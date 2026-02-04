@@ -1,0 +1,454 @@
+{
+  "lastUpdated": "2026-02-03",
+  "election": {
+    "name": "South Burlington Town Meeting Day 2026",
+    "date": "2026-03-03",
+    "location": "South Burlington, Vermont",
+    "pollingHours": "7:00 AM - 7:00 PM",
+    "pollingLocations": [
+      "Chamberlin School (White Street)",
+      "Frederick H. Tuttle Middle School (Dorset Street)",
+      "Orchard School (Baldwin Avenue)",
+      "Kevin Dorn Senior Center at City Hall (Market Street)"
+    ],
+    "publicHearing": {
+      "date": "2026-03-02",
+      "time": "6:30 PM",
+      "description": "Public information meeting to provide information and answer questions on ballot articles"
+    },
+    "earlyVoting": {
+      "available": true,
+      "startDate": "2026-02-11",
+      "endDate": "2026-03-02",
+      "endTime": "12:00 PM",
+      "location": "City Clerk's Office, 180 Market Street",
+      "hours": "Monday-Friday, 8:00 AM - 4:30 PM",
+      "dropBox": "24/7 drop box at City Hall main and back entrances",
+      "note": "Early voting ends at noon the day before the election"
+    },
+    "absenteeBallot": {
+      "requestDeadline": "2026-03-02",
+      "availableDate": "2026-02-11",
+      "requestUrl": "https://mvp.vermont.gov/",
+      "note": "Request online via My Voter Page or at City Clerk's Office. Ballots available 20 days before municipal elections."
+    },
+    "voterRegistration": {
+      "deadline": "Election Day (same-day registration available)",
+      "checkUrl": "https://mvp.vermont.gov/",
+      "registerUrl": "https://mvp.vermont.gov/"
+    }
+  },
+  "ballotArticles": [
+    {
+      "id": "article-1",
+      "title": "Election of City Officers",
+      "description": "To elect all City Officers and City Councilors required by law"
+    },
+    {
+      "id": "article-2",
+      "title": "City Budget (FY2027)",
+      "description": "Adopt the City Council's proposed budget for Fiscal Year 2027 (July 1, 2026 - June 30, 2027)",
+      "amount": "$58,458,894.78",
+      "details": {
+        "generalFund": "$37.4 million (3.55% increase over last year)",
+        "includes": "Police, fire services, recreation, public works, city clerk services, capital improvements, and enterprise funds (wastewater, stormwater, water, rental registry)"
+      }
+    },
+    {
+      "id": "article-3",
+      "title": "Fire Station 1 Addition Bond",
+      "description": "Approve a $2.3 million bond for a 2,333 sq ft addition to Fire Station 1 on Dorset Street",
+      "amount": "$2,300,000",
+      "details": {
+        "funding": "Would be financed through capital assessment fees and surplus revenues from the rental registration program - not from general taxpayer funds"
+      }
+    }
+  ],
+  "races": [
+    {
+      "id": "city-council-2yr",
+      "title": "City Council - 2 Year Term",
+      "description": "Seat vacated by Ann Pugh, who was appointed after Mike Scanlon resigned",
+      "contested": true,
+      "candidates": [
+        {
+          "id": "beth-zigmund",
+          "name": "Beth Zigmund",
+          "photoUrl": "",
+          "website": "https://bethzforcouncil.com",
+          "background": "Cardiothoracic radiologist at UVM Medical Center and Associate Professor of Radiology at the Larner College of Medicine. Medical degree from Drexel University College of Medicine, radiology residency at Georgetown University Hospital, cardiothoracic fellowship at University of Pennsylvania Medical Center. Currently serves as Division Chief of Cardiothoracic Radiology and Director of Lung Cancer Screening at UVM Medical Center.",
+          "experience": [
+            "Member of South Burlington Energy Committee (term expires 2027)",
+            "Co-Chair of Radiologists for a Sustainable Future",
+            "Volunteers with Citizens Climate Lobby and VT Climate and Health Alliance",
+            "Co-author of American College of Radiology Resolution on Climate Change and Sustainability",
+            "Member of ACR Task Force on Climate Change and Sustainability",
+            "Member of Association of University Radiologists Committee on Climate Change and Sustainability",
+            "Member of UVM Medical Center Sustainability Council"
+          ],
+          "positions": {
+            "fiscalPolicy": {
+              "title": "Fiscal Policy & Taxes",
+              "stance": "Keep city taxes affordable through evidence-based decision making. Ensure new development pays its fair share so city services and taxes remain sustainable."
+            },
+            "environment": {
+              "title": "Climate & Environment",
+              "stance": "South Burlington is already a national leader in climate action, but there is more to do. Continue reducing emissions while preparing for flooding, extreme weather, wildfire smoke and heat. Supporting resilience now is far more cost-effective than paying for damage later. Balance growth with protection of precious open spaces."
+            },
+            "development": {
+              "title": "Growth & Development",
+              "stance": "Evidence-driven approach that protects public health and quality of life for residents of all income levels. Develop a comprehensive growth-management plan addressing traffic, pollution, stormwater runoff, and infrastructure."
+            },
+            "housing": {
+              "title": "Housing Affordability",
+              "stance": "Support practical zoning and development policies that increase the supply of middle- and lower-cost housing. Use up-to-date data to assess whether policies are truly lowering costs."
+            },
+            "governance": {
+              "title": "Governance & Civic Engagement",
+              "stance": "Committed to respectful, productive civic dialogue. 'We can disagree without demeaning one another — and we must if we want durable solutions.' Protect constitutional rights and individual freedoms."
+            }
+          },
+          "keyQuote": "As a physician, I have spent my career listening carefully, weighing evidence, and working to help people find answers to and manage their health concerns.",
+          "civicRecord": [
+            {
+              "date": "2025-present",
+              "action": "Serves on South Burlington Energy Committee",
+              "context": "Appointed member helping develop city climate and energy policy",
+              "source": "https://www.southburlingtonvt.gov/470/Energy-Committee"
+            },
+            {
+              "date": "August 2022",
+              "action": "Advocated for carbon-free construction ordinance at City Council",
+              "context": "Urged councilors to pass the ordinance quickly, calling climate change 'the biggest human health crisis we're facing in the 21st century'",
+              "source": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/south-burlington-considers-carbon-free-construction/article_258618e8-1397-11ed-a15f-73534a6172ac.html"
+            },
+            {
+              "date": "2024-2025",
+              "action": "Testified at City Council on bedrock removal noise regulations",
+              "context": "Spoke about 'excessive noise' affecting residents, urging stronger regulations",
+              "source": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/new-bedrock-removal-standards-established-with-noise-in-mind/article_2fdd0c8e-c8dc-44a3-9788-abdcf4926658.html"
+            }
+          ],
+          "endorsements": [],
+          "sources": [
+            {
+              "title": "Campaign Website - BethZforCouncil.com",
+              "url": "https://bethzforcouncil.com"
+            },
+            {
+              "title": "Candidacy Announcement - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/opinion/letters_to_the_editor/zigmund-is-running-for-city-council/article_8e2c5745-2a8f-4558-86ab-9b4302082407.html"
+            },
+            {
+              "title": "VTDigger Commentary: EPA and Climate Policy",
+              "url": "https://vtdigger.org/2025/08/20/beth-zigmund-president-donald-trump-wants-to-undo-the-environmental-protection-agencys-ability-to-protect-our-climate-and-air-and-we-must-speak-up/"
+            },
+            {
+              "title": "City Council Testimony on Bedrock Removal - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/new-bedrock-removal-standards-established-with-noise-in-mind/article_2fdd0c8e-c8dc-44a3-9788-abdcf4926658.html"
+            },
+            {
+              "title": "Medical Society Consortium on Climate and Health Profile",
+              "url": "https://medsocietiesforclimatehealth.org/team/beth-zigmund-md/"
+            },
+            {
+              "title": "UVM Health Provider Profile",
+              "url": "https://www.uvmhealth.org/providers/beth-zigmund-md"
+            }
+          ]
+        },
+        {
+          "id": "amy-allen",
+          "name": "Amy Allen",
+          "photoUrl": "",
+          "website": "",
+          "background": "Stay-at-home mom navigating 'sandwich generation' life — balancing raising children with elder care responsibilities. Before focusing on family, worked as an international development consultant for USAID and the World Bank across Latin America, East Africa, and Southeast Asia, specializing in government reform efforts including streamlining permit processes. Recently purchased 'forever home' in South Burlington after years of renting.",
+          "experience": [
+            "Former international development consultant at USAID and World Bank",
+            "Specialized in government reform and permit process streamlining",
+            "Community volunteer (Green Up Day, scouting organizations)",
+            "Active in local civic engagement"
+          ],
+          "positions": {
+            "fiscalPolicy": {
+              "title": "Fiscal Policy & Taxes",
+              "stance": "Ensure the economic development plan delivers real tax relief while addressing affordability challenges."
+            },
+            "environment": {
+              "title": "Climate & Environment",
+              "stance": "Fund and fully implement the climate action plan while preserving Vermont's unique character."
+            },
+            "development": {
+              "title": "Growth & Development",
+              "stance": "Smart growth management positioning City Center as 'a gateway to Vermont.' Growth needs to be managed smartly so the community works for everyone."
+            },
+            "housing": {
+              "title": "Housing Affordability",
+              "stance": "Address affordability challenges as part of broader economic development efforts."
+            },
+            "governance": {
+              "title": "Governance & Civic Engagement",
+              "stance": "Ready to listen, cooperate, and work hard for a city where every resident can thrive. Believes in equitable access to government processes and transparency from political leaders."
+            }
+          },
+          "keyQuote": "A South Burlington for all is a future we can all agree on.",
+          "civicRecord": [],
+          "civicRecordNote": "No prior South Burlington local government experience. Professional background is in international development consulting for USAID and World Bank, specializing in government reform and permit process streamlining.",
+          "endorsements": [],
+          "sources": [
+            {
+              "title": "Candidacy Announcement - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/opinion/letters_to_the_editor/amy-allen-announces-city-council-candidacy/article_1c009341-108a-4ecb-8c4d-5f79d0a9f355.html"
+            },
+            {
+              "title": "Town Meeting Day Candidate Filing - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/south-burlington-candidates-file-bids-for-town-meeting-day-seats/article_8cebfdd2-6996-4ca9-8f33-7fa60e288c5c.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "city-council-3yr",
+      "title": "City Council - 3 Year Term",
+      "description": "Incumbent running uncontested",
+      "contested": false,
+      "candidates": [
+        {
+          "id": "andrew-chalnick",
+          "name": "Andrew Chalnick",
+          "photoUrl": "",
+          "website": "https://chalnickforcouncil.com",
+          "background": "Incumbent City Councilor and current Vice Chair of the South Burlington City Council. Has been a vocal advocate for residents on noise and quality-of-life issues.",
+          "experience": [
+            "Current City Council member and Vice Chair",
+            "Vocal advocate for strengthening bedrock removal and noise regulations",
+            "Co-authored proposed noise mitigation efforts with Councilor Laurie Smith"
+          ],
+          "positions": {},
+          "civicRecord": [
+            {
+              "date": "October 2023",
+              "action": "Advocated for enforcing noise ordinance against jackhammering",
+              "context": "Only councilor who spoke in support of resident complaints, calling the hammering 'unreasonable' and in violation of ordinance",
+              "source": "https://vtdigger.org/2023/10/26/amid-ongoing-jackhammering-a-south-burlington-neighborhood-urges-city-officials-to-intervene/"
+            },
+            {
+              "date": "August 2024",
+              "action": "Co-drafted noise mitigation proposals for nuisance ordinance",
+              "context": "Worked with Councilor Smith on daytime decibel standards, gas engine phase-out, and performance standards revisions",
+              "source": "https://vtdigger.org/2024/08/12/jackhammering-agreement-raises-ire-of-some-south-burlington-neighbors-2/"
+            },
+            {
+              "date": "October 2024",
+              "action": "Voted on F-35 noise resolution",
+              "context": "Council passed resolution addressing F-35 jet noise impacts on residents",
+              "source": "https://vtdigger.org/2024/10/13/south-burlington-city-council-passes-f-35-resolution/"
+            }
+          ],
+          "endorsements": [],
+          "sources": [
+            {
+              "title": "Town Meeting Day Candidate Filing - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/south-burlington-candidates-file-bids-for-town-meeting-day-seats/article_8cebfdd2-6996-4ca9-8f33-7fa60e288c5c.html"
+            },
+            {
+              "title": "South Burlington City Council",
+              "url": "https://www.southburlingtonvt.gov/government/city_council/index.php"
+            },
+            {
+              "title": "Chalnick for Council Campaign Website",
+              "url": "https://chalnickforcouncil.com"
+            },
+            {
+              "title": "Bedrock removal standards - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/new-bedrock-removal-standards-established-with-noise-in-mind/article_2fdd0c8e-c8dc-44a3-9788-abdcf4926658.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-board-2yr",
+      "title": "School Board - 2 Year Term",
+      "description": "Incumbent running uncontested",
+      "contested": false,
+      "type": "school-board",
+      "candidates": [
+        {
+          "id": "daniel-boyer",
+          "name": "Daniel Boyer",
+          "photoUrl": "",
+          "website": "",
+          "background": "16-year South Burlington resident and former assistant coach for the district's junior varsity baseball team. Elected to one-year term in 2025.",
+          "experience": [
+            "Current School Board member (one-year term)",
+            "Former JV baseball assistant coach for South Burlington schools",
+            "Represented board in teachers' union contract negotiations (2025)"
+          ],
+          "positions": {},
+          "civicRecord": [
+            {
+              "date": "November 2025",
+              "action": "Negotiated new teachers' union contract",
+              "context": "Represented the school board alongside chair Seamus Abshere in negotiating a new work contract with the teachers' union",
+              "source": "https://vtdigger.org/2025/11/27/teachers-union-and-south-burlington-school-board-ink-new-work-contract/"
+            },
+            {
+              "date": "January 2026",
+              "action": "Voted on FY2027 school budget",
+              "context": "Participated in budget discussions and spending decisions",
+              "source": "https://www.vtcng.com/otherpapersbvt/community/education/south-burlington-school-board-approves-spending-increase/article_f10c6a32-1524-4b76-9725-51ff0c6d90a0.html"
+            }
+          ],
+          "endorsements": [],
+          "sources": [
+            {
+              "title": "Town Meeting Day Candidate Filing - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/south-burlington-candidates-file-bids-for-town-meeting-day-seats/article_8cebfdd2-6996-4ca9-8f33-7fa60e288c5c.html"
+            },
+            {
+              "title": "Teachers' union contract - VTDigger",
+              "url": "https://vtdigger.org/2025/11/27/teachers-union-and-south-burlington-school-board-ink-new-work-contract/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-board-3yr",
+      "title": "School Board - 3 Year Term",
+      "description": "Incumbent running uncontested",
+      "contested": false,
+      "type": "school-board",
+      "candidates": [
+        {
+          "id": "emilee-hoffman",
+          "name": "Emilee Hoffman",
+          "photoUrl": "",
+          "website": "",
+          "background": "South Burlington native and SBHS Class of 1998 graduate. Family moved to South Burlington in 1988 when her father became director of student support services in the district. BA in Sociology from UVM. Currently works as a project manager at UVM Health Network. Won write-in campaign in 2025.",
+          "experience": [
+            "Current School Board member (elected via write-in campaign 2025)",
+            "Project manager at UVM Health Network",
+            "Former instructional assistant at SBHS",
+            "Former South Burlington Rec camp counselor"
+          ],
+          "positions": {},
+          "civicRecord": [
+            {
+              "date": "January 2026",
+              "action": "Advocated for adequate superintendent funding",
+              "context": "Argued against 'handcuffing' the superintendent 'with inadequate funding' that would 'undermine his ability to lead us out of this dysfunction'",
+              "source": "https://www.vtcng.com/otherpapersbvt/community/education/south-burlington-school-board-approves-spending-increase/article_f10c6a32-1524-4b76-9725-51ff0c6d90a0.html"
+            }
+          ],
+          "endorsements": [],
+          "sources": [
+            {
+              "title": "Town Meeting Day Candidate Filing - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/south-burlington-candidates-file-bids-for-town-meeting-day-seats/article_8cebfdd2-6996-4ca9-8f33-7fa60e288c5c.html"
+            },
+            {
+              "title": "Write-in campaign announcement - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/opinion/letters_to_the_editor/school-board-candidate-mounts-write-in-campaign/article_a0cc79f8-ef9e-11ef-924b-cbe817ab951b.html"
+            },
+            {
+              "title": "School board budget discussions - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/community/education/south-burlington-school-board-approves-spending-increase/article_f10c6a32-1524-4b76-9725-51ff0c6d90a0.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-board-3yr-partial",
+      "title": "School Board - 3 Year Term (2 years remaining)",
+      "description": "Appointed member running uncontested",
+      "contested": false,
+      "type": "school-board",
+      "candidates": [
+        {
+          "id": "michelle-boyer",
+          "name": "Michelle Boyer",
+          "photoUrl": "",
+          "website": "",
+          "background": "Appointed to the School Board in 2025 to fill a vacancy. Education background from University of Massachusetts, Amherst.",
+          "experience": [
+            "Current School Board member (appointed 2025)",
+            "Participated in FY2027 budget deliberations"
+          ],
+          "positions": {},
+          "civicRecord": [
+            {
+              "date": "January 2026",
+              "action": "Voted on FY2027 school budget",
+              "context": "Participated in budget discussions alongside board chair Seamus Abshere and Dan Boyer",
+              "source": "https://www.vtcng.com/otherpapersbvt/community/education/south-burlington-school-board-approves-spending-increase/article_f10c6a32-1524-4b76-9725-51ff0c6d90a0.html"
+            }
+          ],
+          "endorsements": [],
+          "sources": [
+            {
+              "title": "Town Meeting Day Candidate Filing - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/south-burlington-candidates-file-bids-for-town-meeting-day-seats/article_8cebfdd2-6996-4ca9-8f33-7fa60e288c5c.html"
+            },
+            {
+              "title": "School board budget discussions - The Other Paper",
+              "url": "https://www.vtcng.com/otherpapersbvt/community/education/south-burlington-school-board-approves-spending-increase/article_f10c6a32-1524-4b76-9725-51ff0c6d90a0.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "school-board-3yr-open",
+      "title": "School Board - 3 Year Term",
+      "description": "Open seat - no candidates filed",
+      "contested": false,
+      "type": "school-board",
+      "candidates": []
+    }
+  ],
+  "currentCouncil": [
+    { "name": "Tim Barritt", "role": "Chair" },
+    { "name": "Andrew Chalnick", "role": "Vice Chair" },
+    { "name": "Elizabeth Fitzgerald", "role": "Clerk" },
+    { "name": "Laurie Smith", "role": "Member" },
+    { "name": "Ann Pugh", "role": "Member (seat up for election)" }
+  ],
+  "keyIssues": [
+    {
+      "id": "fiscalPolicy",
+      "title": "Fiscal Policy & Taxes",
+      "description": "Approach to city budget, taxation, economic development, and fiscal sustainability"
+    },
+    {
+      "id": "environment",
+      "title": "Climate & Environment",
+      "description": "Climate action, environmental protection, resilience planning, and open space preservation"
+    },
+    {
+      "id": "development",
+      "title": "Growth & Development",
+      "description": "Managing city growth, City Center development, traffic, infrastructure, and stormwater"
+    },
+    {
+      "id": "housing",
+      "title": "Housing Affordability",
+      "description": "Zoning policies, housing supply, and strategies to address housing costs"
+    },
+    {
+      "id": "governance",
+      "title": "Governance & Civic Engagement",
+      "description": "Decision-making approach, transparency, and community engagement style"
+    }
+  ],
+  "resources": {
+    "cityClerk": "https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php",
+    "sampleBallot": "https://www.southburlingtonvt.gov/208/Warnings-Public-Hearings",
+    "budgetInfo": "https://www.southburlingtonvt.gov/672/Fiscal-Year-2027-Budget",
+    "candidateForum": "https://www.cctv.org/watch-tv/programs/south-burlington-city-council-2-year-term-candidate-forum",
+    "electionCoverage": "https://www.cctv.org/tmd2026"
+  }
+}

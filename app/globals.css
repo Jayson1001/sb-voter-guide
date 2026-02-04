@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream-bg: #FDF9F3;
+  --sage-primary: #5A8A5A;
+  --terracotta-accent: #D97856;
+  --text-primary: #3D3832;
+  --text-secondary: #635B51;
+}
+
+/* Subtle background pattern */
+.bg-pattern {
+  background-color: var(--cream-bg);
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(90, 138, 90, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(217, 120, 86, 0.03) 0%, transparent 50%);
+}
+
+/* Smooth transitions for interactive elements */
+@layer utilities {
+  .transition-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    @apply shadow-soft-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF3E8;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1DFD1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8C5A8;
+}
+
+/* Animated underline for links */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--sage-primary);
+  transition: width 0.3s ease-out;
+  border-radius: 1px;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Gentle fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.animate-fade-in-delay-1 {
+  animation: fadeInUp 0.5s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeInUp 0.5s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fadeInUp 0.5s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+/* Card hover effect */
+.card-interactive {
+  @apply transition-lift;
+}
+
+.card-interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px -8px rgba(90, 138, 90, 0.15),
+              0 4px 15px -4px rgba(0, 0, 0, 0.05);
+}
+
+/* Decorative leaf accent */
+.leaf-accent::before {
+  content: '🌿';
+  position: absolute;
+  opacity: 0.15;
+  font-size: 4rem;
+  pointer-events: none;
+}
+
+/* Badge/pill styling */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-sage {
+  background-color: #E8EFE8;
+  color: #3D663D;
+}
+
+.badge-terracotta {
+  background-color: #FDEBE4;
+  color: #A34A2E;
+}
+
+/* Focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--sage-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(90, 138, 90, 0.2);
+  color: var(--text-primary);
+}
+
+body {
+  color: var(--text-primary);
+  background: var(--cream-bg);
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .bg-pattern {
+    background: white !important;
+    background-image: none !important;
+  }
+
+  .shadow-soft {
+    box-shadow: none !important;
+  }
+
+  @page {
+    margin: 0.5in;
+    size: letter;
+  }
+}

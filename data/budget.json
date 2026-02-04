@@ -1,0 +1,140 @@
+{
+  "lastUpdated": "2026-02-03",
+  "fiscalYear": "FY2027",
+  "cityBudget": {
+    "total": 58458894.78,
+    "generalFund": 37400000,
+    "previousYear": {
+      "total": 56450000,
+      "generalFund": 36100000
+    },
+    "percentIncrease": 3.55,
+    "breakdown": [
+      { "category": "Police", "amount": 8900000, "percentOfGeneral": 23.8 },
+      { "category": "Fire & Ambulance", "amount": 7400000, "percentOfGeneral": 19.8 },
+      { "category": "Public Works", "amount": 7300000, "percentOfGeneral": 19.5 },
+      { "category": "Recreation, Parks & Library", "amount": 5200000, "percentOfGeneral": 13.9 },
+      { "category": "Administration & General Government", "amount": 4600000, "percentOfGeneral": 12.3 },
+      { "category": "Capital Improvements", "amount": 4000000, "percentOfGeneral": 10.7 }
+    ],
+    "enterpriseFunds": {
+      "note": "Separate from general fund - funded by user fees",
+      "funds": [
+        { "name": "Water", "rateIncrease": 8.9 },
+        { "name": "Sewer/Wastewater", "rateIncrease": 8.3 },
+        { "name": "Stormwater", "rateIncrease": 5.9 },
+        { "name": "Rental Registry", "rateIncrease": 0 }
+      ],
+      "estimatedAnnualIncrease": 75,
+      "minimumAccountIncrease": 40
+    }
+  },
+  "taxRates": {
+    "proposed": {
+      "municipal": 0.5570,
+      "homesteadEducation": 1.7090,
+      "nonHomesteadEducation": 1.8003,
+      "totalHomestead": 2.2660,
+      "totalNonHomestead": 2.3573,
+      "note": "Estimated FY2027 rates based on 3.3% municipal increase and projected 8.76% education tax increase. Final education rate set by state after voter approval."
+    },
+    "current": {
+      "municipal": 0.5392,
+      "homesteadEducation": 1.5713,
+      "nonHomesteadEducation": 1.6552,
+      "totalHomestead": 2.1105,
+      "totalNonHomestead": 2.1944
+    },
+    "proposedMunicipalIncrease": 3.3,
+    "proposedEducationIncrease": 8.76,
+    "taxImpactExamples": [
+      { "description": "Average condo", "homeValue": 300000, "municipalIncrease": 53, "totalEstimatedIncrease": 467 },
+      { "description": "Average home", "homeValue": 440000, "municipalIncrease": 79, "totalEstimatedIncrease": 684 }
+    ],
+    "historical": [
+      { "year": "2025-26", "municipal": 0.5392, "homesteadEd": 1.5713, "totalHomestead": 2.1105 },
+      { "year": "2024-25", "municipal": 0.5181, "homesteadEd": 1.4598, "totalHomestead": 1.9779 },
+      { "year": "2023-24", "municipal": 0.4916, "homesteadEd": 1.3494, "totalHomestead": 1.8410 },
+      { "year": "2022-23", "municipal": 0.4660, "homesteadEd": 1.2953, "totalHomestead": 1.7613 },
+      { "year": "2021-22", "municipal": 0.4350, "homesteadEd": 1.3249, "totalHomestead": 1.7599 }
+    ],
+    "note": "Tax rates are per $100 of assessed property value. FY2027 education rate is estimated; final rate set by state after Town Meeting Day vote."
+  },
+  "fireStationBond": {
+    "amount": 2300000,
+    "squareFootage": 2333,
+    "location": "Fire Station 1, 575 Dorset Street",
+    "yearBuilt": 1970,
+    "currentStaffing": "5 firefighters on duty 24/7/365",
+    "fundingSources": [
+      "Capital assessment fees",
+      "Rental registration program surplus"
+    ],
+    "taxImpact": "None - funded through fees, not property taxes",
+    "reason": "Current rental housing inspection staff working from temporary office trailer; need permanent workspace",
+    "timeline": {
+      "vote": "March 3, 2026",
+      "constructionStart": "TBD pending voter approval"
+    }
+  },
+  "schoolBudget": {
+    "total": 73900000,
+    "previousYear": 71500000,
+    "percentIncrease": 3.4,
+    "educationTaxIncrease": 8.76,
+    "levelFundedTaxIncrease": 4.24,
+    "boardVote": "4-3",
+    "boardVoteDissent": "Seamus Abshere, Michelle Boyer, and Dan Boyer voted for level-funding (0% increase)",
+    "costDrivers": [
+      { "category": "Salaries", "increase": 8.4 },
+      { "category": "Benefits", "increase": 6.2 }
+    ],
+    "staffCostShare": 75,
+    "cuts": [
+      "Communications Director position eliminated",
+      "Technology Director position eliminated",
+      "One additional central office leadership position",
+      "One FTE nurse position (split between middle and high school)"
+    ],
+    "totalCentralOfficeCuts": 1900000,
+    "surplusFunds": {
+      "amount": 2600000,
+      "use": "Transferred to capital improvement reserve fund (separate ballot question)",
+      "note": "Board chose not to use surplus to buy down tax rate, calling it 'kicking the can down the road'"
+    },
+    "context": "Even with zero spending increase, residents would face a ~4.24% education tax increase due to a 3.5% drop in equalized pupil weights and 4.7% drop in Common Level of Appraisal (CLA).",
+    "ifRejected": "Board plans to hold a revote offering a level-funded option with ~4.24% tax increase but significant staffing cuts at schools.",
+    "sources": [
+      {
+        "title": "School Board Approves Spending Increase - The Other Paper",
+        "url": "https://www.vtcng.com/otherpapersbvt/community/education/south-burlington-school-board-approves-spending-increase/article_f10c6a32-1524-4b76-9725-51ff0c6d90a0.html"
+      },
+      {
+        "title": "FY2027 Budget - South Burlington School District",
+        "url": "https://www.sbschools.net/article/2528222"
+      }
+    ]
+  },
+  "capitalImprovementPlan": {
+    "percentIncrease": 4.3,
+    "oneTimeProjects": 78000
+  },
+  "sources": [
+    {
+      "title": "South Burlington FY2027 Budget Page",
+      "url": "https://www.southburlingtonvt.gov/672/Fiscal-Year-2027-Budget"
+    },
+    {
+      "title": "City Council Approves Budget - The Other Paper",
+      "url": "https://www.vtcng.com/otherpapersbvt/news/municipal_matters/south-burlington-city-council-approves-budget-warns-town-meeting-vote/article_ee64f279-c7bc-4803-8617-b41323920ad6.html"
+    },
+    {
+      "title": "South Burlington Tax Rates",
+      "url": "https://www.southburlingtonvt.gov/393/Tax-Rates"
+    },
+    {
+      "title": "Fire Station 1 Tour - NBC5",
+      "url": "https://www.mynbc5.com/article/fire-station-upgrades-review/69068473"
+    }
+  ]
+}
