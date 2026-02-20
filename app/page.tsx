@@ -206,9 +206,9 @@ export default function Home() {
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
-                    Upcoming
+                    Recording
                   </span>
-                  <span className="text-terracotta-100 text-sm">February 10 @ 5:25 PM</span>
+                  <span className="text-terracotta-100 text-sm">February 10, 2026</span>
                 </div>
                 <h3 className="font-display font-bold text-lg sm:text-xl">
                   Watch the Candidate Forum
@@ -218,7 +218,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="hidden sm:flex items-center gap-2 text-white/80 group-hover:text-white group-hover:translate-x-1 transition-all">
-                <span className="text-sm font-medium">Watch on CCTV</span>
+                <span className="text-sm font-medium">Watch on YouTube</span>
                 <ArrowRightIcon />
               </div>
             </div>
