@@ -193,7 +193,7 @@ export default function Home() {
 
         {/* Candidate Forum Banner */}
         <a
-          href="https://www.cctv.org/watch-tv/programs/south-burlington-city-council-2-year-term-candidate-forum"
+          href="https://www.youtube.com/live/q0Fco5ewI8I?si=2ykhCvPlFALwiStz"
           target="_blank"
           rel="noopener noreferrer"
           className="block mb-10 group"
