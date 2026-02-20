@@ -34,7 +34,7 @@ export default function SourcesPage() {
       { title: 'South Burlington City Clerk - Elections & Voting', url: resources.cityClerk },
       { title: 'City Warnings & Public Hearings (Sample Ballot)', url: resources.sampleBallot },
       { title: 'City Budget Information', url: resources.budgetInfo },
-      { title: 'South Burlington City Council', url: 'https://www.southburlingtonvt.gov/government/city_council/index.php' },
+      { title: 'South Burlington City Council', url: 'https://www.southburlingtonvt.gov/197/City-Council' },
     ],
   });
 
@@ -44,7 +44,7 @@ export default function SourcesPage() {
     sources: [
       {
         title: 'City Council Candidate Forum (Feb 10, 2026) - Town Meeting TV',
-        url: resources.candidateForum || 'https://www.cctv.org/watch-tv/programs/south-burlington-city-council-2-year-term-candidate-forum',
+        url: resources.candidateForum || 'https://www.youtube.com/live/q0Fco5ewI8I?si=2ykhCvPlFALwiStz',
       },
       {
         title: 'Town Meeting Day 2026 Election Coverage - CCTV',
