@@ -144,17 +144,12 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Election Countdown */}
+            {/* Election Day Banner */}
             <div className="mt-6">
               <div className="inline-flex items-center gap-3 bg-terracotta-500/90 backdrop-blur-sm px-5 py-3 rounded-xl">
-                <div className="text-center">
-                  <div className="font-display text-3xl font-bold text-white">
-                    {Math.max(0, Math.ceil((new Date('2026-03-03').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)))}
-                  </div>
-                  <div className="text-terracotta-100 text-xs uppercase tracking-wide">days</div>
-                </div>
-                <div className="text-terracotta-100 text-sm">
-                  until<br />Election Day
+                <div className="text-2xl">🗳️</div>
+                <div className="text-white font-display font-bold text-lg">
+                  Today is Election Day!
                 </div>
               </div>
             </div>
