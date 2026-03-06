@@ -445,9 +445,10 @@
     {
       "id": "school-board-3yr-open",
       "title": "School Board - 3 Year Term",
-      "description": "Open seat - no candidates filed",
+      "description": "Open seat - won by write-in candidate",
       "contested": false,
       "type": "school-board",
+      "writeInWinner": { "name": "Elyssa Galves" },
       "candidates": []
     }
   ],
