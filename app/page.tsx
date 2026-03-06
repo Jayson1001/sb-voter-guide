@@ -354,35 +354,57 @@ export default function Home() {
                       <div key={race.id}>
                         {race.candidates.length > 0 ? (
                           <div className="block">
-                            <div className="flex items-center justify-between bg-white rounded-xl p-4 hover:bg-sage-50 transition-colors">
-                              <div>
-                                <p className="font-medium text-warmgray-800">
-                                  {race.candidates[0]?.name}
-                                </p>
-                                <p className="text-sm text-warmgray-500">{race.title}</p>
-                                {race.candidates[0]?.experience?.[0] && (
-                                  <p className="text-xs text-warmgray-400 mt-1">{race.candidates[0].experience[0]}</p>
-                                )}
+                            <div className="bg-white rounded-xl p-4 hover:bg-sage-50 transition-colors">
+                              <div className="flex items-center justify-between">
+                                <div>
+                                  <p className="font-medium text-warmgray-800">
+                                    {race.candidates[0]?.name}
+                                  </p>
+                                  <p className="text-sm text-warmgray-500">{race.title}</p>
+                                  {race.candidates[0]?.experience?.[0] && (
+                                    <p className="text-xs text-warmgray-400 mt-1">{race.candidates[0].experience[0]}</p>
+                                  )}
+                                </div>
+                                <div className="flex items-center gap-3">
+                                  {race.candidates[0]?.votes && (
+                                    <span className="text-xs text-warmgray-400">{race.candidates[0].votes.toLocaleString()} votes</span>
+                                  )}
+                                  <span className="flex items-center gap-1 text-sage-600 text-sm font-medium">
+                                    <CheckCircleIcon />
+                                    Elected
+                                  </span>
+                                </div>
                               </div>
-                              <div className="flex items-center gap-3">
-                                {race.candidates[0]?.votes && (
-                                  <span className="text-xs text-warmgray-400">{race.candidates[0].votes.toLocaleString()} votes</span>
-                                )}
-                                <span className="flex items-center gap-1 text-sage-600 text-sm font-medium">
-                                  <CheckCircleIcon />
-                                  Elected
-                                </span>
-                              </div>
+                              {race.writeInChallenges?.length > 0 && (
+                                <div className="mt-2 pt-2 border-t border-warmgray-100">
+                                  {race.writeInChallenges.map((writeIn: any) => (
+                                    <p key={writeIn.name} className="text-xs text-warmgray-400">
+                                      Write-in: {writeIn.name} — {writeIn.votes.toLocaleString()} votes
+                                    </p>
+                                  ))}
+                                </div>
+                              )}
                             </div>
                           </div>
                         ) : (
-                          <div className="flex items-center justify-between bg-white rounded-xl p-4">
+                          <div className="flex items-center justify-between bg-white rounded-xl p-4 hover:bg-sage-50 transition-colors">
                             <div>
-                              <p className="text-warmgray-400 italic font-medium">No candidate filed</p>
+                              <p className="font-medium text-warmgray-800">
+                                {race.writeInWinner ? race.writeInWinner.name : 'No candidate filed'}
+                              </p>
                               <p className="text-sm text-warmgray-500">{race.title}</p>
-                              <p className="text-xs text-warmgray-400 mt-1">Seat remained unfilled — no candidates filed</p>
+                              <p className="text-xs text-warmgray-400 mt-1">
+                                {race.writeInWinner ? 'Elected via write-in campaign' : 'Seat remained unfilled — no candidates filed'}
+                              </p>
                             </div>
-                            <span className="text-terracotta-600 text-sm font-medium">Open Seat</span>
+                            {race.writeInWinner ? (
+                              <span className="flex items-center gap-1 text-sage-600 text-sm font-medium">
+                                <CheckCircleIcon />
+                                Elected
+                              </span>
+                            ) : (
+                              <span className="text-terracotta-600 text-sm font-medium">Open Seat</span>
+                            )}
                           </div>
                         )}
                       </div>
