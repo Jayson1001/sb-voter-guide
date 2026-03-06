@@ -130,7 +130,7 @@ export default function Home() {
           <div className="text-center animate-fade-in">
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4 tracking-tight">
               South Burlington
-              <span className="block text-cream-200">Voter Guide 2026</span>
+              <span className="block text-cream-200">Election Results 2026</span>
             </h1>
 
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-6 text-cream-100">
@@ -144,12 +144,11 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Election Day Banner */}
+            {/* Results Banner */}
             <div className="mt-6">
-              <div className="inline-flex items-center gap-3 bg-terracotta-500/90 backdrop-blur-sm px-5 py-3 rounded-xl">
-                <div className="text-2xl">🗳️</div>
-                <div className="text-white font-display font-bold text-lg">
-                  Today is Election Day!
+              <div className="inline-flex items-center gap-3 bg-white/15 backdrop-blur-sm px-5 py-3 rounded-xl">
+                <div className="text-cream-100 font-display font-medium text-base">
+                  Town Meeting Day results are in &mdash; {(candidatesData as any).results.totalBallotsCast.toLocaleString()} ballots cast ({(candidatesData as any).results.turnoutPercent}% turnout)
                 </div>
               </div>
             </div>
@@ -175,11 +174,11 @@ export default function Home() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800 mb-2">
-                Your Voice Matters
+                The Results Are In
               </h2>
               <p className="text-warmgray-600 leading-relaxed">
-                This guide helps you compare candidates for the contested City Council seat.
-                Click on any candidate to learn more about their background and positions.
+                Beth Zigmund won the contested City Council seat by 31 votes (1,699 to 1,668).
+                All ballot articles passed, including the city budget and fire station bond.
                 This is an independent, nonpartisan community resource.
               </p>
             </div>
@@ -201,7 +200,7 @@ export default function Home() {
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
-                    Recording
+                    Archive
                   </span>
                   <span className="text-terracotta-100 text-sm">February 10, 2026</span>
                 </div>
@@ -222,22 +221,20 @@ export default function Home() {
 
         {/* Race Title */}
         <div className="text-center mb-8 animate-fade-in-delay-2">
-          <span className="badge badge-sage mb-3">Contested Race</span>
+          <span className="badge badge-sage mb-3">Contested Race &mdash; Results</span>
           <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800">
             {contestedRace?.title}
           </h2>
-          <p className="text-warmgray-500 mt-2">Compare the candidates side by side</p>
+          <p className="text-warmgray-500 mt-2">Beth Zigmund elected with 1,699 votes (50.5%) to Amy Allen&apos;s 1,668 (49.5%)</p>
         </div>
 
         {/* Candidate Cards */}
         <div className="grid md:grid-cols-2 gap-6 mb-12 animate-fade-in-delay-3">
           {candidates.map((candidate, index) => (
-            <Link
+            <div
               key={candidate.id}
-              href={`/candidate/${candidate.id}`}
-              className="group"
             >
-              <div className="bg-white rounded-2xl shadow-soft p-6 h-full card-interactive border-2 border-transparent hover:border-sage-200">
+              <div className="bg-white rounded-2xl shadow-soft p-6 h-full border-2 border-transparent hover:border-sage-200 transition-colors">
                 {/* Candidate Header */}
                 <div className="flex items-center gap-4 mb-4">
                   <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
@@ -246,13 +243,16 @@ export default function Home() {
                     <UserIcon />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-display text-xl font-bold text-warmgray-800 group-hover:text-sage-600 transition-colors">
+                    <h3 className="font-display text-xl font-bold text-warmgray-800">
                       {candidate.name}
                     </h3>
-                    <p className="text-sm text-warmgray-500">Candidate</p>
-                  </div>
-                  <div className="text-warmgray-300 group-hover:text-sage-500 group-hover:translate-x-1 transition-all">
-                    <ArrowRightIcon />
+                    <div className="flex items-center gap-2">
+                      {(candidate as any).elected ? (
+                        <span className="text-xs font-semibold text-sage-700 bg-sage-100 px-2 py-0.5 rounded-full">Elected &mdash; {(candidate as any).votes?.toLocaleString()} votes</span>
+                      ) : (
+                        <span className="text-xs font-semibold text-warmgray-500 bg-warmgray-100 px-2 py-0.5 rounded-full">{(candidate as any).votes?.toLocaleString()} votes</span>
+                      )}
+                    </div>
                   </div>
                 </div>
 
@@ -280,130 +280,8 @@ export default function Home() {
                   </div>
                 )}
               </div>
-            </Link>
+            </div>
           ))}
-        </div>
-
-        {/* Issue Comparison */}
-        <div className="mb-12">
-          <div className="text-center mb-8">
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800 mb-2">
-              Where They Stand
-            </h2>
-            <p className="text-warmgray-500">Compare positions on key local issues</p>
-          </div>
-
-          <div className="space-y-4">
-            {keyIssues.map((issue, issueIndex) => (
-              <div
-                key={issue.id}
-                className="bg-white rounded-2xl shadow-soft overflow-hidden"
-                style={{ animationDelay: `${0.4 + issueIndex * 0.1}s` }}
-              >
-                {/* Issue Header */}
-                <div className="bg-gradient-to-r from-sage-50 to-cream-100 px-6 py-4 border-b border-sage-100">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-white rounded-lg shadow-sm flex items-center justify-center text-sage-600">
-                      {issueIcons[issue.id] || issueIcons.governance}
-                    </div>
-                    <div>
-                      <h3 className="font-display font-bold text-warmgray-800">
-                        {issue.title}
-                      </h3>
-                      <p className="text-xs text-warmgray-500">{issue.description}</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Candidate Positions */}
-                <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-warmgray-100">
-                  {candidates.map((candidate, candidateIndex) => {
-                    const position = (candidate.positions as Record<string, { title: string; stance: string }>)[issue.id];
-                    return (
-                      <div key={candidate.id} className="p-5">
-                        <div className="flex items-center gap-2 mb-2">
-                          <div className={`w-2 h-2 rounded-full ${
-                            candidateIndex === 0 ? 'bg-sage-400' : 'bg-terracotta-400'
-                          }`} />
-                          <span className="font-semibold text-sm text-warmgray-700">
-                            {candidate.name}
-                          </span>
-                        </div>
-                        <p className="text-warmgray-600 text-sm leading-relaxed">
-                          {position?.stance || "Position not yet available"}
-                        </p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Quick Comparison Table */}
-        <div className="mb-12">
-          <div className="bg-white rounded-2xl shadow-soft overflow-hidden">
-            <div className="bg-gradient-to-r from-sage-50 to-cream-100 px-6 py-4 border-b border-sage-100">
-              <h2 className="font-display font-bold text-warmgray-800">At a Glance</h2>
-              <p className="text-warmgray-500 text-sm">Quick comparison of the two candidates</p>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-warmgray-200">
-                    <th className="text-left py-3 px-4 font-semibold text-warmgray-500 w-1/3"></th>
-                    <th className="text-left py-3 px-4 font-semibold text-sage-700 w-1/3">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2.5 h-2.5 rounded-full bg-sage-400" />
-                        {candidates[0]?.name}
-                      </div>
-                    </th>
-                    <th className="text-left py-3 px-4 font-semibold text-terracotta-700 w-1/3">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2.5 h-2.5 rounded-full bg-terracotta-400" />
-                        {candidates[1]?.name}
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-warmgray-100">
-                    <td className="py-3 px-4 font-medium text-warmgray-600">Profession</td>
-                    <td className="py-3 px-4 text-warmgray-700">Physician (radiologist)</td>
-                    <td className="py-3 px-4 text-warmgray-700">International development consultant</td>
-                  </tr>
-                  <tr className="border-b border-warmgray-100 bg-cream-50/50">
-                    <td className="py-3 px-4 font-medium text-warmgray-600">Local Gov Experience</td>
-                    <td className="py-3 px-4 text-warmgray-700">Energy Committee member</td>
-                    <td className="py-3 px-4 text-warmgray-700">None (new to SB politics)</td>
-                  </tr>
-                  <tr className="border-b border-warmgray-100">
-                    <td className="py-3 px-4 font-medium text-warmgray-600">On Taxes</td>
-                    <td className="py-3 px-4 text-warmgray-700">Evidence-based spending; review cost of new mandates</td>
-                    <td className="py-3 px-4 text-warmgray-700">Sustainable budgets; protect core services without overburdening taxpayers</td>
-                  </tr>
-                  <tr className="border-b border-warmgray-100 bg-cream-50/50">
-                    <td className="py-3 px-4 font-medium text-warmgray-600">On Climate</td>
-                    <td className="py-3 px-4 text-warmgray-700">Strong advocate; pushed carbon-free construction</td>
-                    <td className="py-3 px-4 text-warmgray-700">Build on existing efforts; balance with affordability</td>
-                  </tr>
-                  <tr className="border-b border-warmgray-100">
-                    <td className="py-3 px-4 font-medium text-warmgray-600">On Housing</td>
-                    <td className="py-3 px-4 text-warmgray-700">Use data to assess if policies lower costs</td>
-                    <td className="py-3 px-4 text-warmgray-700">Address affordability through economic development</td>
-                  </tr>
-                  <tr>
-                    <td className="py-3 px-4 font-medium text-warmgray-600">Campaign Website</td>
-                    <td className="py-3 px-4">
-                      <a href="https://bethzforcouncil.com" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:underline text-xs">bethzforcouncil.com</a>
-                    </td>
-                    <td className="py-3 px-4 text-warmgray-400 text-xs italic">Not available</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
         </div>
 
         {/* Uncontested Races */}
@@ -411,9 +289,9 @@ export default function Home() {
           <div className="mb-12">
             <div className="text-center mb-8">
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800 mb-2">
-                Uncontested Races
+                Uncontested Races — Results
               </h2>
-              <p className="text-warmgray-500">These candidates are running unopposed</p>
+              <p className="text-warmgray-500">These candidates ran unopposed and were elected</p>
             </div>
 
             <div className="bg-white rounded-2xl shadow-soft overflow-hidden">
@@ -432,10 +310,10 @@ export default function Home() {
                   {uncontestedRaces
                     .filter((race: any) => !race.type || race.type !== 'school-board')
                     .map((race: any) => (
-                      <Link key={race.id} href={`/candidate/${race.candidates[0]?.id}`} className="group block">
+                      <div key={race.id} className="block">
                         <div className="flex items-center justify-between bg-cream-50 rounded-xl p-4 hover:bg-sage-50 transition-colors">
                           <div>
-                            <p className="font-medium text-warmgray-800 group-hover:text-sage-700 transition-colors">
+                            <p className="font-medium text-warmgray-800">
                               {race.candidates[0]?.name || 'No candidate'}
                             </p>
                             <p className="text-sm text-warmgray-500">{race.title}</p>
@@ -443,15 +321,17 @@ export default function Home() {
                               <p className="text-xs text-warmgray-400 mt-1">{race.candidates[0].experience[0]}</p>
                             )}
                           </div>
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-3">
+                            {race.candidates[0]?.votes && (
+                              <span className="text-xs text-warmgray-400">{race.candidates[0].votes.toLocaleString()} votes</span>
+                            )}
                             <span className="flex items-center gap-1 text-sage-600 text-sm font-medium">
                               <CheckCircleIcon />
-                              Uncontested
+                              Elected
                             </span>
-                            <ArrowRightIcon />
                           </div>
                         </div>
-                      </Link>
+                      </div>
                     ))}
                 </div>
               </div>
@@ -473,10 +353,10 @@ export default function Home() {
                     .map((race: any) => (
                       <div key={race.id}>
                         {race.candidates.length > 0 ? (
-                          <Link href={`/candidate/${race.candidates[0]?.id}`} className="group block">
+                          <div className="block">
                             <div className="flex items-center justify-between bg-white rounded-xl p-4 hover:bg-sage-50 transition-colors">
                               <div>
-                                <p className="font-medium text-warmgray-800 group-hover:text-sage-700 transition-colors">
+                                <p className="font-medium text-warmgray-800">
                                   {race.candidates[0]?.name}
                                 </p>
                                 <p className="text-sm text-warmgray-500">{race.title}</p>
@@ -484,21 +364,23 @@ export default function Home() {
                                   <p className="text-xs text-warmgray-400 mt-1">{race.candidates[0].experience[0]}</p>
                                 )}
                               </div>
-                              <div className="flex items-center gap-2">
+                              <div className="flex items-center gap-3">
+                                {race.candidates[0]?.votes && (
+                                  <span className="text-xs text-warmgray-400">{race.candidates[0].votes.toLocaleString()} votes</span>
+                                )}
                                 <span className="flex items-center gap-1 text-sage-600 text-sm font-medium">
                                   <CheckCircleIcon />
-                                  Uncontested
+                                  Elected
                                 </span>
-                                <ArrowRightIcon />
                               </div>
                             </div>
-                          </Link>
+                          </div>
                         ) : (
                           <div className="flex items-center justify-between bg-white rounded-xl p-4">
                             <div>
                               <p className="text-warmgray-400 italic font-medium">No candidate filed</p>
                               <p className="text-sm text-warmgray-500">{race.title}</p>
-                              <p className="text-xs text-warmgray-400 mt-1">Write-in candidates accepted at the polls</p>
+                              <p className="text-xs text-warmgray-400 mt-1">Seat remained unfilled — no candidates filed</p>
                             </div>
                             <span className="text-terracotta-600 text-sm font-medium">Open Seat</span>
                           </div>
@@ -516,21 +398,18 @@ export default function Home() {
           <div className="mb-12">
             <div className="text-center mb-8">
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800 mb-2">
-                Also on the Ballot
+                Ballot Article Results
               </h2>
-              <p className="text-warmgray-500">Other items you'll vote on March 3rd</p>
+              <p className="text-warmgray-500">How South Burlington voted on March 3rd</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
               {ballotArticles.slice(1).map((article: any, index: number) => {
-                const href = index === 0 ? '/budget' : '/fire-station-bond';
                 return (
-                  <Link
+                  <div
                     key={article.id}
-                    href={href}
-                    className="group"
                   >
-                    <div className="bg-white rounded-2xl shadow-soft p-6 border-2 border-transparent hover:border-sage-200 transition-colors h-full card-interactive">
+                    <div className="bg-white rounded-2xl shadow-soft p-6 border-2 border-transparent hover:border-sage-200 transition-colors h-full">
                       <div className="flex items-start gap-4">
                         <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
                           index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-600'
@@ -538,14 +417,9 @@ export default function Home() {
                           {index === 0 ? <DocumentIcon /> : <FireIcon />}
                         </div>
                         <div className="flex-1">
-                          <div className="flex items-start justify-between">
-                            <h3 className="font-display font-bold text-warmgray-800 mb-1 group-hover:text-sage-600 transition-colors">
-                              {article.title}
-                            </h3>
-                            <div className="text-warmgray-300 group-hover:text-sage-500 group-hover:translate-x-1 transition-all flex-shrink-0 ml-2">
-                              <ArrowRightIcon />
-                            </div>
-                          </div>
+                          <h3 className="font-display font-bold text-warmgray-800 mb-1">
+                            {article.title}
+                          </h3>
                           {article.amount && (
                             <span className={`inline-block px-2 py-0.5 rounded-full text-xs font-semibold mb-2 ${
                               index === 0 ? 'bg-sage-100 text-sage-700' : 'bg-terracotta-100 text-terracotta-700'
@@ -556,105 +430,27 @@ export default function Home() {
                           <p className="text-warmgray-600 text-sm leading-relaxed mb-3">
                             {article.description}
                           </p>
-                          <span className={`inline-flex items-center gap-1 text-sm font-medium ${
-                            index === 0 ? 'text-sage-600' : 'text-terracotta-600'
-                          }`}>
-                            Learn more
-                            <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                          </span>
+                          {article.passed !== undefined && (
+                            <div className={`inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 rounded-full ${
+                              article.passed ? 'bg-sage-100 text-sage-700' : 'bg-red-100 text-red-700'
+                            }`}>
+                              <CheckCircleIcon />
+                              {article.passed ? 'Approved' : 'Rejected'} &mdash; {article.votesYes?.toLocaleString()} Yes / {article.votesNo?.toLocaleString()} No
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 );
               })}
             </div>
           </div>
         )}
 
-        {/* FAQ / How Voting Works */}
+        {/* Official Results Link */}
         <div className="mb-12">
-          <div className="text-center mb-8">
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800 mb-2">
-              How Town Meeting Day Works
-            </h2>
-            <p className="text-warmgray-500">New to South Burlington elections? Here&apos;s what you need to know</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-white rounded-2xl shadow-soft p-5">
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h3 className="font-display font-bold text-warmgray-800">What is Town Meeting Day?</h3>
-              </div>
-              <p className="text-warmgray-600 text-sm leading-relaxed">
-                Vermont&apos;s annual local election day held the first Tuesday in March. South Burlington uses
-                Australian ballot voting (you vote at the polls or by mail) rather than a floor meeting.
-                You&apos;ll vote on candidates <em>and</em> ballot articles (budget, bonds, etc.).
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-soft p-5">
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
-                  <UserIcon />
-                </div>
-                <h3 className="font-display font-bold text-warmgray-800">What does City Council do?</h3>
-              </div>
-              <p className="text-warmgray-600 text-sm leading-relaxed">
-                The 5-member council is the city&apos;s legislative body. They set the municipal budget and tax rate,
-                approve zoning and development changes, hire the city manager, and make policy decisions affecting
-                roads, parks, police, fire, and city services. Members serve 2- or 3-year terms.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-soft p-5">
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
-                  <AcademicCapIcon />
-                </div>
-                <h3 className="font-display font-bold text-warmgray-800">What does the School Board do?</h3>
-              </div>
-              <p className="text-warmgray-600 text-sm leading-relaxed">
-                The school board hires the superintendent, sets the school budget (which typically makes up
-                70-75% of your property tax bill), negotiates teacher contracts, and oversees education policy.
-                This year&apos;s $73.9M school budget was approved 4-3 by the board.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl shadow-soft p-5">
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
-                  <DocumentIcon />
-                </div>
-                <h3 className="font-display font-bold text-warmgray-800">What&apos;s a bond vote?</h3>
-              </div>
-              <p className="text-warmgray-600 text-sm leading-relaxed">
-                A bond is long-term borrowing for a capital project (like the fire station addition). Voters must
-                approve bonds because they commit the city to future payments. The fire station bond (Article 3) is
-                funded through fees, not property taxes, so it won&apos;t increase your tax bill.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Voting Information */}
-        <div className="mb-12">
-          <div className="text-center mb-8">
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800 mb-2">
-              How to Vote
-            </h2>
-            <p className="text-warmgray-500">Everything you need to know for election day</p>
-          </div>
-
           <div className="bg-white rounded-2xl shadow-soft overflow-hidden">
-            {/* Election Date & Hours */}
             <div className="bg-gradient-to-r from-sage-500 to-sage-600 p-6 text-white">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div className="flex items-center gap-3">
@@ -662,148 +458,23 @@ export default function Home() {
                     <CalendarIcon />
                   </div>
                   <div>
-                    <p className="text-white/80 text-sm">Election Day</p>
-                    <p className="font-display font-bold text-xl">Tuesday, March 3, 2026</p>
+                    <p className="text-white/80 text-sm">Town Meeting Day</p>
+                    <p className="font-display font-bold text-xl">March 3, 2026 &mdash; Final Results</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                    <ClockIcon />
-                  </div>
-                  <div>
-                    <p className="text-white/80 text-sm">Polls Open</p>
-                    <p className="font-display font-bold text-xl">{election.pollingHours || "7:00 AM - 7:00 PM"}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Early Voting & Absentee */}
-            <div className="p-6 border-b border-warmgray-100">
-              <div className="flex items-center gap-2 mb-4">
-                <svg className="w-5 h-5 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <h3 className="font-display font-bold text-warmgray-800">Vote Early or by Mail</h3>
-              </div>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="bg-sage-50 rounded-xl p-4">
-                  <h4 className="font-semibold text-sage-800 mb-2">Early Voting</h4>
-                  <p className="text-sm text-warmgray-600 mb-2">
-                    <strong>Feb 11 - Mar 2</strong> (ends at noon)
-                  </p>
-                  <p className="text-sm text-warmgray-500">
-                    City Clerk's Office, 180 Market St<br />
-                    Mon-Fri, 8 AM - 4:30 PM
-                  </p>
-                </div>
-                <div className="bg-sage-50 rounded-xl p-4">
-                  <h4 className="font-semibold text-sage-800 mb-2">Absentee Ballot</h4>
-                  <p className="text-sm text-warmgray-600 mb-2">
-                    Request by <strong>March 2</strong>
-                  </p>
-                  <p className="text-sm text-warmgray-500 mb-2">
-                    24/7 drop box at City Hall entrances
-                  </p>
-                  <a
-                    href="https://mvp.vermont.gov/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sage-600 hover:text-sage-800 text-sm font-medium"
-                  >
-                    Request online
-                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Voter Registration */}
-            <div className="p-6 border-b border-warmgray-100 bg-cream-50">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center text-sage-600 flex-shrink-0">
-                  <CheckCircleIcon />
-                </div>
-                <div className="flex-1">
-                  <h4 className="font-display font-bold text-warmgray-800 mb-1">Check Your Registration</h4>
-                  <p className="text-warmgray-600 text-sm mb-2">
-                    Vermont allows same-day voter registration, but checking ahead saves time at the polls.
-                  </p>
-                  <a
-                    href="https://mvp.vermont.gov/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                  >
-                    Check My Voter Page
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            {/* Polling Locations */}
-            <div className="p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <LocationMarkerIcon />
-                <h3 className="font-display font-bold text-warmgray-800">Polling Locations</h3>
-              </div>
-              <div className="grid sm:grid-cols-2 gap-3">
-                {(election.pollingLocations || []).map((location: string, index: number) => (
-                  <div
-                    key={index}
-                    className="flex items-center gap-3 bg-cream-100 rounded-xl p-4"
-                  >
-                    <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600 font-bold text-sm flex-shrink-0">
-                      {index + 1}
-                    </div>
-                    <span className="text-warmgray-700 text-sm">{location}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Ballot Cheat Sheet Link */}
-            <div className="p-6 border-b border-warmgray-100">
-              <Link href="/cheat-sheet" className="group flex items-center gap-4">
-                <div className="w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-600 flex-shrink-0 group-hover:bg-terracotta-200 transition-colors">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                <a
+                  href="https://www.southburlingtonvt.gov/697/March-3-2026-Town-Meeting-Day-Results"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                  Official Results
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                </div>
-                <div className="flex-1">
-                  <h4 className="font-display font-bold text-warmgray-800 group-hover:text-terracotta-600 transition-colors">Ballot Cheat Sheet</h4>
-                  <p className="text-warmgray-500 text-sm">Print-friendly guide with all races and ballot articles to bring to the polls</p>
-                </div>
-                <div className="text-warmgray-300 group-hover:text-terracotta-500 group-hover:translate-x-1 transition-all">
-                  <ArrowRightIcon />
-                </div>
-              </Link>
-            </div>
-
-            {/* Public Hearing */}
-            {election.publicHearing && (
-              <div className="border-t border-warmgray-100 p-6 bg-terracotta-50">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-600 flex-shrink-0">
-                    <MegaphoneIcon />
-                  </div>
-                  <div>
-                    <h4 className="font-display font-bold text-warmgray-800 mb-1">Public Information Meeting</h4>
-                    <p className="text-warmgray-600 text-sm mb-2">
-                      <strong>Monday, March 2, 2026 at {election.publicHearing.time}</strong>
-                    </p>
-                    <p className="text-warmgray-500 text-sm">
-                      {election.publicHearing.description}
-                    </p>
-                  </div>
-                </div>
+                </a>
               </div>
-            )}
+            </div>
           </div>
         </div>
 

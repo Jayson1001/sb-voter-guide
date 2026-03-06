@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-03",
+  "lastUpdated": "2026-03-05",
   "election": {
     "name": "South Burlington Town Meeting Day 2026",
     "date": "2026-03-03",
@@ -38,6 +38,11 @@
       "registerUrl": "https://mvp.vermont.gov/"
     }
   },
+  "results": {
+    "totalBallotsCast": 3712,
+    "qualifiedVoters": 16118,
+    "turnoutPercent": 23.03
+  },
   "ballotArticles": [
     {
       "id": "article-1",
@@ -48,11 +53,14 @@
       "id": "article-2",
       "title": "City Budget (FY2027)",
       "description": "Adopt the City Council's proposed budget for Fiscal Year 2027 (July 1, 2026 - June 30, 2027)",
-      "amount": "$58,458,894.78",
+      "amount": "$55,870,081.83",
       "details": {
         "generalFund": "$37.4 million (3.55% increase over last year)",
         "includes": "Police, fire services, recreation, public works, city clerk services, capital improvements, and enterprise funds (wastewater, stormwater, water, rental registry)"
-      }
+      },
+      "passed": true,
+      "votesYes": 2336,
+      "votesNo": 1326
     },
     {
       "id": "article-3",
@@ -61,7 +69,28 @@
       "amount": "$2,300,000",
       "details": {
         "funding": "Would be financed through capital assessment fees and surplus revenues from the rental registration program - not from general taxpayer funds"
-      }
+      },
+      "passed": true,
+      "votesYes": 2651,
+      "votesNo": 1018
+    }
+  ],
+  "schoolBallotArticles": [
+    {
+      "id": "school-article-2",
+      "title": "School Budget (FY2027)",
+      "amount": "$73,939,121",
+      "passed": true,
+      "votesYes": 1915,
+      "votesNo": 1777
+    },
+    {
+      "id": "school-article-3",
+      "title": "Capital Reserve Fund Transfer",
+      "amount": "$2,554,157.57",
+      "passed": true,
+      "votesYes": 2629,
+      "votesNo": 1016
     }
   ],
   "races": [
@@ -76,6 +105,8 @@
           "name": "Beth Zigmund",
           "photoUrl": "",
           "website": "https://bethzforcouncil.com",
+          "elected": true,
+          "votes": 1699,
           "background": "Cardiothoracic radiologist at UVM Medical Center and Associate Professor of Radiology at the Larner College of Medicine. Medical degree from Drexel University College of Medicine, radiology residency at Georgetown University Hospital, cardiothoracic fellowship at University of Pennsylvania Medical Center. Currently serves as Division Chief of Cardiothoracic Radiology and Director of Lung Cancer Screening at UVM Medical Center.",
           "experience": [
             "Member of South Burlington Energy Committee (term expires 2027)",
@@ -162,6 +193,8 @@
           "name": "Amy Allen",
           "photoUrl": "",
           "website": "",
+          "elected": false,
+          "votes": 1668,
           "background": "Stay-at-home mom navigating 'sandwich generation' life — balancing raising children with elder care responsibilities. Before focusing on family, worked as an international development consultant for USAID and the World Bank across Latin America, East Africa, and Southeast Asia, specializing in government reform efforts including streamlining permit processes. Recently purchased 'forever home' in South Burlington after years of renting.",
           "experience": [
             "Former international development consultant at USAID and World Bank",
@@ -219,6 +252,8 @@
           "name": "Andrew Chalnick",
           "photoUrl": "",
           "website": "https://chalnickforcouncil.com",
+          "elected": true,
+          "votes": 2826,
           "background": "Incumbent City Councilor and current Vice Chair of the South Burlington City Council. Has been a vocal advocate for residents on noise and quality-of-life issues.",
           "experience": [
             "Current City Council member and Vice Chair",
@@ -280,6 +315,8 @@
           "name": "Daniel Boyer",
           "photoUrl": "",
           "website": "",
+          "elected": true,
+          "votes": 2594,
           "background": "16-year South Burlington resident and former assistant coach for the district's junior varsity baseball team. Elected to one-year term in 2025.",
           "experience": [
             "Current School Board member (one-year term)",
@@ -327,6 +364,8 @@
           "name": "Emilee Hoffman",
           "photoUrl": "",
           "website": "",
+          "elected": true,
+          "votes": 2768,
           "background": "South Burlington native and SBHS Class of 1998 graduate. Family moved to South Burlington in 1988 when her father became director of student support services in the district. BA in Sociology from UVM. Currently works as a project manager at UVM Health Network. Won write-in campaign in 2025.",
           "experience": [
             "Current School Board member (elected via write-in campaign 2025)",
@@ -373,6 +412,8 @@
           "name": "Michelle Boyer",
           "photoUrl": "",
           "website": "",
+          "elected": true,
+          "votes": 2676,
           "background": "Appointed to the School Board in 2025 to fill a vacancy. Education background from University of Massachusetts, Amherst.",
           "experience": [
             "Current School Board member (appointed 2025)",
