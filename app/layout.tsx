@@ -15,21 +15,21 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "South Burlington Voter Guide 2026",
-  description: "Compare candidates for the March 3, 2026 South Burlington City Council election. Includes budget explainers, tax calculator, and ballot article details. A nonpartisan community resource.",
-  keywords: ["South Burlington", "Vermont", "voter guide", "Town Meeting Day", "City Council", "election 2026", "Beth Zigmund", "Amy Allen", "budget", "tax calculator"],
+  title: "South Burlington Election Results 2026 | Town Meeting Day",
+  description: "Results from the March 3, 2026 South Burlington Town Meeting Day election. City Council, budget, fire station bond, and school budget results. A nonpartisan community resource.",
+  keywords: ["South Burlington", "Vermont", "election results", "Town Meeting Day", "City Council", "2026", "Beth Zigmund", "Amy Allen", "budget", "fire station bond"],
   authors: [{ name: "South Burlington Voter Guide" }],
   openGraph: {
-    title: "South Burlington Voter Guide 2026",
-    description: "Compare candidates, explore ballot articles, and calculate your tax impact for Town Meeting Day - March 3, 2026",
+    title: "South Burlington Election Results 2026",
+    description: "Results from the March 3, 2026 South Burlington Town Meeting Day election. City Council, budget, and ballot article results.",
     type: "website",
     locale: "en_US",
     siteName: "South Burlington Voter Guide",
   },
   twitter: {
     card: "summary_large_image",
-    title: "South Burlington Voter Guide 2026",
-    description: "Compare candidates, explore ballot articles, and calculate your tax impact for Town Meeting Day - March 3, 2026",
+    title: "South Burlington Election Results 2026",
+    description: "Results from the March 3, 2026 South Burlington Town Meeting Day election. City Council, budget, and ballot article results.",
   },
   robots: {
     index: true,
