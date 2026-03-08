@@ -1,0 +1,477 @@
+{
+  "lastUpdated": "2026-03-07",
+  "candidateFilingOpens": "2026-04-27",
+  "candidateFilingCloses": "2026-05-28",
+  "primaryDate": "2026-08-11",
+  "generalDate": "2026-11-03",
+
+  "statewide": [
+    {
+      "id": "governor",
+      "office": "Governor of Vermont",
+      "shortName": "Governor",
+      "type": "statewide",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Governor is Vermont's chief executive, responsible for managing state government, signing or vetoing legislation, appointing judges and cabinet members, and representing Vermont in national affairs.",
+      "responsibilities": [
+        "Signs or vetoes legislation passed by the General Assembly",
+        "Appoints members of the Vermont Supreme Court and other judges",
+        "Manages executive branch state agencies and departments",
+        "Proposes the state budget each year",
+        "Activates the Vermont National Guard in emergencies"
+      ],
+      "whyItMatters": "The Governor sets the tone for Vermont state policy. Gov. Scott has used his veto pen extensively while Democrats have held legislative supermajorities — creating ongoing tension over housing, taxes, and social policy. Vermont elects its Governor every two years with no term limits.",
+      "incumbents": [
+        {
+          "name": "Phil Scott",
+          "party": "Republican",
+          "termStarted": 2016,
+          "status": "likely-running",
+          "statusNote": "Has not formally announced but widely expected to run for a sixth two-year term",
+          "bio": "Phil Scott has served as Vermont's Governor since January 2017, winning five consecutive two-year terms. A former contractor and NASCAR racer, Scott is a moderate Republican who has maintained high approval ratings in a deeply blue state by supporting abortion rights and gun safety measures while pushing back on tax increases and large spending proposals. He won re-election in 2024 by more than 30 percentage points.",
+          "website": "https://governor.vermont.gov",
+          "notablePositions": [
+            "Supports abortion rights",
+            "Has signed gun safety legislation",
+            "Has vetoed several Democratic tax and spending proposals",
+            "Led Vermont's COVID-19 vaccine rollout, one of the fastest in the nation",
+            "Focus on housing affordability and economic development"
+          ]
+        }
+      ],
+      "knownCandidates": [],
+      "notes": "Democrats have struggled to recruit a top-tier challenger. Attorney General Charity Clark and Treasurer Mike Pieciak are seen as potential candidates but have both signaled preference for reelection in their current offices. Candidate filing opens April 27, 2026."
+    },
+    {
+      "id": "lt-governor",
+      "office": "Lieutenant Governor of Vermont",
+      "shortName": "Lt. Governor",
+      "type": "statewide",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Lieutenant Governor presides over the Vermont Senate (but only votes to break ties), serves on several state boards, and becomes Governor if the Governor is unable to serve.",
+      "responsibilities": [
+        "Presides over the Vermont State Senate",
+        "Succeeds the Governor if the Governor is unable to serve",
+        "Serves on the Governor's Commission on Women and other state boards",
+        "Advocates on various policy issues"
+      ],
+      "whyItMatters": "Vermont elects its Governor and Lieutenant Governor separately — they can and often do come from different parties. The Lt. Governor has limited formal executive power but plays an important succession role and can shape the Senate's proceedings.",
+      "incumbents": [
+        {
+          "name": "John Rodgers",
+          "party": "Democrat",
+          "termStarted": 2021,
+          "status": "running",
+          "statusNote": "Announced reelection bid",
+          "bio": "John Rodgers has served as Lieutenant Governor since 2021. He previously served in the Vermont House and Senate representing the Northeast Kingdom. A Democrat who crosses partisan lines on some issues — particularly gun rights — Rodgers won reelection in 2024.",
+          "website": "https://ltgov.vermont.gov",
+          "notablePositions": [
+            "Supports Second Amendment rights while serving as a Democrat",
+            "Focus on rural Vermont issues and the Northeast Kingdom",
+            "Advocates for workforce development and economic opportunity"
+          ]
+        }
+      ],
+      "knownCandidates": [],
+      "notes": "Lt. Gov. Rodgers announced he is running for reelection."
+    },
+    {
+      "id": "attorney-general",
+      "office": "Attorney General",
+      "shortName": "Attorney General",
+      "type": "statewide",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Attorney General is Vermont's chief law enforcement officer, representing the state in legal matters, enforcing consumer protection laws, and prosecuting public corruption.",
+      "responsibilities": [
+        "Represents Vermont in all legal proceedings",
+        "Enforces consumer protection and antitrust laws",
+        "Investigates public corruption and Medicaid fraud",
+        "Issues legal opinions on constitutional questions",
+        "Coordinates with law enforcement on criminal justice issues"
+      ],
+      "whyItMatters": "The AG's office is a major check on corporate wrongdoing and government overreach. Vermont's AG has been active in multi-state actions on opioids, environmental protection, and consumer fraud. The office also handles criminal appeals and civil rights matters.",
+      "incumbents": [
+        {
+          "name": "Charity Clark",
+          "party": "Democrat",
+          "termStarted": 2023,
+          "status": "likely-running",
+          "statusNote": "Has indicated preference for reelection over a gubernatorial run",
+          "bio": "Charity Clark was elected Vermont Attorney General in 2022, becoming the first woman to hold the office. She previously served as Chief Assistant Attorney General. She has been active in multi-state coalitions on opioids, environmental protection, and consumer fraud.",
+          "website": "https://ago.vermont.gov",
+          "notablePositions": [
+            "First woman to serve as Vermont Attorney General",
+            "Active in multi-state opioid and environmental enforcement actions",
+            "Focus on consumer protection and corporate accountability",
+            "Considered as potential gubernatorial candidate; leaning toward AG reelection"
+          ]
+        }
+      ],
+      "knownCandidates": [],
+      "notes": "AG Clark has said she plans to run for a statewide office in 2026 and is leaning toward reelection as Attorney General."
+    },
+    {
+      "id": "secretary-of-state",
+      "office": "Secretary of State",
+      "shortName": "Secretary of State",
+      "type": "statewide",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Secretary of State oversees Vermont's elections, maintains official state records, regulates professional licenses, and registers businesses and nonprofits.",
+      "responsibilities": [
+        "Administers all Vermont state elections",
+        "Maintains the statewide voter registration system",
+        "Regulates professional and occupational licensing for 60+ professions",
+        "Registers corporations, LLCs, and nonprofits",
+        "Maintains official legislative and executive records"
+      ],
+      "whyItMatters": "The Secretary of State plays a direct role in how Vermont elections are run — including voter registration, absentee ballots, and the certification of results. Vermont consistently ranks among the easiest states in the nation to vote in.",
+      "incumbents": [
+        {
+          "name": "Sarah Copeland Hanzas",
+          "party": "Democrat",
+          "termStarted": 2023,
+          "status": "running",
+          "statusNote": "Announced reelection bid",
+          "bio": "Sarah Copeland Hanzas was first elected Secretary of State in 2022. She previously served in the Vermont House of Representatives for over a decade. She succeeded Jim Condos, who served as Secretary of State from 2011–2022.",
+          "website": "https://sos.vermont.gov",
+          "notablePositions": [
+            "Expanded access to absentee voting",
+            "Modernized business registration systems",
+            "Advocates for election security and voter access"
+          ]
+        }
+      ],
+      "knownCandidates": [],
+      "notes": "Secretary Copeland Hanzas announced she is running for reelection."
+    },
+    {
+      "id": "treasurer",
+      "office": "State Treasurer",
+      "shortName": "State Treasurer",
+      "type": "statewide",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The State Treasurer manages Vermont's finances, investments, and public debt, and administers retirement funds for state employees and teachers.",
+      "responsibilities": [
+        "Manages Vermont's cash flow and investments (~$3 billion portfolio)",
+        "Administers Vermont State Employees' and Teachers' Retirement Systems",
+        "Issues state bonds and manages public debt",
+        "Oversees the unclaimed property program",
+        "Administers Vermont's ABLE savings accounts for people with disabilities"
+      ],
+      "whyItMatters": "Vermont's pension systems are a long-term fiscal challenge — the Treasurer plays a key role in managing unfunded liabilities and ensuring retirement security for thousands of state workers and teachers.",
+      "incumbents": [
+        {
+          "name": "Mike Pieciak",
+          "party": "Democrat",
+          "termStarted": 2023,
+          "status": "likely-running",
+          "statusNote": "Has signaled preference for reelection over running for Governor",
+          "bio": "Mike Pieciak was first elected State Treasurer in 2022. He previously served as Commissioner of the Vermont Department of Financial Regulation and oversaw Vermont's pandemic stimulus distribution before becoming Treasurer.",
+          "website": "https://vermonttreasurer.gov",
+          "notablePositions": [
+            "Focus on fiscal responsibility and pension fund management",
+            "Advocates for Vermont housing investment programs",
+            "Widely considered a potential future gubernatorial candidate"
+          ]
+        }
+      ],
+      "knownCandidates": [],
+      "notes": "Treasurer Pieciak is widely expected to seek reelection, having signaled preference for his current office over a gubernatorial run in 2026."
+    },
+    {
+      "id": "auditor",
+      "office": "Auditor of Accounts",
+      "shortName": "State Auditor",
+      "type": "statewide",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": true,
+      "description": "The Auditor of Accounts independently audits Vermont state agencies, ensuring taxpayer money is spent efficiently, legally, and as intended. The Auditor reports to the legislature and the public — not the Governor.",
+      "responsibilities": [
+        "Conducts performance and financial audits of state agencies and programs",
+        "Investigates waste, fraud, and abuse of public funds",
+        "Reports findings to the legislature and the public",
+        "Operates independently of both the Governor and legislature",
+        "Certifies state financial statements"
+      ],
+      "whyItMatters": "Vermont's independent auditor is a powerful watchdog. Six-term incumbent Doug Hoffer built a national reputation for rigorous, non-partisan auditing. With Hoffer retiring after 14 years, this open seat race will determine the office's direction for years to come.",
+      "incumbents": [
+        {
+          "name": "Doug Hoffer",
+          "party": "Democrat",
+          "termStarted": 2013,
+          "status": "retiring",
+          "statusNote": "Announced he will not seek reelection after six terms",
+          "bio": "Doug Hoffer served as Vermont Auditor of Accounts from 2013–2026, winning six consecutive terms. He built a reputation for rigorous, independent auditing and announced before the 2024 election that 2026 would be his last term.",
+          "notablePositions": [
+            "Audited state health benefit exchange, Agency of Transportation, and other major programs",
+            "National reputation for independent, thorough auditing",
+            "Known for detailed reports on Vermont housing and workforce issues"
+          ]
+        }
+      ],
+      "knownCandidates": [
+        {
+          "name": "Tim Ashe",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "January 2026",
+          "bio": "Tim Ashe served as Vermont Senate President Pro Tem from 2013–2021, one of the most powerful positions in Vermont state government. He ran for Lieutenant Governor in 2020, losing in the Democratic primary. He teaches at the University of Vermont and is a former Progressive-Democrat.",
+          "website": null,
+          "notablePositions": [
+            "Former Vermont Senate President Pro Tem (2013–2021)",
+            "Led major Vermont policy initiatives on housing, climate, and tax reform",
+            "Ran for Lt. Governor in 2020 (lost Democratic primary)"
+          ]
+        }
+      ],
+      "notes": "This is the most notable open seat in the 2026 Vermont elections. Tim Ashe (D) is the first major announced candidate. Additional candidates from both parties expected after filing opens April 27."
+    }
+  ],
+
+  "federal": [
+    {
+      "id": "us-house",
+      "office": "U.S. Representative, Vermont At-Large",
+      "shortName": "U.S. House",
+      "type": "federal",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "Vermont has a single at-large congressional seat in the U.S. House of Representatives. One representative covers the entire state, serving on congressional committees, voting on federal legislation, and directing federal funding to Vermont.",
+      "responsibilities": [
+        "Votes on all federal legislation in the U.S. House of Representatives",
+        "Represents Vermont on House committees",
+        "Helps secure federal appropriations for Vermont projects and programs",
+        "Constituent services: assists Vermonters with federal agency issues",
+        "Introduces and co-sponsors federal legislation"
+      ],
+      "whyItMatters": "Vermont's sole House member plays an outsize role on federal matters affecting the state — including farm bills, defense appropriations, climate legislation, and social programs. Vermont has only one vote in the 435-member House, making that vote's alignment with Vermont's interests critical.",
+      "incumbents": [
+        {
+          "name": "Becca Balint",
+          "party": "Democrat",
+          "termStarted": 2023,
+          "status": "running",
+          "statusNote": "Announced reelection bid",
+          "bio": "Becca Balint was elected Vermont's at-large U.S. Representative in 2022, becoming the first woman and first openly gay person elected to Congress from Vermont. She previously served in the Vermont Senate and as Senate President Pro Tem. She serves on the House Judiciary Committee and House Education and Workforce Committee.",
+          "website": "https://balint.house.gov",
+          "notablePositions": [
+            "First woman and first openly LGBTQ+ person elected to Congress from Vermont",
+            "Former Vermont Senate President Pro Tem",
+            "Serves on House Judiciary Committee",
+            "Focus on housing, climate, and workers' rights",
+            "Cook Political Report rates her seat as 'Solid Democratic'"
+          ]
+        }
+      ],
+      "knownCandidates": [],
+      "notes": "Balint is expected to win easily. Vermont's at-large seat has been held by a Democrat or Independent since 1991."
+    }
+  ],
+
+  "stateSenate": [
+    {
+      "id": "chittenden-se-senate",
+      "office": "Vermont State Senate",
+      "shortName": "State Senate",
+      "district": "Chittenden Southeast",
+      "type": "state-senate",
+      "seats": 3,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Vermont State Senate has 30 members who serve 2-year terms. The Chittenden Southeast district elects 3 senators, who pass state legislation, approve the state budget, and confirm the Governor's key appointments.",
+      "responsibilities": [
+        "Passes Vermont state legislation in partnership with the House",
+        "Approves the state budget",
+        "Confirms Governor's appointments to key positions and boards",
+        "Ratifies constitutional amendments (must pass legislature twice before going to voters)",
+        "Provides constituent services for local communities"
+      ],
+      "whyItMatters": "Vermont's legislature has passed major legislation on housing, climate, gun safety, and education in recent sessions. The Senate has been at the center of high-profile fights with Governor Scott over tax policy and spending. Chittenden County's delegation has historically been among the most progressive in the state.",
+      "incumbents": [
+        {
+          "name": "Thomas Chittenden",
+          "party": "Democrat",
+          "status": "unknown",
+          "statusNote": "Reelection plans not yet announced",
+          "bio": "Thomas Chittenden grew up in South Burlington and previously served on the South Burlington City Council. He was elected to the Vermont Senate representing Chittenden Southeast and is directly connected to his South Burlington constituents.",
+          "website": "https://legislature.vermont.gov/people/single/2026/34724",
+          "notablePositions": [
+            "Former South Burlington City Councilor",
+            "Grew up in South Burlington",
+            "Serves on Senate committees"
+          ]
+        },
+        {
+          "name": "Virginia Lyons",
+          "party": "Democrat",
+          "status": "unknown",
+          "statusNote": "Reelection plans not yet announced",
+          "bio": "Virginia Lyons is a Vermont State Senator representing the Chittenden Southeast district. She has served in the Senate for multiple terms.",
+          "website": null,
+          "notablePositions": [
+            "Experienced Senate member",
+            "Chittenden Southeast representative"
+          ]
+        },
+        {
+          "name": "Kesha Ram Hinsdale",
+          "party": "Democrat",
+          "status": "unknown",
+          "statusNote": "Reelection plans not yet announced",
+          "bio": "Kesha Ram Hinsdale is a prominent Vermont legislator and a leading progressive voice. She previously served as chair of the Vermont Progressive Party before becoming a Democrat, and served in the Vermont House before moving to the Senate.",
+          "website": null,
+          "notablePositions": [
+            "Leading progressive voice in the Vermont Senate",
+            "Former Vermont Progressive Party chair",
+            "Focus on climate, housing, and racial equity"
+          ]
+        }
+      ],
+      "knownCandidates": [],
+      "notes": "All three seats are up in 2026 (all Vermont Senate seats are on the ballot every two years). Candidate filing opens April 27, 2026."
+    }
+  ],
+
+  "stateHouse": [
+    {
+      "id": "chittenden-7-1",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden 7-1",
+      "districtNote": "Also referenced as Chittenden-12 in some sources. Covers part of South Burlington — verify your district at mvp.vermont.gov.",
+      "type": "state-house",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "incumbents": [
+        {
+          "name": "Martin LaLonde",
+          "party": "Democrat",
+          "status": "unknown",
+          "statusNote": "Reelection plans not yet announced",
+          "bio": "Martin LaLonde is a South Burlington attorney who has served in the Vermont House for several terms. He is known as a reliable Democratic vote and has been active on legal and judiciary issues.",
+          "website": "https://martinlalondevt.com",
+          "notablePositions": [
+            "Attorney by profession",
+            "Multi-term South Burlington representative",
+            "Active on legal and judiciary matters"
+          ]
+        }
+      ],
+      "knownCandidates": []
+    },
+    {
+      "id": "chittenden-8",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden 8",
+      "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov.",
+      "type": "state-house",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "incumbents": [
+        {
+          "name": "Bridget Burkhardt",
+          "party": "Democrat",
+          "status": "unknown",
+          "statusNote": "Reelection plans not yet announced",
+          "bio": "Bridget Burkhardt was elected to the Vermont House in 2024 and is serving her first term, representing a South Burlington district.",
+          "website": null,
+          "notablePositions": [
+            "First-term representative (elected 2024)",
+            "South Burlington representative"
+          ]
+        }
+      ],
+      "knownCandidates": []
+    },
+    {
+      "id": "chittenden-9",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden 9",
+      "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov.",
+      "type": "state-house",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "incumbents": [
+        {
+          "name": "Emilie Krasnow",
+          "party": "Democrat",
+          "status": "unknown",
+          "statusNote": "Reelection plans not yet announced",
+          "bio": "Emilie Krasnow represents a South Burlington district in the Vermont House of Representatives.",
+          "website": null,
+          "notablePositions": [
+            "South Burlington representative"
+          ]
+        }
+      ],
+      "knownCandidates": []
+    },
+    {
+      "id": "chittenden-10",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden 10",
+      "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov.",
+      "type": "state-house",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "incumbents": [
+        {
+          "name": "Kate Nugent",
+          "party": "Democrat",
+          "status": "unknown",
+          "statusNote": "Reelection plans not yet announced",
+          "bio": "Kate Nugent represents a South Burlington district in the Vermont House of Representatives.",
+          "website": null,
+          "notablePositions": [
+            "South Burlington representative"
+          ]
+        }
+      ],
+      "knownCandidates": []
+    },
+    {
+      "id": "chittenden-11",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden 11",
+      "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov.",
+      "type": "state-house",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "incumbents": [
+        {
+          "name": "Brian Minier",
+          "party": "Democrat",
+          "status": "unknown",
+          "statusNote": "Reelection plans not yet announced",
+          "bio": "Brian Minier represents a South Burlington district in the Vermont House of Representatives.",
+          "website": null,
+          "notablePositions": [
+            "South Burlington representative"
+          ]
+        }
+      ],
+      "knownCandidates": []
+    }
+  ]
+}

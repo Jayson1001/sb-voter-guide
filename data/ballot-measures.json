@@ -1,0 +1,134 @@
+{
+  "lastUpdated": "2026-03-07",
+  "electionDate": "2026-11-03",
+  "measures": [
+    {
+      "id": "proposal-3",
+      "number": "Proposal 3",
+      "title": "Right to Collective Bargaining",
+      "subtitle": "Constitutional amendment to protect workers' right to organize and collectively bargain",
+      "type": "Constitutional Amendment",
+      "status": "confirmed",
+      "electionDate": "2026-11-03",
+      "proposedConstitutionalText": "That employees have the right to organize and join a labor organization for the purpose of collectively bargaining with their employers, and to protect their economic welfare and safety in the workplace. No law shall be enacted that interferes with, negates, or diminishes these rights.",
+      "plainLanguageSummary": "Proposal 3 would add workers' rights to organize unions and collectively bargain to the Vermont Constitution. It would also make it unconstitutional for Vermont to pass 'right-to-work' laws — laws that allow workers in a unionized workplace to opt out of paying union dues, which can weaken unions over time.",
+      "whatItDoes": [
+        "Establishes a constitutional right for all Vermont workers to join a union",
+        "Protects workers' right to collectively bargain wages, hours, and working conditions",
+        "Bans Vermont from passing 'right-to-work' legislation in the future",
+        "Applies to all employers operating in Vermont",
+        "Cannot be undone by simple legislation — only by a future constitutional amendment"
+      ],
+      "whatItDoesNot": [
+        "Does not require workers to join unions",
+        "Does not force employers to agree to specific union demands",
+        "Does not change existing labor laws (provides constitutional backing for them)",
+        "Does not apply to federal workplaces or federal employees"
+      ],
+      "arguments": {
+        "for": [
+          "Workers deserve constitutional protection for fundamental labor rights",
+          "Would make Vermont one of only 5 states to constitutionally protect collective bargaining",
+          "Protects labor gains from being eroded by future legislatures",
+          "Right-to-work states have lower wages and weaker labor protections on average",
+          "Vermont's strong union history has supported middle-class economic stability"
+        ],
+        "against": [
+          "May deter businesses from locating in Vermont by signaling a less flexible labor environment",
+          "Constitutional amendments should be reserved for fundamental rights, not labor policy",
+          "Could limit flexibility in future labor law reform",
+          "Right-to-work laws give individual workers freedom of choice — amendment would ban that"
+        ]
+      },
+      "legislativeHistory": [
+        { "date": "April 2024", "action": "Passed Vermont Senate unanimously" },
+        { "date": "May 2024", "action": "Passed Vermont House with bipartisan support" },
+        { "date": "March 2025", "action": "Passed Vermont Senate again, unanimously (second required passage)" },
+        { "date": "May 1, 2025", "action": "Passed Vermont House — certified for November 2026 ballot" }
+      ],
+      "context": "Vermont is not currently a right-to-work state. But constitutional protection would prevent any future legislature from enacting such laws. If passed, Vermont would join Illinois (which banned right-to-work via constitutional amendment in 2022) as one of only two states with such explicit constitutional protection.",
+      "sources": [
+        {
+          "title": "Vermont Proposal 3 — Ballotpedia",
+          "url": "https://ballotpedia.org/Vermont_Proposal_3,_Right_to_Collective_Bargaining_Amendment_(2026)"
+        },
+        {
+          "title": "Vermont Legislature — PR.3 Status",
+          "url": "https://legislature.vermont.gov/bill/status/2026/PR.3"
+        }
+      ]
+    },
+    {
+      "id": "proposal-4",
+      "number": "Proposal 4",
+      "title": "Equal Protection of Law",
+      "subtitle": "Constitutional amendment adding an explicit equal rights clause to the Vermont Constitution",
+      "type": "Constitutional Amendment",
+      "status": "on-track",
+      "statusNote": "Pending final passage in the 2025–26 legislative session; Senate Judiciary Committee approved February 2026",
+      "electionDate": "2026-11-03",
+      "proposedConstitutionalText": "That the people are guaranteed equal protection under the law. The State shall not deny equal treatment and respect under the law on account of a person's race, ethnicity, sex, religion, disability, sexual orientation, gender identity, gender expression, or national origin.",
+      "plainLanguageSummary": "Proposal 4 would add an explicit equal protection clause to the Vermont Constitution, listing nine protected characteristics. Vermont currently has broad general equality language in the constitution but no specific equal protection clause like the one in the 14th Amendment to the U.S. Constitution.",
+      "protectedCharacteristics": [
+        "Race",
+        "Ethnicity",
+        "Sex",
+        "Religion",
+        "Disability",
+        "Sexual orientation",
+        "Gender identity",
+        "Gender expression",
+        "National origin"
+      ],
+      "whatItDoes": [
+        "Creates an explicit equal protection clause in the Vermont Constitution",
+        "Prohibits the state from denying equal treatment based on nine protected characteristics",
+        "Provides a stronger legal basis for challenging discriminatory laws in Vermont courts",
+        "Applies independent of federal constitutional protections",
+        "Codifies protections that could be at risk if federal equal protection doctrine changes"
+      ],
+      "whatItDoesNot": [
+        "Does not change existing state anti-discrimination laws",
+        "Does not create new enforcement mechanisms beyond existing courts",
+        "Does not directly apply to private discrimination — only state action",
+        "Does not affect criminal or civil liability between private parties"
+      ],
+      "arguments": {
+        "for": [
+          "Vermont's constitution lacks an explicit equal protection clause unlike the U.S. Constitution",
+          "Provides state-level protection independent of future federal court decisions",
+          "Reflects Vermont's values and long-standing commitment to equality",
+          "Passed the legislature 28-0 in the Senate and 140-4 in the House — enormous bipartisan support",
+          "In an era of federal rollbacks on civil rights, strong state-level protection is essential"
+        ],
+        "against": [
+          "Vermont already has strong statutory anti-discrimination laws that protect these characteristics",
+          "Could lead to unintended legal consequences interpreted by courts",
+          "Some argue constitutional amendments should not be used for policy that's already covered by statute",
+          "Potential for litigation over terms like 'equal treatment' and 'equal protection'"
+        ]
+      },
+      "legislativeHistory": [
+        { "date": "April 23, 2024", "action": "Passed Vermont Senate — 28 to 0" },
+        { "date": "May 8, 2024", "action": "Passed Vermont House — 140 to 4" },
+        { "date": "February 2026", "action": "Senate Judiciary Committee approved second passage" },
+        { "date": "Spring 2026", "action": "Expected to receive final legislative approval and be certified for the November ballot" }
+      ],
+      "context": "Unlike the U.S. Constitution's 14th Amendment (which guarantees equal protection at the federal level), Vermont's current constitution has no specific equal protection clause. Vermont does have Article 7 (government exists for the common benefit) and strong statutory anti-discrimination protections — but PR.4 would add explicit constitutional protection. The measure is particularly significant as federal civil rights protections face uncertainty.",
+      "sources": [
+        {
+          "title": "Vermont Equal Protection of Law Amendment (2026) — Ballotpedia",
+          "url": "https://ballotpedia.org/Vermont_Equal_Protection_of_Law_Amendment_(2026)"
+        },
+        {
+          "title": "Vermont Legislature — PR.4 Status",
+          "url": "https://legislature.vermont.gov/bill/status/2026/PR.4"
+        },
+        {
+          "title": "PR.4 as adopted by the Senate (PDF)",
+          "url": "https://legislature.vermont.gov/Documents/2024/Docs/BILLS/PR0004/PR0004%20As%20adopted%20by%20the%20Senate%20Official.pdf"
+        }
+      ]
+    }
+  ]
+}
