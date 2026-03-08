@@ -198,9 +198,20 @@ export default function BallotMeasuresPage() {
               </div>
 
               {/* Arguments */}
+              <div className="bg-warmgray-50 border border-warmgray-200 rounded-xl px-4 py-3 flex items-start gap-2">
+                <svg className="w-4 h-4 text-warmgray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p className="text-xs text-warmgray-500">
+                  <strong className="text-warmgray-600">Note:</strong> {(measure as any).argumentsDisclaimer}
+                </p>
+              </div>
+
               <div className="grid sm:grid-cols-2 gap-5">
                 <div className="bg-white rounded-2xl shadow-soft p-6">
-                  <h3 className="font-display text-base font-bold text-sage-700 mb-3">Arguments for</h3>
+                  <h3 className="font-display text-base font-bold text-sage-700 mb-3">
+                    {(measure as any).arguments.forLabel || "Arguments for"}
+                  </h3>
                   <ul className="space-y-3">
                     {measure.arguments.for.map((arg, i) => (
                       <li key={i} className="flex items-start gap-2.5 text-sm text-warmgray-600">
@@ -214,7 +225,9 @@ export default function BallotMeasuresPage() {
                 </div>
 
                 <div className="bg-white rounded-2xl shadow-soft p-6">
-                  <h3 className="font-display text-base font-bold text-terracotta-700 mb-3">Arguments against</h3>
+                  <h3 className="font-display text-base font-bold text-terracotta-700 mb-3">
+                    {(measure as any).arguments.againstLabel || "Arguments against"}
+                  </h3>
                   <ul className="space-y-3">
                     {measure.arguments.against.map((arg, i) => (
                       <li key={i} className="flex items-start gap-2.5 text-sm text-warmgray-600">

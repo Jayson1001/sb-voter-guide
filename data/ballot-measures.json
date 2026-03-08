@@ -25,19 +25,22 @@
         "Does not change existing labor laws (provides constitutional backing for them)",
         "Does not apply to federal workplaces or federal employees"
       ],
+      "argumentsDisclaimer": "The following arguments are drawn from positions stated by supporters and opponents of this measure. They do not represent the views of this voter guide.",
       "arguments": {
+        "forLabel": "Arguments made by supporters",
         "for": [
-          "Workers deserve constitutional protection for fundamental labor rights",
-          "Would make Vermont one of only 5 states to constitutionally protect collective bargaining",
-          "Protects labor gains from being eroded by future legislatures",
-          "Right-to-work states have lower wages and weaker labor protections on average",
-          "Vermont's strong union history has supported middle-class economic stability"
+          "Would constitutionally protect workers' right to organize and bargain — currently only protected by statute",
+          "Would make Vermont one of only a handful of states to constitutionally protect collective bargaining",
+          "Supporters argue constitutional protection is harder to undo than statutory protection",
+          "Supporters cite research suggesting right-to-work policies are associated with lower wages",
+          "Supporters say Vermont's union workforce has contributed to economic stability in the state"
         ],
+        "againstLabel": "Arguments made by opponents",
         "against": [
-          "May deter businesses from locating in Vermont by signaling a less flexible labor environment",
-          "Constitutional amendments should be reserved for fundamental rights, not labor policy",
-          "Could limit flexibility in future labor law reform",
-          "Right-to-work laws give individual workers freedom of choice — amendment would ban that"
+          "Opponents argue the amendment could deter businesses from locating in Vermont",
+          "Opponents argue constitutional amendments should address fundamental rights, not labor policy",
+          "Opponents argue it could reduce flexibility for future labor law reform",
+          "Opponents argue right-to-work laws give individual workers freedom of choice in union participation"
         ]
       },
       "legislativeHistory": [
@@ -93,19 +96,22 @@
         "Does not directly apply to private discrimination — only state action",
         "Does not affect criminal or civil liability between private parties"
       ],
+      "argumentsDisclaimer": "The following arguments are drawn from positions stated by supporters and opponents of this measure. They do not represent the views of this voter guide.",
       "arguments": {
+        "forLabel": "Arguments made by supporters",
         "for": [
-          "Vermont's constitution lacks an explicit equal protection clause unlike the U.S. Constitution",
-          "Provides state-level protection independent of future federal court decisions",
-          "Reflects Vermont's values and long-standing commitment to equality",
-          "Passed the legislature 28-0 in the Senate and 140-4 in the House — enormous bipartisan support",
-          "In an era of federal rollbacks on civil rights, strong state-level protection is essential"
+          "Vermont's constitution does not currently contain an explicit equal protection clause",
+          "Supporters say state-level constitutional protection would be independent of federal court decisions",
+          "Passed the legislature 28-0 in the Senate and 140-4 in the House",
+          "Supporters argue the amendment would strengthen legal protections for the nine listed characteristics",
+          "Supporters say explicit constitutional language clarifies rights that may currently require legal interpretation"
         ],
+        "againstLabel": "Arguments made by opponents",
         "against": [
-          "Vermont already has strong statutory anti-discrimination laws that protect these characteristics",
-          "Could lead to unintended legal consequences interpreted by courts",
-          "Some argue constitutional amendments should not be used for policy that's already covered by statute",
-          "Potential for litigation over terms like 'equal treatment' and 'equal protection'"
+          "Opponents note Vermont already has statutory anti-discrimination laws covering these characteristics",
+          "Opponents argue constitutional amendments could produce unintended legal interpretations by courts",
+          "Opponents argue constitutional amendments should not address issues already covered by statute",
+          "Opponents note potential for litigation over broad terms like 'equal treatment'"
         ]
       },
       "legislativeHistory": [
@@ -114,7 +120,7 @@
         { "date": "February 2026", "action": "Senate Judiciary Committee approved second passage" },
         { "date": "Spring 2026", "action": "Expected to receive final legislative approval and be certified for the November ballot" }
       ],
-      "context": "Unlike the U.S. Constitution's 14th Amendment (which guarantees equal protection at the federal level), Vermont's current constitution has no specific equal protection clause. Vermont does have Article 7 (government exists for the common benefit) and strong statutory anti-discrimination protections — but PR.4 would add explicit constitutional protection. The measure is particularly significant as federal civil rights protections face uncertainty.",
+      "context": "Unlike the U.S. Constitution's 14th Amendment (which guarantees equal protection at the federal level), Vermont's current constitution has no specific equal protection clause. Vermont does have Article 7 (government exists for the common benefit) and statutory anti-discrimination protections — PR.4 would add an explicit constitutional equal protection clause.",
       "sources": [
         {
           "title": "Vermont Equal Protection of Law Amendment (2026) — Ballotpedia",

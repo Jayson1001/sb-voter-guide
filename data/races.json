@@ -22,7 +22,7 @@
         "Proposes the state budget each year",
         "Activates the Vermont National Guard in emergencies"
       ],
-      "whyItMatters": "The Governor sets the tone for Vermont state policy. Gov. Scott has used his veto pen extensively while Democrats have held legislative supermajorities — creating ongoing tension over housing, taxes, and social policy. Vermont elects its Governor every two years with no term limits.",
+      "whyItMatters": "The Governor is Vermont's top executive, setting the state's policy agenda and either signing or vetoing legislation. Gov. Scott has vetoed several major bills passed by Democratic legislative supermajorities, including proposals on housing, taxes, and social policy. Vermont elects its Governor every two years with no term limits.",
       "incumbents": [
         {
           "name": "Phil Scott",
@@ -30,7 +30,7 @@
           "termStarted": 2016,
           "status": "likely-running",
           "statusNote": "Has not formally announced but widely expected to run for a sixth two-year term",
-          "bio": "Phil Scott has served as Vermont's Governor since January 2017, winning five consecutive two-year terms. A former contractor and NASCAR racer, Scott is a moderate Republican who has maintained high approval ratings in a deeply blue state by supporting abortion rights and gun safety measures while pushing back on tax increases and large spending proposals. He won re-election in 2024 by more than 30 percentage points.",
+          "bio": "Phil Scott has served as Vermont's Governor since January 2017, winning five consecutive two-year terms. A former contractor and racing driver, Scott is a Republican who has supported abortion rights and signed gun safety legislation while vetoing several Democratic tax and spending proposals. He won re-election in 2024 by more than 30 percentage points.",
           "website": "https://governor.vermont.gov",
           "notablePositions": [
             "Supports abortion rights",
@@ -42,7 +42,7 @@
         }
       ],
       "knownCandidates": [],
-      "notes": "Democrats have struggled to recruit a top-tier challenger. Attorney General Charity Clark and Treasurer Mike Pieciak are seen as potential candidates but have both signaled preference for reelection in their current offices. Candidate filing opens April 27, 2026."
+      "notes": "No major Democratic challenger has announced as of March 2026. Attorney General Charity Clark and Treasurer Mike Pieciak have both been mentioned in press reports as potential candidates but have both signaled preference for reelection in their current offices. Candidate filing opens April 27, 2026. (Sources: Seven Days, VTDigger)"
     },
     {
       "id": "lt-governor",
@@ -67,7 +67,7 @@
           "termStarted": 2021,
           "status": "running",
           "statusNote": "Announced reelection bid",
-          "bio": "John Rodgers has served as Lieutenant Governor since 2021. He previously served in the Vermont House and Senate representing the Northeast Kingdom. A Democrat who crosses partisan lines on some issues — particularly gun rights — Rodgers won reelection in 2024.",
+          "bio": "John Rodgers has served as Lieutenant Governor since 2021. He previously served in the Vermont House and Senate representing the Northeast Kingdom. Rodgers has publicly stated he supports Second Amendment rights. He won reelection in 2024.",
           "website": "https://ltgov.vermont.gov",
           "notablePositions": [
             "Supports Second Amendment rights while serving as a Democrat",
@@ -95,7 +95,7 @@
         "Issues legal opinions on constitutional questions",
         "Coordinates with law enforcement on criminal justice issues"
       ],
-      "whyItMatters": "The AG's office is a major check on corporate wrongdoing and government overreach. Vermont's AG has been active in multi-state actions on opioids, environmental protection, and consumer fraud. The office also handles criminal appeals and civil rights matters.",
+      "whyItMatters": "The Attorney General represents Vermont's interests in court, enforces consumer protection and environmental laws, and can join multi-state legal actions on issues like opioids and corporate fraud. The office also handles criminal appeals and civil rights matters.",
       "incumbents": [
         {
           "name": "Charity Clark",
@@ -204,7 +204,7 @@
         "Operates independently of both the Governor and legislature",
         "Certifies state financial statements"
       ],
-      "whyItMatters": "Vermont's independent auditor is a powerful watchdog. Six-term incumbent Doug Hoffer built a national reputation for rigorous, non-partisan auditing. With Hoffer retiring after 14 years, this open seat race will determine the office's direction for years to come.",
+      "whyItMatters": "Vermont's Auditor of Accounts operates independently of both the Governor and the legislature, auditing state agencies and programs and reporting findings to the public. Six-term incumbent Doug Hoffer is retiring after 14 years, making this an open seat race.",
       "incumbents": [
         {
           "name": "Doug Hoffer",
@@ -212,11 +212,11 @@
           "termStarted": 2013,
           "status": "retiring",
           "statusNote": "Announced he will not seek reelection after six terms",
-          "bio": "Doug Hoffer served as Vermont Auditor of Accounts from 2013–2026, winning six consecutive terms. He built a reputation for rigorous, independent auditing and announced before the 2024 election that 2026 would be his last term.",
+          "bio": "Doug Hoffer served as Vermont Auditor of Accounts from 2013–2026, winning six consecutive terms. He announced before the 2024 election that 2026 would be his last term.",
           "notablePositions": [
             "Audited state health benefit exchange, Agency of Transportation, and other major programs",
-            "National reputation for independent, thorough auditing",
-            "Known for detailed reports on Vermont housing and workforce issues"
+            "Published detailed reports on Vermont housing and workforce issues",
+            "Served six consecutive terms (2013–2026)"
           ]
         }
       ],
@@ -330,7 +330,7 @@
           "party": "Democrat",
           "status": "unknown",
           "statusNote": "Reelection plans not yet announced",
-          "bio": "Kesha Ram Hinsdale is a prominent Vermont legislator and a leading progressive voice. She previously served as chair of the Vermont Progressive Party before becoming a Democrat, and served in the Vermont House before moving to the Senate.",
+          "bio": "Kesha Ram Hinsdale is a Vermont State Senator who previously served as chair of the Vermont Progressive Party before becoming a Democrat. She served in the Vermont House before moving to the Senate.",
           "website": null,
           "notablePositions": [
             "Leading progressive voice in the Vermont Senate",
