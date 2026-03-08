@@ -58,54 +58,54 @@ export default function HomePage() {
             <div className="flex items-center gap-3 mb-4">
               <span className="badge badge-sage">Latest Election</span>
             </div>
-            <Link href={`/elections/${featured.slug}`} className="block group">
-              <div className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 border-2 border-transparent hover:border-sage-200 transition-all hover:shadow-md">
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-                  <div className="flex-1">
+            <div className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 border-2 border-warmgray-100">
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-5">
+                <div className="flex-1">
+                  <Link href={`/elections/${featured.slug}`} className="group inline-block">
                     <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800 group-hover:text-sage-700 transition-colors mb-2">
                       {featured.name}
                     </h2>
-                    <div className="flex flex-wrap gap-3 text-sm text-warmgray-500 mb-4">
-                      <span className="flex items-center gap-1.5">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        {new Date(featured.date + 'T12:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                      </span>
-                      <span className="flex items-center gap-1.5">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                        {featured.location}
-                      </span>
-                    </div>
-                    {featuredData.results && (
-                      <p className="text-warmgray-600 text-sm">
-                        {featuredData.results.totalBallotsCast.toLocaleString()} ballots cast &mdash; {featuredData.results.turnoutPercent}% voter turnout
-                      </p>
-                    )}
-                  </div>
-                  <div className="flex-shrink-0">
-                    <span className="inline-flex items-center gap-1.5 bg-sage-100 text-sage-700 text-sm font-semibold px-3 py-1.5 rounded-full">
-                      Results Available
+                  </Link>
+                  <div className="flex flex-wrap gap-3 text-sm text-warmgray-500 mb-4">
+                    <span className="flex items-center gap-1.5">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      {new Date(featured.date + 'T12:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      {featured.location}
                     </span>
                   </div>
+                  {featuredData.results && (
+                    <p className="text-warmgray-600 text-sm">
+                      {featuredData.results.totalBallotsCast.toLocaleString()} ballots cast &mdash; {featuredData.results.turnoutPercent}% voter turnout
+                    </p>
+                  )}
                 </div>
-                <div className="mt-5 pt-5 border-t border-warmgray-100 flex flex-wrap gap-3 text-sm">
-                  {[
-                    { label: 'City Council Results', href: `/elections/${featured.slug}` },
-                    { label: 'Budget Details', href: `/elections/${featured.slug}/budget` },
-                    { label: 'Fire Station Bond', href: `/elections/${featured.slug}/fire-station-bond` },
-                    { label: 'Sources', href: `/elections/${featured.slug}/sources` },
-                  ].map(link => (
-                    <span key={link.href} className="text-sage-600 font-medium">
-                      {link.label}
-                    </span>
-                  ))}
+                <div className="flex-shrink-0">
+                  <span className="inline-flex items-center gap-1.5 bg-sage-100 text-sage-700 text-sm font-semibold px-3 py-1.5 rounded-full">
+                    Results Available
+                  </span>
                 </div>
               </div>
-            </Link>
+              <div className="pt-5 border-t border-warmgray-100 flex flex-wrap gap-3 text-sm">
+                {[
+                  { label: 'City Council Results', href: `/elections/${featured.slug}` },
+                  { label: 'Budget Details', href: `/elections/${featured.slug}/budget` },
+                  { label: 'Fire Station Bond', href: `/elections/${featured.slug}/fire-station-bond` },
+                  { label: 'Sources', href: `/elections/${featured.slug}/sources` },
+                ].map(link => (
+                  <Link key={link.href} href={link.href} className="text-sage-600 hover:text-sage-800 font-medium transition-colors">
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         )}
 
