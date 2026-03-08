@@ -15,21 +15,23 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "South Burlington Election Results 2026 | Town Meeting Day",
-  description: "Results from the March 3, 2026 South Burlington Town Meeting Day election. City Council, budget, fire station bond, and school budget results. A nonpartisan community resource.",
-  keywords: ["South Burlington", "Vermont", "election results", "Town Meeting Day", "City Council", "2026", "Beth Zigmund", "Amy Allen", "budget", "fire station bond"],
-  authors: [{ name: "South Burlington Voter Guide" }],
+  title: {
+    default: "Vermont Election Guide",
+    template: "%s | Vermont Election Guide",
+  },
+  description: "Nonpartisan guides and results archives for Vermont municipal elections. Know your ballot before you vote.",
+  authors: [{ name: "Vermont Election Guide" }],
   openGraph: {
-    title: "South Burlington Election Results 2026",
-    description: "Results from the March 3, 2026 South Burlington Town Meeting Day election. City Council, budget, and ballot article results.",
+    title: "Vermont Election Guide",
+    description: "Nonpartisan guides and results archives for Vermont municipal elections.",
     type: "website",
     locale: "en_US",
-    siteName: "South Burlington Voter Guide",
+    siteName: "Vermont Election Guide",
   },
   twitter: {
     card: "summary_large_image",
-    title: "South Burlington Election Results 2026",
-    description: "Results from the March 3, 2026 South Burlington Town Meeting Day election. City Council, budget, and ballot article results.",
+    title: "Vermont Election Guide",
+    description: "Nonpartisan guides and results archives for Vermont municipal elections.",
   },
   robots: {
     index: true,
