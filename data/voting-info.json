@@ -1,0 +1,85 @@
+{
+  "lastUpdated": "2026-03-07",
+  "voterRegistration": {
+    "deadline": "Same-day registration available at the polls",
+    "onlineDeadline": "The day before the election via My Voter Page",
+    "checkUrl": "https://mvp.vermont.gov/",
+    "registerUrl": "https://mvp.vermont.gov/",
+    "note": "Vermont allows same-day voter registration at the polls. You can also register or update your registration online at My Voter Page (mvp.vermont.gov)."
+  },
+  "findYourDistrict": {
+    "url": "https://mvp.vermont.gov/",
+    "note": "South Burlington is divided into multiple Vermont House districts. Use My Voter Page to look up your exact district and find your representatives."
+  },
+  "southBurlingtonPollingLocations": [
+    "Chamberlin School (White Street)",
+    "Frederick H. Tuttle Middle School (Dorset Street)",
+    "Orchard School (Baldwin Avenue)",
+    "Kevin Dorn Senior Center at City Hall (Market Street)"
+  ],
+  "keyDates": [
+    {
+      "date": "2026-04-27",
+      "event": "Candidate filing period opens",
+      "type": "filing",
+      "description": "Candidates may begin filing paperwork to appear on the primary ballot"
+    },
+    {
+      "date": "2026-05-28",
+      "event": "Candidate filing deadline",
+      "type": "filing",
+      "description": "All primary candidates must file by 5:00 PM to appear on the August ballot"
+    },
+    {
+      "date": "2026-08-06",
+      "event": "Independent/third-party petition deadline",
+      "type": "filing",
+      "description": "Deadline for independent and third-party candidates to file petitions for the general election ballot"
+    },
+    {
+      "date": "2026-08-11",
+      "event": "Vermont Primary Election",
+      "type": "election",
+      "description": "Voters in each party choose their nominees for the November general election"
+    },
+    {
+      "date": "2026-11-03",
+      "event": "Vermont General Election",
+      "type": "election",
+      "description": "All South Burlington residents vote for Governor, legislature, U.S. House, and ballot measures"
+    }
+  ],
+  "elections": [
+    {
+      "id": "primary-2026",
+      "name": "Vermont Primary Election",
+      "date": "2026-08-11",
+      "type": "primary",
+      "pollingHours": "7:00 AM – 7:00 PM",
+      "absenteeBallot": {
+        "requestUrl": "https://mvp.vermont.gov/",
+        "note": "Request an absentee ballot online through My Voter Page (mvp.vermont.gov)"
+      },
+      "notes": "Vermont has open primaries — you may request the ballot of any party regardless of your registration. You can change your party affiliation at the polls on Election Day."
+    },
+    {
+      "id": "general-2026",
+      "name": "Vermont General Election",
+      "date": "2026-11-03",
+      "type": "general",
+      "pollingHours": "7:00 AM – 7:00 PM",
+      "absenteeBallot": {
+        "requestUrl": "https://mvp.vermont.gov/",
+        "note": "Vermont automatically mails ballots to all active registered voters. You may vote by mail or return your ballot in person."
+      },
+      "notes": "Vermont automatically mails ballots to all registered voters for general elections. You can vote by mail, drop your ballot at a drop box, or vote in person at your polling place."
+    }
+  ],
+  "officialResources": {
+    "myVoterPage": "https://mvp.vermont.gov/",
+    "vtSoSElections": "https://sos.vermont.gov/elections/",
+    "sbCityClerk": "https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php",
+    "vtLegislature": "https://legislature.vermont.gov/",
+    "vtSecretaryOfState": "https://sos.vermont.gov/"
+  }
+}
