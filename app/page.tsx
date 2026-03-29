@@ -31,11 +31,11 @@ const ArchiveIcon = () => (
   </svg>
 );
 
-const keyDates = [
+const keyDates: { date: string; event: string; type: string; note?: string }[] = [
   { date: "Apr 27", event: "Candidate filing opens", type: "filing" },
   { date: "May 28", event: "Filing deadline (5 PM)", type: "filing" },
-  { date: "Aug 11", event: "Vermont Primary Election", type: "election" },
-  { date: "Nov 3", event: "Vermont General Election", type: "election" },
+  { date: "Aug 11", event: "Vermont Primary Election", type: "election", note: "Same-day registration available at polls" },
+  { date: "Nov 3", event: "Vermont General Election", type: "election", note: "Same-day registration available at polls" },
 ];
 
 const primaryRaces = [
@@ -116,6 +116,39 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Same-Day Registration Banner */}
+        <div className="bg-gradient-to-r from-sage-50 to-terracotta-50 border border-sage-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-11 h-11 bg-sage-100 rounded-xl flex items-center justify-center">
+              <CheckIcon />
+            </div>
+            <div className="flex-1">
+              <h2 className="font-display text-lg font-bold text-sage-800 mb-1">No Registration Deadline in Vermont</h2>
+              <p className="text-warmgray-700 text-sm leading-relaxed mb-3">
+                Vermont has same-day voter registration. You can register and vote on the same day — including at your polling place on Election Day. There is no cutoff date to register.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://mvp.vermont.gov/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-white bg-sage-500 hover:bg-sage-600 px-4 py-2 rounded-lg transition-colors"
+                >
+                  Register Online
+                  <ArrowRightIcon />
+                </a>
+                <Link
+                  href="/how-to-vote"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-sage-700 bg-white border border-sage-200 hover:border-sage-300 px-4 py-2 rounded-lg transition-colors"
+                >
+                  How to Vote
+                  <ArrowRightIcon />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Key Dates Timeline */}
         <div className="mb-8">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-4">Key Dates</h2>
@@ -133,6 +166,7 @@ export default function Home() {
                       {item.date}
                     </p>
                     <p className="text-warmgray-600 text-sm leading-tight">{item.event}</p>
+                    {item.note && <p className="text-sage-600 text-xs mt-0.5">{item.note}</p>}
                   </div>
                 </div>
               ))}
@@ -233,7 +267,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Register to Vote</p>
-                <p className="text-xs text-warmgray-500">My Voter Page (mvp.vermont.gov)</p>
+                <p className="text-xs text-warmgray-500">Same-day registration available — no deadline</p>
               </div>
             </a>
             <a
@@ -304,6 +338,13 @@ export default function Home() {
               All positions sourced from publicly available materials. Not affiliated with the City of South Burlington or any candidate.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4 border-t border-warmgray-100">
+              <Link href="/how-to-vote" className="inline-flex items-center gap-2 text-sage-600 hover:text-sage-800 font-medium text-sm transition-colors">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                How to Vote
+              </Link>
+              <span className="hidden sm:inline text-warmgray-300">&middot;</span>
               <Link href="/about" className="inline-flex items-center gap-2 text-sage-600 hover:text-sage-800 font-medium text-sm transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
