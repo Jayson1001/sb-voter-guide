@@ -32,8 +32,7 @@ const ArchiveIcon = () => (
 );
 
 const keyDates: { date: string; event: string; type: string; note?: string }[] = [
-  { date: "Apr 27", event: "Candidate filing opens", type: "filing" },
-  { date: "May 28", event: "Filing deadline (5 PM)", type: "filing" },
+  { date: "May 28", event: "Filing deadline passed", type: "filing", note: "See full list at sos.vermont.gov" },
   { date: "Aug 11", event: "Vermont Primary Election", type: "election", note: "Same-day registration available at polls" },
   { date: "Nov 3", event: "Vermont General Election", type: "election", note: "Same-day registration available at polls" },
 ];
@@ -110,7 +109,26 @@ export default function Home() {
                 This independent, nonpartisan guide covers all races on those ballots — from Governor down to your local State House representative.
               </p>
               <p className="text-warmgray-500 text-sm mt-2">
-                Candidate filing opens April 27 and closes May 28, 2026. Pages will be updated as candidates announce.
+                Candidate filing closed May 28, 2026. The full candidate list is now available — see the primary and general guides below.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Leadership News Banner */}
+        <div className="bg-gradient-to-r from-terracotta-50 to-cream-100 border-2 border-terracotta-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-11 h-11 bg-terracotta-100 rounded-xl flex items-center justify-center">
+              <span className="text-2xl">🏛️</span>
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-wrap items-center gap-2 mb-1">
+                <span className="text-xs font-semibold text-terracotta-700 uppercase tracking-wide">May 28, 2026</span>
+                <span className="text-xs bg-terracotta-100 text-terracotta-700 px-2 py-0.5 rounded-full font-semibold">Breaking</span>
+              </div>
+              <h2 className="font-display text-lg sm:text-xl font-bold text-warmgray-800 mb-1">New leadership coming to Montpelier</h2>
+              <p className="text-warmgray-700 text-sm leading-relaxed">
+                Both Vermont House Speaker <strong>Jill Krowinski</strong> (D-Burlington) and Senate President Pro Tem <strong>Phil Baruth</strong> (D/P-Chittenden Central) are not seeking reelection. Both chambers will have new leaders in the 2027 session — the first time in years there&apos;s an open contest for both top legislative posts.
               </p>
             </div>
           </div>
@@ -147,6 +165,44 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* What's New / Changelog */}
+        <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
+          <div className="flex items-center justify-between gap-3 mb-3">
+            <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
+            <span className="text-xs text-warmgray-400 font-medium">Updated May 28, 2026</span>
+          </div>
+          <ul className="space-y-2 text-sm text-warmgray-700">
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Gov. Phil Scott</strong> filed for a 6th term hours before the deadline; no Republican primary opposition.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Three-way Democratic primary for Governor:</strong> Amanda Janoo, Aly Richards, and Jeffery Wilson. June Goodband (Peace and Justice Party) also on the November ballot.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Contested GOP primary for U.S. House:</strong> Gerald Malloy vs. Mark Coester; Andrew Giusto runs as an Independent. Incumbent Becca Balint (D) filed May 7.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Lt. Governor:</strong> Republican incumbent John Rodgers files for reelection; three Democrats (Esther Charlestin, Molly Gray, Ryan McLaren) compete in the primary.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Auditor (open seat):</strong> Doug Hoffer retiring after seven terms. Tim Ashe (D, Hoffer&apos;s chief deputy) faces a GOP primary winner — Nick Graeter or Joshua Bechhoefer.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Treasurer Mike Pieciak</strong> (D) filed for reelection on May 28.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Chittenden-SE Senate:</strong> Democratic incumbents Chittenden and Lyons running; Republican Javen Sears (UVM student, SBHS &apos;20) launched in April.</span>
+            </li>
+          </ul>
         </div>
 
         {/* Key Dates Timeline */}
@@ -207,7 +263,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-4 pt-4 border-t border-warmgray-100">
-                  <p className="text-xs text-warmgray-400">Filing closes May 28 &bull; Candidates TBD</p>
+                  <p className="text-xs text-warmgray-400">Filing closed May 28 &bull; Full candidate list inside</p>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07",
+  "lastUpdated": "2026-05-28",
   "candidateFilingOpens": "2026-04-27",
   "candidateFilingCloses": "2026-05-28",
   "primaryDate": "2026-08-11",
@@ -28,8 +28,8 @@
           "name": "Phil Scott",
           "party": "Republican",
           "termStarted": 2016,
-          "status": "likely-running",
-          "statusNote": "Has not formally announced but widely expected to run for a sixth two-year term",
+          "status": "running",
+          "statusNote": "Filed for a 6th term on May 28, 2026 — hours before the deadline. No Republican primary opposition.",
           "bio": "Phil Scott has served as Vermont's Governor since January 2017, winning five consecutive two-year terms. A former contractor and racing driver, Scott is a Republican who has supported abortion rights and signed gun safety legislation while vetoing several Democratic tax and spending proposals. He won re-election in 2024 by more than 30 percentage points.",
           "website": "https://governor.vermont.gov",
           "notablePositions": [
@@ -37,12 +37,50 @@
             "Has signed gun safety legislation",
             "Has vetoed several Democratic tax and spending proposals",
             "Led Vermont's COVID-19 vaccine rollout, one of the fastest in the nation",
-            "Focus on housing affordability and economic development"
+            "Focus on housing affordability and economic development",
+            "If he wins and serves the full term, would become Vermont's longest-serving governor since statehood"
           ]
         }
       ],
-      "knownCandidates": [],
-      "notes": "No major Democratic challenger has announced as of March 2026. Attorney General Charity Clark and Treasurer Mike Pieciak have both been mentioned in press reports as potential candidates but have both signaled preference for reelection in their current offices. Candidate filing opens April 27, 2026. (Sources: Seven Days, VTDigger)"
+      "knownCandidates": [
+        {
+          "name": "Amanda Janoo",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed in the Democratic primary for Governor on or before the May 28 deadline.",
+          "website": null,
+          "notablePositions": []
+        },
+        {
+          "name": "Aly Richards",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed in the Democratic primary for Governor on or before the May 28 deadline.",
+          "website": null,
+          "notablePositions": []
+        },
+        {
+          "name": "Jeffery Wilson",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed in the Democratic primary for Governor on or before the May 28 deadline.",
+          "website": null,
+          "notablePositions": []
+        },
+        {
+          "name": "June Goodband",
+          "party": "Peace and Justice",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed as the Peace and Justice Party candidate for Governor; will appear directly on the November general election ballot.",
+          "website": null,
+          "notablePositions": []
+        }
+      ],
+      "notes": "Filing deadline has passed. The Republican primary is uncontested — Phil Scott faces no GOP opponent. The Democratic primary is a three-way contest between Janoo, Richards, and Wilson; the winner faces Scott in November along with June Goodband of the Peace and Justice Party. (Sources: Seven Days, VTDigger; verify final ballot at sos.vermont.gov)"
     },
     {
       "id": "lt-governor",
@@ -63,21 +101,50 @@
       "incumbents": [
         {
           "name": "John Rodgers",
-          "party": "Democrat",
-          "termStarted": 2021,
+          "party": "Republican",
+          "termStarted": 2025,
           "status": "running",
-          "statusNote": "Announced reelection bid",
-          "bio": "John Rodgers has served as Lieutenant Governor since 2021. He previously served in the Vermont House and Senate representing the Northeast Kingdom. Rodgers has publicly stated he supports Second Amendment rights. He won reelection in 2024.",
+          "statusNote": "Filed for reelection",
+          "bio": "John Rodgers was elected Lieutenant Governor in 2024 running as a Republican, after years as a Democratic state senator. He previously served in the Vermont House and Senate representing the Northeast Kingdom and has long advocated for Second Amendment rights.",
           "website": "https://ltgov.vermont.gov",
           "notablePositions": [
-            "Supports Second Amendment rights while serving as a Democrat",
+            "Supports Second Amendment rights",
+            "Switched from Democrat to Republican before the 2024 race",
             "Focus on rural Vermont issues and the Northeast Kingdom",
             "Advocates for workforce development and economic opportunity"
           ]
         }
       ],
-      "knownCandidates": [],
-      "notes": "Lt. Gov. Rodgers announced he is running for reelection."
+      "knownCandidates": [
+        {
+          "name": "Esther Charlestin",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Vermont educator and 2024 Democratic gubernatorial nominee; filed in the Democratic primary for Lt. Governor.",
+          "website": null,
+          "notablePositions": []
+        },
+        {
+          "name": "Molly Gray",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Former Vermont Lieutenant Governor (2021–2023); filed in the Democratic primary for Lt. Governor.",
+          "website": null,
+          "notablePositions": []
+        },
+        {
+          "name": "Ryan McLaren",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed in the Democratic primary for Lt. Governor.",
+          "website": null,
+          "notablePositions": []
+        }
+      ],
+      "notes": "Republican Lt. Gov. John Rodgers is running for a second term and faces no GOP primary opposition. Three Democrats — Charlestin, Gray, and McLaren — compete in the August 11 Democratic primary for the right to face him in November."
     },
     {
       "id": "attorney-general",
@@ -101,20 +168,19 @@
           "name": "Charity Clark",
           "party": "Democrat",
           "termStarted": 2023,
-          "status": "likely-running",
-          "statusNote": "Has indicated preference for reelection over a gubernatorial run",
+          "status": "running",
+          "statusNote": "Expected to have filed for reelection by the May 28 deadline (verify against the VT SOS candidate list)",
           "bio": "Charity Clark was elected Vermont Attorney General in 2022, becoming the first woman to hold the office. She previously served as Chief Assistant Attorney General. She has been active in multi-state coalitions on opioids, environmental protection, and consumer fraud.",
           "website": "https://ago.vermont.gov",
           "notablePositions": [
             "First woman to serve as Vermont Attorney General",
             "Active in multi-state opioid and environmental enforcement actions",
-            "Focus on consumer protection and corporate accountability",
-            "Considered as potential gubernatorial candidate; leaning toward AG reelection"
+            "Focus on consumer protection and corporate accountability"
           ]
         }
       ],
       "knownCandidates": [],
-      "notes": "AG Clark has said she plans to run for a statewide office in 2026 and is leaning toward reelection as Attorney General."
+      "notes": "AG Clark was expected to file for reelection. Verify the final candidate field against sos.vermont.gov/elections/election-info-resources/candidates."
     },
     {
       "id": "secretary-of-state",
@@ -139,7 +205,7 @@
           "party": "Democrat",
           "termStarted": 2023,
           "status": "running",
-          "statusNote": "Announced reelection bid",
+          "statusNote": "Expected to have filed for reelection by the May 28 deadline (verify against the VT SOS candidate list)",
           "bio": "Sarah Copeland Hanzas was first elected Secretary of State in 2022. She previously served in the Vermont House of Representatives for over a decade. She succeeded Jim Condos, who served as Secretary of State from 2011–2022.",
           "website": "https://sos.vermont.gov",
           "notablePositions": [
@@ -150,7 +216,7 @@
         }
       ],
       "knownCandidates": [],
-      "notes": "Secretary Copeland Hanzas announced she is running for reelection."
+      "notes": "Secretary Copeland Hanzas was expected to file for reelection. Verify the final candidate field against sos.vermont.gov/elections/election-info-resources/candidates."
     },
     {
       "id": "treasurer",
@@ -174,8 +240,8 @@
           "name": "Mike Pieciak",
           "party": "Democrat",
           "termStarted": 2023,
-          "status": "likely-running",
-          "statusNote": "Has signaled preference for reelection over running for Governor",
+          "status": "running",
+          "statusNote": "Filed for reelection on May 28, 2026",
           "bio": "Mike Pieciak was first elected State Treasurer in 2022. He previously served as Commissioner of the Vermont Department of Financial Regulation and oversaw Vermont's pandemic stimulus distribution before becoming Treasurer.",
           "website": "https://vermonttreasurer.gov",
           "notablePositions": [
@@ -186,7 +252,7 @@
         }
       ],
       "knownCandidates": [],
-      "notes": "Treasurer Pieciak is widely expected to seek reelection, having signaled preference for his current office over a gubernatorial run in 2026."
+      "notes": "Treasurer Pieciak filed for reelection on the May 28 deadline."
     },
     {
       "id": "auditor",
@@ -211,12 +277,12 @@
           "party": "Democrat",
           "termStarted": 2013,
           "status": "retiring",
-          "statusNote": "Announced he will not seek reelection after six terms",
-          "bio": "Doug Hoffer served as Vermont Auditor of Accounts from 2013–2026, winning six consecutive terms. He announced before the 2024 election that 2026 would be his last term.",
+          "statusNote": "Retiring after seven terms — first open Auditor race in 14 years",
+          "bio": "Doug Hoffer served as Vermont Auditor of Accounts from 2013–2026, winning seven consecutive terms. He announced before the 2024 election that 2026 would be his last term, opening the seat for the first time in 14 years.",
           "notablePositions": [
             "Audited state health benefit exchange, Agency of Transportation, and other major programs",
             "Published detailed reports on Vermont housing and workforce issues",
-            "Served six consecutive terms (2013–2026)"
+            "Served seven consecutive terms (2013–2026)"
           ]
         }
       ],
@@ -226,16 +292,35 @@
           "party": "Democrat",
           "status": "announced",
           "announcedDate": "January 2026",
-          "bio": "Tim Ashe served as Vermont Senate President Pro Tem from 2013–2021, one of the most powerful positions in Vermont state government. He ran for Lieutenant Governor in 2020, losing in the Democratic primary. He teaches at the University of Vermont and is a former Progressive-Democrat.",
+          "bio": "Tim Ashe has served as Auditor Doug Hoffer's chief deputy since 2021. He was previously Vermont Senate President Pro Tem from 2013–2021, one of the most powerful positions in Vermont state government, and ran for Lieutenant Governor in 2020.",
           "website": null,
           "notablePositions": [
+            "Chief Deputy Auditor of Accounts since 2021 (under Hoffer)",
             "Former Vermont Senate President Pro Tem (2013–2021)",
             "Led major Vermont policy initiatives on housing, climate, and tax reform",
             "Ran for Lt. Governor in 2020 (lost Democratic primary)"
           ]
+        },
+        {
+          "name": "Nick Graeter",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Williston business owner; filed in the Republican primary for Auditor of Accounts.",
+          "website": null,
+          "notablePositions": []
+        },
+        {
+          "name": "Joshua Bechhoefer",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed in the Republican primary for Auditor of Accounts.",
+          "website": null,
+          "notablePositions": []
         }
       ],
-      "notes": "This is the most notable open seat in the 2026 Vermont elections. Tim Ashe (D) is the first major announced candidate. Additional candidates from both parties expected after filing opens April 27."
+      "notes": "This is the first open Auditor race in Vermont in 14 years. Democrat Tim Ashe (Hoffer's chief deputy since 2021) is uncontested in the Democratic primary; Republicans Nick Graeter and Joshua Bechhoefer compete in the August 11 GOP primary."
     }
   ],
 
@@ -263,7 +348,7 @@
           "party": "Democrat",
           "termStarted": 2023,
           "status": "running",
-          "statusNote": "Announced reelection bid",
+          "statusNote": "Filed for reelection on May 7, 2026",
           "bio": "Becca Balint was elected Vermont's at-large U.S. Representative in 2022, becoming the first woman and first openly gay person elected to Congress from Vermont. She previously served in the Vermont Senate and as Senate President Pro Tem. She serves on the House Judiciary Committee and House Education and Workforce Committee.",
           "website": "https://balint.house.gov",
           "notablePositions": [
@@ -275,8 +360,36 @@
           ]
         }
       ],
-      "knownCandidates": [],
-      "notes": "Balint is expected to win easily. Vermont's at-large seat has been held by a Democrat or Independent since 1991."
+      "knownCandidates": [
+        {
+          "name": "Gerald Malloy",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed in the Republican primary for U.S. House. Previously ran statewide in Vermont.",
+          "website": null,
+          "notablePositions": []
+        },
+        {
+          "name": "Mark Coester",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed in the Republican primary for U.S. House.",
+          "website": null,
+          "notablePositions": []
+        },
+        {
+          "name": "Andrew Giusto",
+          "party": "Independent",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Filed as an Independent candidate for U.S. House; will appear directly on the November general election ballot.",
+          "website": null,
+          "notablePositions": []
+        }
+      ],
+      "notes": "Balint faces a contested GOP primary between Gerald Malloy and Mark Coester, plus Independent Andrew Giusto on the general ballot. Vermont's at-large seat has been held by a Democrat or Independent since 1991."
     }
   ],
 
@@ -303,8 +416,8 @@
         {
           "name": "Thomas Chittenden",
           "party": "Democrat",
-          "status": "unknown",
-          "statusNote": "Reelection plans not yet announced",
+          "status": "running",
+          "statusNote": "Filed for reelection",
           "bio": "Thomas Chittenden grew up in South Burlington and previously served on the South Burlington City Council. He was elected to the Vermont Senate representing Chittenden Southeast and is directly connected to his South Burlington constituents.",
           "website": "https://legislature.vermont.gov/people/single/2026/34724",
           "notablePositions": [
@@ -316,8 +429,8 @@
         {
           "name": "Virginia Lyons",
           "party": "Democrat",
-          "status": "unknown",
-          "statusNote": "Reelection plans not yet announced",
+          "status": "running",
+          "statusNote": "Filed for reelection",
           "bio": "Virginia Lyons is a Vermont State Senator representing the Chittenden Southeast district. She has served in the Senate for multiple terms.",
           "website": null,
           "notablePositions": [
@@ -329,7 +442,7 @@
           "name": "Kesha Ram Hinsdale",
           "party": "Democrat",
           "status": "unknown",
-          "statusNote": "Reelection plans not yet announced",
+          "statusNote": "Status pending — verify against the VT SOS candidate list at sos.vermont.gov",
           "bio": "Kesha Ram Hinsdale is a Vermont State Senator who previously served as chair of the Vermont Progressive Party before becoming a Democrat. She served in the Vermont House before moving to the Senate.",
           "website": null,
           "notablePositions": [
@@ -339,8 +452,21 @@
           ]
         }
       ],
-      "knownCandidates": [],
-      "notes": "All three seats are up in 2026 (all Vermont Senate seats are on the ballot every two years). Candidate filing opens April 27, 2026."
+      "knownCandidates": [
+        {
+          "name": "Javen Sears",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "April 2026",
+          "bio": "UVM student and South Burlington High School class of 2020 graduate; launched his Senate campaign in April and filed in the Republican primary for Chittenden-Southeast.",
+          "website": null,
+          "notablePositions": [
+            "Recent SBHS graduate (2020)",
+            "UVM student"
+          ]
+        }
+      ],
+      "notes": "All three seats are on the ballot. Democratic incumbents Chittenden and Lyons have filed for reelection; verify Kesha Ram Hinsdale's status against the SOS candidate list. Republican Javen Sears, a UVM student and 2020 SBHS graduate, is the lone announced GOP challenger so far."
     }
   ],
 

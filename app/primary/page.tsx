@@ -231,9 +231,9 @@ export default function PrimaryPage() {
               <p className="text-sage-100 text-base sm:text-lg">Each party nominates its candidates for the November general election</p>
             </div>
             <div className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 text-white text-center">
-              <p className="text-sage-100 text-xs font-medium uppercase tracking-wide">Filing closes</p>
-              <p className="font-display text-2xl font-bold">May 28</p>
-              <p className="text-sage-100 text-sm">5:00 PM</p>
+              <p className="text-sage-100 text-xs font-medium uppercase tracking-wide">Filing</p>
+              <p className="font-display text-2xl font-bold">Closed</p>
+              <p className="text-sage-100 text-sm">As of May 28</p>
             </div>
           </div>
         </div>
@@ -268,10 +268,10 @@ export default function PrimaryPage() {
             <CalendarIcon />
           </div>
           <div className="flex-1">
-            <p className="font-semibold text-sage-800">Candidates not yet known for most races</p>
+            <p className="font-semibold text-sage-800">Filing deadline passed — see full candidate list</p>
             <p className="text-sage-700 text-sm mt-0.5">
-              Candidate filing opens <strong>April 27</strong> and closes <strong>May 28, 2026</strong>.
-              Incumbents and their known plans are listed below. Check back after May 28 for the full candidate list.
+              Candidate filing closed <strong>May 28, 2026 at 5:00 PM</strong>.
+              The races and candidates below reflect filings as of that deadline. For the official certified list, see the VT SoS candidates page.
             </p>
           </div>
           <a
