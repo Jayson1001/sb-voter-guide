@@ -171,7 +171,7 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <div className="flex items-center justify-between gap-3 mb-3">
             <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
-            <span className="text-xs text-warmgray-400 font-medium">Updated May 28, 2026</span>
+            <span className="text-xs text-warmgray-400 font-medium">Updated May 29, 2026</span>
           </div>
           <ul className="space-y-2 text-sm text-warmgray-700">
             <li className="flex items-start gap-2">
@@ -180,11 +180,15 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Three-way Democratic primary for Governor:</strong> Amanda Janoo, Aly Richards, and Jeffery Wilson. June Goodband (Peace and Justice Party) also on the November ballot.</span>
+              <span><strong>Democratic primary for Governor:</strong> Amanda Janoo and Aly Richards confirmed filed; Jeffery Wilson announced in April but post-deadline reporting did not confirm his filing.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Contested GOP primary for U.S. House:</strong> Gerald Malloy vs. Mark Coester; Andrew Giusto runs as an Independent. Incumbent Becca Balint (D) filed May 7.</span>
+              <span><strong>14-year-old on the November ballot:</strong> Stowe student Dean Roy qualified for the general election as the new Freedom and Unity Party&apos;s candidate for Governor.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Contested GOP primary for U.S. House:</strong> Gerald Malloy vs. Mark Coester; Andrew Giusto is a Unity Party write-in for November. Incumbent Becca Balint (D) filed May 7.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
@@ -196,11 +200,15 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Treasurer Mike Pieciak</strong> (D) filed for reelection on May 28.</span>
+              <span><strong>AG, SoS, Treasurer all running unopposed:</strong> Charity Clark, Sarah Copeland Hanzas, and Mike Pieciak (all D) filed for reelection with no announced challengers.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Chittenden-SE Senate:</strong> Democratic incumbents Chittenden and Lyons running; Republican Javen Sears (UVM student, SBHS &apos;20) launched in April.</span>
+              <span><strong>Five-way Chittenden-SE Senate Democratic primary</strong> for three nominations: incumbents Thomas Chittenden, Virginia Lyons, and Kesha Ram Hinsdale vs. challengers Joanna Grossman and Elizabeth Hunt. Republican Javen Sears (UVM student, SBHS &apos;20) is the lone GOP filer.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) filed for reelection unopposed. Independents have until Aug 6 to file for November.</span>
             </li>
           </ul>
         </div>

@@ -41,6 +41,9 @@ const partyColors: Record<string, string> = {
   "Democrat": "bg-blue-50 text-blue-700 border-blue-100",
   "Republican": "bg-red-50 text-red-700 border-red-100",
   "Independent": "bg-purple-50 text-purple-700 border-purple-100",
+  "Peace and Justice": "bg-emerald-50 text-emerald-700 border-emerald-100",
+  "Unity Party": "bg-amber-50 text-amber-700 border-amber-100",
+  "Freedom and Unity": "bg-orange-50 text-orange-700 border-orange-100",
 };
 
 function RaceCard({ race }: { race: any }) {

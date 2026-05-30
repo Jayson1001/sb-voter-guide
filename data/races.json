@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-28",
+  "lastUpdated": "2026-05-29",
   "candidateFilingOpens": "2026-04-27",
   "candidateFilingCloses": "2026-05-28",
   "primaryDate": "2026-08-11",
@@ -48,8 +48,8 @@
           "party": "Democrat",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Filed in the Democratic primary for Governor on or before the May 28 deadline.",
-          "website": null,
+          "bio": "Filed in the Democratic primary for Governor on May 28, 2026.",
+          "website": "https://www.janooforvt.com",
           "notablePositions": []
         },
         {
@@ -57,30 +57,42 @@
           "party": "Democrat",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Filed in the Democratic primary for Governor on or before the May 28 deadline.",
-          "website": null,
+          "bio": "Filed in the Democratic primary for Governor on May 28, 2026.",
+          "website": "https://alyforvt.com",
           "notablePositions": []
         },
         {
           "name": "Jeffery Wilson",
           "party": "Democrat",
           "status": "announced",
-          "announcedDate": "May 2026",
-          "bio": "Filed in the Democratic primary for Governor on or before the May 28 deadline.",
+          "announcedDate": "April 2026",
+          "bio": "Coventry Emergency Management Director; announced a Democratic primary bid for Governor in April. As of post-deadline reporting (VT Public, May 28), only Janoo and Richards were confirmed filed — Wilson's filing status is unconfirmed.",
           "website": null,
           "notablePositions": []
+        },
+        {
+          "name": "Dean Roy",
+          "party": "Freedom and Unity",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "14-year-old Stowe student. Qualified for the November general election ballot via the newly-formed Freedom and Unity Party — appears directly on the general ballot without going through the primary. Coverage: Newsweek, Fortune, CNN.",
+          "website": null,
+          "notablePositions": [
+            "Helped form the Freedom and Unity Party in 2026",
+            "Believed to be among the youngest people ever on a Vermont general election ballot for Governor"
+          ]
         },
         {
           "name": "June Goodband",
           "party": "Peace and Justice",
           "status": "announced",
-          "announcedDate": "May 2026",
-          "bio": "Filed as the Peace and Justice Party candidate for Governor; will appear directly on the November general election ballot.",
-          "website": null,
+          "announcedDate": "2024",
+          "bio": "Ran for Governor in 2024 as the Green Mountain Peace and Justice Party candidate. Has been associated with a possible 2026 run but no 2026 filing has been confirmed. The minor-party filing deadline is August 6, 2026.",
+          "website": "https://june4govvt.org",
           "notablePositions": []
         }
       ],
-      "notes": "Filing deadline has passed. The Republican primary is uncontested — Phil Scott faces no GOP opponent. The Democratic primary is a three-way contest between Janoo, Richards, and Wilson; the winner faces Scott in November along with June Goodband of the Peace and Justice Party. (Sources: Seven Days, VTDigger; verify final ballot at sos.vermont.gov)"
+      "notes": "The Republican primary is uncontested — Phil Scott faces no GOP opponent. The Democratic primary appears to be a two-way contest between Janoo and Richards (Wilson announced in April but is unconfirmed as a May 28 filer). Dean Roy of the new Freedom and Unity Party has already qualified for the November general ballot. The minor-party filing deadline is August 6, 2026, so additional general-ballot candidates may still emerge."
     },
     {
       "id": "lt-governor",
@@ -122,7 +134,7 @@
           "status": "announced",
           "announcedDate": "May 2026",
           "bio": "Vermont educator and 2024 Democratic gubernatorial nominee; filed in the Democratic primary for Lt. Governor.",
-          "website": null,
+          "website": "https://charlestinforvermont.com",
           "notablePositions": []
         },
         {
@@ -140,7 +152,7 @@
           "status": "announced",
           "announcedDate": "May 2026",
           "bio": "Filed in the Democratic primary for Lt. Governor.",
-          "website": null,
+          "website": "https://www.mclarenforvermont.com",
           "notablePositions": []
         }
       ],
@@ -169,7 +181,7 @@
           "party": "Democrat",
           "termStarted": 2023,
           "status": "running",
-          "statusNote": "Expected to have filed for reelection by the May 28 deadline (verify against the VT SOS candidate list)",
+          "statusNote": "Filed for reelection on May 4, 2026",
           "bio": "Charity Clark was elected Vermont Attorney General in 2022, becoming the first woman to hold the office. She previously served as Chief Assistant Attorney General. She has been active in multi-state coalitions on opioids, environmental protection, and consumer fraud.",
           "website": "https://ago.vermont.gov",
           "notablePositions": [
@@ -180,7 +192,7 @@
         }
       ],
       "knownCandidates": [],
-      "notes": "AG Clark was expected to file for reelection. Verify the final candidate field against sos.vermont.gov/elections/election-info-resources/candidates."
+      "notes": "AG Clark filed for reelection on May 4, 2026 (sources: VTDigger, WCAX). No primary or general challenger announced as of the May 28 filing deadline."
     },
     {
       "id": "secretary-of-state",
@@ -205,7 +217,7 @@
           "party": "Democrat",
           "termStarted": 2023,
           "status": "running",
-          "statusNote": "Expected to have filed for reelection by the May 28 deadline (verify against the VT SOS candidate list)",
+          "statusNote": "Filed for reelection",
           "bio": "Sarah Copeland Hanzas was first elected Secretary of State in 2022. She previously served in the Vermont House of Representatives for over a decade. She succeeded Jim Condos, who served as Secretary of State from 2011–2022.",
           "website": "https://sos.vermont.gov",
           "notablePositions": [
@@ -216,7 +228,7 @@
         }
       ],
       "knownCandidates": [],
-      "notes": "Secretary Copeland Hanzas was expected to file for reelection. Verify the final candidate field against sos.vermont.gov/elections/election-info-resources/candidates."
+      "notes": "Secretary Copeland Hanzas filed for reelection (sources: VTDigger, Ballotpedia). No primary or general challenger announced as of the May 28 filing deadline."
     },
     {
       "id": "treasurer",
@@ -307,7 +319,7 @@
           "status": "announced",
           "announcedDate": "May 2026",
           "bio": "Williston business owner; filed in the Republican primary for Auditor of Accounts.",
-          "website": null,
+          "website": "https://www.nickforvt.com",
           "notablePositions": []
         },
         {
@@ -366,8 +378,8 @@
           "party": "Republican",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Filed in the Republican primary for U.S. House. Previously ran statewide in Vermont.",
-          "website": null,
+          "bio": "Army veteran; previously the 2022 Republican nominee for U.S. Senate against Peter Welch. Filed in the Republican primary for U.S. House.",
+          "website": "https://www.deploymalloy.com",
           "notablePositions": []
         },
         {
@@ -376,20 +388,20 @@
           "status": "announced",
           "announcedDate": "May 2026",
           "bio": "Filed in the Republican primary for U.S. House.",
-          "website": null,
+          "website": "https://mark4vermont.com",
           "notablePositions": []
         },
         {
           "name": "Andrew Giusto",
-          "party": "Independent",
+          "party": "Unity Party",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Filed as an Independent candidate for U.S. House; will appear directly on the November general election ballot.",
-          "website": null,
+          "bio": "Declared Unity Party write-in candidate for the November general election; not on the May 28 filed-by-deadline list.",
+          "website": "https://andrewgiusto.carrd.co",
           "notablePositions": []
         }
       ],
-      "notes": "Balint faces a contested GOP primary between Gerald Malloy and Mark Coester, plus Independent Andrew Giusto on the general ballot. Vermont's at-large seat has been held by a Democrat or Independent since 1991."
+      "notes": "Balint faces a contested GOP primary between Gerald Malloy and Mark Coester. Andrew Giusto is a declared Unity Party write-in for the November general (not on the filed ballot). Vermont's at-large seat has been held by a Democrat or Independent since 1991."
     }
   ],
 
@@ -441,8 +453,8 @@
         {
           "name": "Kesha Ram Hinsdale",
           "party": "Democrat",
-          "status": "unknown",
-          "statusNote": "Status pending — verify against the VT SOS candidate list at sos.vermont.gov",
+          "status": "running",
+          "statusNote": "Filed for reelection",
           "bio": "Kesha Ram Hinsdale is a Vermont State Senator who previously served as chair of the Vermont Progressive Party before becoming a Democrat. She served in the Vermont House before moving to the Senate.",
           "website": null,
           "notablePositions": [
@@ -454,55 +466,51 @@
       ],
       "knownCandidates": [
         {
+          "name": "Joanna Grossman",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "March 2026",
+          "bio": "Burlington community activist and former chair of the Chittenden County Democratic Party; filed in the Democratic primary for Chittenden-Southeast.",
+          "website": "https://joannaforvermont.org",
+          "notablePositions": [
+            "Former Chittenden County Democratic Party chair",
+            "Burlington community activist"
+          ]
+        },
+        {
+          "name": "Elizabeth Hunt",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Charlotte pediatrician (partner at Timber Lane Pediatrics); filed in the Democratic primary for Chittenden-Southeast.",
+          "website": null,
+          "notablePositions": [
+            "Pediatrician, Timber Lane Pediatrics"
+          ]
+        },
+        {
           "name": "Javen Sears",
           "party": "Republican",
           "status": "announced",
           "announcedDate": "April 2026",
           "bio": "UVM student and South Burlington High School class of 2020 graduate; launched his Senate campaign in April and filed in the Republican primary for Chittenden-Southeast.",
-          "website": null,
+          "website": "https://www.javensears.com",
           "notablePositions": [
             "Recent SBHS graduate (2020)",
             "UVM student"
           ]
         }
       ],
-      "notes": "All three seats are on the ballot. Democratic incumbents Chittenden and Lyons have filed for reelection; verify Kesha Ram Hinsdale's status against the SOS candidate list. Republican Javen Sears, a UVM student and 2020 SBHS graduate, is the lone announced GOP challenger so far."
+      "notes": "All three seats are on the ballot. The Democratic primary is a five-way contest between incumbents Thomas Chittenden, Virginia Lyons, and Kesha Ram Hinsdale and challengers Joanna Grossman and Elizabeth Hunt — voters choose three nominees. Republican Javen Sears, a UVM student and 2020 SBHS graduate, is the lone GOP filer."
     }
   ],
 
   "stateHouse": [
     {
-      "id": "chittenden-7-1",
-      "office": "Vermont House of Representatives",
-      "shortName": "State House",
-      "district": "Chittenden 7-1",
-      "districtNote": "Also referenced as Chittenden-12 in some sources. Covers part of South Burlington — verify your district at mvp.vermont.gov.",
-      "type": "state-house",
-      "seats": 1,
-      "termYears": 2,
-      "openSeat": false,
-      "incumbents": [
-        {
-          "name": "Martin LaLonde",
-          "party": "Democrat",
-          "status": "unknown",
-          "statusNote": "Reelection plans not yet announced",
-          "bio": "Martin LaLonde is a South Burlington attorney who has served in the Vermont House for several terms. He is known as a reliable Democratic vote and has been active on legal and judiciary issues.",
-          "website": "https://martinlalondevt.com",
-          "notablePositions": [
-            "Attorney by profession",
-            "Multi-term South Burlington representative",
-            "Active on legal and judiciary matters"
-          ]
-        }
-      ],
-      "knownCandidates": []
-    },
-    {
       "id": "chittenden-8",
       "office": "Vermont House of Representatives",
       "shortName": "State House",
-      "district": "Chittenden 8",
+      "district": "Chittenden-8",
       "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov.",
       "type": "state-house",
       "seats": 1,
@@ -512,23 +520,24 @@
         {
           "name": "Bridget Burkhardt",
           "party": "Democrat",
-          "status": "unknown",
-          "statusNote": "Reelection plans not yet announced",
+          "status": "running",
+          "statusNote": "Filed for reelection — no challenger known as of May 28",
           "bio": "Bridget Burkhardt was elected to the Vermont House in 2024 and is serving her first term, representing a South Burlington district.",
-          "website": null,
+          "website": "https://burkhardtforvt.com",
           "notablePositions": [
             "First-term representative (elected 2024)",
             "South Burlington representative"
           ]
         }
       ],
-      "knownCandidates": []
+      "knownCandidates": [],
+      "notes": "Independents have until August 6, 2026 to file for the November general ballot."
     },
     {
       "id": "chittenden-9",
       "office": "Vermont House of Representatives",
       "shortName": "State House",
-      "district": "Chittenden 9",
+      "district": "Chittenden-9",
       "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov.",
       "type": "state-house",
       "seats": 1,
@@ -538,22 +547,23 @@
         {
           "name": "Emilie Krasnow",
           "party": "Democrat",
-          "status": "unknown",
-          "statusNote": "Reelection plans not yet announced",
+          "status": "running",
+          "statusNote": "Filed for reelection — no challenger known as of May 28",
           "bio": "Emilie Krasnow represents a South Burlington district in the Vermont House of Representatives.",
-          "website": null,
+          "website": "https://www.emiliekrasnow.com",
           "notablePositions": [
             "South Burlington representative"
           ]
         }
       ],
-      "knownCandidates": []
+      "knownCandidates": [],
+      "notes": "Independents have until August 6, 2026 to file for the November general ballot."
     },
     {
       "id": "chittenden-10",
       "office": "Vermont House of Representatives",
       "shortName": "State House",
-      "district": "Chittenden 10",
+      "district": "Chittenden-10",
       "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov.",
       "type": "state-house",
       "seats": 1,
@@ -563,22 +573,23 @@
         {
           "name": "Kate Nugent",
           "party": "Democrat",
-          "status": "unknown",
-          "statusNote": "Reelection plans not yet announced",
+          "status": "running",
+          "statusNote": "Filed for reelection — no challenger known as of May 28",
           "bio": "Kate Nugent represents a South Burlington district in the Vermont House of Representatives.",
-          "website": null,
+          "website": "https://www.katenugent.org",
           "notablePositions": [
             "South Burlington representative"
           ]
         }
       ],
-      "knownCandidates": []
+      "knownCandidates": [],
+      "notes": "Independents have until August 6, 2026 to file for the November general ballot."
     },
     {
       "id": "chittenden-11",
       "office": "Vermont House of Representatives",
       "shortName": "State House",
-      "district": "Chittenden 11",
+      "district": "Chittenden-11",
       "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov.",
       "type": "state-house",
       "seats": 1,
@@ -588,8 +599,8 @@
         {
           "name": "Brian Minier",
           "party": "Democrat",
-          "status": "unknown",
-          "statusNote": "Reelection plans not yet announced",
+          "status": "running",
+          "statusNote": "Filed for reelection — no challenger known as of May 28",
           "bio": "Brian Minier represents a South Burlington district in the Vermont House of Representatives.",
           "website": null,
           "notablePositions": [
@@ -597,7 +608,36 @@
           ]
         }
       ],
-      "knownCandidates": []
+      "knownCandidates": [],
+      "notes": "Independents have until August 6, 2026 to file for the November general ballot."
+    },
+    {
+      "id": "chittenden-12",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-12",
+      "districtNote": "Covers part of South Burlington — verify your district at mvp.vermont.gov. (Formerly labeled Chittenden 7-1 before the 2022 redistricting.)",
+      "type": "state-house",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "incumbents": [
+        {
+          "name": "Martin LaLonde",
+          "party": "Democrat",
+          "status": "running",
+          "statusNote": "Filed for reelection — no challenger known as of May 28",
+          "bio": "Martin LaLonde is a South Burlington attorney who has served in the Vermont House for several terms. He is known as a reliable Democratic vote and has been active on legal and judiciary issues.",
+          "website": "https://martinlalondevt.com",
+          "notablePositions": [
+            "Attorney by profession",
+            "Multi-term South Burlington representative",
+            "Active on legal and judiciary matters"
+          ]
+        }
+      ],
+      "knownCandidates": [],
+      "notes": "Independents have until August 6, 2026 to file for the November general ballot."
     }
   ]
 }
