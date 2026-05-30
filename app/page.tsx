@@ -31,11 +31,10 @@ const ArchiveIcon = () => (
   </svg>
 );
 
-const keyDates = [
-  { date: "Apr 27", event: "Candidate filing opens", type: "filing" },
-  { date: "May 28", event: "Filing deadline (5 PM)", type: "filing" },
-  { date: "Aug 11", event: "Vermont Primary Election", type: "election" },
-  { date: "Nov 3", event: "Vermont General Election", type: "election" },
+const keyDates: { date: string; event: string; type: string; note?: string }[] = [
+  { date: "May 28", event: "Filing deadline passed", type: "filing", note: "See full list at sos.vermont.gov" },
+  { date: "Aug 11", event: "Vermont Primary Election", type: "election", note: "Same-day registration available at polls" },
+  { date: "Nov 3", event: "Vermont General Election", type: "election", note: "Same-day registration available at polls" },
 ];
 
 const primaryRaces = [
@@ -110,10 +109,108 @@ export default function Home() {
                 This independent, nonpartisan guide covers all races on those ballots — from Governor down to your local State House representative.
               </p>
               <p className="text-warmgray-500 text-sm mt-2">
-                Candidate filing opens April 27 and closes May 28, 2026. Pages will be updated as candidates announce.
+                Candidate filing closed May 28, 2026. The full candidate list is now available — see the primary and general guides below.
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Leadership News Banner */}
+        <div className="bg-gradient-to-r from-terracotta-50 to-cream-100 border-2 border-terracotta-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-11 h-11 bg-terracotta-100 rounded-xl flex items-center justify-center">
+              <span className="text-2xl">🏛️</span>
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-wrap items-center gap-2 mb-1">
+                <span className="text-xs font-semibold text-terracotta-700 uppercase tracking-wide">May 28, 2026</span>
+                <span className="text-xs bg-terracotta-100 text-terracotta-700 px-2 py-0.5 rounded-full font-semibold">Breaking</span>
+              </div>
+              <h2 className="font-display text-lg sm:text-xl font-bold text-warmgray-800 mb-1">New leadership coming to Montpelier</h2>
+              <p className="text-warmgray-700 text-sm leading-relaxed">
+                Both Vermont House Speaker <strong>Jill Krowinski</strong> (D-Burlington) and Senate President Pro Tem <strong>Phil Baruth</strong> (D/P-Chittenden Central) are not seeking reelection. Both chambers will have new leaders in the 2027 session — the first time in years there&apos;s an open contest for both top legislative posts.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Same-Day Registration Banner */}
+        <div className="bg-gradient-to-r from-sage-50 to-terracotta-50 border border-sage-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-11 h-11 bg-sage-100 rounded-xl flex items-center justify-center">
+              <CheckIcon />
+            </div>
+            <div className="flex-1">
+              <h2 className="font-display text-lg font-bold text-sage-800 mb-1">No Registration Deadline in Vermont</h2>
+              <p className="text-warmgray-700 text-sm leading-relaxed mb-3">
+                Vermont has same-day voter registration. You can register and vote on the same day — including at your polling place on Election Day. There is no cutoff date to register.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://mvp.vermont.gov/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-white bg-sage-500 hover:bg-sage-600 px-4 py-2 rounded-lg transition-colors"
+                >
+                  Register Online
+                  <ArrowRightIcon />
+                </a>
+                <Link
+                  href="/how-to-vote"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-sage-700 bg-white border border-sage-200 hover:border-sage-300 px-4 py-2 rounded-lg transition-colors"
+                >
+                  How to Vote
+                  <ArrowRightIcon />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* What's New / Changelog */}
+        <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
+          <div className="flex items-center justify-between gap-3 mb-3">
+            <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
+            <span className="text-xs text-warmgray-400 font-medium">Updated May 29, 2026</span>
+          </div>
+          <ul className="space-y-2 text-sm text-warmgray-700">
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Gov. Phil Scott</strong> filed for a 6th term hours before the deadline; no Republican primary opposition.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Democratic primary for Governor:</strong> Amanda Janoo and Aly Richards confirmed filed; Jeffery Wilson announced in April but post-deadline reporting did not confirm his filing.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>14-year-old on the November ballot:</strong> Stowe student Dean Roy qualified for the general election as the new Freedom and Unity Party&apos;s candidate for Governor.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Contested GOP primary for U.S. House:</strong> Gerald Malloy vs. Mark Coester; Andrew Giusto is a Unity Party write-in for November. Incumbent Becca Balint (D) filed May 7.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Lt. Governor:</strong> Republican incumbent John Rodgers files for reelection; three Democrats (Esther Charlestin, Molly Gray, Ryan McLaren) compete in the primary.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Auditor (open seat):</strong> Doug Hoffer retiring after seven terms. Tim Ashe (D, Hoffer&apos;s chief deputy) faces a GOP primary winner — Nick Graeter or Joshua Bechhoefer.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>AG, SoS, Treasurer all running unopposed:</strong> Charity Clark, Sarah Copeland Hanzas, and Mike Pieciak (all D) filed for reelection with no announced challengers.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Five-way Chittenden-SE Senate Democratic primary</strong> for three nominations: incumbents Thomas Chittenden, Virginia Lyons, and Kesha Ram Hinsdale vs. challengers Joanna Grossman and Elizabeth Hunt. Republican Javen Sears (UVM student, SBHS &apos;20) is the lone GOP filer.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) filed for reelection unopposed. Independents have until Aug 6 to file for November.</span>
+            </li>
+          </ul>
         </div>
 
         {/* Key Dates Timeline */}
@@ -133,6 +230,7 @@ export default function Home() {
                       {item.date}
                     </p>
                     <p className="text-warmgray-600 text-sm leading-tight">{item.event}</p>
+                    {item.note && <p className="text-sage-600 text-xs mt-0.5">{item.note}</p>}
                   </div>
                 </div>
               ))}
@@ -173,7 +271,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-4 pt-4 border-t border-warmgray-100">
-                  <p className="text-xs text-warmgray-400">Filing closes May 28 &bull; Candidates TBD</p>
+                  <p className="text-xs text-warmgray-400">Filing closed May 28 &bull; Full candidate list inside</p>
                 </div>
               </div>
             </div>
@@ -233,7 +331,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Register to Vote</p>
-                <p className="text-xs text-warmgray-500">My Voter Page (mvp.vermont.gov)</p>
+                <p className="text-xs text-warmgray-500">Same-day registration available — no deadline</p>
               </div>
             </a>
             <a
@@ -304,6 +402,13 @@ export default function Home() {
               All positions sourced from publicly available materials. Not affiliated with the City of South Burlington or any candidate.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4 border-t border-warmgray-100">
+              <Link href="/how-to-vote" className="inline-flex items-center gap-2 text-sage-600 hover:text-sage-800 font-medium text-sm transition-colors">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                How to Vote
+              </Link>
+              <span className="hidden sm:inline text-warmgray-300">&middot;</span>
               <Link href="/about" className="inline-flex items-center gap-2 text-sage-600 hover:text-sage-800 font-medium text-sm transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
