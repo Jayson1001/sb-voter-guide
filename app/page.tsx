@@ -205,6 +205,10 @@ export default function Home() {
           <ul className="space-y-2 text-sm text-warmgray-700">
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
+              <span><strong>Watch the primary forums:</strong> <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">CCTV Burlington</a> is producing candidate forums for the August 11 primary. <a href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">YouTube playlist →</a></span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>Early voting is open</strong> for the August 11 primary — request an absentee ballot at <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">mvp.vermont.gov</a>.</span>
             </li>
             <li className="flex items-start gap-2">
