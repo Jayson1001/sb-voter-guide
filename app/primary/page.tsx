@@ -181,6 +181,16 @@ function RaceCard({ race }: { race: any }) {
                         ))}
                       </ul>
                     )}
+                    {candidate.website && (
+                      <a
+                        href={candidate.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-xs text-sage-600 hover:text-sage-800 transition-colors mt-2"
+                      >
+                        Website<ExternalLinkIcon />
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}

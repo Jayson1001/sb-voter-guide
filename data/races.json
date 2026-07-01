@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-29",
+  "lastUpdated": "2026-06-30",
   "candidateFilingOpens": "2026-04-27",
   "candidateFilingCloses": "2026-05-28",
   "primaryDate": "2026-08-11",
@@ -62,21 +62,12 @@
           "notablePositions": []
         },
         {
-          "name": "Jeffery Wilson",
-          "party": "Democrat",
-          "status": "announced",
-          "announcedDate": "April 2026",
-          "bio": "Coventry Emergency Management Director; announced a Democratic primary bid for Governor in April. As of post-deadline reporting (VT Public, May 28), only Janoo and Richards were confirmed filed — Wilson's filing status is unconfirmed.",
-          "website": null,
-          "notablePositions": []
-        },
-        {
           "name": "Dean Roy",
           "party": "Freedom and Unity",
           "status": "announced",
           "announcedDate": "May 2026",
           "bio": "14-year-old Stowe student. Qualified for the November general election ballot via the newly-formed Freedom and Unity Party — appears directly on the general ballot without going through the primary. Coverage: Newsweek, Fortune, CNN.",
-          "website": null,
+          "website": "https://deanroyforgovernor.my.canva.site",
           "notablePositions": [
             "Helped form the Freedom and Unity Party in 2026",
             "Believed to be among the youngest people ever on a Vermont general election ballot for Governor"
@@ -92,7 +83,7 @@
           "notablePositions": []
         }
       ],
-      "notes": "The Republican primary is uncontested — Phil Scott faces no GOP opponent. The Democratic primary appears to be a two-way contest between Janoo and Richards (Wilson announced in April but is unconfirmed as a May 28 filer). Dean Roy of the new Freedom and Unity Party has already qualified for the November general ballot. The minor-party filing deadline is August 6, 2026, so additional general-ballot candidates may still emerge."
+      "notes": "The Republican primary is uncontested — Phil Scott faces no GOP opponent. The Democratic primary is a two-way contest between Amanda Janoo and Aly Richards. Dean Roy of the new Freedom and Unity Party has qualified for the November general ballot. The independent / minor-party filing deadline is August 6, 2026, so additional general-ballot candidates may still emerge."
     },
     {
       "id": "lt-governor",
@@ -143,7 +134,7 @@
           "status": "announced",
           "announcedDate": "May 2026",
           "bio": "Former Vermont Lieutenant Governor (2021–2023); filed in the Democratic primary for Lt. Governor.",
-          "website": null,
+          "website": "https://www.mollyforvt.com",
           "notablePositions": []
         },
         {
@@ -263,8 +254,18 @@
           ]
         }
       ],
-      "knownCandidates": [],
-      "notes": "Treasurer Pieciak filed for reelection on the May 28 deadline."
+      "knownCandidates": [
+        {
+          "name": "Joshua Bechhoefer",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Republican nominee for Treasurer; was also the 2024 GOP nominee for the same office.",
+          "website": "https://www.instagram.com/joshuabechhoefer/",
+          "notablePositions": []
+        }
+      ],
+      "notes": "Treasurer Pieciak filed for reelection. Joshua Bechhoefer is the Republican nominee (as he was in 2024). The race will be decided in the November general election."
     },
     {
       "id": "auditor",
@@ -318,21 +319,21 @@
           "party": "Republican",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Williston business owner; filed in the Republican primary for Auditor of Accounts.",
+          "bio": "Williston business owner; filed in the primary for Auditor of Accounts. Party affiliation for this race is pending verification against the certified SOS candidate list (some post-certification sources list him as a Democratic primary challenger to Ashe).",
           "website": "https://www.nickforvt.com",
           "notablePositions": []
         },
         {
-          "name": "Joshua Bechhoefer",
+          "name": "H. Brooke Paige",
           "party": "Republican",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Filed in the Republican primary for Auditor of Accounts.",
-          "website": null,
+          "bio": "Longtime Vermont Republican candidate; filed as the Republican nominee for Auditor of Accounts (also filed for Attorney General, Secretary of State, and Treasurer).",
+          "website": "http://brookepaige.us",
           "notablePositions": []
         }
       ],
-      "notes": "This is the first open Auditor race in Vermont in 14 years. Democrat Tim Ashe (Hoffer's chief deputy since 2021) is uncontested in the Democratic primary; Republicans Nick Graeter and Joshua Bechhoefer compete in the August 11 GOP primary."
+      "notes": "This is the first open Auditor race in Vermont in 14 years. Democrat Tim Ashe (Hoffer's chief deputy since 2021) leads the Democratic field; H. Brooke Paige is the sole certified Republican nominee. Nick Graeter's primary and party affiliation are pending verification against the certified SOS list."
     }
   ],
 
@@ -483,7 +484,7 @@
           "status": "announced",
           "announcedDate": "May 2026",
           "bio": "Charlotte pediatrician (partner at Timber Lane Pediatrics); filed in the Democratic primary for Chittenden-Southeast.",
-          "website": null,
+          "website": "https://huntforvermont.com",
           "notablePositions": [
             "Pediatrician, Timber Lane Pediatrics"
           ]
@@ -602,7 +603,7 @@
           "status": "running",
           "statusNote": "Filed for reelection — no challenger known as of May 28",
           "bio": "Brian Minier represents a South Burlington district in the Vermont House of Representatives.",
-          "website": null,
+          "website": "https://sites.google.com/view/minier4vthouse/home",
           "notablePositions": [
             "South Burlington representative"
           ]

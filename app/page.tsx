@@ -31,10 +31,13 @@ const ArchiveIcon = () => (
   </svg>
 );
 
-const keyDates: { date: string; event: string; type: string; note?: string }[] = [
-  { date: "May 28", event: "Filing deadline passed", type: "filing", note: "See full list at sos.vermont.gov" },
-  { date: "Aug 11", event: "Vermont Primary Election", type: "election", note: "Same-day registration available at polls" },
-  { date: "Nov 3", event: "Vermont General Election", type: "election", note: "Same-day registration available at polls" },
+const keyDates: { date: string; event: string; type: string; note?: string; badge?: string }[] = [
+  { date: "Now", event: "Early voting open for the August 11 primary", type: "now", badge: "Live", note: "Request an absentee ballot or vote in person at the City Clerk's office" },
+  { date: "Aug 6", event: "Independent candidate filing deadline", type: "filing", note: "Last day for independents to file for the November ballot" },
+  { date: "Aug 10", event: "Last day to request an absentee ballot online or register online for the primary", type: "filing", note: "Exact clerk cutoff times vary. Same-day registration is available at the polls on Election Day." },
+  { date: "Aug 11", event: "Vermont Primary Election", type: "election", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls." },
+  { date: "Late Sept – Oct 1", event: "General election ballots mailed", type: "milestone", note: "Vermont mails a ballot to every active registered voter, starting around Sept 25" },
+  { date: "Nov 3", event: "Vermont General Election", type: "election", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls." },
 ];
 
 const primaryRaces = [
@@ -115,6 +118,33 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Early Voting Lead Callout */}
+        <div className="bg-gradient-to-br from-sage-500 to-sage-600 rounded-2xl p-6 sm:p-7 mb-8 text-white shadow-soft animate-fade-in-delay-1">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+              <span className="text-2xl">🗳️</span>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-semibold bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full uppercase tracking-wide">Now Live</span>
+              </div>
+              <h2 className="font-display text-xl sm:text-2xl font-bold mb-1">Early voting is open</h2>
+              <p className="text-sage-50 text-sm sm:text-base leading-relaxed mb-4">
+                Ballots for the August 11 primary are available now. Any registered voter can request one and vote by mail or in person at the City Clerk&apos;s office — or vote at the polls on August 11. Vermont has same-day registration, so there&apos;s no deadline to register.
+              </p>
+              <a
+                href="https://mvp.vermont.gov/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-sage-700 hover:bg-cream-100 px-4 py-2 rounded-lg font-medium text-sm transition-colors"
+              >
+                Request a Ballot
+                <ArrowRightIcon />
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Leadership News Banner */}
         <div className="bg-gradient-to-r from-terracotta-50 to-cream-100 border-2 border-terracotta-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
           <div className="flex items-start gap-4">
@@ -123,8 +153,7 @@ export default function Home() {
             </div>
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-2 mb-1">
-                <span className="text-xs font-semibold text-terracotta-700 uppercase tracking-wide">May 28, 2026</span>
-                <span className="text-xs bg-terracotta-100 text-terracotta-700 px-2 py-0.5 rounded-full font-semibold">Breaking</span>
+                <span className="text-xs font-semibold text-terracotta-700 uppercase tracking-wide">Looking ahead to 2027</span>
               </div>
               <h2 className="font-display text-lg sm:text-xl font-bold text-warmgray-800 mb-1">New leadership coming to Montpelier</h2>
               <p className="text-warmgray-700 text-sm leading-relaxed">
@@ -171,44 +200,36 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <div className="flex items-center justify-between gap-3 mb-3">
             <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
-            <span className="text-xs text-warmgray-400 font-medium">Updated May 29, 2026</span>
+            <span className="text-xs text-warmgray-400 font-medium">Updated June 30, 2026</span>
           </div>
           <ul className="space-y-2 text-sm text-warmgray-700">
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Gov. Phil Scott</strong> filed for a 6th term hours before the deadline; no Republican primary opposition.</span>
+              <span><strong>Early voting is open</strong> for the August 11 primary — request an absentee ballot at <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">mvp.vermont.gov</a>.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Democratic primary for Governor:</strong> Amanda Janoo and Aly Richards confirmed filed; Jeffery Wilson announced in April but post-deadline reporting did not confirm his filing.</span>
+              <span><strong>Democratic gubernatorial primary is a two-way race</strong> between Amanda Janoo and Aly Richards. Jeffery Wilson announced in April but did not file.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>14-year-old on the November ballot:</strong> Stowe student Dean Roy qualified for the general election as the new Freedom and Unity Party&apos;s candidate for Governor.</span>
+              <span><strong>Treasurer race is now contested:</strong> incumbent Mike Pieciak (D) faces Joshua Bechhoefer (R) in November. (Earlier reporting placed Bechhoefer on the Auditor primary — that was incorrect.)</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Contested GOP primary for U.S. House:</strong> Gerald Malloy vs. Mark Coester; Andrew Giusto is a Unity Party write-in for November. Incumbent Becca Balint (D) filed May 7.</span>
+              <span><strong>Auditor:</strong> H. Brooke Paige is the sole certified Republican nominee, facing Tim Ashe (D). Nick Graeter&apos;s party affiliation for the Auditor primary is pending SOS verification.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Lt. Governor:</strong> Republican incumbent John Rodgers files for reelection; three Democrats (Esther Charlestin, Molly Gray, Ryan McLaren) compete in the primary.</span>
+              <span><strong>Governor November ballot confirmed:</strong> Gov. Scott (R), the Democratic primary winner, and Dean Roy (Freedom and Unity Party, 14-year-old Stowe student) will all appear.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Auditor (open seat):</strong> Doug Hoffer retiring after seven terms. Tim Ashe (D, Hoffer&apos;s chief deputy) faces a GOP primary winner — Nick Graeter or Joshua Bechhoefer.</span>
+              <span><strong>Chittenden-SE Senate:</strong> five-way Democratic primary confirmed — incumbents Chittenden, Lyons, and Ram Hinsdale vs. challengers Grossman and Hunt for 3 nominations. Javen Sears (R) is the lone Republican filer.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>AG, SoS, Treasurer all running unopposed:</strong> Charity Clark, Sarah Copeland Hanzas, and Mike Pieciak (all D) filed for reelection with no announced challengers.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Five-way Chittenden-SE Senate Democratic primary</strong> for three nominations: incumbents Thomas Chittenden, Virginia Lyons, and Kesha Ram Hinsdale vs. challengers Joanna Grossman and Elizabeth Hunt. Republican Javen Sears (UVM student, SBHS &apos;20) is the lone GOP filer.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) filed for reelection unopposed. Independents have until Aug 6 to file for November.</span>
+              <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) filed unopposed. Independents have until Aug 6 to file.</span>
             </li>
           </ul>
         </div>
@@ -217,24 +238,30 @@ export default function Home() {
         <div className="mb-8">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-4">Key Dates</h2>
           <div className="bg-white rounded-2xl shadow-soft p-6">
-            <div className="flex flex-col sm:flex-row gap-0 sm:gap-0">
-              {keyDates.map((item, i) => (
-                <div key={i} className="flex sm:flex-col items-start sm:items-center sm:flex-1 gap-3 sm:gap-2 py-3 sm:py-0 border-b sm:border-b-0 sm:border-r border-warmgray-100 last:border-0 sm:last:border-0 px-0 sm:px-4 first:sm:pl-0 last:sm:pr-0">
-                  <div className={`flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center ${
-                    item.type === 'election' ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-50 text-terracotta-600'
-                  }`}>
-                    <CalendarIcon />
-                  </div>
-                  <div className="sm:text-center">
-                    <p className={`font-display font-bold text-base ${item.type === 'election' ? 'text-sage-700' : 'text-terracotta-700'}`}>
-                      {item.date}
-                    </p>
-                    <p className="text-warmgray-600 text-sm leading-tight">{item.event}</p>
-                    {item.note && <p className="text-sage-600 text-xs mt-0.5">{item.note}</p>}
-                  </div>
-                </div>
-              ))}
-            </div>
+            <ol className="relative border-l-2 border-warmgray-100 ml-3 space-y-5">
+              {keyDates.map((item, i) => {
+                const dot =
+                  item.type === 'election'  ? 'bg-sage-500' :
+                  item.type === 'now'       ? 'bg-terracotta-500' :
+                  item.type === 'milestone' ? 'bg-sage-300' :
+                                              'bg-warmgray-300';
+                return (
+                  <li key={i} className="ml-6 relative">
+                    <span className={`absolute -left-[34px] top-1.5 w-4 h-4 rounded-full ring-4 ring-white ${dot}`} />
+                    <div className="flex flex-wrap items-baseline gap-2">
+                      <p className="font-display text-base font-bold text-warmgray-800">{item.date}</p>
+                      {item.badge && (
+                        <span className="text-xs bg-terracotta-100 text-terracotta-700 px-2 py-0.5 rounded-full font-semibold uppercase tracking-wide">
+                          {item.badge}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-warmgray-700 text-sm mt-0.5">{item.event}</p>
+                    {item.note && <p className="text-warmgray-500 text-xs mt-1">{item.note}</p>}
+                  </li>
+                );
+              })}
+            </ol>
           </div>
         </div>
 
@@ -314,6 +341,21 @@ export default function Home() {
           </Link>
         </div>
 
+        {/* Open Primary Explainer */}
+        <div className="bg-gradient-to-r from-sage-50 to-cream-100 border border-sage-100 rounded-2xl p-5 sm:p-6 mb-8">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-11 h-11 bg-sage-100 rounded-xl flex items-center justify-center">
+              <span className="text-xl">🗳️</span>
+            </div>
+            <div className="flex-1">
+              <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">How Vermont&apos;s open primary works</h3>
+              <p className="text-warmgray-700 text-sm leading-relaxed">
+                Vermont holds open primaries — you don&apos;t need to belong to a party to vote. At the polls (or on your early ballot) you&apos;ll pick <strong>one</strong> party&apos;s ballot and vote only in that party&apos;s races. You can choose a different party in November.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Voter Info Strip */}
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <h2 className="font-display text-lg font-bold text-warmgray-800 mb-4">Voting in South Burlington</h2>
@@ -360,8 +402,8 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <p className="font-medium text-warmgray-800 text-sm">Request Absentee Ballot</p>
-                <p className="text-xs text-warmgray-500">Vermont mails ballots to all voters</p>
+                <p className="font-medium text-warmgray-800 text-sm">Absentee Ballots</p>
+                <p className="text-xs text-warmgray-500">Aug 11 primary: request one (not mailed automatically). Nov 3 general: mailed to every active voter.</p>
               </div>
             </a>
           </div>
