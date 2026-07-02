@@ -181,6 +181,16 @@ function RaceCard({ race }: { race: any }) {
                         ))}
                       </ul>
                     )}
+                    {candidate.website && (
+                      <a
+                        href={candidate.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-xs text-sage-600 hover:text-sage-800 transition-colors mt-2"
+                      >
+                        Website<ExternalLinkIcon />
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}
@@ -262,6 +272,32 @@ export default function PrimaryPage() {
               Vermont has an <strong className="text-warmgray-800">open primary</strong>: you may request any party&apos;s
               ballot on Election Day, regardless of your registration. Same-day party changes are allowed at the polls.
             </p>
+          </div>
+        </div>
+
+        {/* Candidate Forums (CCTV Burlington) */}
+        <div className="bg-white border-2 border-sage-200 rounded-2xl p-5 sm:p-6 mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+            <div className="flex-shrink-0 w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center text-sage-600">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">Watch the candidate forums</h3>
+              <p className="text-warmgray-700 text-sm leading-relaxed mb-3">
+                <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">CCTV Burlington (Channel 17)</a> is producing candidate forums for the August 11 primary. New videos are added to their YouTube playlist as they&apos;re released.
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-sage-500 hover:bg-sage-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors"
+              >
+                Watch on YouTube
+                <ExternalLinkIcon />
+              </a>
+            </div>
           </div>
         </div>
 
