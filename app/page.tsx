@@ -145,6 +145,38 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Candidate Forums (Town Meeting TV) */}
+        <div className="bg-white rounded-2xl p-6 sm:p-7 mb-8 border-2 border-sage-200 shadow-soft animate-fade-in-delay-1">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-5">
+            <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-sage-500 to-sage-600 rounded-xl flex items-center justify-center text-white">
+              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-semibold text-sage-700 uppercase tracking-wide">New Resource</span>
+              </div>
+              <h2 className="font-display text-xl sm:text-2xl font-bold text-warmgray-800 mb-1">Watch the primary candidate forums</h2>
+              <p className="text-warmgray-700 text-sm sm:text-base leading-relaxed mb-2">
+                See the candidates for the August 11 primary in their own words. New forums are added to the playlist as they&apos;re released.
+              </p>
+              <p className="text-warmgray-500 text-xs leading-relaxed mb-4">
+                Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-sage-500 hover:bg-sage-600 text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
+              >
+                Watch on YouTube
+                <ArrowRightIcon />
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Leadership News Banner */}
         <div className="bg-gradient-to-r from-terracotta-50 to-cream-100 border-2 border-terracotta-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
           <div className="flex items-start gap-4">
@@ -203,10 +235,6 @@ export default function Home() {
             <span className="text-xs text-warmgray-400 font-medium">Updated June 30, 2026</span>
           </div>
           <ul className="space-y-2 text-sm text-warmgray-700">
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Watch the primary forums:</strong> <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">CCTV Burlington</a> is producing candidate forums for the August 11 primary. <a href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">YouTube playlist →</a></span>
-            </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>Early voting is open</strong> for the August 11 primary — request an absentee ballot at <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">mvp.vermont.gov</a>.</span>

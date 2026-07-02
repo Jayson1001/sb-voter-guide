@@ -285,8 +285,11 @@ export default function PrimaryPage() {
             </div>
             <div className="flex-1">
               <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">Watch the candidate forums</h3>
-              <p className="text-warmgray-700 text-sm leading-relaxed mb-3">
-                <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">CCTV Burlington (Channel 17)</a> is producing candidate forums for the August 11 primary. New videos are added to their YouTube playlist as they&apos;re released.
+              <p className="text-warmgray-700 text-sm leading-relaxed mb-2">
+                See the candidates for the August 11 primary in their own words. New forums are added to the playlist as they&apos;re released.
+              </p>
+              <p className="text-warmgray-500 text-xs leading-relaxed mb-3">
+                Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
               </p>
               <a
                 href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J"
