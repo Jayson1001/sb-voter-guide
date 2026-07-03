@@ -1,0 +1,74 @@
+{
+  "lastUpdated": "2026-07-01",
+  "playlistUrl": "https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J",
+  "channelUrl": "https://www.youtube.com/@townmeetingtv",
+  "attribution": "Video is courtesy of Town Meeting TV. Town Meeting TV is Chittenden County's regional government access TV channel.",
+  "forums": [
+    {
+      "id": "sb-dems-senate-governor",
+      "videoId": "q2-8LyolcLM",
+      "title": "South Burlington Democrats: State Senator CHIT-SE & Governor Candidate Primary Forums",
+      "airDate": "2026-07-09",
+      "host": "South Burlington Democrats",
+      "racesCovered": [
+        "Governor (D primary)",
+        "Chittenden-SE State Senate (D primary)"
+      ],
+      "raceLinkIds": ["governor", "chittenden-se-senate"],
+      "featured": true,
+      "note": "The most South-Burlington-focused forum in the series — covers the two most contested primaries on the local ballot."
+    },
+    {
+      "id": "auditor-d-primary",
+      "videoId": "tdTBzOgMCHo",
+      "title": "Auditor of Accounts Democratic Candidate Primary Forum",
+      "airDate": "2026-07-09",
+      "host": null,
+      "racesCovered": [
+        "Auditor of Accounts (D primary)"
+      ],
+      "raceLinkIds": ["auditor"],
+      "featured": false,
+      "note": null
+    },
+    {
+      "id": "primary-election-roundup",
+      "videoId": "CQySWUANnF4",
+      "title": "Primary Election Candidate Roundup",
+      "airDate": null,
+      "host": null,
+      "racesCovered": [
+        "Multiple statewide races"
+      ],
+      "raceLinkIds": [],
+      "featured": false,
+      "note": "Overview of the statewide primary field."
+    },
+    {
+      "id": "states-attorney-jul-8",
+      "videoId": "glEvz6AYVwQ",
+      "title": "Chittenden County State's Attorney Democratic Candidate Primary Forum",
+      "airDate": "2026-07-08",
+      "host": null,
+      "racesCovered": [
+        "Chittenden County State's Attorney (D primary)"
+      ],
+      "raceLinkIds": [],
+      "featured": false,
+      "note": "The Chittenden County State's Attorney race is on your ballot but is not otherwise covered in this guide."
+    },
+    {
+      "id": "states-attorney-dems",
+      "videoId": "BKyPkRpqO20",
+      "title": "Chittenden County Democrats: Democratic Primary Forum for Chittenden County State's Attorney",
+      "airDate": null,
+      "host": "Chittenden County Democrats",
+      "racesCovered": [
+        "Chittenden County State's Attorney (D primary)"
+      ],
+      "raceLinkIds": [],
+      "featured": false,
+      "note": "The Chittenden County State's Attorney race is on your ballot but is not otherwise covered in this guide."
+    }
+  ]
+}

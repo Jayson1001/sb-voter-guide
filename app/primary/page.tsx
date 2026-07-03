@@ -291,15 +291,13 @@ export default function PrimaryPage() {
               <p className="text-warmgray-500 text-xs leading-relaxed mb-3">
                 Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
               </p>
-              <a
-                href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/primary/forums"
                 className="inline-flex items-center gap-2 bg-sage-500 hover:bg-sage-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors"
               >
-                Watch on YouTube
-                <ExternalLinkIcon />
-              </a>
+                See the forums
+                <ArrowRightIcon />
+              </Link>
             </div>
           </div>
         </div>
