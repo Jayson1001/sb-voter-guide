@@ -32,12 +32,12 @@ const ArchiveIcon = () => (
 );
 
 const keyDates: { date: string; event: string; type: string; note?: string; badge?: string }[] = [
-  { date: "Now", event: "Early voting open for the August 11 primary", type: "now", badge: "Live", note: "Request an absentee ballot or vote in person at the City Clerk's office" },
-  { date: "Aug 6", event: "Independent candidate filing deadline", type: "filing", note: "Last day for independents to file for the November ballot" },
-  { date: "Aug 10", event: "Last day to request an absentee ballot online or register online for the primary", type: "filing", note: "Exact clerk cutoff times vary. Same-day registration is available at the polls on Election Day." },
-  { date: "Aug 11", event: "Vermont Primary Election", type: "election", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls." },
-  { date: "Late Sept – Oct 1", event: "General election ballots mailed", type: "milestone", note: "Vermont mails a ballot to every active registered voter, starting around Sept 25" },
-  { date: "Nov 3", event: "Vermont General Election", type: "election", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls." },
+  { date: "Now", event: "Early voting is open for the August 11 primary", type: "now", badge: "Live", note: "Request a mail ballot online, or vote in person at the City Clerk's office." },
+  { date: "Aug 6", event: "Last day for independent candidates to sign up", type: "filing", note: "Deadline for independents to get on the November ballot." },
+  { date: "Aug 10", event: "Last day to request a mail ballot online (or register online) for the primary", type: "filing", note: "Clerk cutoff times vary a bit. Same-day registration is still available at the polls on Election Day." },
+  { date: "Aug 11", event: "Vermont Primary", type: "election", note: "Polls open 7 AM – 7 PM. You can register at the polls." },
+  { date: "Late Sept – Oct 1", event: "General election ballots hit the mail", type: "milestone", note: "Vermont mails a ballot to every active registered voter, starting around Sept 25." },
+  { date: "Nov 3", event: "General Election", type: "election", note: "Polls open 7 AM – 7 PM. You can register at the polls." },
 ];
 
 const primaryRaces = [
@@ -75,7 +75,7 @@ export default function Home() {
               <span className="block text-cream-200">Voter Guide 2026</span>
             </h1>
             <p className="text-cream-100 text-lg sm:text-xl max-w-2xl mx-auto mb-6 leading-relaxed">
-              Everything South Burlington residents need to know about the 2026 elections — primary and general.
+              The friendly, jargon-free guide to South Burlington&apos;s 2026 ballots. No mystery, no lectures — just what&apos;s on the ballot and how to vote.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 mt-2 text-cream-100">
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
@@ -106,13 +106,12 @@ export default function Home() {
               <span className="text-2xl">🗳️</span>
             </div>
             <div>
-              <h2 className="font-display text-xl font-bold text-warmgray-800 mb-2">About This Guide</h2>
+              <h2 className="font-display text-xl font-bold text-warmgray-800 mb-2">What this is</h2>
               <p className="text-warmgray-600 leading-relaxed">
-                South Burlington residents will vote in two elections in 2026: the Vermont Primary on August 11 and the General Election on November 3.
-                This independent, nonpartisan guide covers all races on those ballots — from Governor down to your local State House representative.
+                You&apos;ve got two elections this year: the Vermont Primary on <strong>August 11</strong> and the General Election on <strong>November 3</strong>. This is an independent, nonpartisan guide to everything on your ballot — from Governor down to your local State House rep — written in normal English.
               </p>
               <p className="text-warmgray-500 text-sm mt-2">
-                Candidate filing closed May 28, 2026. The full candidate list is now available — see the primary and general guides below.
+                Party candidate sign-ups closed May 28, 2026, so the primary ballot is set — independents have until August 6 to join the November ballot. Peek at the primary and general guides below.
               </p>
             </div>
           </div>
@@ -130,7 +129,7 @@ export default function Home() {
               </div>
               <h2 className="font-display text-xl sm:text-2xl font-bold mb-1">Early voting is open</h2>
               <p className="text-sage-50 text-sm sm:text-base leading-relaxed mb-4">
-                Ballots for the August 11 primary are available now. Any registered voter can request one and vote by mail or in person at the City Clerk&apos;s office — or vote at the polls on August 11. Vermont has same-day registration, so there&apos;s no deadline to register.
+                Ballots for the August 11 primary are ready right now. You can request one and mail it back, drop by the City Clerk&apos;s office to vote in person, or just show up at the polls on August 11. Vermont has same-day registration too — there&apos;s no deadline to sign up.
               </p>
               <a
                 href="https://mvp.vermont.gov/"
@@ -159,7 +158,7 @@ export default function Home() {
               </div>
               <h2 className="font-display text-xl sm:text-2xl font-bold text-warmgray-800 mb-1">Watch the primary candidate forums</h2>
               <p className="text-warmgray-700 text-sm sm:text-base leading-relaxed mb-2">
-                See the candidates for the August 11 primary in their own words. New forums are added to the playlist as they&apos;re released.
+                Hear from the candidates on the August 11 ballot in their own words. New forums drop as they&apos;re recorded — check back.
               </p>
               <p className="text-warmgray-500 text-xs leading-relaxed mb-4">
                 Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
@@ -189,7 +188,7 @@ export default function Home() {
               </div>
               <h2 className="font-display text-lg sm:text-xl font-bold text-warmgray-800 mb-1">New leadership coming to Montpelier</h2>
               <p className="text-warmgray-700 text-sm leading-relaxed">
-                Both Vermont House Speaker <strong>Jill Krowinski</strong> (D-Burlington) and Senate President Pro Tem <strong>Phil Baruth</strong> (D/P-Chittenden Central) are not seeking reelection. Both chambers will have new leaders in the 2027 session — the first time in years there&apos;s an open contest for both top legislative posts.
+                Vermont House Speaker <strong>Jill Krowinski</strong> (D-Burlington) and Senate President Pro Tem <strong>Phil Baruth</strong> (D/P-Chittenden Central) — the top jobs running each chamber — are both stepping down. That means the 2027 session picks new leaders for both, the first time in years both jobs have been up for grabs.
               </p>
             </div>
           </div>
@@ -202,9 +201,9 @@ export default function Home() {
               <CheckIcon />
             </div>
             <div className="flex-1">
-              <h2 className="font-display text-lg font-bold text-sage-800 mb-1">No Registration Deadline in Vermont</h2>
+              <h2 className="font-display text-lg font-bold text-sage-800 mb-1">There&apos;s no registration deadline. Really.</h2>
               <p className="text-warmgray-700 text-sm leading-relaxed mb-3">
-                Vermont has same-day voter registration. You can register and vote on the same day — including at your polling place on Election Day. There is no cutoff date to register.
+                Vermont lets you register and vote on the same day. Show up at the polls, sign up, cast your ballot — one visit, done. No cutoff, no gotcha.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a
@@ -237,31 +236,31 @@ export default function Home() {
           <ul className="space-y-2 text-sm text-warmgray-700">
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Early voting is open</strong> for the August 11 primary — request an absentee ballot at <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">mvp.vermont.gov</a>.</span>
+              <span><strong>Early voting just opened</strong> for the August 11 primary. Request a mail ballot at <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">mvp.vermont.gov</a>.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Democratic gubernatorial primary is a two-way race</strong> between Amanda Janoo and Aly Richards. Jeffery Wilson announced in April but did not file.</span>
+              <span><strong>The Democratic primary for Governor is a two-way race:</strong> Amanda Janoo vs. Aly Richards. Jeffery Wilson announced in April but didn&apos;t sign up.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Treasurer race is now contested:</strong> incumbent Mike Pieciak (D) faces Joshua Bechhoefer (R) in November. (Earlier reporting placed Bechhoefer on the Auditor primary — that was incorrect.)</span>
+              <span><strong>The Treasurer race is now a contest:</strong> the current Treasurer, Mike Pieciak (D), faces Joshua Bechhoefer (R) in November. (An earlier report had Bechhoefer running for Auditor — wrong race.)</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Auditor:</strong> H. Brooke Paige is the sole certified Republican nominee, facing Tim Ashe (D). Nick Graeter&apos;s party affiliation for the Auditor primary is pending SOS verification.</span>
+              <span><strong>Auditor of Accounts</strong> (the person who checks how the state spends your money): H. Brooke Paige (R) is the lone Republican on the November ballot, facing Tim Ashe (D). Nick Graeter is on a primary ballot — we&apos;re still confirming which party.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Governor November ballot confirmed:</strong> Gov. Scott (R), the Democratic primary winner, and Dean Roy (Freedom and Unity Party, 14-year-old Stowe student) will all appear.</span>
+              <span><strong>Governor&apos;s November ballot is set:</strong> Gov. Scott (R), whoever wins the Democratic primary, and Dean Roy — the 14-year-old Stowe student running under the new Freedom and Unity Party. (Yes, really.)</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Chittenden-SE Senate:</strong> five-way Democratic primary confirmed — incumbents Chittenden, Lyons, and Ram Hinsdale vs. challengers Grossman and Hunt for 3 nominations. Javen Sears (R) is the lone Republican filer.</span>
+              <span><strong>Chittenden-SE Senate:</strong> it&apos;s a five-way Democratic primary for three spots — the three sitting senators (Chittenden, Lyons, Ram Hinsdale) plus challengers Grossman and Hunt. Javen Sears is the only Republican running.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) filed unopposed. Independents have until Aug 6 to file.</span>
+              <span><strong>South Burlington&apos;s State House seats:</strong> all five current reps (LaLonde, Burkhardt, Krasnow, Nugent, Minier — all Democrats) are running with nobody against them. Independents can still sign up through <strong>August 6</strong>.</span>
             </li>
           </ul>
         </div>
@@ -310,7 +309,7 @@ export default function Home() {
                       August 11, 2026
                     </span>
                     <h2 className="font-display text-2xl font-bold">Vermont Primary</h2>
-                    <p className="text-sage-100 text-sm mt-1">Each party nominates its candidates</p>
+                    <p className="text-sage-100 text-sm mt-1">Each party picks who runs in November</p>
                   </div>
                   <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
                     <ArrowRightIcon />
@@ -330,7 +329,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-4 pt-4 border-t border-warmgray-100">
-                  <p className="text-xs text-warmgray-400">Filing closed May 28 &bull; Full candidate list inside</p>
+                  <p className="text-xs text-warmgray-400">Sign-ups closed May 28 &bull; Full candidate list inside</p>
                 </div>
               </div>
             </div>
@@ -346,7 +345,7 @@ export default function Home() {
                       November 3, 2026
                     </span>
                     <h2 className="font-display text-2xl font-bold">General Election</h2>
-                    <p className="text-terracotta-100 text-sm mt-1">All candidates + ballot measures</p>
+                    <p className="text-terracotta-100 text-sm mt-1">Everyone on the ballot, plus two constitutional questions</p>
                   </div>
                   <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
                     <ArrowRightIcon />
@@ -366,7 +365,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-4 pt-4 border-t border-warmgray-100">
-                  <p className="text-xs text-warmgray-400">Candidates finalized after primary &bull; Measures confirmed</p>
+                  <p className="text-xs text-warmgray-400">Candidates locked in after the primary &bull; Measures confirmed</p>
                 </div>
               </div>
             </div>
@@ -380,9 +379,9 @@ export default function Home() {
               <span className="text-xl">🗳️</span>
             </div>
             <div className="flex-1">
-              <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">How Vermont&apos;s open primary works</h3>
+              <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">Do I need to be in a party? (No.)</h3>
               <p className="text-warmgray-700 text-sm leading-relaxed">
-                Vermont holds open primaries — you don&apos;t need to belong to a party to vote. At the polls (or on your early ballot) you&apos;ll pick <strong>one</strong> party&apos;s ballot and vote only in that party&apos;s races. You can choose a different party in November.
+                Vermont&apos;s primary is <em>open</em>, which is a fancy way of saying you don&apos;t need to belong to any party to vote in it. When you show up (or when you request a mail ballot), you pick <strong>one</strong> party&apos;s ballot and vote only in that party&apos;s races. Your pick doesn&apos;t sign you up for anything — you can grab a different party&apos;s ballot in November.
               </p>
             </div>
           </div>
@@ -405,7 +404,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Register to Vote</p>
-                <p className="text-xs text-warmgray-500">Same-day registration available — no deadline</p>
+                <p className="text-xs text-warmgray-500">No deadline — sign up right at the polls if you want to</p>
               </div>
             </a>
             <a
@@ -419,7 +418,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Find Your District</p>
-                <p className="text-xs text-warmgray-500">SB spans multiple House districts</p>
+                <p className="text-xs text-warmgray-500">SB is chopped into several State House districts — this tells you which one is yours</p>
               </div>
             </a>
             <a
@@ -434,8 +433,8 @@ export default function Home() {
                 </svg>
               </div>
               <div>
-                <p className="font-medium text-warmgray-800 text-sm">Absentee Ballots</p>
-                <p className="text-xs text-warmgray-500">Aug 11 primary: request one (not mailed automatically). Nov 3 general: mailed to every active voter.</p>
+                <p className="font-medium text-warmgray-800 text-sm">Mail Ballots</p>
+                <p className="text-xs text-warmgray-500">Primary (Aug 11): you have to request one. General (Nov 3): they mail one to every active voter automatically.</p>
               </div>
             </a>
           </div>
@@ -449,7 +448,7 @@ export default function Home() {
             </div>
             <div>
               <p className="font-display font-semibold text-warmgray-700">March 2026 Town Meeting Day Results</p>
-              <p className="text-warmgray-500 text-sm">Beth Zigmund elected to City Council &bull; All ballot articles passed</p>
+              <p className="text-warmgray-500 text-sm">Beth Zigmund won the City Council seat &bull; Every ballot article passed</p>
             </div>
           </div>
           <Link
@@ -469,11 +468,10 @@ export default function Home() {
             </div>
             <h3 className="font-display font-bold text-warmgray-800 mb-2">About This Guide</h3>
             <p className="text-warmgray-600 text-sm leading-relaxed mb-3">
-              An independent, nonpartisan community resource for South Burlington voters. Information is compiled
-              from official sources, candidate materials, and trusted news coverage.
+              An independent, nonpartisan resource for South Burlington voters. Everything here is compiled from official sources, candidate materials, and trusted news coverage — and cited.
             </p>
             <p className="text-xs text-warmgray-400 mb-4">
-              All positions sourced from publicly available materials. Not affiliated with the City of South Burlington or any candidate.
+              Not affiliated with the City of South Burlington or any candidate.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4 border-t border-warmgray-100">
               <Link href="/how-to-vote" className="inline-flex items-center gap-2 text-sage-600 hover:text-sage-800 font-medium text-sm transition-colors">

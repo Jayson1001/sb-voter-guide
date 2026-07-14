@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Vote | South Burlington Voter Guide 2026",
   description:
-    "Everything you need to know about voting in South Burlington, VT — same-day registration, ID requirements, mail ballots, polling locations, and more.",
+    "Everything you need to know about voting in South Burlington, VT — a plain-English guide to same-day registration, ID rules, mail ballots, and polling places.",
 };
 
 const ArrowLeftIcon = () => (
@@ -43,52 +43,52 @@ const faqs = [
   {
     question: "Do I need to register before Election Day?",
     answer:
-      "No. Vermont has same-day voter registration. You can register and vote on the same day — even at your polling place on Election Day. There is no registration deadline. You can also register or update your registration online at mvp.vermont.gov up to the day before the election.",
+      "Nope. You can register and vote on the same day — including right at your polling place on Election Day. There's no deadline. If you'd rather do it ahead of time, mvp.vermont.gov takes online registration up until the day before the election.",
   },
   {
     question: "What do I need to bring to register at the polls?",
     answer:
-      "To register at the polls on Election Day, you need to provide your name, date of birth, and a Vermont residence address. You will sign an oath affirming your identity and eligibility. You do not need a photo ID to register.",
+      "Your name, date of birth, and a Vermont residence address. You'll sign a short oath saying yes, you're who you say you are and you're eligible to vote. No photo ID needed.",
   },
   {
     question: "Do I need a photo ID to vote in Vermont?",
     answer:
-      "No. Vermont does not require a photo ID to vote. When you check in at the polls, a poll worker will ask for your name and verify it against the checklist. If you are not on the checklist, you can register on the spot (see above).",
+      "No. Vermont doesn't require a photo ID. At the polls, a poll worker asks your name and finds you on the voter list. Not on the list? Register right there — see question 1.",
   },
   {
     question: "Will I get a ballot in the mail?",
     answer:
-      "For the General Election (November 3), yes — Vermont automatically mails ballots to all active registered voters. You can vote by mail, drop your ballot at a drop box, or vote in person at your polling place. For the Primary (August 11), you can request an absentee ballot through My Voter Page (mvp.vermont.gov) or vote in person.",
+      "For the General Election on November 3, yes — Vermont automatically mails a ballot to every active registered voter. You can mail it back, drop it in a drop box, or vote in person instead. For the Primary on August 11, ballots aren't auto-mailed. You request one at mvp.vermont.gov, or you show up in person.",
   },
   {
     question: "How do I vote by mail?",
     answer:
-      "When you receive your ballot in the mail, mark it, seal it in the provided envelope, sign the envelope, and either mail it back (postage is pre-paid) or drop it at a designated drop box or your Town Clerk's office. Your ballot must be received by 7:00 PM on Election Day.",
+      "Mark your ballot, put it in the sealed envelope that came with it, and sign the envelope (this part is easy to forget — do not forget). Mail it back (postage is pre-paid), drop it at a drop box, or hand it to the Town Clerk's office. It has to be received by 7:00 PM on Election Day — not postmarked, received.",
   },
   {
     question: "I moved within South Burlington. Do I need to re-register?",
     answer:
-      "Yes — you should update your address so you receive the correct ballot for your district. You can update your address online at mvp.vermont.gov or at your polling place on Election Day. South Burlington spans multiple Vermont House districts, so your address determines which State House race appears on your ballot.",
+      "Yes — otherwise you might get the wrong ballot. Update your address at mvp.vermont.gov, or fix it at your polling place on Election Day. South Burlington is chopped into several State House districts, and your address decides which one shows up on your ballot.",
   },
   {
     question: "I just moved to South Burlington. Can I vote here?",
     answer:
-      "Yes, if South Burlington is your primary residence. You can register at your new polling place on Election Day with same-day registration. Update your address at mvp.vermont.gov or register in person.",
+      "Yes, as long as South Burlington is where you actually live. You can register at your new polling place on Election Day. Or update your address at mvp.vermont.gov ahead of time.",
   },
   {
     question: "Where do I vote in South Burlington?",
     answer:
-      "South Burlington has four polling locations: Chamberlin School (White Street), Frederick H. Tuttle Middle School (Dorset Street), Orchard School (Baldwin Avenue), and Kevin Dorn Senior Center at City Hall (Market Street). Your assigned location depends on your address. Check mvp.vermont.gov to find your polling place.",
+      "South Burlington has four polling locations: Chamberlin School (White Street), Frederick H. Tuttle Middle School (Dorset Street), Orchard School (Baldwin Avenue), and Kevin Dorn Senior Center at City Hall (Market Street). Which one is yours depends on your address — mvp.vermont.gov will tell you.",
   },
   {
     question: "What are the polling hours?",
     answer:
-      "Polls are open from 7:00 AM to 7:00 PM on Election Day. If you are in line by 7:00 PM, you will be allowed to vote.",
+      "7:00 AM to 7:00 PM on Election Day. If you're in line at 7:00 PM, you still get to vote — they can't kick you out.",
   },
   {
     question: "How does the primary work? Do I pick a party?",
     answer:
-      "Vermont has open primaries. When you arrive at the polls, you choose which party's ballot you want — you do not have to be registered with that party. You can only vote in one party's primary. Your choice does not affect your voter registration or party affiliation.",
+      "Vermont's primary is open — meaning you don't need to belong to a party to vote in it. When you show up (or when you request a mail ballot), you pick one party's ballot and vote only in that party's races. Your pick doesn't sign you up for anything: you can grab a different party's ballot in November.",
   },
 ];
 
@@ -123,8 +123,7 @@ export default function HowToVotePage() {
               How to Vote
             </h1>
             <p className="text-sage-100 text-lg max-w-2xl leading-relaxed">
-              Registration, ID requirements, mail ballots, and everything else
-              South Burlington voters need to know.
+              Registration, IDs, mail ballots, polling places — the un-boring version.
             </p>
           </div>
         </div>
@@ -158,13 +157,13 @@ export default function HowToVotePage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-sage-800 mb-2">
-                Vermont Has Same-Day Voter Registration
+                You Can Sign Up on Election Day
               </h2>
               <p className="text-warmgray-700 text-sm leading-relaxed mb-2">
-                There is no registration deadline in Vermont. You can register and vote on the same day — including at your polling place on Election Day. This applies to both the Primary (August 11) and the General Election (November 3).
+                Vermont has no registration deadline. Show up at the polls, register on the spot, vote — same visit, one and done. Works for both the Primary (<strong>August 11</strong>) and the General Election (<strong>November 3</strong>).
               </p>
               <p className="text-warmgray-600 text-sm leading-relaxed">
-                You can also register or update your registration online at{" "}
+                Prefer to knock it out ahead of time? Register or update your registration online at{" "}
                 <a
                   href="https://mvp.vermont.gov/"
                   target="_blank"
@@ -174,7 +173,7 @@ export default function HowToVotePage() {
                   mvp.vermont.gov
                   <ExternalLinkIcon />
                 </a>{" "}
-                up to the day before the election.
+                up to the day before Election Day.
               </p>
             </div>
           </div>
@@ -187,12 +186,12 @@ export default function HowToVotePage() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
-              { label: "Registration deadline", value: "None — same-day registration" },
+              { label: "Registration deadline", value: "None — you can sign up at the polls" },
               { label: "Photo ID required", value: "No" },
               { label: "Primary (open)", value: "August 11, 2026" },
               { label: "General Election", value: "November 3, 2026" },
               { label: "Polling hours", value: "7:00 AM – 7:00 PM" },
-              { label: "Mail ballots (general)", value: "Sent automatically to all voters" },
+              { label: "Mail ballots (general)", value: "Sent to every active voter automatically" },
             ].map((fact, i) => (
               <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-cream-50">
                 <div className="w-2 h-2 mt-1.5 bg-sage-400 rounded-full flex-shrink-0" />
@@ -211,14 +210,14 @@ export default function HowToVotePage() {
             South Burlington Polling Locations
           </h2>
           <p className="text-warmgray-500 text-sm mb-4">
-            Your assigned location depends on your address.{" "}
+            Which one you use depends on your address.{" "}
             <a
               href="https://mvp.vermont.gov/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sage-600 hover:text-sage-800 font-medium transition-colors"
             >
-              Find yours at mvp.vermont.gov
+              Look it up at mvp.vermont.gov
               <ExternalLinkIcon />
             </a>
           </p>
@@ -263,9 +262,9 @@ export default function HowToVotePage() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
-              { name: "My Voter Page", desc: "Register, find your polling place, request a ballot", url: "https://mvp.vermont.gov/" },
-              { name: "VT Secretary of State — Elections", desc: "Official election information", url: "https://sos.vermont.gov/elections/" },
-              { name: "SB City Clerk — Elections", desc: "Local election details", url: "https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php" },
+              { name: "My Voter Page", desc: "Register, find your polling place, request a mail ballot", url: "https://mvp.vermont.gov/" },
+              { name: "VT Secretary of State — Elections", desc: "The state's official election page", url: "https://sos.vermont.gov/elections/" },
+              { name: "SB City Clerk — Elections", desc: "South Burlington's own election info", url: "https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php" },
             ].map((resource, i) => (
               <a
                 key={i}
