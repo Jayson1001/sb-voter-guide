@@ -1,0 +1,45 @@
+{
+  "Governor of Vermont": {
+    "blurb": "The state's chief executive. Proposes the state budget, signs or vetoes bills from the Legislature, appoints agency heads and judges, and runs state government day to day. Two-year term."
+  },
+  "Lieutenant Governor of Vermont": {
+    "blurb": "Vermont's backup governor — steps in if the governor can't serve — and presides over the State Senate. Beyond that, the job is largely what the person makes of it. Two-year term."
+  },
+  "Attorney General": {
+    "blurb": "The state's lawyer. Represents Vermont in court, enforces consumer-protection laws, and issues legal opinions for state government."
+  },
+  "Secretary of State": {
+    "blurb": "Runs elections statewide, keeps official state records, and handles business registrations and professional licenses. Basically the person who makes sure voting itself works."
+  },
+  "State Treasurer": {
+    "blurb": "The state's money manager — Vermont's bank accounts, investments, debt, and the state pension funds. Doesn't set taxes; that's the Legislature's job."
+  },
+  "Auditor of Accounts": {
+    "blurb": "Checks the state's math homework. Audits how state agencies and programs spend money and reports what they find."
+  },
+  "U.S. Representative, Vermont At-Large": {
+    "blurb": "Vermont's one seat in the U.S. House — we're a small state, so we get exactly one. Votes on federal laws, taxes, and spending in Washington. Two-year term."
+  },
+  "Vermont State Senate": {
+    "blurb": "One of 30 members of Vermont's upper legislative chamber. Writes and votes on state laws and sets the state budget and taxes. South Burlington sits in the Chittenden-Southeast district, which elects three senators."
+  },
+  "Vermont House of Representatives": {
+    "blurb": "One of 150 members of the Vermont House. Same lawmaking job as a senator, just a smaller district — your rep represents only your slice of South Burlington.",
+    "link": { "label": "Find your House district", "href": "https://mvp.vermont.gov/" }
+  },
+  "State's Attorney": {
+    "blurb": "The county's chief prosecutor. Decides which criminal cases to bring in Chittenden County and prosecutes them."
+  },
+  "Sheriff": {
+    "blurb": "Runs the county sheriff's department: serving civil paperwork, transporting prisoners, court security, and police coverage for towns that contract for it. (South Burlington has its own police department, so the sheriff isn't your everyday cops.)"
+  },
+  "High Bailiff": {
+    "blurb": "The person whose main job is to arrest the sheriff, if it ever comes to that. Yes, really — Vermont keeps the position around mostly as a constitutional backstop."
+  },
+  "Assistant Judges": {
+    "blurb": "Elected non-lawyer judges — 'side judges' — who sit alongside the professional judge in some Superior Court cases and handle certain county administrative duties."
+  },
+  "Probate Judge": {
+    "blurb": "Handles wills, estates, guardianships, and adoptions for the district."
+  }
+}

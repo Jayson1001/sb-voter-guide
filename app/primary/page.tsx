@@ -1,6 +1,7 @@
 import Link from "next/link";
 import racesData from "@/data/races.json";
 import votingInfo from "@/data/voting-info.json";
+import OfficeExplainer from "@/components/OfficeExplainer";
 
 const ArrowLeftIcon = () => (
   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -339,7 +340,10 @@ export default function PrimaryPage() {
           </div>
           <div className="grid lg:grid-cols-2 gap-5">
             {statewide.map((race) => (
-              <RaceCard key={race.id} race={race} />
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+              </div>
             ))}
           </div>
         </section>
@@ -356,7 +360,10 @@ export default function PrimaryPage() {
           </div>
           <div className="grid lg:grid-cols-2 gap-5">
             {federal.map((race) => (
-              <RaceCard key={race.id} race={race} />
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+              </div>
             ))}
           </div>
         </section>
@@ -376,7 +383,10 @@ export default function PrimaryPage() {
           </div>
           <div className="space-y-5">
             {stateSenate.map((race) => (
-              <RaceCard key={race.id} race={race} />
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+              </div>
             ))}
           </div>
         </section>
@@ -407,6 +417,11 @@ export default function PrimaryPage() {
               </a>
               {" "}to look up your exact district based on your address.
             </div>
+          </div>
+
+          {/* One explainer for the office type — not once per district */}
+          <div className="mb-5">
+            <OfficeExplainer office="Vermont House of Representatives" />
           </div>
 
           <div className="grid lg:grid-cols-2 gap-5">
@@ -457,6 +472,17 @@ export default function PrimaryPage() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Scope note: Justices of the Peace are a November thing */}
+        <div className="bg-warmgray-50 border border-warmgray-200 rounded-xl p-4 mb-8 flex items-start gap-3">
+          <svg className="w-5 h-5 text-warmgray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <p className="text-sm text-warmgray-600 leading-relaxed">
+            <strong className="text-warmgray-700">Looking for Justices of the Peace?</strong> They&apos;re not on the August primary ballot — JPs are elected in November. You&apos;ll find them on the{" "}
+            <Link href="/general" className="text-sage-700 hover:text-sage-900 underline">General Election guide</Link>.
+          </p>
         </div>
 
         {/* Nav to General */}
