@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PrimaryCountdown from "@/components/PrimaryCountdown";
 
 const CalendarIcon = () => (
   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,7 +76,7 @@ export default function Home() {
               <span className="block text-cream-200">Voter Guide 2026</span>
             </h1>
             <p className="text-cream-100 text-lg sm:text-xl max-w-2xl mx-auto mb-6 leading-relaxed">
-              Everything South Burlington residents need to know about the 2026 elections — primary and general.
+              Everything South Burlington residents need for the 2026 elections. First up: the open primary on August 11.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 mt-2 text-cream-100">
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
@@ -99,6 +100,62 @@ export default function Home() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
+        {/* Primary Main Event — countdown + early voting + the two facts people get wrong */}
+        <section className="bg-gradient-to-br from-sage-500 to-sage-600 rounded-2xl p-6 sm:p-8 mb-8 text-white shadow-soft animate-fade-in">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-5">
+            <div className="flex-shrink-0 mx-auto sm:mx-0">
+              <PrimaryCountdown />
+            </div>
+            <div className="flex-1">
+              <span className="inline-block text-xs font-semibold bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full uppercase tracking-wide mb-2">
+                Now Live &bull; Early voting is open
+              </span>
+              <h2 className="font-display text-2xl sm:text-3xl font-bold mb-1">The August 11 primary is next</h2>
+              <p className="text-sage-50 text-sm sm:text-base leading-relaxed">
+                Early voting is open now, and Vermont has same-day registration — so there&apos;s no deadline to register. But the primary comes with two catches most people miss.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4 mb-5">
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <p className="font-display font-bold mb-1 flex items-center gap-2">
+                <span aria-hidden="true">📬</span> Nobody mails you a primary ballot
+              </p>
+              <p className="text-sage-50 text-sm leading-relaxed">
+                For the primary you have to <strong>request</strong> one — by <strong>Monday, Aug 10</strong> at the City Clerk&apos;s office (or just vote in person on Aug 11). November is the opposite: a general-election ballot goes to <strong>every</strong> active registered voter automatically.
+              </p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+              <p className="font-display font-bold mb-1 flex items-center gap-2">
+                <span aria-hidden="true">🗳️</span> You get all three ballots — vote ONE
+              </p>
+              <p className="text-sage-50 text-sm leading-relaxed">
+                Vermont&apos;s primary is open: there&apos;s no party registration here. You&apos;ll get all three major-party ballots — Democratic, Republican, and Progressive. Fill out <strong>one</strong>, and return the other two <strong>blank</strong> in the unvoted-ballots envelope. Skip that step and your vote doesn&apos;t count.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/primary"
+              className="inline-flex items-center gap-2 bg-white text-sage-700 hover:bg-cream-100 px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors"
+            >
+              See who&apos;s running — Primary Guide
+              <ArrowRightIcon />
+            </Link>
+            <a
+              href="https://mvp.vermont.gov/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-sage-700/40 hover:bg-sage-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
+            >
+              Request a Ballot
+              <ArrowRightIcon />
+            </a>
+          </div>
+        </section>
+
         {/* Intro */}
         <div className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 animate-fade-in-delay-1">
           <div className="flex items-start gap-4">
@@ -114,33 +171,6 @@ export default function Home() {
               <p className="text-warmgray-500 text-sm mt-2">
                 Candidate filing closed May 28, 2026. The full candidate list is now available — see the primary and general guides below.
               </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Early Voting Lead Callout */}
-        <div className="bg-gradient-to-br from-sage-500 to-sage-600 rounded-2xl p-6 sm:p-7 mb-8 text-white shadow-soft animate-fade-in-delay-1">
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
-              <span className="text-2xl">🗳️</span>
-            </div>
-            <div className="flex-1">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-semibold bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full uppercase tracking-wide">Now Live</span>
-              </div>
-              <h2 className="font-display text-xl sm:text-2xl font-bold mb-1">Early voting is open</h2>
-              <p className="text-sage-50 text-sm sm:text-base leading-relaxed mb-4">
-                Ballots for the August 11 primary are available now. Any registered voter can request one and vote by mail or in person at the City Clerk&apos;s office — or vote at the polls on August 11. Vermont has same-day registration, so there&apos;s no deadline to register.
-              </p>
-              <a
-                href="https://mvp.vermont.gov/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white text-sage-700 hover:bg-cream-100 px-4 py-2 rounded-lg font-medium text-sm transition-colors"
-              >
-                Request a Ballot
-                <ArrowRightIcon />
-              </a>
             </div>
           </div>
         </div>
@@ -173,24 +203,6 @@ export default function Home() {
                 Watch on YouTube
                 <ArrowRightIcon />
               </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Leadership News Banner */}
-        <div className="bg-gradient-to-r from-terracotta-50 to-cream-100 border-2 border-terracotta-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
-          <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-11 h-11 bg-terracotta-100 rounded-xl flex items-center justify-center">
-              <span className="text-2xl">🏛️</span>
-            </div>
-            <div className="flex-1">
-              <div className="flex flex-wrap items-center gap-2 mb-1">
-                <span className="text-xs font-semibold text-terracotta-700 uppercase tracking-wide">Looking ahead to 2027</span>
-              </div>
-              <h2 className="font-display text-lg sm:text-xl font-bold text-warmgray-800 mb-1">New leadership coming to Montpelier</h2>
-              <p className="text-warmgray-700 text-sm leading-relaxed">
-                Both Vermont House Speaker <strong>Jill Krowinski</strong> (D-Burlington) and Senate President Pro Tem <strong>Phil Baruth</strong> (D/P-Chittenden Central) are not seeking reelection. Both chambers will have new leaders in the 2027 session — the first time in years there&apos;s an open contest for both top legislative posts.
-              </p>
             </div>
           </div>
         </div>
@@ -297,81 +309,41 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Two Election Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8 animate-fade-in-delay-2">
-
-          {/* Primary Card */}
-          <Link href="/primary" className="group block">
-            <div className="bg-white rounded-2xl shadow-soft overflow-hidden h-full border-2 border-transparent group-hover:border-sage-300 transition-all">
-              <div className="bg-gradient-to-br from-sage-500 to-sage-600 p-6 text-white">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
-                      August 11, 2026
-                    </span>
-                    <h2 className="font-display text-2xl font-bold">Vermont Primary</h2>
-                    <p className="text-sage-100 text-sm mt-1">Each party nominates its candidates</p>
-                  </div>
-                  <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
-                    <ArrowRightIcon />
-                  </div>
+        {/* Primary Guide Card — the main event, full width */}
+        <Link href="/primary" className="group block mb-8 animate-fade-in-delay-2">
+          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent group-hover:border-sage-300 transition-all">
+            <div className="bg-gradient-to-br from-sage-500 to-sage-600 p-6 text-white">
+              <div className="flex items-start justify-between">
+                <div>
+                  <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
+                    August 11, 2026 &bull; Up next
+                  </span>
+                  <h2 className="font-display text-2xl font-bold">Vermont Primary Guide</h2>
+                  <p className="text-sage-100 text-sm mt-1">Every race on your primary ballot — and who&apos;s running for it</p>
                 </div>
-              </div>
-              <div className="p-6">
-                <p className="text-warmgray-500 text-xs font-semibold uppercase tracking-wide mb-3">Races on the ballot</p>
-                <ul className="space-y-2">
-                  {primaryRaces.map((race, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
-                      <span className="mt-1 flex-shrink-0 w-4 h-4 bg-sage-100 text-sage-600 rounded-full flex items-center justify-center">
-                        <CheckIcon />
-                      </span>
-                      {race}
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-4 pt-4 border-t border-warmgray-100">
-                  <p className="text-xs text-warmgray-400">Filing closed May 28 &bull; Full candidate list inside</p>
+                <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
+                  <ArrowRightIcon />
                 </div>
               </div>
             </div>
-          </Link>
-
-          {/* General Card */}
-          <Link href="/general" className="group block">
-            <div className="bg-white rounded-2xl shadow-soft overflow-hidden h-full border-2 border-transparent group-hover:border-terracotta-300 transition-all">
-              <div className="bg-gradient-to-br from-terracotta-500 to-terracotta-600 p-6 text-white">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
-                      November 3, 2026
+            <div className="p-6">
+              <p className="text-warmgray-500 text-xs font-semibold uppercase tracking-wide mb-3">Races on the ballot</p>
+              <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+                {primaryRaces.map((race, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
+                    <span className="mt-1 flex-shrink-0 w-4 h-4 bg-sage-100 text-sage-600 rounded-full flex items-center justify-center">
+                      <CheckIcon />
                     </span>
-                    <h2 className="font-display text-2xl font-bold">General Election</h2>
-                    <p className="text-terracotta-100 text-sm mt-1">All candidates + ballot measures</p>
-                  </div>
-                  <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
-                    <ArrowRightIcon />
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <p className="text-warmgray-500 text-xs font-semibold uppercase tracking-wide mb-3">All primary races, plus</p>
-                <ul className="space-y-2">
-                  {generalAdditions.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
-                      <span className="mt-1 flex-shrink-0 w-4 h-4 bg-terracotta-100 text-terracotta-600 rounded-full flex items-center justify-center">
-                        <CheckIcon />
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-4 pt-4 border-t border-warmgray-100">
-                  <p className="text-xs text-warmgray-400">Candidates finalized after primary &bull; Measures confirmed</p>
-                </div>
+                    {race}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4 pt-4 border-t border-warmgray-100">
+                <p className="text-xs text-warmgray-400">Filing closed May 28 &bull; Full candidate list inside</p>
               </div>
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
 
         {/* Open Primary Explainer */}
         <div className="bg-gradient-to-r from-sage-50 to-cream-100 border border-sage-100 rounded-2xl p-5 sm:p-6 mb-8">
@@ -382,7 +354,7 @@ export default function Home() {
             <div className="flex-1">
               <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">How Vermont&apos;s open primary works</h3>
               <p className="text-warmgray-700 text-sm leading-relaxed">
-                Vermont holds open primaries — you don&apos;t need to belong to a party to vote. At the polls (or on your early ballot) you&apos;ll pick <strong>one</strong> party&apos;s ballot and vote only in that party&apos;s races. You can choose a different party in November.
+                No party registration required. You&apos;ll get all three major-party ballots — Democratic, Republican, and Progressive — but you can only vote <strong>one</strong>. Return the other two <strong>blank</strong> in the unvoted-ballots envelope, or your vote won&apos;t count. Choosing one party in August doesn&apos;t lock you in; you can pick a different one in November.
               </p>
             </div>
           </div>
@@ -440,6 +412,55 @@ export default function Home() {
             </a>
           </div>
         </div>
+
+        {/* Looking ahead to November — de-emphasized until after the primary */}
+        <section className="mb-8">
+          <div className="flex items-baseline gap-2 mb-3">
+            <h2 className="font-display text-lg font-bold text-warmgray-500">Looking ahead to November</h2>
+            <span className="text-xs text-warmgray-400">— after Aug 11</span>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+
+            {/* General Election (muted) */}
+            <Link href="/general" className="group block">
+              <div className="bg-white rounded-2xl border border-warmgray-200 p-5 h-full hover:border-terracotta-300 transition-colors">
+                <div className="flex items-start justify-between gap-3 mb-2">
+                  <div>
+                    <span className="inline-block bg-warmgray-100 text-warmgray-500 text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
+                      November 3, 2026
+                    </span>
+                    <h3 className="font-display text-lg font-bold text-warmgray-700">General Election</h3>
+                  </div>
+                  <span className="text-warmgray-300 group-hover:text-terracotta-400 transition-colors">
+                    <ArrowRightIcon />
+                  </span>
+                </div>
+                <p className="text-warmgray-500 text-sm leading-relaxed">
+                  Every race from the primary, plus the statewide ballot measures — and a ballot mailed to every active voter automatically. We&apos;ll turn the spotlight here once the primary&apos;s done.
+                </p>
+                <ul className="mt-3 space-y-1">
+                  {generalAdditions.map((item, i) => (
+                    <li key={i} className="text-xs text-warmgray-500 flex items-start gap-2">
+                      <span className="mt-1.5 w-1 h-1 rounded-full bg-terracotta-300 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Link>
+
+            {/* Leadership 2027 (moved down, muted) */}
+            <div className="bg-white rounded-2xl border border-warmgray-200 p-5">
+              <span className="inline-block bg-warmgray-100 text-warmgray-500 text-xs font-semibold px-2 py-0.5 rounded-full mb-2 uppercase tracking-wide">
+                Looking ahead to 2027
+              </span>
+              <h3 className="font-display text-base font-bold text-warmgray-700 mb-1">New leadership coming to Montpelier</h3>
+              <p className="text-warmgray-500 text-sm leading-relaxed">
+                Both House Speaker <strong>Jill Krowinski</strong> (D-Burlington) and Senate President Pro Tem <strong>Phil Baruth</strong> (D/P-Chittenden Central) aren&apos;t seeking reelection — so both chambers get new leaders in the 2027 session, the first open contest for both top posts in years.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Archive Notice */}
         <div className="bg-warmgray-50 border border-warmgray-200 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
