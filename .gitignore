@@ -31,3 +31,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# iCloud conflict copies ("Foo 2.tsx") — never real source
+* [0-9].*
+*.icloud
