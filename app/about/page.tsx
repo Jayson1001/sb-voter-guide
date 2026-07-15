@@ -23,22 +23,6 @@ const ArrowLeftIcon = () => (
   </svg>
 );
 
-const ExternalLinkIcon = () => (
-  <svg
-    className="w-4 h-4 inline-block ml-1 opacity-50"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-    />
-  </svg>
-);
-
 const MailIcon = () => (
   <svg
     className="w-5 h-5"
@@ -147,34 +131,21 @@ export default function AboutPage() {
 
           <div className="space-y-4 text-warmgray-700 text-sm leading-relaxed">
             <p>
-              This voter guide was created by{" "}
-              <strong className="text-warmgray-800">Jayson Durante</strong>, a 
-              web developer and South Burlington resident. Jayson is
-              the founder of{" "}
-              <a
-                href="https://durantedevelopment.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sage-600 hover:text-sage-800 font-medium transition-colors"
-              >
-                Durante Development
-                <ExternalLinkIcon />
-              </a>
-              .
+              Hi — I&apos;m{" "}
+              <strong className="text-warmgray-800">Jayson Durante</strong>, a
+              South Burlington resident, and I built this voter guide.
             </p>
             <p>
-              As a South Burlington voter, Jayson found it difficult to track
-              down all the information needed to make informed decisions —
-              especially for local races and ballot measures that don&apos;t get
-              as much coverage. As a web developer, he had the skills to do
-              something about it.
+              Every election I&apos;d go looking for straight answers about who
+              was running and what was actually on the ballot — and come up
+              short. Local races and ballot measures get the least coverage, and
+              they&apos;re the ones that land closest to home.
             </p>
             <p>
-              The result is this voter guide: a well-organized, independent,
-              nonpartisan resource that brings together official sources,
-              candidate information, and key dates in one place — so that South
-              Burlington residents can walk into the voting booth feeling
-              confident and prepared.
+              I build websites for a living. So I built one: independent,
+              nonpartisan, and organized — official sources, candidate
+              information, and key dates in one place, so my neighbors and I can
+              walk into the voting booth feeling confident and prepared.
             </p>
 
             <div className="bg-sage-50 border border-sage-100 rounded-xl p-4 mt-5">
@@ -183,9 +154,9 @@ export default function AboutPage() {
                   This is a community project
                 </strong>{" "}
                 — not a political campaign, advocacy organization, or government
-                website. It is not affiliated with the City of South Burlington,
-                any political party, or any candidate. The goal is simply to
-                help neighbors make informed decisions.
+                website. I&apos;m not affiliated with the City of South
+                Burlington, any political party, or any candidate. My goal is
+                simply to help my neighbors make informed decisions.
               </p>
             </div>
           </div>
@@ -204,7 +175,7 @@ export default function AboutPage() {
 
           <div className="space-y-4 text-warmgray-700 text-sm leading-relaxed">
             <p>
-              This guide is a living resource — your feedback helps keep it
+              This guide is a living resource — your feedback helps me keep it
               accurate and useful. If you spot an error, have a suggestion, or
               want to share information about a candidate or race, please reach
               out.
