@@ -90,6 +90,11 @@ const faqs = [
     answer:
       "Vermont has open primaries. When you arrive at the polls, you choose which party's ballot you want — you do not have to be registered with that party. You can only vote in one party's primary. Your choice does not affect your voter registration or party affiliation.",
   },
+  {
+    question: "Why does the guide say some races have no opponent “as of” a date?",
+    answer:
+      "Because the ballot isn't fully set the moment major-party filing closes. Major-party candidates had to file by May 28, but independent candidates have until August 6, 2026 to qualify for the November ballot, and party committees can fill a spot left empty in the primary until August 17. So when we say a race has no opponent “as of” a certain date, that's a snapshot in time — it can still change, and we update the guide when it does.",
+  },
 ];
 
 const pollingLocations = [
