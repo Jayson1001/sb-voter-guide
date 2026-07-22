@@ -2,6 +2,7 @@ import Link from "next/link";
 import racesData from "@/data/races.json";
 import votingInfo from "@/data/voting-info.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
+import PrimaryCountdown from "@/components/PrimaryCountdown";
 
 const ArrowLeftIcon = () => (
   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -254,8 +255,12 @@ export default function PrimaryPage() {
       {/* Header */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-sage-500 via-sage-600 to-sage-700" />
+        <div className="absolute inset-0 opacity-20 pointer-events-none" aria-hidden="true">
+          <div className="absolute -top-6 left-10 w-40 h-40 rounded-full bg-white/40 blur-3xl" />
+          <div className="absolute bottom-0 right-24 w-56 h-56 rounded-full bg-sage-300/50 blur-3xl" />
+        </div>
 
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 animate-fade-in">
           <Link
             href="/"
             className="inline-flex items-center gap-2 text-sage-100 hover:text-white mb-5 transition-colors text-sm"
@@ -264,18 +269,39 @@ export default function PrimaryPage() {
             Back to Voter Guide
           </Link>
 
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
             <div>
-              <span className="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">
-                August 11, 2026
-              </span>
+              <div className="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-sm px-4 py-2.5 rounded-2xl mb-4">
+                <span className="text-white/90">
+                  <CalendarIcon />
+                </span>
+                <span className="text-left leading-none">
+                  <span className="block text-sage-100 text-[0.7rem] font-semibold uppercase tracking-widest mb-1">
+                    Election Day
+                  </span>
+                  <span className="block font-display text-2xl sm:text-3xl font-bold text-white">
+                    August 11, 2026
+                  </span>
+                </span>
+              </div>
               <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">Vermont Primary Election</h1>
               <p className="text-sage-100 text-base sm:text-lg">Each party nominates its candidates for the November general election</p>
             </div>
-            <div className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 text-white text-center">
-              <p className="text-sage-100 text-xs font-medium uppercase tracking-wide">Filing</p>
-              <p className="font-display text-2xl font-bold">Closed</p>
-              <p className="text-sage-100 text-sm">As of May 28</p>
+            <div className="flex-shrink-0 flex flex-col items-center gap-3">
+              <PrimaryCountdown />
+              <a
+                href="https://mvp.vermont.gov/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white text-sage-700 hover:bg-cream-100 px-4 py-2 rounded-lg font-semibold text-sm transition-colors whitespace-nowrap"
+              >
+                <span className="relative flex h-2 w-2" aria-hidden="true">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-sage-500 opacity-75 motion-safe:animate-ping" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-sage-600" />
+                </span>
+                Early voting is open
+                <ArrowRightIcon />
+              </a>
             </div>
           </div>
         </div>
