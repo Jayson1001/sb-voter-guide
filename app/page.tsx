@@ -257,11 +257,11 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Treasurer race is now contested:</strong> incumbent Mike Pieciak (D) faces Joshua Bechhoefer (R) in November. (Earlier reporting placed Bechhoefer on the Auditor primary — that was incorrect.)</span>
+              <span><strong>Treasurer:</strong> incumbent Mike Pieciak (D) is unopposed in the Democratic primary. H. Brooke Paige (R) and Zachary Hampl (P) are on the primary ballot and would face Pieciak in November.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Auditor:</strong> H. Brooke Paige is the sole certified Republican nominee, facing Tim Ashe (D). Nick Graeter&apos;s party affiliation for the Auditor primary is pending SOS verification.</span>
+              <span><strong>Auditor:</strong> open seat — Doug Hoffer is retiring. The Democratic primary is a three-way race between Tim Ashe, Nick Graeter, and Dan Towle; H. Brooke Paige is the lone Republican.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
@@ -269,7 +269,7 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Chittenden-SE Senate:</strong> five-way Democratic primary confirmed — incumbents Chittenden, Lyons, and Ram Hinsdale vs. challengers Grossman and Hunt for 3 nominations. Javen Sears (R) is the lone Republican filer.</span>
+              <span><strong>Chittenden-SE Senate:</strong> five-way Democratic primary confirmed — incumbents Chittenden, Lyons, and Ram Hinsdale vs. challengers Grossman and Hunt for 3 nominations. The Republican primary is a two-way race between Javen Sears and Bruce Roy.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
