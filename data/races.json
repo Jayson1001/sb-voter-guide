@@ -714,7 +714,7 @@
       "seats": 1,
       "termYears": 4,
       "openSeat": false,
-      "whyItMatters": "The State's Attorney is the county's chief prosecutor and sets local criminal-justice priorities — which cases get charged, and how. No Republican or independent has filed for this seat, so the Democratic primary is likely to decide it.",
+      "whyItMatters": "The State's Attorney is the county's chief prosecutor and sets local criminal-justice priorities — which cases get charged, and how. As of July 21, 2026, no Republican or independent candidate has qualified for this seat in November, so the August 11 Democratic primary is likely to decide who gets the job. (Independents have until August 6 to file — we'll update if that changes.)",
       "incumbents": [],
       "knownCandidates": [
         {
@@ -740,7 +740,7 @@
           ]
         }
       ],
-      "notes": "Contested Democratic primary between Sarah George and Bram Kranichfeld. No Republican or independent has filed, so the primary winner is likely to be unopposed in November. (Source: Vermont Secretary of State 2026 primary candidate list.)"
+      "notes": "Contested Democratic primary between Sarah George and Bram Kranichfeld. As of July 21, 2026, no Republican or independent candidate has qualified for November, so the primary winner is likely to be unopposed — though independents have until August 6 to file. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     },
     {
       "id": "sheriff",
@@ -883,7 +883,7 @@
           "notablePositions": []
         }
       ],
-      "notes": "Gregory J. Glennon is the only candidate who filed for this office. (Source: Vermont Secretary of State 2026 primary candidate list.)"
+      "notes": "As of July 21, 2026, Gregory J. Glennon is the only candidate who has qualified for this office; independents have until August 6 to file. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     }
   ]
 }

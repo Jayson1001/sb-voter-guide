@@ -244,7 +244,7 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <div className="flex items-center justify-between gap-3 mb-3">
             <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
-            <span className="text-xs text-warmgray-400 font-medium">Updated June 30, 2026</span>
+            <span className="text-xs text-warmgray-400 font-medium">Updated July 21, 2026</span>
           </div>
           <ul className="space-y-2 text-sm text-warmgray-700">
             <li className="flex items-start gap-2">
@@ -273,7 +273,7 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) filed unopposed. Independents have until Aug 6 to file.</span>
+              <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) are unopposed in the Democratic primary; Republican Mitchel Cypes is on the ballot in Chittenden-8. As of July 21, 2026, independents can still file for the November ballot until August 6.</span>
             </li>
           </ul>
         </div>
