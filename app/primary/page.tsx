@@ -27,6 +27,21 @@ const CalendarIcon = () => (
   </svg>
 );
 
+// Small link back to the open-primary mechanics box (three ballots, vote one,
+// request deadline). Dropped under each race-section heading so the rules are
+// never more than one tap away.
+const MechanicsLink = () => (
+  <a
+    href="#primary-mechanics"
+    className="inline-flex items-center gap-1 text-xs text-sage-600 hover:text-sage-800 underline underline-offset-2"
+  >
+    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    How Vermont&apos;s open primary works
+  </a>
+);
+
 const statusColors: Record<string, string> = {
   "running": "bg-sage-100 text-sage-700",
   "likely-running": "bg-sage-50 text-sage-600",
@@ -46,6 +61,7 @@ const statusLabels: Record<string, string> = {
 const partyColors: Record<string, string> = {
   "Democrat": "bg-blue-50 text-blue-700 border-blue-100",
   "Republican": "bg-red-50 text-red-700 border-red-100",
+  "Progressive": "bg-teal-50 text-teal-700 border-teal-100",
   "Independent": "bg-purple-50 text-purple-700 border-purple-100",
   "Peace and Justice": "bg-emerald-50 text-emerald-700 border-emerald-100",
   "Unity Party": "bg-amber-50 text-amber-700 border-amber-100",
@@ -97,6 +113,16 @@ function RaceCard({ race }: { race: any }) {
           <p className="text-warmgray-600 text-sm leading-relaxed mb-4 border-l-2 border-sage-200 pl-3">
             {race.whyItMatters}
           </p>
+        )}
+
+        {/* How many to vote for (multi-seat races) */}
+        {race.voteForNote && (
+          <div className="mb-4 flex items-start gap-2 bg-sage-50 border border-sage-100 rounded-xl px-3 py-2">
+            <svg className="w-4 h-4 text-sage-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p className="text-sage-800 text-xs leading-relaxed font-medium">{race.voteForNote}</p>
+          </div>
         )}
 
         {/* Incumbents */}
@@ -219,7 +245,9 @@ function RaceCard({ race }: { race: any }) {
 }
 
 export default function PrimaryPage() {
-  const { statewide, federal, stateSenate, stateHouse } = racesData;
+  const { statewide, federal, stateSenate, stateHouse, county } = racesData;
+  const statesAttorney = county.find((r) => r.id === "states-attorney");
+  const otherCounty = county.filter((r) => r.id !== "states-attorney");
 
   return (
     <main className="min-h-screen bg-pattern">
@@ -262,7 +290,7 @@ export default function PrimaryPage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
         {/* What is a Primary */}
-        <div className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8">
+        <div id="primary-mechanics" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-6">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-3">What is the Primary?</h2>
           <div className="grid sm:grid-cols-2 gap-4 text-sm text-warmgray-600 leading-relaxed">
             <p>
@@ -272,6 +300,24 @@ export default function PrimaryPage() {
             <p>
               Vermont has an <strong className="text-warmgray-800">open primary</strong>: you may request any party&apos;s
               ballot on Election Day, regardless of your registration. Same-day party changes are allowed at the polls.
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-warmgray-100 grid sm:grid-cols-3 gap-4 text-sm text-warmgray-600 leading-relaxed">
+            <p>
+              <strong className="text-warmgray-800">You get all three ballots.</strong> Democratic, Republican, and
+              Progressive. Fill out <strong className="text-warmgray-800">one</strong>, and return the other two
+              blank in the unvoted-ballots envelope — skip that and your vote won&apos;t count.
+            </p>
+            <p>
+              <strong className="text-warmgray-800">Vote one party only.</strong> You can&apos;t split across parties
+              in the same primary. Your choice doesn&apos;t change your registration, and you can pick a different
+              party in November.
+            </p>
+            <p>
+              <strong className="text-warmgray-800">Nobody is mailed a primary ballot automatically.</strong> Request
+              one by <strong className="text-warmgray-800">Monday, August 10</strong> at{" "}
+              <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">mvp.vermont.gov</a>{" "}
+              or the City Clerk&apos;s office, or vote in person on August 11.
             </p>
           </div>
         </div>
@@ -338,6 +384,7 @@ export default function PrimaryPage() {
             </div>
             <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont Statewide Offices</h2>
           </div>
+          <div className="mb-4"><MechanicsLink /></div>
           <div className="grid lg:grid-cols-2 gap-5">
             {statewide.map((race) => (
               <div key={race.id} className="flex flex-col gap-3">
@@ -358,6 +405,7 @@ export default function PrimaryPage() {
             </div>
             <h2 className="font-display text-xl font-bold text-warmgray-800">Federal Office</h2>
           </div>
+          <div className="mb-4"><MechanicsLink /></div>
           <div className="grid lg:grid-cols-2 gap-5">
             {federal.map((race) => (
               <div key={race.id} className="flex flex-col gap-3">
@@ -381,6 +429,7 @@ export default function PrimaryPage() {
               <p className="text-warmgray-500 text-sm">Your senators from the Chittenden Southeast district</p>
             </div>
           </div>
+          <div className="mb-4"><MechanicsLink /></div>
           <div className="space-y-5">
             {stateSenate.map((race) => (
               <div key={race.id} className="flex flex-col gap-3">
@@ -404,6 +453,7 @@ export default function PrimaryPage() {
               <p className="text-warmgray-500 text-sm">South Burlington spans multiple House districts — see which one you&apos;re in</p>
             </div>
           </div>
+          <div className="mb-4"><MechanicsLink /></div>
 
           <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mb-5 flex items-start gap-3">
             <svg className="w-5 h-5 text-terracotta-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -427,6 +477,50 @@ export default function PrimaryPage() {
           <div className="grid lg:grid-cols-2 gap-5">
             {stateHouse.map((race) => (
               <RaceCard key={race.id} race={race} />
+            ))}
+          </div>
+        </section>
+
+        {/* Chittenden County Offices */}
+        <section className="mb-10">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+              </svg>
+            </div>
+            <div>
+              <h2 className="font-display text-xl font-bold text-warmgray-800">Chittenden County Offices</h2>
+              <p className="text-warmgray-500 text-sm">Same for every South Burlington voter — no district lookup needed</p>
+            </div>
+          </div>
+          <div className="mb-4"><MechanicsLink /></div>
+
+          <div className="bg-cream-50 border border-warmgray-200 rounded-xl p-4 mb-5 flex items-start gap-3">
+            <svg className="w-5 h-5 text-warmgray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p className="text-sm text-warmgray-600 leading-relaxed">
+              These county offices are elected across all of Chittenden County, so every South Burlington voter sees the
+              same candidates. Each is a Democratic primary this August — no Republican or Progressive candidates filed
+              for these seats.
+            </p>
+          </div>
+
+          {/* State's Attorney — featured (the one contested countywide race likely decided in the primary) */}
+          {statesAttorney && (
+            <div className="flex flex-col gap-3 mb-5">
+              <OfficeExplainer office={statesAttorney.office} />
+              <RaceCard race={statesAttorney} />
+            </div>
+          )}
+
+          <div className="grid lg:grid-cols-2 gap-5">
+            {otherCounty.map((race) => (
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+              </div>
             ))}
           </div>
         </section>

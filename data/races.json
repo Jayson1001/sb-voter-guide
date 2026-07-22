@@ -182,8 +182,18 @@
           ]
         }
       ],
-      "knownCandidates": [],
-      "notes": "AG Clark filed for reelection on May 4, 2026 (sources: VTDigger, WCAX). No primary or general challenger announced as of the May 28 filing deadline."
+      "knownCandidates": [
+        {
+          "name": "H. Brooke Paige",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Longtime Vermont Republican candidate; filed as the Republican candidate for Attorney General (also filed for State Treasurer, Secretary of State, and Auditor of Accounts).",
+          "website": "http://brookepaige.us",
+          "notablePositions": []
+        }
+      ],
+      "notes": "AG Charity Clark is unopposed in the Democratic primary. H. Brooke Paige is the Republican candidate. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     },
     {
       "id": "secretary-of-state",
@@ -218,8 +228,26 @@
           ]
         }
       ],
-      "knownCandidates": [],
-      "notes": "Secretary Copeland Hanzas filed for reelection (sources: VTDigger, Ballotpedia). No primary or general challenger announced as of the May 28 filing deadline."
+      "knownCandidates": [
+        {
+          "name": "H. Brooke Paige",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Longtime Vermont Republican candidate; filed as the Republican candidate for Secretary of State (also filed for State Treasurer, Auditor of Accounts, and Attorney General).",
+          "website": "http://brookepaige.us",
+          "notablePositions": []
+        },
+        {
+          "name": "Rachel Shaw",
+          "party": "Progressive",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Bennington; filed as the Progressive candidate for Secretary of State.",
+          "notablePositions": []
+        }
+      ],
+      "notes": "Secretary Copeland Hanzas is unopposed in the Democratic primary. H. Brooke Paige is the Republican candidate and Rachel Shaw is the Progressive candidate. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     },
     {
       "id": "treasurer",
@@ -256,16 +284,24 @@
       ],
       "knownCandidates": [
         {
-          "name": "Joshua Bechhoefer",
+          "name": "H. Brooke Paige",
           "party": "Republican",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Republican nominee for Treasurer; was also the 2024 GOP nominee for the same office.",
-          "website": "https://www.instagram.com/joshuabechhoefer/",
+          "bio": "Longtime Vermont Republican candidate; filed as the Republican candidate for State Treasurer (also filed for Secretary of State, Auditor of Accounts, and Attorney General).",
+          "website": "http://brookepaige.us",
+          "notablePositions": []
+        },
+        {
+          "name": "Zachary Hampl",
+          "party": "Progressive",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Rutland Town; filed as the Progressive candidate for State Treasurer.",
           "notablePositions": []
         }
       ],
-      "notes": "Treasurer Pieciak filed for reelection. Joshua Bechhoefer is the Republican nominee (as he was in 2024). The race will be decided in the November general election."
+      "notes": "Treasurer Mike Pieciak is unopposed in the Democratic primary. H. Brooke Paige is the Republican candidate and Zachary Hampl is the Progressive candidate. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     },
     {
       "id": "auditor",
@@ -316,11 +352,19 @@
         },
         {
           "name": "Nick Graeter",
-          "party": "Republican",
+          "party": "Democrat",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Williston business owner; filed in the primary for Auditor of Accounts. Party affiliation for this race is pending verification against the certified SOS candidate list (some post-certification sources list him as a Democratic primary challenger to Ashe).",
+          "bio": "Williston business owner; filed in the Democratic primary for Auditor of Accounts.",
           "website": "https://www.nickforvt.com",
+          "notablePositions": []
+        },
+        {
+          "name": "Dan Towle",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Huntington; filed in the Democratic primary for Auditor of Accounts.",
           "notablePositions": []
         },
         {
@@ -328,12 +372,12 @@
           "party": "Republican",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Longtime Vermont Republican candidate; filed as the Republican nominee for Auditor of Accounts (also filed for Attorney General, Secretary of State, and Treasurer).",
+          "bio": "Longtime Vermont Republican candidate; filed as the Republican candidate for Auditor of Accounts (also filed for Attorney General, Secretary of State, and Treasurer).",
           "website": "http://brookepaige.us",
           "notablePositions": []
         }
       ],
-      "notes": "This is the first open Auditor race in Vermont in 14 years. Democrat Tim Ashe (Hoffer's chief deputy since 2021) leads the Democratic field; H. Brooke Paige is the sole certified Republican nominee. Nick Graeter's primary and party affiliation are pending verification against the certified SOS list."
+      "notes": "This is the first open Auditor race in Vermont in 14 years. The Democratic primary is a three-way contest between Tim Ashe (Hoffer's chief deputy since 2021), Nick Graeter, and Dan Towle. H. Brooke Paige is the lone Republican candidate. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     }
   ],
 
@@ -500,9 +544,18 @@
             "Recent SBHS graduate (2020)",
             "UVM student"
           ]
+        },
+        {
+          "name": "Bruce Roy",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "Williston; retired IBM engineer and Air Force veteran; filed in the Republican primary for Chittenden-Southeast.",
+          "notablePositions": []
         }
       ],
-      "notes": "All three seats are on the ballot. The Democratic primary is a five-way contest between incumbents Thomas Chittenden, Virginia Lyons, and Kesha Ram Hinsdale and challengers Joanna Grossman and Elizabeth Hunt — voters choose three nominees. Republican Javen Sears, a UVM student and 2020 SBHS graduate, is the lone GOP filer."
+      "voteForNote": "This district elects three senators, so you vote for up to three candidates on your party's ballot. The three Democrats and any Republicans with the most votes advance to November.",
+      "notes": "All three seats are on the ballot. The Democratic primary is a five-way contest between incumbents Thomas Chittenden, Virginia Lyons, and Kesha Ram Hinsdale and challengers Joanna Grossman and Elizabeth Hunt — voters choose up to three nominees. The Republican primary is a two-way contest between Javen Sears and Bruce Roy. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     }
   ],
 
@@ -531,8 +584,17 @@
           ]
         }
       ],
-      "knownCandidates": [],
-      "notes": "Independents have until August 6, 2026 to file for the November general ballot."
+      "knownCandidates": [
+        {
+          "name": "Mitchel Cypes",
+          "party": "Republican",
+          "status": "announced",
+          "announcedDate": "May 2026",
+          "bio": "South Burlington; filed in the Republican primary for Chittenden-8.",
+          "notablePositions": []
+        }
+      ],
+      "notes": "Rep. Bridget Burkhardt (D) is unopposed in the Democratic primary. Mitchel Cypes is the Republican candidate. Independents have until August 6, 2026 to file for the November general ballot. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     },
     {
       "id": "chittenden-9",
@@ -639,6 +701,189 @@
       ],
       "knownCandidates": [],
       "notes": "Independents have until August 6, 2026 to file for the November general ballot."
+    }
+  ],
+
+  "county": [
+    {
+      "id": "states-attorney",
+      "office": "State's Attorney",
+      "shortName": "State's Attorney",
+      "district": "Chittenden County",
+      "type": "county",
+      "seats": 1,
+      "termYears": 4,
+      "openSeat": false,
+      "whyItMatters": "The State's Attorney is the county's chief prosecutor and sets local criminal-justice priorities — which cases get charged, and how. No Republican or independent has filed for this seat, so the Democratic primary is likely to decide it.",
+      "incumbents": [],
+      "knownCandidates": [
+        {
+          "name": "Sarah George",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Has served as Chittenden County State's Attorney since 2017 and is seeking a third full term.",
+          "notablePositions": [
+            "Pairs accountability with treatment courts and recovery services",
+            "Emphasizes reentry support for people leaving the justice system"
+          ]
+        },
+        {
+          "name": "Bram Kranichfeld",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Has served as Franklin County State's Attorney since 2023; previously a deputy prosecutor in the Chittenden County State's Attorney's office and a Burlington city councilor.",
+          "notablePositions": [
+            "Focuses on restoring public confidence in the justice system",
+            "Says he would reverse restrictions on requesting cash bail"
+          ]
+        }
+      ],
+      "notes": "Contested Democratic primary between Sarah George and Bram Kranichfeld. No Republican or independent has filed, so the primary winner is likely to be unopposed in November. (Source: Vermont Secretary of State 2026 primary candidate list.)"
+    },
+    {
+      "id": "sheriff",
+      "office": "Sheriff",
+      "shortName": "Sheriff",
+      "district": "Chittenden County",
+      "type": "county",
+      "seats": 1,
+      "termYears": 4,
+      "openSeat": false,
+      "incumbents": [],
+      "knownCandidates": [
+        {
+          "name": "Kevin Bloom",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "A Burlington musician and activist; his campaign focuses on reducing evictions and questions the law-enforcement framing of the office.",
+          "notablePositions": [
+            "Campaigns on reducing evictions",
+            "Questions the law-enforcement framing of the sheriff's role"
+          ]
+        },
+        {
+          "name": "Daniel Gamelin",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Has served as Chittenden County Sheriff since being elected in 2022, with more than 40 years in the sheriff's department.",
+          "notablePositions": [
+            "Elected sheriff in 2022",
+            "More than 40 years in the sheriff's department"
+          ]
+        }
+      ],
+      "notes": "Contested Democratic primary between Kevin Bloom and Daniel Gamelin. (Source: Vermont Secretary of State 2026 primary candidate list.)"
+    },
+    {
+      "id": "high-bailiff",
+      "office": "High Bailiff",
+      "shortName": "High Bailiff",
+      "district": "Chittenden County",
+      "type": "county",
+      "seats": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "incumbents": [],
+      "knownCandidates": [
+        {
+          "name": "Augustus Barkyoumb",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Burlington; filed in the Democratic primary for High Bailiff.",
+          "notablePositions": []
+        },
+        {
+          "name": "Paul McManus",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Williston; filed in the Democratic primary for High Bailiff.",
+          "notablePositions": []
+        },
+        {
+          "name": "Amy Payne",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Burlington; filed in the Democratic primary for High Bailiff.",
+          "notablePositions": []
+        },
+        {
+          "name": "Helaine \"Lainey\" Rappaport",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Burlington; filed in the Democratic primary for High Bailiff.",
+          "notablePositions": []
+        },
+        {
+          "name": "Michael \"Mikey\" Roberts",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Charlotte; filed in the Democratic primary for High Bailiff.",
+          "notablePositions": []
+        }
+      ],
+      "notes": "Five candidates are running in the Democratic primary. (Source: Vermont Secretary of State 2026 primary candidate list.)"
+    },
+    {
+      "id": "assistant-judges",
+      "office": "Assistant Judges",
+      "shortName": "Assistant Judge",
+      "district": "Chittenden County",
+      "type": "county",
+      "seats": 2,
+      "termYears": 4,
+      "openSeat": false,
+      "incumbents": [],
+      "knownCandidates": [
+        {
+          "name": "Connie Cain Ramsey",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Burlington; filed in the Democratic primary for assistant judge.",
+          "notablePositions": []
+        },
+        {
+          "name": "Anne Nichols Williams",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Burlington; filed in the Democratic primary for assistant judge.",
+          "notablePositions": []
+        }
+      ],
+      "voteForNote": "Two assistant judge seats are on the ballot, so you vote for up to two candidates.",
+      "notes": "Two candidates are running for the two Democratic nominations. (Source: Vermont Secretary of State 2026 primary candidate list.)"
+    },
+    {
+      "id": "probate-judge",
+      "office": "Probate Judge",
+      "shortName": "Probate Judge",
+      "district": "Chittenden County",
+      "type": "county",
+      "seats": 1,
+      "termYears": 4,
+      "openSeat": false,
+      "incumbents": [],
+      "knownCandidates": [
+        {
+          "name": "Gregory J. Glennon",
+          "party": "Democrat",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "Burlington; filed in the Democratic primary for probate judge.",
+          "notablePositions": []
+        }
+      ],
+      "notes": "Gregory J. Glennon is the only candidate who filed for this office. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     }
   ]
 }
