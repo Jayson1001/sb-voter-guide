@@ -4,6 +4,14 @@ import votingInfo from "@/data/voting-info.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
 import PrimaryCountdown from "@/components/PrimaryCountdown";
 
+// TODO (after the Aug 6, 2026 independent/minor-party filing deadline): run a
+// candidate sweep against the certified VT Secretary of State list.
+//   - Confirm or remove June Goodband (Governor, Peace & Justice) — her 2026
+//     filing was unconfirmed as of July 22, 2026; do not publish speculation.
+//   - Confirm Charlie Bass (Lt. Gov, Freedom and Unity) on the certified list;
+//     added July 22 on Ballotpedia/Politics1 corroboration + the Dean Roy ticket.
+//   - Refresh any "as of <date>" qualifiers on the races that note no opponent.
+
 const ArrowLeftIcon = () => (
   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -315,6 +323,19 @@ export default function PrimaryPage() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
+        {/* Turnout hook */}
+        <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-4 mb-8 flex items-start gap-3">
+          <svg className="w-5 h-5 text-terracotta-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          <p className="text-sm text-warmgray-700 leading-relaxed">
+            <strong className="text-warmgray-800">Your vote counts extra this year.</strong> Vermont is on pace for its
+            lowest-turnout primary in more than a decade, based on early-ballot requests (
+            <a href="https://www.vermontpublic.org/local-news/2026-07-22/democratic-candidates-governor-voters-primary" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">Vermont Public</a>, July 2026).
+            In a low-turnout race, each ballot carries more weight.
+          </p>
+        </div>
+
         {/* What is a Primary */}
         <div id="primary-mechanics" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-6">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-3">What is the Primary?</h2>
@@ -348,6 +369,120 @@ export default function PrimaryPage() {
           </div>
         </div>
 
+        {/* City Ballot Item — Bartlett Bay wastewater bond. NOT a primary race:
+            every SB voter gets this on the Aug 11 ballot regardless of party. */}
+        <section className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8">
+          <div className="bg-terracotta-500 text-white px-5 sm:px-6 py-2.5 flex items-center gap-2">
+            <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+            </svg>
+            <span className="text-xs font-semibold uppercase tracking-wide">City ballot item · Every voter gets this one</span>
+          </div>
+          <div className="p-5 sm:p-7">
+            <h2 className="font-display text-xl sm:text-2xl font-bold text-warmgray-800 mb-2">
+              $16.4 million for the Bartlett Bay wastewater plant
+            </h2>
+            <p className="text-warmgray-600 text-sm leading-relaxed mb-5">
+              This one isn&apos;t a party race. It&apos;s a <strong className="text-warmgray-800">city question on the same
+              August 11 ballot</strong>, and every South Burlington voter gets it — no matter which party&apos;s ballot you
+              pick. It&apos;s decided that day, not in November.
+            </p>
+
+            {/* What you're voting on */}
+            <div className="bg-cream-50 rounded-xl p-4 mb-5">
+              <p className="text-warmgray-700 text-sm leading-relaxed">
+                Voters are asked to approve an <strong className="text-warmgray-800">additional $16.4 million</strong> to
+                rebuild the Bartlett Bay Wastewater Treatment Facility — the city&apos;s sewage-treatment plant off Route 7
+                — on top of the <strong className="text-warmgray-800">$33.8 million</strong> bond voters approved on Town
+                Meeting Day in 2023. The plant has run continuously for more than 55 years, and 25 years since its last
+                major refurbishment. The city says critical parts are worn out and no longer made.
+              </p>
+            </div>
+
+            {/* City's case + the criticism, side by side and equal */}
+            <div className="grid md:grid-cols-2 gap-4 mb-5">
+              <div className="border border-sage-100 rounded-xl p-4">
+                <p className="text-xs font-semibold text-sage-700 uppercase tracking-wide mb-2">Why the cost went up — the city&apos;s case</p>
+                <p className="text-warmgray-600 text-sm leading-relaxed">
+                  The city points to inflation and rising construction costs, tariffs on materials, and federal
+                  &ldquo;Buy America&rdquo; rules (the BABA Act) that raise the price of equipment, plus fuel costs. Then
+                  crews hit surprises at the site: poor soils and a newly discovered protected wetland that limited where
+                  infrastructure could go, along with a design change for wet-weather capacity — a third clarifier, the
+                  tank that settles solids out of the water.
+                </p>
+              </div>
+              <div className="border border-warmgray-200 rounded-xl p-4">
+                <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">The criticism</p>
+                <p className="text-warmgray-600 text-sm leading-relaxed">
+                  <a href="https://www.vtcng.com/otherpapersbvt/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">The Other Paper</a>{" "}
+                  reported the request is a <strong className="text-warmgray-800">49% increase</strong> in total project
+                  funding, following a <strong className="text-warmgray-800">66% cost overrun</strong> on the Bartlett Bay
+                  portion specifically. Some residents and at least one city councilor questioned how late the full scale
+                  of the overrun reached voters. The original $33.8 million also covered Queen City Park pump stations
+                  (not moving forward) and the Airport Parkway plant (already under construction).
+                </p>
+              </div>
+            </div>
+
+            {/* How it's paid for */}
+            <div className="mb-5">
+              <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">How it gets paid for</p>
+              <ul className="space-y-2 text-warmgray-600 text-sm leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
+                  <span>A <strong className="text-warmgray-800">2% state clean-water loan</strong> (the Clean Water State Revolving Fund) is lined up for the project as designed. The city says if the bond fails or stalls, that low-interest money gets reallocated to other projects around Vermont — and the contractor holding the current bid may not hold it.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
+                  <span>A <strong className="text-warmgray-800">$700,000 EPA grant</strong> (2025) covers some energy-efficiency work.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
+                  <span>The rest comes from <strong className="text-warmgray-800">wastewater ratepayers</strong> — your sewer fees, which the city expects to rise about 2–3% a year. The city says South Burlington&apos;s rates are among the lowest in Vermont and would land mid-pack even after the increases.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Learn more: hearing + videos */}
+            <div className="bg-sage-50 border border-sage-100 rounded-xl p-4 mb-5">
+              <p className="text-xs font-semibold text-sage-700 uppercase tracking-wide mb-2">Dig in before you vote</p>
+              <ul className="space-y-1.5 text-warmgray-700 text-sm leading-relaxed mb-3">
+                <li>
+                  <strong className="text-warmgray-800">Public information hearing:</strong> Monday, August 10, 6:00 PM at
+                  City Hall (180 Market Street), with a Zoom option (link on the city&apos;s project page).
+                </li>
+                <li>
+                  <strong className="text-warmgray-800">Watch:</strong> Town Meeting TV made two videos — a tour of the
+                  facility and a forum with Councilors Andrew Chalnick and Beth Zigmund and the public works director.
+                  Both are on the city&apos;s project page.
+                </li>
+              </ul>
+              <a
+                href="https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-sage-500 hover:bg-sage-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors"
+              >
+                City project page &amp; videos
+                <ExternalLinkIcon />
+              </a>
+            </div>
+
+            {/* Ballot logistics */}
+            <div className="flex items-start gap-2 text-xs text-warmgray-500 leading-relaxed">
+              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-warmgray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p>
+                <strong className="text-warmgray-600">Heads up on your ballot:</strong> because this is a city
+                special-election item, these ballots may not be ready until 20–30 days before August 11. If you already
+                requested or returned a primary ballot, the city article may reach you separately. Not sure? Check with
+                the City Clerk at 802-846-4105.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Candidate Forums (CCTV Burlington) */}
         <div className="bg-white border-2 border-sage-200 rounded-2xl p-5 sm:p-6 mb-8">
           <div className="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -360,6 +495,10 @@ export default function PrimaryPage() {
               <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">Watch the candidate forums</h3>
               <p className="text-warmgray-700 text-sm leading-relaxed mb-2">
                 See the candidates for the August 11 primary in their own words. New forums are added to the playlist as they&apos;re released.
+              </p>
+              <p className="text-warmgray-600 text-sm leading-relaxed mb-2">
+                Local hook: the three Democratic candidates for Lieutenant Governor held a housing forum in South
+                Burlington on July 15 (<a href="https://vtdigger.org/2026/07/20/in-vermonts-democratic-primary-for-lieutenant-governor-leading-candidates-past-work-takes-center-stage/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">VTDigger, July 20</a>).
               </p>
               <p className="text-warmgray-500 text-xs leading-relaxed mb-3">
                 Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
@@ -589,6 +728,19 @@ export default function PrimaryPage() {
               <div>
                 <p className="font-semibold text-warmgray-700 mb-1">Open Primary</p>
                 <p className="text-warmgray-600">Request any party&apos;s ballot — you don&apos;t need to be registered with that party.</p>
+              </div>
+              <div>
+                <p className="font-semibold text-warmgray-700 mb-1">Early voting &amp; drop boxes</p>
+                <p className="text-warmgray-600">
+                  Early in-person voting at the Clerk&apos;s Office ends at <strong className="text-warmgray-700">noon the day before the election</strong> (noon Monday, August 10). Return a ballot by mail, in person, or in the 24/7 drop boxes near City Hall&apos;s main and back entrances (180 Market Street).
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-warmgray-700 mb-1">City Clerk&apos;s Office</p>
+                <p className="text-warmgray-600">
+                  180 Market Street &middot; Monday–Friday, 8:00 AM–4:30 PM &middot;{" "}
+                  <a href="tel:+18028464105" className="text-sage-600 hover:text-sage-800 underline">802-846-4105</a>
+                </p>
               </div>
             </div>
           </div>

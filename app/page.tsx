@@ -36,7 +36,8 @@ const keyDates: { date: string; event: string; type: string; note?: string; badg
   { date: "Now", event: "Early voting open for the August 11 primary", type: "now", badge: "Live", note: "Request an absentee ballot or vote in person at the City Clerk's office" },
   { date: "Aug 6", event: "Independent candidate filing deadline", type: "filing", note: "Last day for independents to file for the November ballot" },
   { date: "Aug 10", event: "Last day to request an absentee ballot online or register online for the primary", type: "filing", note: "Exact clerk cutoff times vary. Same-day registration is available at the polls on Election Day." },
-  { date: "Aug 11", event: "Vermont Primary Election", type: "election", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls." },
+  { date: "Aug 10", event: "Public hearing on the Bartlett Bay wastewater bond", type: "milestone", note: "6:00 PM at City Hall (180 Market St), with a Zoom option. The $16.4M bond is on every voter's Aug 11 ballot." },
+  { date: "Aug 11", event: "Vermont Primary Election", type: "election", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls. The $16.4M Bartlett Bay city bond is also on the ballot for every voter." },
   { date: "Late Sept – Oct 1", event: "General election ballots mailed", type: "milestone", note: "Vermont mails a ballot to every active registered voter, starting around Sept 25" },
   { date: "Nov 3", event: "Vermont General Election", type: "election", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls." },
 ];
@@ -244,9 +245,13 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <div className="flex items-center justify-between gap-3 mb-3">
             <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
-            <span className="text-xs text-warmgray-400 font-medium">Updated July 21, 2026</span>
+            <span className="text-xs text-warmgray-400 font-medium">Updated July 22, 2026</span>
           </div>
           <ul className="space-y-2 text-sm text-warmgray-700">
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-terracotta-500 flex-shrink-0" />
+              <span><strong>On every ballot:</strong> a <strong>$16.4M Bartlett Bay wastewater bond</strong> is a city question on the August 11 ballot — every South Burlington voter gets it, whatever party ballot you pick. See the full breakdown on the <Link href="/primary" className="text-sage-600 hover:text-sage-800 underline">primary guide</Link>. Public hearing Monday, August 10.</span>
+            </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>Early voting is open</strong> for the August 11 primary — request an absentee ballot at <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">mvp.vermont.gov</a>.</span>

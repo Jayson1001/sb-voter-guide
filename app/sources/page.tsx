@@ -33,7 +33,17 @@ const sourceCategories = [
     category: 'Official South Burlington',
     sources: [
       { title: 'South Burlington City Clerk — Elections & Voting', url: 'https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php' },
+      { title: 'South Burlington Elections & Voting — drop boxes, early-voting cutoff, ballot timing', url: 'https://www.southburlingtonvt.gov/211/Elections-Voting' },
       { title: 'South Burlington March 3, 2026 Town Meeting Day Results', url: 'https://www.southburlingtonvt.gov/697/March-3-2026-Town-Meeting-Day-Results' },
+    ],
+  },
+  {
+    category: 'August 11 City Ballot Item — Bartlett Bay Wastewater Bond',
+    sources: [
+      { title: 'City of South Burlington — Bartlett Bay WWTF Upgrade Project (official project page & videos)', url: 'https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project' },
+      { title: 'The Other Paper — South Burlington coverage (Liberty Darr, June 25 & May 2026 wastewater bond reports)', url: 'https://www.vtcng.com/otherpapersbvt/' },
+      { title: 'WCAX — "Costs climb for South Burlington wastewater facility upgrades" (June 23, 2026)', url: 'https://www.wcax.com/2026/06/23/costs-climb-south-burlington-wastewater-facility-upgrades/' },
+      { title: 'Local 22/44 — "South Burlington: $16.4 million needed for wastewater upgrades" (May 19, 2026)', url: 'https://www.mychamplainvalley.com/news/local-news/south-burlington-16-4-million-needed-for-wastewater-upgrades/' },
     ],
   },
   {
@@ -62,6 +72,12 @@ const sourceCategories = [
       { title: 'Democrats Struggle to Find Candidate to Take on Scott — Seven Days', url: 'https://www.sevendaysvt.com/news/politics/democrats-struggle-to-find-candidate-to-take-on-scott/' },
       { title: 'Lt. Gov. Rodgers and Secretary Copeland Hanzas announce reelection — VTDigger', url: 'https://vtdigger.org/2025/08/14/vermont-lt-gov-john-rodgers-secretary-of-state-sarah-copeland-hanzas-say-theyre-running-for-reelection/' },
       { title: '2026 Vermont House Analysis — Cook Political Report', url: 'https://www.cookpolitical.com/analysis/house/vermont-house/2026-vermont-house-analysis-becca-balint-should-cruise-reelection' },
+      { title: 'Vermont Public — "Aly Richards, Amanda Janoo race to win over voters ahead of Vt. primary" (July 22, 2026)', url: 'https://www.vermontpublic.org/local-news/2026-07-22/democratic-candidates-governor-voters-primary' },
+      { title: 'WCAX Campaign Countdown — Democratic gubernatorial primary (July 21, 2026)', url: 'https://www.wcax.com/2026/07/21/campaign-countdown-democrats-running-vt-governor-couldnt-be-more-different/' },
+      { title: 'UNH Survey Center — Vermont 2026 poll (June 30, 2026)', url: 'https://scholars.unh.edu/survey_center_polls/970/' },
+      { title: 'Vermont Public — "Phil Scott\'s approval numbers slipping, new poll finds" (July 2, 2026)', url: 'https://www.vermontpublic.org/local-news/2026-07-02/phil-scotts-approval-numbers-slipping-new-poll-finds' },
+      { title: 'VTDigger — Democratic Lt. Governor primary (July 20, 2026)', url: 'https://vtdigger.org/2026/07/20/in-vermonts-democratic-primary-for-lieutenant-governor-leading-candidates-past-work-takes-center-stage/' },
+      { title: 'Politics1 — Vermont 2026 candidates (Charlie Bass, Freedom and Unity; pending SoS certification)', url: 'https://politics1.com/vt.htm' },
     ],
   },
   {

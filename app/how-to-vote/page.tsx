@@ -95,6 +95,16 @@ const faqs = [
     answer:
       "Because the ballot isn't fully set the moment major-party filing closes. Major-party candidates had to file by May 28, but independent candidates have until August 6, 2026 to qualify for the November ballot, and party committees can fill a spot left empty in the primary until August 17. So when we say a race has no opponent “as of” a certain date, that's a snapshot in time — it can still change, and we update the guide when it does.",
   },
+  {
+    question: "Can I drop my ballot off instead of mailing it?",
+    answer:
+      "Yes. You can return your ballot by mail, in person at the Clerk's Office, or in one of the 24/7 drop boxes near the main and back entrances of City Hall (180 Market Street). Early in-person voting at the Clerk's Office ends at noon the day before the election — so for the August 11 primary, that's noon on Monday, August 10.",
+  },
+  {
+    question: "How do I reach the South Burlington City Clerk?",
+    answer:
+      "The City Clerk's Office is at 180 Market Street and is open Monday through Friday, 8:00 AM to 4:30 PM. You can call them at 802-846-4105 with any questions about your ballot, registration, or where to vote.",
+  },
 ];
 
 const pollingLocations = [

@@ -48,18 +48,24 @@
           "party": "Democrat",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Filed in the Democratic primary for Governor on May 28, 2026.",
+          "bio": "An Oxford-trained economist and Strafford native, running for office for the first time. She runs in the more progressive lane of the Democratic primary.",
           "website": "https://www.janooforvt.com",
-          "notablePositions": []
+          "notablePositions": [
+            "Proposes publicly funded universal primary care, with the state paying providers directly",
+            "Would fund it with income-tax surcharges on high earners — 2% on income over $250,000 and 8% over $500,000"
+          ]
         },
         {
           "name": "Aly Richards",
           "party": "Democrat",
           "status": "announced",
           "announcedDate": "May 2026",
-          "bio": "Filed in the Democratic primary for Governor on May 28, 2026.",
+          "bio": "Former CEO of Let's Grow Kids who led the decade-long campaign for Vermont's 2023 child care law. She runs in the more moderate lane of the Democratic primary.",
           "website": "https://alyforvt.com",
-          "notablePositions": []
+          "notablePositions": [
+            "Favors growing the economy over new taxes, though she hasn't ruled out raising taxes on high earners",
+            "Supports universal primary care while keeping insurance as the main way to pay for it"
+          ]
         },
         {
           "name": "Dean Roy",
@@ -83,7 +89,7 @@
           "notablePositions": []
         }
       ],
-      "notes": "The Republican primary is uncontested — Phil Scott faces no GOP opponent. The Democratic primary is a two-way contest between Amanda Janoo and Aly Richards. Dean Roy of the new Freedom and Unity Party has qualified for the November general ballot. The independent / minor-party filing deadline is August 6, 2026, so additional general-ballot candidates may still emerge."
+      "notes": "The Republican primary is uncontested — Phil Scott faces no GOP opponent. The Democratic primary is a two-way contest between Amanda Janoo and Aly Richards. A University of New Hampshire Survey Center poll released in early July 2026 gave Janoo 20% and Richards 12% among likely Democratic primary voters, with about 64% still undecided; in hypothetical November matchups it showed Gov. Scott beating either Democrat by at least 16 points. Dean Roy of the new Freedom and Unity Party has qualified for the November general ballot. The independent / minor-party filing deadline is August 6, 2026, so additional general-ballot candidates may still emerge."
     },
     {
       "id": "lt-governor",
@@ -145,9 +151,17 @@
           "bio": "Filed in the Democratic primary for Lt. Governor.",
           "website": "https://www.mclarenforvermont.com",
           "notablePositions": []
+        },
+        {
+          "name": "Charlie Bass",
+          "party": "Freedom and Unity",
+          "status": "announced",
+          "announcedDate": "2026",
+          "bio": "A high school student running for Lieutenant Governor with the newly-formed Freedom and Unity Party, as the running mate of gubernatorial candidate Dean Roy. Like Roy, he would appear directly on the November general ballot rather than the August primary.",
+          "notablePositions": []
         }
       ],
-      "notes": "Republican Lt. Gov. John Rodgers is running for a second term and faces no GOP primary opposition. Three Democrats — Charlestin, Gray, and McLaren — compete in the August 11 Democratic primary for the right to face him in November."
+      "notes": "Republican Lt. Gov. John Rodgers is running for a second term and faces no GOP primary opposition. Three Democrats — Charlestin, Gray, and McLaren — compete in the August 11 Democratic primary for the right to face him in November. Charlie Bass (Freedom and Unity) is listed by Ballotpedia and Politics1 as a declared general-election candidate; as of July 22, 2026 that is pending confirmation on the certified Secretary of State list after the August 6 minor-party deadline."
     },
     {
       "id": "attorney-general",
