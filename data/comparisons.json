@@ -1,0 +1,263 @@
+{
+  "_note": "Head-to-head comparisons for CONTESTED races only. Rules: every row is a real, sourced difference (facts over positions); cite every cell; never score/rank/rate or use directional language; label money figures with an 'as of' date. Keyed by race id from races.json.",
+
+  "states-attorney": {
+    "raceId": "states-attorney",
+    "office": "Chittenden County State's Attorney",
+    "asOf": "2026-07-27",
+    "intro": "Both are Democrats and career prosecutors from the same office. With no Republican or independent filed, the August 11 primary likely decides the job. Here's where the two actually split.",
+    "candidates": ["Sarah George", "Bram Kranichfeld"],
+    "rows": [
+      {
+        "axis": "Cash bail",
+        "detail": "The central split in the race.",
+        "values": {
+          "Sarah George": "Set a policy in her first term barring her office from requesting cash bail in most cases.",
+          "Bram Kranichfeld": "Says he would reverse those restrictions immediately on taking office, calling cash bail a tool to ensure people return to court."
+        },
+        "source": { "label": "Vermont Public, July 28, 2026", "url": "https://www.vermontpublic.org/local-news/2026-07-28/race-chittenden-county-states-attorney-progressive-prosecution-on-trial" }
+      },
+      {
+        "axis": "Track record",
+        "values": {
+          "Sarah George": "Chittenden County State's Attorney since 2017; seeking a third full term.",
+          "Bram Kranichfeld": "Franklin County State's Attorney since 2023; earlier a Chittenden County deputy prosecutor, executive director of the Department of State's Attorneys and Sheriffs, and an assistant attorney general."
+        },
+        "source": { "label": "WCAX, July 16, 2026", "url": "https://www.wcax.com/2026/07/16/campaign-countdown-former-coworkers-face-off-chittenden-county-states-attorney-race/" }
+      },
+      {
+        "axis": "Money raised",
+        "detail": "As of the July 1 filing. Not a scandal — a signal of who is spending to reach voters. Fresher numbers arrive with the August 7 pre-primary filing.",
+        "values": {
+          "Sarah George": "$35,736",
+          "Bram Kranichfeld": "$108,000"
+        },
+        "source": { "label": "Vermont campaign finance filings", "url": "https://campaignfinance.vermont.gov/" }
+      }
+    ],
+    "agree": "Both spent their careers as prosecutors in this same office. When their old boss T.J. Donovan became Attorney General in 2016, both were considered for the job, and Gov. Phil Scott appointed George. This is a contest between two people who have done the work, differing on how the office should run.",
+    "sources": [
+      { "label": "Vermont Public — Chittenden County state's attorney race (July 28, 2026)", "url": "https://www.vermontpublic.org/local-news/2026-07-28/race-chittenden-county-states-attorney-progressive-prosecution-on-trial" },
+      { "label": "WCAX — former coworkers face off (July 16, 2026)", "url": "https://www.wcax.com/2026/07/16/campaign-countdown-former-coworkers-face-off-chittenden-county-states-attorney-race/" },
+      { "label": "Vermont campaign finance portal", "url": "https://campaignfinance.vermont.gov/" }
+    ]
+  },
+
+  "governor": {
+    "raceId": "governor",
+    "office": "Governor",
+    "asOf": "2026-08-02",
+    "intro": "Two Democrats hoping to take on Gov. Phil Scott in November — and they would run the state differently. Here is where they actually split.",
+    "candidates": ["Amanda Janoo", "Aly Richards"],
+    "rows": [
+      {
+        "axis": "Paying for health care",
+        "detail": "Both want universal primary care; they differ on how to fund it.",
+        "values": {
+          "Amanda Janoo": "Make primary care free for everyone, with the state paying providers directly and ending insurance billing for primary care — funded by an income surcharge on earnings over $500,000.",
+          "Aly Richards": "Also supports universal primary care, but would keep private insurance as the funding mechanism rather than move to direct state payment."
+        },
+        "source": { "label": "Vermont Public, July 22, 2026", "url": "https://www.vermontpublic.org/local-news/2026-07-22/democratic-candidates-governor-voters-primary" }
+      },
+      {
+        "axis": "Taxes",
+        "values": {
+          "Amanda Janoo": "Backs income-tax surcharges on high earners — 2% on income over $250,000 and 8% over $500,000 — plus higher taxes on vacant, speculative, and high-value homes.",
+          "Aly Richards": "Prefers growing the economy to raising taxes; open to higher taxes on second homes, but won't commit to income-tax increases until she sees specifics."
+        },
+        "source": { "label": "WCAX, July 21, 2026", "url": "https://www.wcax.com/2026/07/21/campaign-countdown-democrats-running-vt-governor-couldnt-be-more-different/" }
+      },
+      {
+        "axis": "Housing",
+        "values": {
+          "Amanda Janoo": "Higher taxes on vacant and investor-owned homes, limits on private-equity ownership, and letting towns enact rent stabilization.",
+          "Aly Richards": "A sales-tax holiday on building materials, plus state-set regional housing targets and model zoning to encourage denser building."
+        },
+        "source": { "label": "WCAX, July 21, 2026", "url": "https://www.wcax.com/2026/07/21/campaign-countdown-democrats-running-vt-governor-couldnt-be-more-different/" }
+      },
+      {
+        "axis": "Background",
+        "values": {
+          "Amanda Janoo": "An Oxford-trained economist and Strafford native, running for office for the first time.",
+          "Aly Richards": "Former CEO of Let's Grow Kids, who led the decade-long campaign for Vermont's 2023 child care law."
+        },
+        "source": { "label": "Vermont Public, July 22, 2026", "url": "https://www.vermontpublic.org/local-news/2026-07-22/democratic-candidates-governor-voters-primary" }
+      }
+    ],
+    "agree": "Both are Democrats running to unseat Gov. Phil Scott, and both say every Vermonter should have primary care — the fight between them is over how to pay for it. A late-June University of New Hampshire poll found most likely Democratic primary voters were still undecided, and Scott leading either Democrat in a general-election matchup.",
+    "sources": [
+      { "label": "Vermont Public — Richards and Janoo race to win over voters (July 22, 2026)", "url": "https://www.vermontpublic.org/local-news/2026-07-22/democratic-candidates-governor-voters-primary" },
+      { "label": "WCAX — Democrats running for governor couldn't be more different (July 21, 2026)", "url": "https://www.wcax.com/2026/07/21/campaign-countdown-democrats-running-vt-governor-couldnt-be-more-different/" },
+      { "label": "Amanda Janoo campaign site", "url": "https://www.janooforvt.com" }
+    ]
+  },
+
+  "auditor": {
+    "raceId": "auditor",
+    "office": "Auditor of Accounts",
+    "asOf": "2026-08-02",
+    "intro": "The auditor independently checks how the state spends money. A third Democrat, Dan Towle, is still on the ballot but ended his campaign, so this is the active contest — and the two candidates have different ideas about the job.",
+    "candidates": ["Tim Ashe", "Nick Graeter"],
+    "rows": [
+      {
+        "axis": "What they'd audit first",
+        "values": {
+          "Tim Ashe": "Points to the Agency of Human Services — roughly half the state budget — and to the high cost of health care.",
+          "Nick Graeter": "Favors narrower, focused audits — first up, the state's School Safety Center and overtime spending in the Department of Corrections."
+        },
+        "source": { "label": "Vermont Public, July 14, 2026", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-14/meet-the-democratic-candidates-for-vermont-state-auditor" }
+      },
+      {
+        "axis": "Approach to the job",
+        "values": {
+          "Tim Ashe": "Argues the office needs someone who can take on big, complex systems.",
+          "Nick Graeter": "Argues for tighter audits with clearer, more actionable findings, rather than tackling sprawling systems."
+        },
+        "source": { "label": "Vermont Public, July 14, 2026", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-14/meet-the-democratic-candidates-for-vermont-state-auditor" }
+      },
+      {
+        "axis": "Background",
+        "values": {
+          "Tim Ashe": "Deputy Auditor since 2021 and a former Senate President Pro Tempore; about two decades in state and local government.",
+          "Nick Graeter": "An accounting specialist and first-time candidate, running as a Montpelier outsider."
+        },
+        "source": { "label": "Vermont Public, July 14, 2026", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-14/meet-the-democratic-candidates-for-vermont-state-auditor" }
+      }
+    ],
+    "agree": "Both are Democrats who say the auditor's findings should actually get acted on, not filed away. The office is open for the first time in 14 years, with Doug Hoffer retiring.",
+    "sources": [
+      { "label": "Vermont Public — Meet the Democratic candidates for auditor (July 14, 2026)", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-14/meet-the-democratic-candidates-for-vermont-state-auditor" }
+    ]
+  },
+
+  "sheriff": {
+    "raceId": "sheriff",
+    "office": "Chittenden County Sheriff",
+    "asOf": "2026-08-02",
+    "intro": "Almost nobody knows this race is on the ballot, and the two Democrats see the job very differently. With no Republican filed, the August 11 primary likely decides it.",
+    "candidates": ["Daniel Gamelin", "Kevin Bloom"],
+    "rows": [
+      {
+        "axis": "Background",
+        "values": {
+          "Daniel Gamelin": "Sheriff since 2022; has worked in the sheriff's office since 1982, with part-time stints at the Winooski and Essex police departments.",
+          "Kevin Bloom": "A Burlington musician and audio producer, running for office for the first time, with no law-enforcement background. Bloom uses they/them pronouns."
+        },
+        "source": { "label": "VTDigger, July 13, 2026", "url": "https://vtdigger.org/2026/07/13/the-two-democrats-running-for-chittenden-county-sheriff-couldnt-be-more-different/" }
+      },
+      {
+        "axis": "How they see the office",
+        "values": {
+          "Daniel Gamelin": "Runs it as a traditional law-enforcement agency — court security, serving legal papers, and contract patrols for some towns.",
+          "Kevin Bloom": "Questions the law-enforcement framing of the office and wants it focused on reducing harm in the community."
+        },
+        "source": { "label": "Vermont Public, July 30, 2026", "url": "https://www.vermontpublic.org/local-news/2026-07-30/what-should-sheriff-do-chittenden-county-democratic-primary" }
+      },
+      {
+        "axis": "Evictions",
+        "detail": "The sheriff's deputies serve eviction paperwork.",
+        "values": {
+          "Daniel Gamelin": "Treats serving court papers, including evictions, as a required legal duty of the office.",
+          "Kevin Bloom": "Campaigns on reducing evictions and calls them a public-safety issue, while acknowledging deputies would still carry out court-ordered evictions."
+        },
+        "source": { "label": "VTDigger, July 13, 2026", "url": "https://vtdigger.org/2026/07/13/the-two-democrats-running-for-chittenden-county-sheriff-couldnt-be-more-different/" }
+      }
+    ],
+    "agree": "Whoever wins, the sheriff's deputies still serve court papers, including evictions — that duty doesn't change. And South Burlington has its own police department, so the county sheriff isn't the city's everyday police force.",
+    "sources": [
+      { "label": "VTDigger — the two Democrats for sheriff couldn't be more different (July 13, 2026)", "url": "https://vtdigger.org/2026/07/13/the-two-democrats-running-for-chittenden-county-sheriff-couldnt-be-more-different/" },
+      { "label": "Vermont Public — what should a sheriff do? (July 30, 2026)", "url": "https://www.vermontpublic.org/local-news/2026-07-30/what-should-sheriff-do-chittenden-county-democratic-primary" }
+    ]
+  },
+
+  "lt-governor": {
+    "raceId": "lt-governor",
+    "office": "Lieutenant Governor",
+    "asOf": "2026-08-02",
+    "intro": "Three Democrats are competing to challenge Republican Lt. Gov. John Rodgers in November — and one of them, Esther Charlestin, lives right here in South Burlington. Here's where the three split.",
+    "candidates": ["Esther Charlestin", "Molly Gray", "Ryan McLaren"],
+    "rows": [
+      {
+        "axis": "Lengthen the 2-year term?",
+        "detail": "Vermont elects its governor and lieutenant governor every two years.",
+        "values": {
+          "Esther Charlestin": "Yes — supports lengthening the terms.",
+          "Molly Gray": "No — would keep the two-year term.",
+          "Ryan McLaren": "Yes — supports lengthening the terms."
+        },
+        "source": { "label": "Vermont Public debate, July 21, 2026", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-21/vermont-2026-democratic-primary-debate-lieutenant-governor" }
+      },
+      {
+        "axis": "Held this office before?",
+        "values": {
+          "Esther Charlestin": "No. She was the 2024 Democratic nominee for Governor and a former Middlebury Select Board member.",
+          "Molly Gray": "Yes. She served as Lieutenant Governor from 2021 to 2023.",
+          "Ryan McLaren": "No. This is his first run; he was most recently a principal aide to U.S. Sen. Peter Welch."
+        },
+        "source": { "label": "VTDigger, July 20, 2026", "url": "https://vtdigger.org/2026/07/20/in-vermonts-democratic-primary-for-lieutenant-governor-leading-candidates-past-work-takes-center-stage/" }
+      },
+      {
+        "axis": "Funding primary care",
+        "detail": "All three back universal primary care; they differ on how to pay for it.",
+        "values": {
+          "Esther Charlestin": "Says taxes on second homes and the very wealthy could help fund it, and points to the People's Health and Wellness Clinic in Barre as a model to expand.",
+          "Molly Gray": "Would raise property taxes on second homes and recoup recent federal tax cuts through a health-care surcharge to fund universal primary care.",
+          "Ryan McLaren": "Would first raise taxes on second homes, and expand Medicaid to 200% of the poverty line to add seniors to free primary care."
+        },
+        "source": { "label": "Vermont Public debate, July 21, 2026", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-21/vermont-2026-democratic-primary-debate-lieutenant-governor" }
+      },
+      {
+        "axis": "Background",
+        "values": {
+          "Esther Charlestin": "Runs a consulting firm and lives in South Burlington.",
+          "Molly Gray": "A former assistant attorney general who clerked for a federal judge and did humanitarian work abroad.",
+          "Ryan McLaren": "A longtime congressional aide to U.S. Sen. Peter Welch."
+        },
+        "source": { "label": "Seven Days; Vermont Public", "url": "https://www.sevendaysvt.com/news/politics/three-democrats-are-vying-to-take-on-republican-lg-john-rodgers/" }
+      }
+    ],
+    "agree": "All three are Democrats running for the chance to face Republican incumbent John Rodgers in November. It's a genuinely open race, with many voters still deciding.",
+    "sources": [
+      { "label": "Vermont Public — Lt. Gov Democratic primary debate (July 21, 2026)", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-21/vermont-2026-democratic-primary-debate-lieutenant-governor" },
+      { "label": "VTDigger — Lt. Gov candidates' past work takes center stage (July 20, 2026)", "url": "https://vtdigger.org/2026/07/20/in-vermonts-democratic-primary-for-lieutenant-governor-leading-candidates-past-work-takes-center-stage/" }
+    ]
+  },
+
+  "chittenden-se-senate": {
+    "raceId": "chittenden-se-senate",
+    "office": "State Senate — Chittenden Southeast",
+    "asOf": "2026-08-02",
+    "intro": "This is the unusual one: you vote for up to THREE, and the top three Democrats advance. So it's less 'who's best' and more 'which three.' Five Democrats are running — three incumbents and two challengers.",
+    "candidates": ["Thomas Chittenden", "Virginia Lyons", "Kesha Ram Hinsdale", "Joanna Grossman", "Elizabeth Hunt"],
+    "rows": [
+      {
+        "axis": "In the Senate since",
+        "values": {
+          "Thomas Chittenden": "2021.",
+          "Virginia Lyons": "2001.",
+          "Kesha Ram Hinsdale": "2021 (and the Vermont House, 2009–2016).",
+          "Joanna Grossman": "Challenger — would be new to the Senate.",
+          "Elizabeth Hunt": "Challenger — would be new to the Senate."
+        },
+        "source": { "label": "Ballotpedia; legislature.vermont.gov", "url": "https://ballotpedia.org/Vermont_State_Senate_Chittenden_Southeast_District" }
+      },
+      {
+        "axis": "Background & role",
+        "values": {
+          "Thomas Chittenden": "Grew up in South Burlington and served on the South Burlington City Council.",
+          "Virginia Lyons": "The delegation's longest-serving senator.",
+          "Kesha Ram Hinsdale": "Senate Majority Leader since 2025; running for Senate President Pro Tempore, the chamber's top job, in 2027.",
+          "Joanna Grossman": "A Burlington political strategist and former chair of the Chittenden County Democrats.",
+          "Elizabeth Hunt": "A pediatrician at Timber Lane Pediatrics (in South Burlington) and a UVM assistant professor; lives in Charlotte and describes herself as a pragmatic moderate."
+        },
+        "source": { "label": "Seven Days; Vermont Daily Chronicle", "url": "https://www.sevendaysvt.com/news/charlotte-pediatrician-launches-campaign-for-state-senate/" }
+      }
+    ],
+    "agree": "All five are Democrats, and because you vote for up to three, more than one will likely win. On the biggest recent issue — Act 73, the education overhaul — you can look up exactly how the three incumbents voted at legislature.vermont.gov.",
+    "sources": [
+      { "label": "Ballotpedia — Chittenden Southeast Senate district", "url": "https://ballotpedia.org/Vermont_State_Senate_Chittenden_Southeast_District" },
+      { "label": "Seven Days — Charlotte pediatrician launches Senate campaign", "url": "https://www.sevendaysvt.com/news/charlotte-pediatrician-launches-campaign-for-state-senate/" },
+      { "label": "Vermont legislature — bills, committees, and roll-call votes", "url": "https://legislature.vermont.gov/" }
+    ]
+  }
+}

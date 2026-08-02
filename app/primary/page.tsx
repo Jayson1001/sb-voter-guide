@@ -3,6 +3,7 @@ import racesData from "@/data/races.json";
 import votingInfo from "@/data/voting-info.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
 import PrimaryCountdown from "@/components/PrimaryCountdown";
+import RaceComparison from "@/components/RaceComparison";
 
 // TODO (after the Aug 6, 2026 independent/minor-party filing deadline): run a
 // candidate sweep against the certified VT Secretary of State list.
@@ -560,6 +561,10 @@ export default function PrimaryPage() {
               </div>
             ))}
           </div>
+          {/* Full-width comparisons for the contested statewide races (auto-renders where data exists) */}
+          {statewide.map((race) => (
+            <RaceComparison key={race.id} raceId={race.id} />
+          ))}
         </section>
 
         {/* Federal Races */}
@@ -602,6 +607,7 @@ export default function PrimaryPage() {
               <div key={race.id} className="flex flex-col gap-3">
                 <OfficeExplainer office={race.office} />
                 <RaceCard race={race} />
+                <RaceComparison raceId={race.id} />
               </div>
             ))}
           </div>
@@ -679,6 +685,7 @@ export default function PrimaryPage() {
             <div className="flex flex-col gap-3 mb-5">
               <OfficeExplainer office={statesAttorney.office} />
               <RaceCard race={statesAttorney} />
+              <RaceComparison raceId="states-attorney" />
             </div>
           )}
 
@@ -690,6 +697,10 @@ export default function PrimaryPage() {
               </div>
             ))}
           </div>
+          {/* Full-width comparisons for contested county races (e.g. Sheriff) */}
+          {otherCounty.map((race) => (
+            <RaceComparison key={race.id} raceId={race.id} />
+          ))}
         </section>
 
         {/* Voter Info */}
