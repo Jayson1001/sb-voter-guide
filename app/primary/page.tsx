@@ -1,9 +1,30 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import racesData from "@/data/races.json";
 import votingInfo from "@/data/voting-info.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
 import PrimaryCountdown from "@/components/PrimaryCountdown";
 import RaceComparison from "@/components/RaceComparison";
+
+export const metadata: Metadata = {
+  title: "Who's on your Aug 11 ballot? — South Burlington Primary Guide",
+  description:
+    "Every race on your August 11 South Burlington primary ballot, in plain English — Governor, Lt. Governor, Auditor, State's Attorney, Sheriff, the Chittenden-SE Senate, and the $16.4M Bartlett Bay bond. Side-by-side candidate comparisons. Independent and nonpartisan.",
+  alternates: { canonical: "/primary" },
+  openGraph: {
+    title: "Who's on your Aug 11 ballot?",
+    description:
+      "Every South Burlington race on the August 11 primary ballot, in plain English — with side-by-side candidate comparisons and the Bartlett Bay bond explained.",
+    url: "https://sbvoterguide.com/primary",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Who's on your August 11 South Burlington ballot?" }],
+  },
+  twitter: {
+    title: "Who's on your Aug 11 ballot?",
+    description:
+      "Every South Burlington race on the August 11 primary ballot, in plain English — with side-by-side candidate comparisons.",
+    images: ["/og.png"],
+  },
+};
 
 // TODO (after the Aug 6, 2026 independent/minor-party filing deadline): run a
 // candidate sweep against the certified VT Secretary of State list.
