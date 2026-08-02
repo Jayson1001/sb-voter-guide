@@ -266,7 +266,7 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Auditor:</strong> open seat — Doug Hoffer is retiring. The Democratic primary is a three-way race between Tim Ashe, Nick Graeter, and Dan Towle; H. Brooke Paige is the lone Republican.</span>
+              <span><strong>Auditor:</strong> open seat — Doug Hoffer is retiring. The Democratic primary is now a two-way race between Tim Ashe and Nick Graeter; Dan Towle ended his campaign but stays on the ballot. H. Brooke Paige is the lone Republican.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />

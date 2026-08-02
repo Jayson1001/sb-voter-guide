@@ -56,6 +56,7 @@ const statusColors: Record<string, string> = {
   "likely-running": "bg-sage-50 text-sage-600",
   "announced": "bg-sage-100 text-sage-700",
   "retiring": "bg-warmgray-100 text-warmgray-500",
+  "withdrawn": "bg-warmgray-100 text-warmgray-500",
   "unknown": "bg-cream-100 text-warmgray-500",
 };
 
@@ -64,6 +65,7 @@ const statusLabels: Record<string, string> = {
   "likely-running": "Likely running",
   "announced": "Announced",
   "retiring": "Retiring",
+  "withdrawn": "On the ballot · campaign ended",
   "unknown": "Plans not announced",
 };
 
