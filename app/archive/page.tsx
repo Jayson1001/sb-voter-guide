@@ -182,7 +182,7 @@ export default function ArchivePage() {
               <div className="bg-white rounded-2xl shadow-soft p-6 h-full border-2 border-transparent hover:border-sage-200 transition-colors">
                 <div className="flex items-center gap-4 mb-4">
                   <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
-                    index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-600'
+                    index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-700'
                   }`}>
                     <UserIcon />
                   </div>
@@ -258,7 +258,7 @@ export default function ArchivePage() {
 
               <div className="p-6 bg-cream-50/50">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600"><AcademicCapIcon /></div>
+                  <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700"><AcademicCapIcon /></div>
                   <h3 className="font-display font-bold text-warmgray-800">School Board</h3>
                 </div>
                 <p className="text-warmgray-600 text-xs mb-4 ml-10">
@@ -310,7 +310,7 @@ export default function ArchivePage() {
                             {race.writeInWinner ? (
                               <span className="flex items-center gap-1 text-sage-600 text-sm font-medium"><CheckCircleIcon /> Elected</span>
                             ) : (
-                              <span className="text-terracotta-600 text-sm font-medium">Open Seat</span>
+                              <span className="text-terracotta-700 text-sm font-medium">Open Seat</span>
                             )}
                           </div>
                         )}
@@ -335,7 +335,7 @@ export default function ArchivePage() {
                   <div className="bg-white rounded-2xl shadow-soft p-6 border-2 border-transparent hover:border-sage-200 transition-colors h-full">
                     <div className="flex items-start gap-4">
                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                        index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-600'
+                        index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-700'
                       }`}>
                         {index === 0 ? <DocumentIcon /> : <FireIcon />}
                       </div>

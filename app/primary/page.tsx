@@ -5,6 +5,7 @@ import votingInfo from "@/data/voting-info.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
 import PrimaryCountdown from "@/components/PrimaryCountdown";
 import RaceComparison from "@/components/RaceComparison";
+import { partyColors, statusColors, statusLabels } from "@/lib/raceMeta";
 
 export const metadata: Metadata = {
   title: "Who's on your Aug 11 ballot? — South Burlington Primary Guide",
@@ -73,33 +74,8 @@ const MechanicsLink = () => (
   </a>
 );
 
-const statusColors: Record<string, string> = {
-  "running": "bg-sage-100 text-sage-700",
-  "likely-running": "bg-sage-50 text-sage-600",
-  "announced": "bg-sage-100 text-sage-700",
-  "retiring": "bg-warmgray-100 text-warmgray-600",
-  "withdrawn": "bg-warmgray-100 text-warmgray-600",
-  "unknown": "bg-cream-100 text-warmgray-600",
-};
-
-const statusLabels: Record<string, string> = {
-  "running": "Running for reelection",
-  "likely-running": "Likely running",
-  "announced": "Announced",
-  "retiring": "Retiring",
-  "withdrawn": "On the ballot · campaign ended",
-  "unknown": "Plans not announced",
-};
-
-const partyColors: Record<string, string> = {
-  "Democrat": "bg-blue-50 text-blue-700 border-blue-100",
-  "Republican": "bg-red-50 text-red-700 border-red-100",
-  "Progressive": "bg-teal-50 text-teal-700 border-teal-100",
-  "Independent": "bg-purple-50 text-purple-700 border-purple-100",
-  "Peace and Justice": "bg-emerald-50 text-emerald-700 border-emerald-100",
-  "Unity Party": "bg-amber-50 text-amber-700 border-amber-100",
-  "Freedom and Unity": "bg-orange-50 text-orange-700 border-orange-100",
-};
+// Party/status styling is shared via @/lib/raceMeta (imported above) so
+// /primary and /general can't drift.
 
 function RaceCard({ race }: { race: any }) {
   const isOpenSeat = race.openSeat;
@@ -341,7 +317,7 @@ export default function PrimaryPage() {
 
         {/* Turnout hook */}
         <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-4 mb-8 flex items-start gap-3">
-          <svg className="w-5 h-5 text-terracotta-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
           </svg>
           <p className="text-sm text-warmgray-700 leading-relaxed">
@@ -597,7 +573,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Candidate Forums (CCTV Burlington) */}
-        <div className="bg-white border-2 border-sage-200 rounded-2xl p-5 sm:p-6 mb-8">
+        <div className="bg-white border-2 border-sage-200 rounded-2xl shadow-soft p-6 sm:p-7 mb-8">
           <div className="flex flex-col sm:flex-row sm:items-start gap-4">
             <div className="flex-shrink-0 w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center text-sage-600">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -680,7 +656,7 @@ export default function PrimaryPage() {
         {/* Federal Races */}
         <section id="federal" className="mb-10 scroll-mt-20">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
               </svg>
@@ -739,7 +715,7 @@ export default function PrimaryPage() {
           <div className="mb-4"><MechanicsLink /></div>
 
           <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mb-5 flex items-start gap-3">
-            <svg className="w-5 h-5 text-terracotta-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div className="text-sm text-terracotta-800">
@@ -767,7 +743,7 @@ export default function PrimaryPage() {
         {/* Chittenden County Offices */}
         <section id="county" className="mb-10 scroll-mt-20">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
               </svg>

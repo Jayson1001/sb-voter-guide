@@ -176,7 +176,7 @@ export default function SourcesPage() {
         {/* Disclaimer */}
         <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-6 mt-8">
           <div className="flex items-start gap-3">
-            <svg className="w-6 h-6 text-terracotta-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
@@ -189,7 +189,7 @@ export default function SourcesPage() {
                   href="https://sos.vermont.gov/elections/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-terracotta-600 hover:text-terracotta-800 underline"
+                  className="text-terracotta-700 hover:text-terracotta-800 underline"
                 >
                   Vermont Secretary of State&apos;s office
                 </a>
@@ -198,7 +198,7 @@ export default function SourcesPage() {
                   href="https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-terracotta-600 hover:text-terracotta-800 underline"
+                  className="text-terracotta-700 hover:text-terracotta-800 underline"
                 >
                   South Burlington City Clerk&apos;s office
                 </a>.

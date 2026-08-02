@@ -2,6 +2,7 @@ import Link from "next/link";
 import racesData from "@/data/races.json";
 import ballotMeasuresData from "@/data/ballot-measures.json";
 import votingInfo from "@/data/voting-info.json";
+import { partyColors, statusColors, statusLabels } from "@/lib/raceMeta";
 
 const ArrowLeftIcon = () => (
   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -21,30 +22,8 @@ const ExternalLinkIcon = () => (
   </svg>
 );
 
-const statusColors: Record<string, string> = {
-  "running": "bg-sage-100 text-sage-700",
-  "likely-running": "bg-sage-50 text-sage-600",
-  "announced": "bg-sage-100 text-sage-700",
-  "retiring": "bg-warmgray-100 text-warmgray-600",
-  "unknown": "bg-cream-100 text-warmgray-600",
-};
-
-const statusLabels: Record<string, string> = {
-  "running": "Running for reelection",
-  "likely-running": "Likely running",
-  "announced": "Announced",
-  "retiring": "Retiring",
-  "unknown": "Plans not announced",
-};
-
-const partyColors: Record<string, string> = {
-  "Democrat": "bg-blue-50 text-blue-700 border-blue-100",
-  "Republican": "bg-red-50 text-red-700 border-red-100",
-  "Independent": "bg-purple-50 text-purple-700 border-purple-100",
-  "Peace and Justice": "bg-emerald-50 text-emerald-700 border-emerald-100",
-  "Unity Party": "bg-amber-50 text-amber-700 border-amber-100",
-  "Freedom and Unity": "bg-orange-50 text-orange-700 border-orange-100",
-};
+// Party/status styling is shared via @/lib/raceMeta (imported above) so
+// /primary and /general can't drift.
 
 function RaceCard({ race }: { race: any }) {
   const isOpenSeat = race.openSeat;
@@ -224,7 +203,7 @@ function BallotMeasureCard({ measure }: { measure: any }) {
             <ul className="space-y-1.5">
               {measure.arguments.against.slice(0, 3).map((arg: string, i: number) => (
                 <li key={i} className="text-xs text-warmgray-600 flex items-start gap-1.5">
-                  <span className="mt-1 w-3 h-3 rounded-full bg-terracotta-50 text-terracotta-600 flex-shrink-0 flex items-center justify-center">
+                  <span className="mt-1 w-3 h-3 rounded-full bg-terracotta-50 text-terracotta-700 flex-shrink-0 flex items-center justify-center">
                     <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -287,7 +266,7 @@ export default function GeneralPage() {
 
         {/* Candidates TBD Notice */}
         <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="flex-shrink-0 w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-600">
+          <div className="flex-shrink-0 w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-700">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
@@ -338,7 +317,7 @@ export default function GeneralPage() {
         {/* Statewide Races */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
               </svg>
@@ -355,7 +334,7 @@ export default function GeneralPage() {
         {/* Federal */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
               </svg>
@@ -372,7 +351,7 @@ export default function GeneralPage() {
         {/* Vermont State Senate */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
@@ -392,7 +371,7 @@ export default function GeneralPage() {
         {/* Vermont State House */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
@@ -404,7 +383,7 @@ export default function GeneralPage() {
           </div>
 
           <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mb-5 flex items-start gap-3">
-            <svg className="w-5 h-5 text-terracotta-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div className="text-sm text-terracotta-800">
@@ -449,14 +428,14 @@ export default function GeneralPage() {
               <div>
                 <p className="font-semibold text-warmgray-700 mb-1">Voter Registration</p>
                 <p className="text-warmgray-600">Same-day registration available at the polls.{" "}
-                  <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-terracotta-600 hover:text-terracotta-800 underline">
+                  <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-terracotta-700 hover:text-terracotta-800 underline">
                     Register online at mvp.vermont.gov
                   </a>
                 </p>
               </div>
               <div>
                 <p className="font-semibold text-warmgray-700 mb-1">Official Resources</p>
-                <a href="https://sos.vermont.gov/elections/" target="_blank" rel="noopener noreferrer" className="text-terracotta-600 hover:text-terracotta-800 underline text-warmgray-600">
+                <a href="https://sos.vermont.gov/elections/" target="_blank" rel="noopener noreferrer" className="text-terracotta-700 hover:text-terracotta-800 underline text-warmgray-600">
                   Vermont Secretary of State — Elections<ExternalLinkIcon />
                 </a>
               </div>

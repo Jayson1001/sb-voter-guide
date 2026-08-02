@@ -127,7 +127,7 @@ export default function BudgetPage() {
                 </div>
                 <div className="border-t border-sage-200 pt-2 flex justify-between">
                   <span className="font-semibold text-warmgray-700">Difference</span>
-                  <span className={`font-bold ${municipalDifference > 0 ? 'text-terracotta-600' : 'text-sage-600'}`}>
+                  <span className={`font-bold ${municipalDifference > 0 ? 'text-terracotta-700' : 'text-sage-600'}`}>
                     {municipalDifference >= 0 ? '+' : ''}{formatCurrency(municipalDifference, 2)}/year
                   </span>
                 </div>
@@ -148,7 +148,7 @@ export default function BudgetPage() {
                 </div>
                 <div className="border-t border-terracotta-200 pt-2 flex justify-between">
                   <span className="font-semibold text-warmgray-700">Difference</span>
-                  <span className={`font-bold ${totalDifference > 0 ? 'text-terracotta-600' : 'text-sage-600'}`}>
+                  <span className={`font-bold ${totalDifference > 0 ? 'text-terracotta-700' : 'text-sage-600'}`}>
                     {totalDifference >= 0 ? '+' : ''}{formatCurrency(totalDifference, 2)}/year
                   </span>
                 </div>
@@ -245,7 +245,7 @@ export default function BudgetPage() {
             {cityBudget.enterpriseFunds.funds.map((fund) => (
               <div key={fund.name} className="bg-cream-100 rounded-xl p-4 text-center">
                 <p className="text-warmgray-600 text-sm mb-1">{fund.name}</p>
-                <p className={`font-bold text-lg ${fund.rateIncrease > 0 ? 'text-terracotta-600' : 'text-sage-600'}`}>
+                <p className={`font-bold text-lg ${fund.rateIncrease > 0 ? 'text-terracotta-700' : 'text-sage-600'}`}>
                   {fund.rateIncrease > 0 ? '+' : ''}{fund.rateIncrease}%
                 </p>
               </div>
@@ -262,7 +262,7 @@ export default function BudgetPage() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8 border-2 border-terracotta-200">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center">
-              <svg className="w-5 h-5 text-terracotta-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-terracotta-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path d="M12 14l9-5-9-5-9 5 9 5z" />
                 <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
@@ -289,7 +289,7 @@ export default function BudgetPage() {
             </div>
             <div className="bg-cream-100 rounded-xl p-4 text-center">
               <p className="text-warmgray-600 text-sm mb-1">Education Tax Impact</p>
-              <p className="font-display font-bold text-2xl text-terracotta-600">+8.76%</p>
+              <p className="font-display font-bold text-2xl text-terracotta-700">+8.76%</p>
               <p className="text-warmgray-600 text-xs mt-1">even 0% spending = +4.24%</p>
             </div>
             <div className="bg-cream-100 rounded-xl p-4 text-center">
@@ -382,7 +382,7 @@ export default function BudgetPage() {
               href="/fire-station-bond"
               className="flex items-center gap-3 p-4 bg-terracotta-50 rounded-xl hover:bg-terracotta-100 transition-colors"
             >
-              <div className="w-10 h-10 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+              <div className="w-10 h-10 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
                 </svg>

@@ -249,7 +249,7 @@ export default function BallotMeasuresPage() {
                     <div key={i} className="flex items-start gap-3">
                       <div className={`flex-shrink-0 w-2 h-2 mt-2 rounded-full ${measureIdx === 0 ? 'bg-sage-400' : 'bg-terracotta-400'}`} />
                       <div>
-                        <span className={`text-xs font-semibold ${measureIdx === 0 ? 'text-sage-600' : 'text-terracotta-600'}`}>
+                        <span className={`text-xs font-semibold ${measureIdx === 0 ? 'text-sage-600' : 'text-terracotta-700'}`}>
                           {item.date}
                         </span>
                         <p className="text-warmgray-700 text-sm">{item.action}</p>
