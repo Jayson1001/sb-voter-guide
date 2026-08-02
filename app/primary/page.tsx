@@ -393,10 +393,20 @@ export default function PrimaryPage() {
           </div>
         </div>
 
-        {/* Jump to your race — anchor chips so a voter can skip past the bond
-            straight to their ballot section instead of scrolling the whole page. */}
-        <nav aria-label="Jump to a section" className="mb-8">
-          <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Jump to your race</p>
+        {/* Jump to your race — a prominent card (voters were scrolling past the
+            quieter version) so they can skip past the bond to their ballot section. */}
+        <nav aria-label="Jump to a section" className="bg-white rounded-2xl shadow-soft border-2 border-sage-200 p-4 sm:p-5 mb-8">
+          <div className="flex items-center gap-2.5 mb-3">
+            <div className="w-9 h-9 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600 flex-shrink-0">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h10" />
+              </svg>
+            </div>
+            <div>
+              <h2 className="font-display text-base sm:text-lg font-bold text-warmgray-800 leading-tight">Jump to your race</h2>
+              <p className="text-xs text-warmgray-600">Skip straight to the section you care about</p>
+            </div>
+          </div>
           <ul className="flex flex-wrap gap-2">
             {[
               { href: "#statewide", label: "Statewide" },
@@ -409,7 +419,11 @@ export default function PrimaryPage() {
               <li key={s.href}>
                 <a
                   href={s.href}
-                  className="inline-block px-3 py-1.5 rounded-full text-sm bg-sage-50 text-sage-700 hover:bg-sage-100 border border-sage-100 transition-colors"
+                  className={`inline-flex items-center px-3.5 py-2 rounded-full text-sm font-medium transition-colors ${
+                    s.href === "#bond"
+                      ? "bg-terracotta-100 text-terracotta-700 hover:bg-terracotta-200"
+                      : "bg-sage-100 text-sage-800 hover:bg-sage-200"
+                  }`}
                 >
                   {s.label}
                 </a>
