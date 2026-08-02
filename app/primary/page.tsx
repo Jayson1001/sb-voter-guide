@@ -293,14 +293,6 @@ export default function PrimaryPage() {
         </div>
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 animate-fade-in">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sage-100 hover:text-white mb-5 transition-colors text-sm"
-          >
-            <ArrowLeftIcon />
-            Back to Voter Guide
-          </Link>
-
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
             <div>
               <div className="inline-flex items-center gap-2.5 bg-white/20 backdrop-blur-sm px-4 py-2.5 rounded-2xl mb-4">

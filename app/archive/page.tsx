@@ -74,25 +74,6 @@ export default function ArchivePage() {
 
   return (
     <main className="min-h-screen bg-pattern">
-      {/* Archive Banner */}
-      <div className="bg-warmgray-700 text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-          <div className="flex items-center gap-2 text-sm">
-            <svg className="w-4 h-4 text-warmgray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-            </svg>
-            <span className="text-warmgray-200">Archive &mdash; March 3, 2026 Town Meeting Day Results</span>
-          </div>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm text-white bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg transition-colors font-medium"
-          >
-            <ArrowLeftIcon />
-            Back to Voter Guide
-          </Link>
-        </div>
-      </div>
-
       {/* Hero Header */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-warmgray-500 via-warmgray-600 to-warmgray-700" />

@@ -259,10 +259,6 @@ export default function GeneralPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-terracotta-500 via-terracotta-600 to-terracotta-700" />
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
-          <Link href="/" className="inline-flex items-center gap-2 text-terracotta-100 hover:text-white mb-5 transition-colors text-sm">
-            <ArrowLeftIcon />
-            Back to Voter Guide
-          </Link>
 
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
             <div>

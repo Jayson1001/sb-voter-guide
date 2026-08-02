@@ -154,8 +154,51 @@ export default function Home() {
               Request a Ballot
               <ArrowRightIcon />
             </a>
+            <Link
+              href="/how-to-vote"
+              className="inline-flex items-center gap-2 bg-sage-700/40 hover:bg-sage-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
+            >
+              How to vote
+              <ArrowRightIcon />
+            </Link>
           </div>
         </section>
+
+        {/* Primary Guide Card — races gateway, right below the Primary Main Event */}
+        <Link href="/primary" className="group block mb-8 animate-fade-in-delay-1">
+          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent group-hover:border-sage-300 transition-all">
+            <div className="bg-gradient-to-br from-sage-500 to-sage-600 p-6 text-white">
+              <div className="flex items-start justify-between">
+                <div>
+                  <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
+                    August 11, 2026 &bull; Up next
+                  </span>
+                  <h2 className="font-display text-2xl font-bold">Vermont Primary Guide</h2>
+                  <p className="text-sage-100 text-sm mt-1">Every race on your primary ballot — and who&apos;s running for it</p>
+                </div>
+                <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
+                  <ArrowRightIcon />
+                </div>
+              </div>
+            </div>
+            <div className="p-6">
+              <p className="text-warmgray-600 text-xs font-semibold uppercase tracking-wide mb-3">Races on the ballot</p>
+              <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+                {primaryRaces.map((race, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
+                    <span className="mt-1 flex-shrink-0 w-4 h-4 bg-sage-100 text-sage-600 rounded-full flex items-center justify-center">
+                      <CheckIcon />
+                    </span>
+                    {race}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4 pt-4 border-t border-warmgray-100">
+                <p className="text-xs text-warmgray-600">Filing closed May 28 &bull; Full candidate list inside</p>
+              </div>
+            </div>
+          </div>
+        </Link>
 
         {/* Intro */}
         <div className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 animate-fade-in-delay-1">
@@ -260,6 +303,15 @@ export default function Home() {
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>Democratic gubernatorial primary is a two-way race</strong> between Amanda Janoo and Aly Richards. Jeffery Wilson announced in April but did not file.</span>
             </li>
+          </ul>
+          <details className="group mt-3">
+            <summary className="flex items-center gap-1.5 cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden text-sm font-medium text-sage-700 hover:text-sage-900">
+              <svg className="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+              5 more updates
+            </summary>
+            <ul className="space-y-2 text-sm text-warmgray-700 mt-3">
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>Treasurer:</strong> incumbent Mike Pieciak (D) is unopposed in the Democratic primary. H. Brooke Paige (R) and Zachary Hampl (P) are on the primary ballot and would face Pieciak in November.</span>
@@ -280,7 +332,8 @@ export default function Home() {
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) are unopposed in the Democratic primary; Republican Mitchel Cypes is on the ballot in Chittenden-8. As of July 21, 2026, independents can still file for the November ballot until August 6.</span>
             </li>
-          </ul>
+            </ul>
+          </details>
         </div>
 
         {/* Key Dates Timeline */}
@@ -314,41 +367,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Primary Guide Card — the main event, full width */}
-        <Link href="/primary" className="group block mb-8 animate-fade-in-delay-2">
-          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent group-hover:border-sage-300 transition-all">
-            <div className="bg-gradient-to-br from-sage-500 to-sage-600 p-6 text-white">
-              <div className="flex items-start justify-between">
-                <div>
-                  <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
-                    August 11, 2026 &bull; Up next
-                  </span>
-                  <h2 className="font-display text-2xl font-bold">Vermont Primary Guide</h2>
-                  <p className="text-sage-100 text-sm mt-1">Every race on your primary ballot — and who&apos;s running for it</p>
-                </div>
-                <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
-                  <ArrowRightIcon />
-                </div>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="text-warmgray-600 text-xs font-semibold uppercase tracking-wide mb-3">Races on the ballot</p>
-              <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
-                {primaryRaces.map((race, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
-                    <span className="mt-1 flex-shrink-0 w-4 h-4 bg-sage-100 text-sage-600 rounded-full flex items-center justify-center">
-                      <CheckIcon />
-                    </span>
-                    {race}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4 pt-4 border-t border-warmgray-100">
-                <p className="text-xs text-warmgray-600">Filing closed May 28 &bull; Full candidate list inside</p>
-              </div>
-            </div>
-          </div>
-        </Link>
+        {/* Primary Guide card lives up top now, right after the Primary Main Event. */}
 
         {/* Open Primary Explainer */}
         <div className="bg-gradient-to-r from-sage-50 to-cream-100 border border-sage-100 rounded-2xl p-5 sm:p-6 mb-8">

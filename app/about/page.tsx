@@ -83,13 +83,6 @@ export default function AboutPage() {
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-1 text-sage-100 hover:text-white transition-colors mb-6 text-sm"
-          >
-            <ArrowLeftIcon />
-            Back to Guide
-          </Link>
           <div className="animate-fade-in">
             <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3 tracking-tight">
               About This Guide

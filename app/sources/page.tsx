@@ -1,11 +1,5 @@
 import Link from 'next/link';
 
-const ArrowLeftIcon = () => (
-  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-  </svg>
-);
-
 const ExternalLinkIcon = () => (
   <svg className="w-4 h-4 inline-block ml-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -102,21 +96,34 @@ const sourceCategories = [
 export default function SourcesPage() {
   return (
     <main className="min-h-screen bg-pattern">
-      {/* Header */}
-      <header className="bg-sage-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 py-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-sage-100 hover:text-white mb-4 transition-colors">
-            <ArrowLeftIcon />
-            Back to Voter Guide
-          </Link>
-          <h1 className="font-display text-3xl md:text-4xl font-bold mb-2">Sources & Citations</h1>
-          <p className="text-sage-100 text-lg">
-            All information in this voter guide is sourced from official and trusted sources
-          </p>
+      {/* Header — standard hero (gradient + soft blobs + wave divider) */}
+      <header className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-sage-500 via-sage-600 to-sage-700" />
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-white/20 blur-2xl" />
+          <div className="absolute bottom-10 right-20 w-48 h-48 rounded-full bg-terracotta-300/30 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+          <div className="animate-fade-in">
+            <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3 tracking-tight">
+              Sources &amp; Citations
+            </h1>
+            <p className="text-sage-100 text-lg max-w-2xl leading-relaxed">
+              All information in this voter guide is sourced from official and trusted sources.
+            </p>
+          </div>
+        </div>
+
+        {/* Wave divider */}
+        <div className="relative h-6">
+          <svg className="absolute bottom-0 w-full" viewBox="0 0 1440 48" fill="none" preserveAspectRatio="none">
+            <path d="M0 48h1440V24C1200 0 960 48 720 24S240 48 0 24v24z" className="fill-cream-100" />
+          </svg>
         </div>
       </header>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 -mt-1">
         {/* About */}
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <h2 className="font-display text-xl font-bold text-warmgray-900 mb-4">About This Voter Guide</h2>
