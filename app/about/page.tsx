@@ -192,13 +192,13 @@ export default function AboutPage() {
                 <p className="font-medium text-warmgray-800 text-sm">
                   Send an Email
                 </p>
-                <p className="text-xs text-warmgray-500">
+                <p className="text-xs text-warmgray-600">
                   jayson@durantedevelopment.com
                 </p>
               </div>
             </a>
 
-            <p className="text-warmgray-500 text-xs">
+            <p className="text-warmgray-600 text-xs">
               Corrections, candidate information, missing sources, accessibility
               feedback — all welcome.
             </p>
@@ -237,7 +237,7 @@ export default function AboutPage() {
 
         {/* Page footer */}
         <div className="mt-8 pt-6 border-t border-warmgray-200 text-center">
-          <p className="text-warmgray-400 text-xs">
+          <p className="text-warmgray-600 text-xs">
             sbvoterguide.com &middot; An independent community resource for
             South Burlington, VT
           </p>

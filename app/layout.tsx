@@ -52,9 +52,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${quicksand.variable} ${nunito.variable}`}>
       <body className="font-body bg-cream-100 min-h-screen">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:z-50 focus:top-3 focus:left-3 focus:bg-white focus:text-sage-700 focus:font-medium focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-soft"
+        >
+          Skip to content
+        </a>
         <PrimaryBanner />
         <SiteNav />
-        {children}
+        <div id="main" tabIndex={-1}>
+          {children}
+        </div>
         <Analytics />
       </body>
     </html>

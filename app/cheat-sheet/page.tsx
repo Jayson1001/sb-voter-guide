@@ -90,7 +90,7 @@ export default function CheatSheetPage() {
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-1 print:text-lg">
             Your Ballot Preview
           </h2>
-          <p className="text-warmgray-500 text-sm mb-4 print:mb-2 print:text-xs">
+          <p className="text-warmgray-600 text-sm mb-4 print:mb-2 print:text-xs">
             Here&apos;s what to expect when you get to the polls. Mark your
             choices before you go.
           </p>
@@ -116,7 +116,7 @@ export default function CheatSheetPage() {
                     <p className="font-semibold text-warmgray-800 print:text-sm">
                       {candidate.name}
                     </p>
-                    <p className="text-warmgray-500 text-xs">
+                    <p className="text-warmgray-600 text-xs">
                       {candidate.experience[0]}
                     </p>
                   </div>
@@ -124,7 +124,7 @@ export default function CheatSheetPage() {
               ))}
               <div className="flex items-center gap-3 p-3 border border-dashed border-warmgray-200 rounded-lg print:p-2">
                 <div className="w-5 h-5 border-2 border-warmgray-400 rounded flex-shrink-0 print:w-4 print:h-4" />
-                <p className="text-warmgray-400 text-sm italic print:text-xs">
+                <p className="text-warmgray-600 text-sm italic print:text-xs">
                   Write-in: _______________
                 </p>
               </div>
@@ -155,7 +155,7 @@ export default function CheatSheetPage() {
               ) : (
                 <div className="flex items-center gap-3 p-2 border border-dashed border-warmgray-200 rounded-lg print:p-1.5">
                   <div className="w-5 h-5 border-2 border-warmgray-400 rounded flex-shrink-0 print:w-4 print:h-4" />
-                  <p className="text-warmgray-400 text-sm italic print:text-xs">
+                  <p className="text-warmgray-600 text-sm italic print:text-xs">
                     Write-in: _______________
                   </p>
                 </div>
@@ -177,7 +177,7 @@ export default function CheatSheetPage() {
             >
               <div className="flex items-start justify-between gap-4 mb-2">
                 <div>
-                  <span className="text-xs font-semibold text-warmgray-500 uppercase">
+                  <span className="text-xs font-semibold text-warmgray-600 uppercase">
                     Article {index + 2}
                   </span>
                   <h3 className="font-display font-bold text-warmgray-800 print:text-sm">
@@ -194,7 +194,7 @@ export default function CheatSheetPage() {
                 {article.description}
               </p>
               {article.details?.funding && (
-                <p className="text-warmgray-500 text-xs mb-3 print:mb-2">
+                <p className="text-warmgray-600 text-xs mb-3 print:mb-2">
                   <strong>Funding:</strong> {article.details.funding}
                 </p>
               )}
@@ -279,7 +279,7 @@ export default function CheatSheetPage() {
               )
             )}
           </div>
-          <p className="text-warmgray-500 text-xs mt-2 print:mt-1">
+          <p className="text-warmgray-600 text-xs mt-2 print:mt-1">
             Polls open 7:00 AM - 7:00 PM &mdash; Same-day voter registration
             available
           </p>
@@ -287,7 +287,7 @@ export default function CheatSheetPage() {
 
         {/* Screen-only footer */}
         <div className="print:hidden text-center py-6">
-          <p className="text-warmgray-500 text-sm mb-4">
+          <p className="text-warmgray-600 text-sm mb-4">
             South Burlington Voter Guide 2026 &middot; A nonpartisan community
             resource
           </p>
@@ -328,7 +328,7 @@ export default function CheatSheetPage() {
 
         {/* Print-only footer */}
         <div className="hidden print:block border-t border-warmgray-300 pt-2 mt-4">
-          <p className="text-[10px] text-warmgray-500">
+          <p className="text-[10px] text-warmgray-600">
             South Burlington Voter Guide 2026 &mdash; sbvoterguide.com &mdash;
             A nonpartisan community resource. Verify all information at
             southburlingtonvt.gov.

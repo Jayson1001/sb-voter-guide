@@ -25,8 +25,8 @@ const statusColors: Record<string, string> = {
   "running": "bg-sage-100 text-sage-700",
   "likely-running": "bg-sage-50 text-sage-600",
   "announced": "bg-sage-100 text-sage-700",
-  "retiring": "bg-warmgray-100 text-warmgray-500",
-  "unknown": "bg-cream-100 text-warmgray-500",
+  "retiring": "bg-warmgray-100 text-warmgray-600",
+  "unknown": "bg-cream-100 text-warmgray-600",
 };
 
 const statusLabels: Record<string, string> = {
@@ -58,7 +58,7 @@ function RaceCard({ race }: { race: any }) {
           <div className="flex-1">
             <div className="flex flex-wrap items-center gap-2 mb-1">
               {race.district && (
-                <span className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide">{race.district}</span>
+                <span className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide">{race.district}</span>
               )}
               {race.seats > 1 && (
                 <span className="text-xs bg-sage-50 text-sage-600 px-2 py-0.5 rounded-full font-medium">{race.seats} seats</span>
@@ -69,10 +69,10 @@ function RaceCard({ race }: { race: any }) {
             </div>
             <h3 className="font-display text-lg font-bold text-warmgray-800">{race.shortName || race.office}</h3>
             {race.office !== race.shortName && race.district && (
-              <p className="text-warmgray-500 text-sm">{race.office}</p>
+              <p className="text-warmgray-600 text-sm">{race.office}</p>
             )}
           </div>
-          <div className="flex-shrink-0 text-xs text-warmgray-400 text-right">{race.termYears}-yr term</div>
+          <div className="flex-shrink-0 text-xs text-warmgray-600 text-right">{race.termYears}-yr term</div>
         </div>
 
         {race.description && (
@@ -81,7 +81,7 @@ function RaceCard({ race }: { race: any }) {
 
         {allIncumbents.length > 0 && (
           <div className="mb-4">
-            <p className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide mb-2">
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">
               {isOpenSeat ? 'Outgoing' : 'Current'} {allIncumbents.length > 1 ? 'Officeholders' : 'Officeholder'}
             </p>
             <div className="space-y-2">
@@ -90,17 +90,17 @@ function RaceCard({ race }: { race: any }) {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <span className="font-medium text-warmgray-800 text-sm">{incumbent.name}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[incumbent.party] || 'bg-warmgray-50 text-warmgray-500 border-warmgray-100'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[incumbent.party] || 'bg-warmgray-50 text-warmgray-600 border-warmgray-100'}`}>
                         {incumbent.party}
                       </span>
                     </div>
                     {incumbent.bio && (
-                      <p className="text-warmgray-500 text-xs leading-relaxed mt-1 line-clamp-2">{incumbent.bio}</p>
+                      <p className="text-warmgray-600 text-xs leading-relaxed mt-1 line-clamp-2">{incumbent.bio}</p>
                     )}
                     {incumbent.notablePositions && incumbent.notablePositions.length > 0 && (
                       <ul className="mt-1.5 space-y-0.5">
                         {incumbent.notablePositions.slice(0, 2).map((pos: string, j: number) => (
-                          <li key={j} className="text-xs text-warmgray-500 flex items-start gap-1.5">
+                          <li key={j} className="text-xs text-warmgray-600 flex items-start gap-1.5">
                             <span className="mt-1 w-1 h-1 rounded-full bg-warmgray-300 flex-shrink-0" />
                             {pos}
                           </li>
@@ -126,22 +126,22 @@ function RaceCard({ race }: { race: any }) {
 
         {knownCandidates.length > 0 && (
           <div className="mb-4">
-            <p className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide mb-2">Announced Candidates</p>
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Announced Candidates</p>
             <div className="space-y-2">
               {knownCandidates.map((candidate: any, i: number) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-sage-50 border border-sage-100">
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <span className="font-medium text-warmgray-800 text-sm">{candidate.name}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[candidate.party] || 'bg-warmgray-50 text-warmgray-500 border-warmgray-100'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[candidate.party] || 'bg-warmgray-50 text-warmgray-600 border-warmgray-100'}`}>
                         {candidate.party}
                       </span>
                       {candidate.announcedDate && (
-                        <span className="text-xs text-warmgray-400">Announced {candidate.announcedDate}</span>
+                        <span className="text-xs text-warmgray-600">Announced {candidate.announcedDate}</span>
                       )}
                     </div>
                     {candidate.bio && (
-                      <p className="text-warmgray-500 text-xs leading-relaxed mt-1">{candidate.bio}</p>
+                      <p className="text-warmgray-600 text-xs leading-relaxed mt-1">{candidate.bio}</p>
                     )}
                     {candidate.website && (
                       <a
@@ -161,10 +161,10 @@ function RaceCard({ race }: { race: any }) {
         )}
 
         {race.notes && (
-          <p className="text-xs text-warmgray-400 italic border-t border-warmgray-100 pt-3 mt-1">{race.notes}</p>
+          <p className="text-xs text-warmgray-600 italic border-t border-warmgray-100 pt-3 mt-1">{race.notes}</p>
         )}
         {race.districtNote && (
-          <div className="mt-2 flex items-start gap-1.5 text-xs text-warmgray-400">
+          <div className="mt-2 flex items-start gap-1.5 text-xs text-warmgray-600">
             <svg className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -199,7 +199,7 @@ function BallotMeasureCard({ measure }: { measure: any }) {
         <p className="text-warmgray-600 text-sm leading-relaxed mb-4">{measure.plainLanguageSummary}</p>
 
         <div className="bg-warmgray-50 rounded-xl p-4 mb-4">
-          <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">Proposed Constitutional Text</p>
+          <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Proposed Constitutional Text</p>
           <p className="text-warmgray-700 text-sm italic leading-relaxed">&ldquo;{measure.proposedConstitutionalText}&rdquo;</p>
         </div>
 
@@ -315,7 +315,7 @@ export default function GeneralPage() {
               </div>
               <div>
                 <h2 className="font-display text-xl font-bold text-warmgray-800">Ballot Measures</h2>
-                <p className="text-warmgray-500 text-sm">Two constitutional amendments — content confirmed now</p>
+                <p className="text-warmgray-600 text-sm">Two constitutional amendments — content confirmed now</p>
               </div>
             </div>
             <Link
@@ -383,7 +383,7 @@ export default function GeneralPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont State Senate</h2>
-              <p className="text-warmgray-500 text-sm">Chittenden Southeast district — 3 seats</p>
+              <p className="text-warmgray-600 text-sm">Chittenden Southeast district — 3 seats</p>
             </div>
           </div>
           <div className="space-y-5">
@@ -403,7 +403,7 @@ export default function GeneralPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont House of Representatives</h2>
-              <p className="text-warmgray-500 text-sm">5 South Burlington districts</p>
+              <p className="text-warmgray-600 text-sm">5 South Burlington districts</p>
             </div>
           </div>
 
@@ -435,10 +435,10 @@ export default function GeneralPage() {
             <div>
               <p className="font-semibold text-warmgray-700 mb-1">Polling Hours</p>
               <p className="text-warmgray-600">7:00 AM – 7:00 PM on November 3, 2026</p>
-              <p className="text-warmgray-500 mt-3 font-semibold">South Burlington Polling Locations</p>
+              <p className="text-warmgray-600 mt-3 font-semibold">South Burlington Polling Locations</p>
               <ul className="mt-1 space-y-1">
                 {votingInfo.southBurlingtonPollingLocations.map((loc, i) => (
-                  <li key={i} className="text-warmgray-500 flex items-start gap-1.5">
+                  <li key={i} className="text-warmgray-600 flex items-start gap-1.5">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-terracotta-400 flex-shrink-0" />
                     {loc}
                   </li>

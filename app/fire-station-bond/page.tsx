@@ -190,22 +190,22 @@ export default function FireStationBondPage() {
 
             <div className="bg-warmgray-50 border border-warmgray-200 rounded-xl p-5">
               <div className="flex items-center gap-2 mb-3">
-                <svg className="w-6 h-6 text-warmgray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-warmgray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <h3 className="font-bold text-warmgray-700">It Fails</h3>
               </div>
               <ul className="space-y-2 text-warmgray-600 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-warmgray-400 mt-1">•</span>
+                  <span className="text-warmgray-600 mt-1">•</span>
                   Staff continues working from temporary trailer
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-warmgray-400 mt-1">•</span>
+                  <span className="text-warmgray-600 mt-1">•</span>
                   City may seek alternative funding or bring back to voters
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-warmgray-400 mt-1">•</span>
+                  <span className="text-warmgray-600 mt-1">•</span>
                   Capital fees and rental surplus remain in those funds
                 </li>
               </ul>
@@ -221,15 +221,15 @@ export default function FireStationBondPage() {
 
           <div className="grid md:grid-cols-3 gap-4">
             <div className="text-center p-4 bg-cream-100 rounded-xl">
-              <p className="text-warmgray-500 text-sm mb-1">Location</p>
+              <p className="text-warmgray-600 text-sm mb-1">Location</p>
               <p className="font-semibold text-warmgray-800">575 Dorset Street</p>
             </div>
             <div className="text-center p-4 bg-cream-100 rounded-xl">
-              <p className="text-warmgray-500 text-sm mb-1">Year Built</p>
+              <p className="text-warmgray-600 text-sm mb-1">Year Built</p>
               <p className="font-semibold text-warmgray-800">{fireStationBond.yearBuilt}</p>
             </div>
             <div className="text-center p-4 bg-cream-100 rounded-xl">
-              <p className="text-warmgray-500 text-sm mb-1">On-Duty Staff</p>
+              <p className="text-warmgray-600 text-sm mb-1">On-Duty Staff</p>
               <p className="font-semibold text-warmgray-800">5 firefighters 24/7</p>
             </div>
           </div>
@@ -276,7 +276,7 @@ export default function FireStationBondPage() {
               </div>
               <div>
                 <p className="font-semibold text-warmgray-800">City Budget</p>
-                <p className="text-sm text-warmgray-500">$58.5M - Article 2</p>
+                <p className="text-sm text-warmgray-600">$58.5M - Article 2</p>
               </div>
             </Link>
             <Link
@@ -290,7 +290,7 @@ export default function FireStationBondPage() {
               </div>
               <div>
                 <p className="font-semibold text-warmgray-800">City Council Race</p>
-                <p className="text-sm text-warmgray-500">2 candidates - contested</p>
+                <p className="text-sm text-warmgray-600">2 candidates - contested</p>
               </div>
             </Link>
           </div>
@@ -300,7 +300,7 @@ export default function FireStationBondPage() {
       {/* Footer */}
       <footer className="bg-warmgray-100 border-t border-warmgray-200 mt-12">
         <div className="max-w-4xl mx-auto px-4 py-6 text-center">
-          <p className="text-warmgray-500 text-sm">
+          <p className="text-warmgray-600 text-sm">
             South Burlington Voter Guide 2026 &middot; A nonpartisan community resource
           </p>
         </div>

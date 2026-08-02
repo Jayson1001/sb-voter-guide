@@ -77,7 +77,7 @@ export default function SiteNav() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
-            className="lg:hidden inline-flex items-center justify-center w-9 h-9 rounded-lg text-warmgray-700 hover:bg-warmgray-100 transition-colors"
+            className="lg:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-lg text-warmgray-700 hover:bg-warmgray-100 transition-colors"
           >
             {open ? (
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,7 +111,7 @@ export default function SiteNav() {
                     <span className={`text-sm font-semibold ${active ? "text-sage-700" : "text-warmgray-800"}`}>
                       {item.label}
                     </span>
-                    <span className="text-xs text-warmgray-500 mt-0.5">{item.desc}</span>
+                    <span className="text-xs text-warmgray-600 mt-0.5">{item.desc}</span>
                   </Link>
                 </li>
               );

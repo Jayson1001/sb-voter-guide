@@ -212,7 +212,7 @@ export default function HowToVotePage() {
               <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-cream-50">
                 <div className="w-2 h-2 mt-1.5 bg-sage-400 rounded-full flex-shrink-0" />
                 <div>
-                  <p className="text-warmgray-500 text-xs font-semibold uppercase tracking-wide">{fact.label}</p>
+                  <p className="text-warmgray-600 text-xs font-semibold uppercase tracking-wide">{fact.label}</p>
                   <p className="text-warmgray-800 text-sm font-medium">{fact.value}</p>
                 </div>
               </div>
@@ -225,7 +225,7 @@ export default function HowToVotePage() {
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-2">
             South Burlington Polling Locations
           </h2>
-          <p className="text-warmgray-500 text-sm mb-4">
+          <p className="text-warmgray-600 text-sm mb-4">
             Your assigned location depends on your address.{" "}
             <a
               href="https://mvp.vermont.gov/"
@@ -296,7 +296,7 @@ export default function HowToVotePage() {
                 </div>
                 <div>
                   <p className="font-medium text-warmgray-800 text-sm">{resource.name}</p>
-                  <p className="text-xs text-warmgray-500">{resource.desc}</p>
+                  <p className="text-xs text-warmgray-600">{resource.desc}</p>
                 </div>
               </a>
             ))}
@@ -335,7 +335,7 @@ export default function HowToVotePage() {
 
         {/* Page footer */}
         <div className="mt-8 pt-6 border-t border-warmgray-200 text-center">
-          <p className="text-warmgray-400 text-xs">
+          <p className="text-warmgray-600 text-xs">
             sbvoterguide.com &middot; An independent community resource for
             South Burlington, VT
           </p>

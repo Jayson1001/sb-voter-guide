@@ -263,7 +263,7 @@ export default function CandidatePage({ params }: { params: { id: string } }) {
                 <h2 className="font-display text-xl font-bold text-warmgray-800">
                   Civic Record
                 </h2>
-                <p className="text-warmgray-500 text-sm">Actions in local government</p>
+                <p className="text-warmgray-600 text-sm">Actions in local government</p>
               </div>
             </div>
 

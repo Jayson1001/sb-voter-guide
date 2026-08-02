@@ -89,7 +89,7 @@ export default function BudgetPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Tax Calculator</h2>
-              <p className="text-warmgray-500 text-sm">See what this budget means for your property taxes</p>
+              <p className="text-warmgray-600 text-sm">See what this budget means for your property taxes</p>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ export default function BudgetPage() {
               Your Home Value
             </label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-warmgray-400 font-medium">$</span>
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-warmgray-600 font-medium">$</span>
               <input
                 type="number"
                 value={homeValue}
@@ -107,7 +107,7 @@ export default function BudgetPage() {
                 placeholder="440000"
               />
             </div>
-            <p className="text-warmgray-400 text-sm mt-2">
+            <p className="text-warmgray-600 text-sm mt-2">
               Average South Burlington home: $440,000 | Average condo: $300,000
             </p>
           </div>
@@ -156,7 +156,7 @@ export default function BudgetPage() {
             </div>
           </div>
 
-          <p className="text-warmgray-400 text-xs mt-4">
+          <p className="text-warmgray-600 text-xs mt-4">
             * Calculations based on homestead property tax rates. Non-homestead rates differ slightly.
             Tax rates are per $100 of assessed property value. FY2027 education rate is estimated based on
             the projected 8.76% increase; the final rate is set by the state after voters approve the school budget.
@@ -187,7 +187,7 @@ export default function BudgetPage() {
                     style={{ width: `${(item.amount / maxBreakdown) * 100}%` }}
                   />
                 </div>
-                <p className="text-warmgray-400 text-sm mt-1">{item.percentOfGeneral}% of general fund</p>
+                <p className="text-warmgray-600 text-sm mt-1">{item.percentOfGeneral}% of general fund</p>
               </div>
             ))}
           </div>
@@ -252,7 +252,7 @@ export default function BudgetPage() {
             ))}
           </div>
 
-          <p className="text-warmgray-500 text-sm">
+          <p className="text-warmgray-600 text-sm">
             Estimated annual increase for most residents: ~${cityBudget.enterpriseFunds.estimatedAnnualIncrease}
             (or ~${cityBudget.enterpriseFunds.minimumAccountIncrease} for accounts paying minimum fees)
           </p>
@@ -270,7 +270,7 @@ export default function BudgetPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">The Other Half of Your Tax Bill</h2>
-              <p className="text-warmgray-500 text-sm">School budget drives the majority of property taxes</p>
+              <p className="text-warmgray-600 text-sm">School budget drives the majority of property taxes</p>
             </div>
           </div>
 
@@ -283,19 +283,19 @@ export default function BudgetPage() {
 
           <div className="grid sm:grid-cols-3 gap-4 mb-6">
             <div className="bg-cream-100 rounded-xl p-4 text-center">
-              <p className="text-warmgray-500 text-sm mb-1">School Budget</p>
+              <p className="text-warmgray-600 text-sm mb-1">School Budget</p>
               <p className="font-display font-bold text-2xl text-warmgray-800">$73.9M</p>
-              <p className="text-warmgray-500 text-xs mt-1">up 3.4% from $71.5M</p>
+              <p className="text-warmgray-600 text-xs mt-1">up 3.4% from $71.5M</p>
             </div>
             <div className="bg-cream-100 rounded-xl p-4 text-center">
-              <p className="text-warmgray-500 text-sm mb-1">Education Tax Impact</p>
+              <p className="text-warmgray-600 text-sm mb-1">Education Tax Impact</p>
               <p className="font-display font-bold text-2xl text-terracotta-600">+8.76%</p>
-              <p className="text-warmgray-500 text-xs mt-1">even 0% spending = +4.24%</p>
+              <p className="text-warmgray-600 text-xs mt-1">even 0% spending = +4.24%</p>
             </div>
             <div className="bg-cream-100 rounded-xl p-4 text-center">
-              <p className="text-warmgray-500 text-sm mb-1">Board Vote</p>
+              <p className="text-warmgray-600 text-sm mb-1">Board Vote</p>
               <p className="font-display font-bold text-2xl text-warmgray-800">4-3</p>
-              <p className="text-warmgray-500 text-xs mt-1">not unanimous</p>
+              <p className="text-warmgray-600 text-xs mt-1">not unanimous</p>
             </div>
           </div>
 
@@ -339,7 +339,7 @@ export default function BudgetPage() {
           </div>
 
           <div className="border-t border-warmgray-100 pt-3">
-            <p className="text-warmgray-400 text-xs">
+            <p className="text-warmgray-600 text-xs">
               Sources:{' '}
               <a href="https://www.vtcng.com/otherpapersbvt/community/education/south-burlington-school-board-approves-spending-increase/article_f10c6a32-1524-4b76-9725-51ff0c6d90a0.html" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:underline">The Other Paper</a>
               {' '}&middot;{' '}
@@ -389,7 +389,7 @@ export default function BudgetPage() {
               </div>
               <div>
                 <p className="font-semibold text-warmgray-800">Fire Station Bond</p>
-                <p className="text-sm text-warmgray-500">$2.3M addition - Article 3</p>
+                <p className="text-sm text-warmgray-600">$2.3M addition - Article 3</p>
               </div>
             </Link>
             <Link
@@ -403,7 +403,7 @@ export default function BudgetPage() {
               </div>
               <div>
                 <p className="font-semibold text-warmgray-800">City Council Race</p>
-                <p className="text-sm text-warmgray-500">2 candidates - contested</p>
+                <p className="text-sm text-warmgray-600">2 candidates - contested</p>
               </div>
             </Link>
           </div>
@@ -413,7 +413,7 @@ export default function BudgetPage() {
       {/* Footer */}
       <footer className="bg-warmgray-100 border-t border-warmgray-200 mt-12">
         <div className="max-w-4xl mx-auto px-4 py-6 text-center">
-          <p className="text-warmgray-500 text-sm">
+          <p className="text-warmgray-600 text-sm">
             South Burlington Voter Guide 2026 &middot; A nonpartisan community resource
           </p>
         </div>

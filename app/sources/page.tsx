@@ -203,7 +203,7 @@ export default function SourcesPage() {
 
       <footer className="bg-warmgray-100 border-t border-warmgray-200 mt-12">
         <div className="max-w-4xl mx-auto px-4 py-6 text-center">
-          <p className="text-warmgray-500 text-sm">
+          <p className="text-warmgray-600 text-sm">
             South Burlington Voter Guide 2026 &middot; A nonpartisan community resource
           </p>
         </div>

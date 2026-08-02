@@ -77,9 +77,9 @@ const statusColors: Record<string, string> = {
   "running": "bg-sage-100 text-sage-700",
   "likely-running": "bg-sage-50 text-sage-600",
   "announced": "bg-sage-100 text-sage-700",
-  "retiring": "bg-warmgray-100 text-warmgray-500",
-  "withdrawn": "bg-warmgray-100 text-warmgray-500",
-  "unknown": "bg-cream-100 text-warmgray-500",
+  "retiring": "bg-warmgray-100 text-warmgray-600",
+  "withdrawn": "bg-warmgray-100 text-warmgray-600",
+  "unknown": "bg-cream-100 text-warmgray-600",
 };
 
 const statusLabels: Record<string, string> = {
@@ -114,7 +114,7 @@ function RaceCard({ race }: { race: any }) {
           <div className="flex-1">
             <div className="flex flex-wrap items-center gap-2 mb-1">
               {race.district && (
-                <span className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide">
+                <span className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide">
                   {race.district}
                 </span>
               )}
@@ -133,10 +133,10 @@ function RaceCard({ race }: { race: any }) {
               {race.shortName || race.office}
             </h3>
             {race.office !== race.shortName && race.district && (
-              <p className="text-warmgray-500 text-sm">{race.office}</p>
+              <p className="text-warmgray-600 text-sm">{race.office}</p>
             )}
           </div>
-          <div className="flex-shrink-0 text-xs text-warmgray-400 text-right">
+          <div className="flex-shrink-0 text-xs text-warmgray-600 text-right">
             {race.termYears}-yr term
           </div>
         </div>
@@ -161,7 +161,7 @@ function RaceCard({ race }: { race: any }) {
         {/* Incumbents */}
         {allIncumbents.length > 0 && (
           <div className="mb-4">
-            <p className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide mb-2">
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">
               {isOpenSeat ? 'Outgoing' : 'Current'} {allIncumbents.length > 1 ? 'Officeholders' : 'Officeholder'}
             </p>
             <div className="space-y-2">
@@ -170,17 +170,17 @@ function RaceCard({ race }: { race: any }) {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <span className="font-medium text-warmgray-800 text-sm">{incumbent.name}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[incumbent.party] || 'bg-warmgray-50 text-warmgray-500 border-warmgray-100'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[incumbent.party] || 'bg-warmgray-50 text-warmgray-600 border-warmgray-100'}`}>
                         {incumbent.party}
                       </span>
                     </div>
                     {incumbent.bio && (
-                      <p className="text-warmgray-500 text-xs leading-relaxed mt-1 line-clamp-2">{incumbent.bio}</p>
+                      <p className="text-warmgray-600 text-xs leading-relaxed mt-1 line-clamp-2">{incumbent.bio}</p>
                     )}
                     {incumbent.notablePositions && incumbent.notablePositions.length > 0 && (
                       <ul className="mt-1.5 space-y-0.5">
                         {incumbent.notablePositions.slice(0, 2).map((pos: string, j: number) => (
-                          <li key={j} className="text-xs text-warmgray-500 flex items-start gap-1.5">
+                          <li key={j} className="text-xs text-warmgray-600 flex items-start gap-1.5">
                             <span className="mt-1 w-1 h-1 rounded-full bg-warmgray-300 flex-shrink-0" />
                             {pos}
                           </li>
@@ -212,7 +212,7 @@ function RaceCard({ race }: { race: any }) {
         {/* Known Challengers / Candidates */}
         {knownCandidates.length > 0 && (
           <div className="mb-4">
-            <p className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide mb-2">
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">
               Announced Candidates
             </p>
             <div className="space-y-2">
@@ -221,20 +221,20 @@ function RaceCard({ race }: { race: any }) {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <span className="font-medium text-warmgray-800 text-sm">{candidate.name}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[candidate.party] || 'bg-warmgray-50 text-warmgray-500 border-warmgray-100'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[candidate.party] || 'bg-warmgray-50 text-warmgray-600 border-warmgray-100'}`}>
                         {candidate.party}
                       </span>
                       {candidate.announcedDate && (
-                        <span className="text-xs text-warmgray-400">Announced {candidate.announcedDate}</span>
+                        <span className="text-xs text-warmgray-600">Announced {candidate.announcedDate}</span>
                       )}
                     </div>
                     {candidate.bio && (
-                      <p className="text-warmgray-500 text-xs leading-relaxed mt-1">{candidate.bio}</p>
+                      <p className="text-warmgray-600 text-xs leading-relaxed mt-1">{candidate.bio}</p>
                     )}
                     {candidate.notablePositions && candidate.notablePositions.length > 0 && (
                       <ul className="mt-1.5 space-y-0.5">
                         {candidate.notablePositions.slice(0, 2).map((pos: string, j: number) => (
-                          <li key={j} className="text-xs text-warmgray-500 flex items-start gap-1.5">
+                          <li key={j} className="text-xs text-warmgray-600 flex items-start gap-1.5">
                             <span className="mt-1 w-1 h-1 rounded-full bg-sage-300 flex-shrink-0" />
                             {pos}
                           </li>
@@ -260,12 +260,12 @@ function RaceCard({ race }: { race: any }) {
 
         {/* Notes */}
         {race.notes && (
-          <p className="text-xs text-warmgray-400 italic border-t border-warmgray-100 pt-3 mt-1">{race.notes}</p>
+          <p className="text-xs text-warmgray-600 italic border-t border-warmgray-100 pt-3 mt-1">{race.notes}</p>
         )}
 
         {/* District note */}
         {race.districtNote && (
-          <div className="mt-2 flex items-start gap-1.5 text-xs text-warmgray-400">
+          <div className="mt-2 flex items-start gap-1.5 text-xs text-warmgray-600">
             <svg className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -361,7 +361,7 @@ export default function PrimaryPage() {
         </div>
 
         {/* What is a Primary */}
-        <div id="primary-mechanics" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-6">
+        <div id="primary-mechanics" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-20">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-3">What is the Primary?</h2>
           <div className="grid sm:grid-cols-2 gap-4 text-sm text-warmgray-600 leading-relaxed">
             <p>
@@ -436,7 +436,7 @@ export default function PrimaryPage() {
                 </p>
               </div>
               <div className="border border-warmgray-200 rounded-xl p-4">
-                <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">The criticism</p>
+                <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">The criticism</p>
                 <p className="text-warmgray-600 text-sm leading-relaxed">
                   <a href="https://www.vtcng.com/otherpapersbvt/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">The Other Paper</a>{" "}
                   reported the request is a <strong className="text-warmgray-800">49% increase</strong> in total project
@@ -450,7 +450,7 @@ export default function PrimaryPage() {
 
             {/* How it's paid for */}
             <div className="mb-5">
-              <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">How it gets paid for</p>
+              <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">How it gets paid for</p>
               <ul className="space-y-2 text-warmgray-600 text-sm leading-relaxed">
                 <li className="flex items-start gap-2">
                   <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
@@ -487,7 +487,7 @@ export default function PrimaryPage() {
                   help hold the cost down. South Burlington has one of the lowest sewer rates in Vermont today, and the
                   city says it would still compare well regionally after the increases.
                 </p>
-                <p className="text-warmgray-500 text-xs">
+                <p className="text-warmgray-600 text-xs">
                   The city hasn&apos;t published an exact dollar figure for a typical household, so we can&apos;t give you
                   a precise monthly number — check your sewer bill or the{" "}
                   <a
@@ -529,8 +529,8 @@ export default function PrimaryPage() {
             </div>
 
             {/* Ballot logistics */}
-            <div className="flex items-start gap-2 text-xs text-warmgray-500 leading-relaxed">
-              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-warmgray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="flex items-start gap-2 text-xs text-warmgray-600 leading-relaxed">
+              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-warmgray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <p>
@@ -560,7 +560,7 @@ export default function PrimaryPage() {
                 Local hook: the three Democratic candidates for Lieutenant Governor held a housing forum in South
                 Burlington on July 15 (<a href="https://vtdigger.org/2026/07/20/in-vermonts-democratic-primary-for-lieutenant-governor-leading-candidates-past-work-takes-center-stage/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">VTDigger, July 20</a>).
               </p>
-              <p className="text-warmgray-500 text-xs leading-relaxed mb-3">
+              <p className="text-warmgray-600 text-xs leading-relaxed mb-3">
                 Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
               </p>
               <a
@@ -655,7 +655,7 @@ export default function PrimaryPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont State Senate</h2>
-              <p className="text-warmgray-500 text-sm">Your senators from the Chittenden Southeast district</p>
+              <p className="text-warmgray-600 text-sm">Your senators from the Chittenden Southeast district</p>
             </div>
           </div>
           <div className="mb-4"><MechanicsLink /></div>
@@ -680,7 +680,7 @@ export default function PrimaryPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont House of Representatives</h2>
-              <p className="text-warmgray-500 text-sm">South Burlington spans multiple House districts — see which one you&apos;re in</p>
+              <p className="text-warmgray-600 text-sm">South Burlington spans multiple House districts — see which one you&apos;re in</p>
             </div>
           </div>
           <div className="mb-4"><MechanicsLink /></div>
@@ -721,13 +721,13 @@ export default function PrimaryPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Chittenden County Offices</h2>
-              <p className="text-warmgray-500 text-sm">Same for every South Burlington voter — no district lookup needed</p>
+              <p className="text-warmgray-600 text-sm">Same for every South Burlington voter — no district lookup needed</p>
             </div>
           </div>
           <div className="mb-4"><MechanicsLink /></div>
 
           <div className="bg-cream-50 border border-warmgray-200 rounded-xl p-4 mb-5 flex items-start gap-3">
-            <svg className="w-5 h-5 text-warmgray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-warmgray-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <p className="text-sm text-warmgray-600 leading-relaxed">
@@ -761,7 +761,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Check it yourself — primary-source resources */}
-        <section id="check-it-yourself" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-6">
+        <section id="check-it-yourself" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-20">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-1">Check it yourself</h2>
           <p className="text-warmgray-600 text-sm leading-relaxed mb-5">
             Every campaign says the same three things. Here&apos;s where to go when you want to know what someone
@@ -789,7 +789,7 @@ export default function PrimaryPage() {
                     {r.title}
                     <ExternalLinkIcon />
                   </a>
-                  <p className="text-warmgray-500 text-xs leading-relaxed mt-0.5">{r.desc}</p>
+                  <p className="text-warmgray-600 text-xs leading-relaxed mt-0.5">{r.desc}</p>
                 </div>
               </li>
             ))}
@@ -803,10 +803,10 @@ export default function PrimaryPage() {
             <div>
               <p className="font-semibold text-warmgray-700 mb-1">Polling Hours</p>
               <p className="text-warmgray-600">7:00 AM – 7:00 PM</p>
-              <p className="text-warmgray-500 mt-3 font-semibold">South Burlington Polling Locations</p>
+              <p className="text-warmgray-600 mt-3 font-semibold">South Burlington Polling Locations</p>
               <ul className="mt-1 space-y-1">
                 {votingInfo.southBurlingtonPollingLocations.map((loc, i) => (
-                  <li key={i} className="text-warmgray-500 flex items-start gap-1.5">
+                  <li key={i} className="text-warmgray-600 flex items-start gap-1.5">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
                     {loc}
                   </li>
@@ -854,7 +854,7 @@ export default function PrimaryPage() {
 
         {/* Scope note: Justices of the Peace are a November thing */}
         <div className="bg-warmgray-50 border border-warmgray-200 rounded-xl p-4 mb-8 flex items-start gap-3">
-          <svg className="w-5 h-5 text-warmgray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 text-warmgray-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           <p className="text-sm text-warmgray-600 leading-relaxed">

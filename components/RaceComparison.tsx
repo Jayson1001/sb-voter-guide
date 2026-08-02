@@ -73,14 +73,16 @@ export default function RaceComparison({ raceId }: { raceId: string }) {
       <div className="bg-sage-50 border-b border-sage-100 px-5 sm:px-6 py-4">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h3 className="font-display text-lg font-bold text-sage-800">What&apos;s the difference?</h3>
-          {asOf && <span className="text-xs text-warmgray-400">As of {asOf}</span>}
+          {asOf && <span className="text-xs text-warmgray-600">As of {asOf}</span>}
         </div>
         <p className="text-warmgray-600 text-sm leading-relaxed mt-1">{c.intro}</p>
       </div>
 
       <div className="p-5 sm:p-6">
-        {/* Desktop: table */}
-        <table className="hidden sm:table w-full border-collapse">
+        {/* Desktop (lg+): table. overflow-x-auto is a safety net so a long cell
+            scrolls instead of clipping inside the section's overflow-hidden. */}
+        <div className="hidden lg:block overflow-x-auto">
+        <table className="w-full border-collapse">
           <thead>
             <tr>
               <th className="w-40 text-left align-bottom pb-3 pr-4"></th>
@@ -101,7 +103,7 @@ export default function RaceComparison({ raceId }: { raceId: string }) {
                 <th scope="row" className="text-left py-4 pr-4">
                   <span className="block text-sm font-semibold text-warmgray-800">{row.axis}</span>
                   {row.detail && (
-                    <span className="block text-xs text-warmgray-400 font-normal mt-0.5 leading-relaxed">
+                    <span className="block text-xs text-warmgray-600 font-normal mt-0.5 leading-relaxed">
                       {row.detail}
                     </span>
                   )}
@@ -116,7 +118,7 @@ export default function RaceComparison({ raceId }: { raceId: string }) {
                     {row.values[name] ? (
                       row.values[name]
                     ) : (
-                      <span className="text-warmgray-400 italic">Did not respond</span>
+                      <span className="text-warmgray-600 italic">Did not respond</span>
                     )}
                   </td>
                 ))}
@@ -124,14 +126,16 @@ export default function RaceComparison({ raceId }: { raceId: string }) {
             ))}
           </tbody>
         </table>
+        </div>
 
-        {/* Mobile: stacked cards, one axis per card (no horizontal scroll) */}
-        <div className="sm:hidden space-y-4">
+        {/* Below lg: stacked cards, one axis per card (no horizontal scroll).
+            Used up to 1024px so multi-candidate tables never get cramped. */}
+        <div className="lg:hidden space-y-4">
           {c.rows.map((row, i) => (
             <div key={i} className="border border-warmgray-100 rounded-xl p-4">
               <p className="text-sm font-semibold text-warmgray-800">{row.axis}</p>
               {row.detail && (
-                <p className="text-xs text-warmgray-400 mt-0.5 leading-relaxed">{row.detail}</p>
+                <p className="text-xs text-warmgray-600 mt-0.5 leading-relaxed">{row.detail}</p>
               )}
               <div className="mt-3 space-y-3">
                 {c.candidates.map((name) => (
@@ -141,7 +145,7 @@ export default function RaceComparison({ raceId }: { raceId: string }) {
                       {row.values[name] ? (
                         row.values[name]
                       ) : (
-                        <span className="text-warmgray-400 italic">Did not respond</span>
+                        <span className="text-warmgray-600 italic">Did not respond</span>
                       )}
                     </p>
                   </div>
@@ -159,7 +163,7 @@ export default function RaceComparison({ raceId }: { raceId: string }) {
         {/* Where they agree */}
         {c.agree && (
           <div className="mt-6 bg-cream-50 rounded-xl p-4">
-            <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-1.5">Where they agree</p>
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-1.5">Where they agree</p>
             <p className="text-sm text-warmgray-600 leading-relaxed">{c.agree}</p>
           </div>
         )}
@@ -167,7 +171,7 @@ export default function RaceComparison({ raceId }: { raceId: string }) {
         {/* Check it yourself */}
         {c.sources && c.sources.length > 0 && (
           <div className="mt-6 pt-4 border-t border-warmgray-100">
-            <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">Check it yourself</p>
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Check it yourself</p>
             <ul className="space-y-1.5">
               {c.sources.map((s, i) => (
                 <li key={i}>

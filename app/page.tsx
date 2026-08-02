@@ -169,7 +169,7 @@ export default function Home() {
                 South Burlington residents will vote in two elections in 2026: the Vermont Primary on August 11 and the General Election on November 3.
                 This independent, nonpartisan guide covers all races on those ballots — from Governor down to your local State House representative.
               </p>
-              <p className="text-warmgray-500 text-sm mt-2">
+              <p className="text-warmgray-600 text-sm mt-2">
                 Candidate filing closed May 28, 2026. The full candidate list is now available — see the primary and general guides below.
               </p>
             </div>
@@ -192,7 +192,7 @@ export default function Home() {
               <p className="text-warmgray-700 text-sm sm:text-base leading-relaxed mb-2">
                 See the candidates for the August 11 primary in their own words. New forums are added to the playlist as they&apos;re released.
               </p>
-              <p className="text-warmgray-500 text-xs leading-relaxed mb-4">
+              <p className="text-warmgray-600 text-xs leading-relaxed mb-4">
                 Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
               </p>
               <a
@@ -245,7 +245,7 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <div className="flex items-center justify-between gap-3 mb-3">
             <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
-            <span className="text-xs text-warmgray-400 font-medium">Updated July 22, 2026</span>
+            <span className="text-xs text-warmgray-600 font-medium">Updated July 22, 2026</span>
           </div>
           <ul className="space-y-2 text-sm text-warmgray-700">
             <li className="flex items-start gap-2">
@@ -306,7 +306,7 @@ export default function Home() {
                       )}
                     </div>
                     <p className="text-warmgray-700 text-sm mt-0.5">{item.event}</p>
-                    {item.note && <p className="text-warmgray-500 text-xs mt-1">{item.note}</p>}
+                    {item.note && <p className="text-warmgray-600 text-xs mt-1">{item.note}</p>}
                   </li>
                 );
               })}
@@ -332,7 +332,7 @@ export default function Home() {
               </div>
             </div>
             <div className="p-6">
-              <p className="text-warmgray-500 text-xs font-semibold uppercase tracking-wide mb-3">Races on the ballot</p>
+              <p className="text-warmgray-600 text-xs font-semibold uppercase tracking-wide mb-3">Races on the ballot</p>
               <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
                 {primaryRaces.map((race, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
@@ -344,7 +344,7 @@ export default function Home() {
                 ))}
               </ul>
               <div className="mt-4 pt-4 border-t border-warmgray-100">
-                <p className="text-xs text-warmgray-400">Filing closed May 28 &bull; Full candidate list inside</p>
+                <p className="text-xs text-warmgray-600">Filing closed May 28 &bull; Full candidate list inside</p>
               </div>
             </div>
           </div>
@@ -382,7 +382,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Register to Vote</p>
-                <p className="text-xs text-warmgray-500">Same-day registration available — no deadline</p>
+                <p className="text-xs text-warmgray-600">Same-day registration available — no deadline</p>
               </div>
             </a>
             <a
@@ -396,7 +396,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Find Your District</p>
-                <p className="text-xs text-warmgray-500">SB spans multiple House districts</p>
+                <p className="text-xs text-warmgray-600">SB spans multiple House districts</p>
               </div>
             </a>
             <a
@@ -412,7 +412,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Absentee Ballots</p>
-                <p className="text-xs text-warmgray-500">Aug 11 primary: request one (not mailed automatically). Nov 3 general: mailed to every active voter.</p>
+                <p className="text-xs text-warmgray-600">Aug 11 primary: request one (not mailed automatically). Nov 3 general: mailed to every active voter.</p>
               </div>
             </a>
           </div>
@@ -421,8 +421,8 @@ export default function Home() {
         {/* Looking ahead to November — de-emphasized until after the primary */}
         <section className="mb-8">
           <div className="flex items-baseline gap-2 mb-3">
-            <h2 className="font-display text-lg font-bold text-warmgray-500">Looking ahead to November</h2>
-            <span className="text-xs text-warmgray-400">— after Aug 11</span>
+            <h2 className="font-display text-lg font-bold text-warmgray-600">Looking ahead to November</h2>
+            <span className="text-xs text-warmgray-600">— after Aug 11</span>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
 
@@ -431,7 +431,7 @@ export default function Home() {
               <div className="bg-white rounded-2xl border border-warmgray-200 p-5 h-full hover:border-terracotta-300 transition-colors">
                 <div className="flex items-start justify-between gap-3 mb-2">
                   <div>
-                    <span className="inline-block bg-warmgray-100 text-warmgray-500 text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
+                    <span className="inline-block bg-warmgray-100 text-warmgray-600 text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
                       November 3, 2026
                     </span>
                     <h3 className="font-display text-lg font-bold text-warmgray-700">General Election</h3>
@@ -440,12 +440,12 @@ export default function Home() {
                     <ArrowRightIcon />
                   </span>
                 </div>
-                <p className="text-warmgray-500 text-sm leading-relaxed">
+                <p className="text-warmgray-600 text-sm leading-relaxed">
                   Every race from the primary, plus the statewide ballot measures — and a ballot mailed to every active voter automatically. We&apos;ll turn the spotlight here once the primary&apos;s done.
                 </p>
                 <ul className="mt-3 space-y-1">
                   {generalAdditions.map((item, i) => (
-                    <li key={i} className="text-xs text-warmgray-500 flex items-start gap-2">
+                    <li key={i} className="text-xs text-warmgray-600 flex items-start gap-2">
                       <span className="mt-1.5 w-1 h-1 rounded-full bg-terracotta-300 flex-shrink-0" />
                       {item}
                     </li>
@@ -456,11 +456,11 @@ export default function Home() {
 
             {/* Leadership 2027 (moved down, muted) */}
             <div className="bg-white rounded-2xl border border-warmgray-200 p-5">
-              <span className="inline-block bg-warmgray-100 text-warmgray-500 text-xs font-semibold px-2 py-0.5 rounded-full mb-2 uppercase tracking-wide">
+              <span className="inline-block bg-warmgray-100 text-warmgray-600 text-xs font-semibold px-2 py-0.5 rounded-full mb-2 uppercase tracking-wide">
                 Looking ahead to 2027
               </span>
               <h3 className="font-display text-base font-bold text-warmgray-700 mb-1">New leadership coming to Montpelier</h3>
-              <p className="text-warmgray-500 text-sm leading-relaxed">
+              <p className="text-warmgray-600 text-sm leading-relaxed">
                 Both House Speaker <strong>Jill Krowinski</strong> (D-Burlington) and Senate President Pro Tem <strong>Phil Baruth</strong> (D/P-Chittenden Central) aren&apos;t seeking reelection — so both chambers get new leaders in the 2027 session, the first open contest for both top posts in years.
               </p>
             </div>
@@ -475,7 +475,7 @@ export default function Home() {
             </div>
             <div>
               <p className="font-display font-semibold text-warmgray-700">March 2026 Town Meeting Day Results</p>
-              <p className="text-warmgray-500 text-sm">Beth Zigmund elected to City Council &bull; All ballot articles passed</p>
+              <p className="text-warmgray-600 text-sm">Beth Zigmund elected to City Council &bull; All ballot articles passed</p>
             </div>
           </div>
           <Link
@@ -498,7 +498,7 @@ export default function Home() {
               An independent, nonpartisan community resource for South Burlington voters. Information is compiled
               from official sources, candidate materials, and trusted news coverage.
             </p>
-            <p className="text-xs text-warmgray-400 mb-4">
+            <p className="text-xs text-warmgray-600 mb-4">
               All positions sourced from publicly available materials. Not affiliated with the City of South Burlington or any candidate.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4 border-t border-warmgray-100">
