@@ -393,9 +393,34 @@ export default function PrimaryPage() {
           </div>
         </div>
 
+        {/* Jump to your race — anchor chips so a voter can skip past the bond
+            straight to their ballot section instead of scrolling the whole page. */}
+        <nav aria-label="Jump to a section" className="mb-8">
+          <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Jump to your race</p>
+          <ul className="flex flex-wrap gap-2">
+            {[
+              { href: "#statewide", label: "Statewide" },
+              { href: "#federal", label: "U.S. House" },
+              { href: "#senate", label: "State Senate" },
+              { href: "#house", label: "State House" },
+              { href: "#county", label: "County offices" },
+              { href: "#bond", label: "Bartlett Bay bond" },
+            ].map((s) => (
+              <li key={s.href}>
+                <a
+                  href={s.href}
+                  className="inline-block px-3 py-1.5 rounded-full text-sm bg-sage-50 text-sage-700 hover:bg-sage-100 border border-sage-100 transition-colors"
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         {/* City Ballot Item — Bartlett Bay wastewater bond. NOT a primary race:
             every SB voter gets this on the Aug 11 ballot regardless of party. */}
-        <section className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8">
+        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8 scroll-mt-20">
           <div className="bg-terracotta-500 text-white px-5 sm:px-6 py-2.5 flex items-center gap-2">
             <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
@@ -422,6 +447,26 @@ export default function PrimaryPage() {
                 major refurbishment. The city says critical parts are worn out and no longer made.
               </p>
             </div>
+
+            {/* Two key facts, always visible */}
+            <div className="grid sm:grid-cols-2 gap-3 mb-5">
+              <div className="bg-sage-50 border border-sage-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
+                <span aria-hidden="true">💵</span> Paid through <strong className="text-warmgray-800">sewer rates, not property taxes</strong> — about 2–3% a year, phased over 5–6 years.
+              </div>
+              <div className="bg-terracotta-50 border border-terracotta-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
+                <span aria-hidden="true">🗓️</span> <strong className="text-warmgray-800">Public hearing:</strong> Mon, Aug 10, 6 PM at City Hall (Zoom option on the city page).
+              </div>
+            </div>
+
+            {/* Full breakdown collapsed by default so it doesn't bury the races below */}
+            <details className="group border-t border-warmgray-100 pt-4">
+              <summary className="flex items-center gap-2 cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden text-sm font-semibold text-sage-700 hover:text-sage-900">
+                <svg className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+                See the full breakdown — costs, how it&apos;s paid, tax impact, the criticism &amp; videos
+              </summary>
+              <div className="mt-5">
 
             {/* City's case + the criticism, side by side and equal */}
             <div className="grid md:grid-cols-2 gap-4 mb-5">
@@ -540,6 +585,8 @@ export default function PrimaryPage() {
                 the City Clerk at 802-846-4105.
               </p>
             </div>
+              </div>
+            </details>
           </div>
         </section>
 
@@ -600,7 +647,7 @@ export default function PrimaryPage() {
         </div>
 
         {/* Statewide Races */}
-        <section className="mb-10">
+        <section id="statewide" className="mb-10 scroll-mt-20">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -625,7 +672,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Federal Races */}
-        <section className="mb-10">
+        <section id="federal" className="mb-10 scroll-mt-20">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -646,7 +693,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Vermont State Senate */}
-        <section className="mb-10">
+        <section id="senate" className="mb-10 scroll-mt-20">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -671,7 +718,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Vermont State House */}
-        <section className="mb-10">
+        <section id="house" className="mb-10 scroll-mt-20">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -712,7 +759,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Chittenden County Offices */}
-        <section className="mb-10">
+        <section id="county" className="mb-10 scroll-mt-20">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
