@@ -376,9 +376,9 @@
         {
           "name": "Dan Towle",
           "party": "Democrat",
-          "status": "announced",
+          "status": "withdrawn",
           "announcedDate": "May 2026",
-          "bio": "Huntington; filed in the Democratic primary for Auditor of Accounts.",
+          "bio": "Huntington. Ended his campaign for Auditor but remains on the primary ballot — his name was already printed. Votes cast for him still count; they just go to a candidate who is no longer running.",
           "notablePositions": []
         },
         {
@@ -391,7 +391,7 @@
           "notablePositions": []
         }
       ],
-      "notes": "This is the first open Auditor race in Vermont in 14 years. The Democratic primary is a three-way contest between Tim Ashe (Hoffer's chief deputy since 2021), Nick Graeter, and Dan Towle. H. Brooke Paige is the lone Republican candidate. (Source: Vermont Secretary of State 2026 primary candidate list.)"
+      "notes": "This is the first open Auditor race in Vermont in 14 years. The Democratic primary is now a two-way contest between Tim Ashe (Hoffer's chief deputy since 2021) and Nick Graeter; a third Democrat, Dan Towle, ended his campaign but remains on the ballot. H. Brooke Paige is the lone Republican candidate. (Sources: Vermont Secretary of State 2026 primary candidate list; Vermont Public on Towle's withdrawal.)"
     }
   ],
 
@@ -514,11 +514,12 @@
           "party": "Democrat",
           "status": "running",
           "statusNote": "Filed for reelection",
-          "bio": "Kesha Ram Hinsdale is a Vermont State Senator who previously served as chair of the Vermont Progressive Party before becoming a Democrat. She served in the Vermont House before moving to the Senate.",
+          "bio": "Kesha Ram Hinsdale has been Senate Majority Leader since January 2025 — one of the chamber's top leadership posts — and has announced she is running for Senate President Pro Tempore in 2027, the Senate's top job, now that Phil Baruth is retiring. She served in the Vermont House from 2009 to 2016 and has been in the Senate since 2021. She is the first woman of color to serve in the Vermont Senate.",
           "website": "https://keshaforvermont.com",
           "notablePositions": [
-            "Leading progressive voice in the Vermont Senate",
-            "Former Vermont Progressive Party chair",
+            "Senate Majority Leader since January 2025",
+            "Running for Senate President Pro Tempore (the Senate's top post) in 2027",
+            "First woman of color to serve in the Vermont Senate",
             "Focus on climate, housing, and racial equity"
           ]
         }

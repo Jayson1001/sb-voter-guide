@@ -3,6 +3,7 @@ import racesData from "@/data/races.json";
 import votingInfo from "@/data/voting-info.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
 import PrimaryCountdown from "@/components/PrimaryCountdown";
+import RaceComparison from "@/components/RaceComparison";
 
 // TODO (after the Aug 6, 2026 independent/minor-party filing deadline): run a
 // candidate sweep against the certified VT Secretary of State list.
@@ -56,6 +57,7 @@ const statusColors: Record<string, string> = {
   "likely-running": "bg-sage-50 text-sage-600",
   "announced": "bg-sage-100 text-sage-700",
   "retiring": "bg-warmgray-100 text-warmgray-500",
+  "withdrawn": "bg-warmgray-100 text-warmgray-500",
   "unknown": "bg-cream-100 text-warmgray-500",
 };
 
@@ -64,6 +66,7 @@ const statusLabels: Record<string, string> = {
   "likely-running": "Likely running",
   "announced": "Announced",
   "retiring": "Retiring",
+  "withdrawn": "On the ballot · campaign ended",
   "unknown": "Plans not announced",
 };
 
@@ -438,9 +441,45 @@ export default function PrimaryPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
-                  <span>The rest comes from <strong className="text-warmgray-800">wastewater ratepayers</strong> — your sewer fees, which the city expects to rise about 2–3% a year. The city says South Burlington&apos;s rates are among the lowest in Vermont and would land mid-pack even after the increases.</span>
+                  <span>The rest comes from <strong className="text-warmgray-800">wastewater ratepayers</strong> — meaning sewer fees, not property taxes (more on that just below).</span>
                 </li>
               </ul>
+            </div>
+
+            {/* How will this affect my taxes? */}
+            <div className="bg-cream-50 border border-cream-300 rounded-xl p-4 mb-5">
+              <p className="font-display font-bold text-warmgray-800 text-sm mb-2 flex items-center gap-2">
+                <span aria-hidden="true">💵</span> How will this affect my taxes?
+              </p>
+              <div className="text-warmgray-600 text-sm leading-relaxed space-y-2">
+                <p>
+                  Here&apos;s the part people get wrong: this bond{" "}
+                  <strong className="text-warmgray-800">doesn&apos;t come out of your property taxes</strong>. It&apos;s
+                  paid back through <strong className="text-warmgray-800">wastewater (sewer) rates</strong> — so it lands
+                  on your sewer bill, not your property tax bill.
+                </p>
+                <p>
+                  The city expects sewer rates to rise about <strong className="text-warmgray-800">2–3% a year</strong>{" "}
+                  beyond increases already planned, spread over the next{" "}
+                  <strong className="text-warmgray-800">5–6 years</strong> rather than all at once. The 2% state loan
+                  (payments don&apos;t start until construction wraps, about two years out) and the $700,000 EPA grant
+                  help hold the cost down. South Burlington has one of the lowest sewer rates in Vermont today, and the
+                  city says it would still compare well regionally after the increases.
+                </p>
+                <p className="text-warmgray-500 text-xs">
+                  The city hasn&apos;t published an exact dollar figure for a typical household, so we can&apos;t give you
+                  a precise monthly number — check your sewer bill or the{" "}
+                  <a
+                    href="https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sage-600 hover:text-sage-800 underline"
+                  >
+                    city project page
+                  </a>
+                  .
+                </p>
+              </div>
             </div>
 
             {/* Learn more: hearing + videos */}
@@ -558,6 +597,10 @@ export default function PrimaryPage() {
               </div>
             ))}
           </div>
+          {/* Full-width comparisons for the contested statewide races (auto-renders where data exists) */}
+          {statewide.map((race) => (
+            <RaceComparison key={race.id} raceId={race.id} />
+          ))}
         </section>
 
         {/* Federal Races */}
@@ -600,6 +643,7 @@ export default function PrimaryPage() {
               <div key={race.id} className="flex flex-col gap-3">
                 <OfficeExplainer office={race.office} />
                 <RaceCard race={race} />
+                <RaceComparison raceId={race.id} />
               </div>
             ))}
           </div>
@@ -677,6 +721,7 @@ export default function PrimaryPage() {
             <div className="flex flex-col gap-3 mb-5">
               <OfficeExplainer office={statesAttorney.office} />
               <RaceCard race={statesAttorney} />
+              <RaceComparison raceId="states-attorney" />
             </div>
           )}
 
@@ -688,6 +733,46 @@ export default function PrimaryPage() {
               </div>
             ))}
           </div>
+          {/* Full-width comparisons for contested county races (e.g. Sheriff) */}
+          {otherCounty.map((race) => (
+            <RaceComparison key={race.id} raceId={race.id} />
+          ))}
+        </section>
+
+        {/* Check it yourself — primary-source resources */}
+        <section id="check-it-yourself" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-6">
+          <h2 className="font-display text-xl font-bold text-warmgray-800 mb-1">Check it yourself</h2>
+          <p className="text-warmgray-600 text-sm leading-relaxed mb-5">
+            Every campaign says the same three things. Here&apos;s where to go when you want to know what someone
+            actually did.
+          </p>
+          <ul className="space-y-4">
+            {[
+              { title: "Vermont-NEA 2026 Primary Guide", url: "https://vtnea.org/primaryguide2026", desc: "Candidates answered a long written questionnaire, and the guide builds you a sample ballot you can take to the polls." },
+              { title: "Vermont Public — debates & interviews", url: "https://www.vermontpublic.org/show/vermont-edition/2026-07-23/vermont-2026-democratic-primary-debate-governor", desc: "The candidates in extended, unscripted conversation — governor, lieutenant governor, and more." },
+              { title: "VTDigger 2026 Primary Election Guide", url: "https://vtdigger.org/2026-primary-election-guide/", desc: "County-by-county pages, including each candidate's financial disclosures." },
+              { title: "Vermont campaign finance portal", url: "https://campaignfinance.vermont.gov/", desc: "Who's funding whom. Big ad buys ($520+) within 45 days of the election must be reported within 24 hours, so right now it's basically a live feed of ad spending. The next major filing lands August 7." },
+              { title: "Vermont Legislature", url: "https://legislature.vermont.gov/", desc: "For anyone already in office: what they sponsored, which committees they sit on, and how they voted." },
+            ].map((r, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="mt-0.5 flex-shrink-0 w-6 h-6 bg-sage-100 text-sage-700 rounded-lg flex items-center justify-center text-xs font-bold">
+                  {i + 1}
+                </span>
+                <div>
+                  <a
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-sage-700 hover:text-sage-900 text-sm"
+                  >
+                    {r.title}
+                    <ExternalLinkIcon />
+                  </a>
+                  <p className="text-warmgray-500 text-xs leading-relaxed mt-0.5">{r.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </section>
 
         {/* Voter Info */}
