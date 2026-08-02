@@ -2,6 +2,7 @@ import Link from "next/link";
 import racesData from "@/data/races.json";
 import ballotMeasuresData from "@/data/ballot-measures.json";
 import votingInfo from "@/data/voting-info.json";
+import { partyColors, statusColors, statusLabels } from "@/lib/raceMeta";
 
 const ArrowLeftIcon = () => (
   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -21,30 +22,8 @@ const ExternalLinkIcon = () => (
   </svg>
 );
 
-const statusColors: Record<string, string> = {
-  "running": "bg-sage-100 text-sage-700",
-  "likely-running": "bg-sage-50 text-sage-600",
-  "announced": "bg-sage-100 text-sage-700",
-  "retiring": "bg-warmgray-100 text-warmgray-500",
-  "unknown": "bg-cream-100 text-warmgray-500",
-};
-
-const statusLabels: Record<string, string> = {
-  "running": "Running for reelection",
-  "likely-running": "Likely running",
-  "announced": "Announced",
-  "retiring": "Retiring",
-  "unknown": "Plans not announced",
-};
-
-const partyColors: Record<string, string> = {
-  "Democrat": "bg-blue-50 text-blue-700 border-blue-100",
-  "Republican": "bg-red-50 text-red-700 border-red-100",
-  "Independent": "bg-purple-50 text-purple-700 border-purple-100",
-  "Peace and Justice": "bg-emerald-50 text-emerald-700 border-emerald-100",
-  "Unity Party": "bg-amber-50 text-amber-700 border-amber-100",
-  "Freedom and Unity": "bg-orange-50 text-orange-700 border-orange-100",
-};
+// Party/status styling is shared via @/lib/raceMeta (imported above) so
+// /primary and /general can't drift.
 
 function RaceCard({ race }: { race: any }) {
   const isOpenSeat = race.openSeat;
@@ -58,7 +37,7 @@ function RaceCard({ race }: { race: any }) {
           <div className="flex-1">
             <div className="flex flex-wrap items-center gap-2 mb-1">
               {race.district && (
-                <span className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide">{race.district}</span>
+                <span className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide">{race.district}</span>
               )}
               {race.seats > 1 && (
                 <span className="text-xs bg-sage-50 text-sage-600 px-2 py-0.5 rounded-full font-medium">{race.seats} seats</span>
@@ -69,10 +48,10 @@ function RaceCard({ race }: { race: any }) {
             </div>
             <h3 className="font-display text-lg font-bold text-warmgray-800">{race.shortName || race.office}</h3>
             {race.office !== race.shortName && race.district && (
-              <p className="text-warmgray-500 text-sm">{race.office}</p>
+              <p className="text-warmgray-600 text-sm">{race.office}</p>
             )}
           </div>
-          <div className="flex-shrink-0 text-xs text-warmgray-400 text-right">{race.termYears}-yr term</div>
+          <div className="flex-shrink-0 text-xs text-warmgray-600 text-right">{race.termYears}-yr term</div>
         </div>
 
         {race.description && (
@@ -81,7 +60,7 @@ function RaceCard({ race }: { race: any }) {
 
         {allIncumbents.length > 0 && (
           <div className="mb-4">
-            <p className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide mb-2">
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">
               {isOpenSeat ? 'Outgoing' : 'Current'} {allIncumbents.length > 1 ? 'Officeholders' : 'Officeholder'}
             </p>
             <div className="space-y-2">
@@ -90,17 +69,17 @@ function RaceCard({ race }: { race: any }) {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <span className="font-medium text-warmgray-800 text-sm">{incumbent.name}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[incumbent.party] || 'bg-warmgray-50 text-warmgray-500 border-warmgray-100'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[incumbent.party] || 'bg-warmgray-50 text-warmgray-600 border-warmgray-100'}`}>
                         {incumbent.party}
                       </span>
                     </div>
                     {incumbent.bio && (
-                      <p className="text-warmgray-500 text-xs leading-relaxed mt-1 line-clamp-2">{incumbent.bio}</p>
+                      <p className="text-warmgray-600 text-xs leading-relaxed mt-1 line-clamp-2">{incumbent.bio}</p>
                     )}
                     {incumbent.notablePositions && incumbent.notablePositions.length > 0 && (
                       <ul className="mt-1.5 space-y-0.5">
                         {incumbent.notablePositions.slice(0, 2).map((pos: string, j: number) => (
-                          <li key={j} className="text-xs text-warmgray-500 flex items-start gap-1.5">
+                          <li key={j} className="text-xs text-warmgray-600 flex items-start gap-1.5">
                             <span className="mt-1 w-1 h-1 rounded-full bg-warmgray-300 flex-shrink-0" />
                             {pos}
                           </li>
@@ -126,22 +105,22 @@ function RaceCard({ race }: { race: any }) {
 
         {knownCandidates.length > 0 && (
           <div className="mb-4">
-            <p className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide mb-2">Announced Candidates</p>
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Announced Candidates</p>
             <div className="space-y-2">
               {knownCandidates.map((candidate: any, i: number) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-sage-50 border border-sage-100">
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <span className="font-medium text-warmgray-800 text-sm">{candidate.name}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[candidate.party] || 'bg-warmgray-50 text-warmgray-500 border-warmgray-100'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[candidate.party] || 'bg-warmgray-50 text-warmgray-600 border-warmgray-100'}`}>
                         {candidate.party}
                       </span>
                       {candidate.announcedDate && (
-                        <span className="text-xs text-warmgray-400">Announced {candidate.announcedDate}</span>
+                        <span className="text-xs text-warmgray-600">Announced {candidate.announcedDate}</span>
                       )}
                     </div>
                     {candidate.bio && (
-                      <p className="text-warmgray-500 text-xs leading-relaxed mt-1">{candidate.bio}</p>
+                      <p className="text-warmgray-600 text-xs leading-relaxed mt-1">{candidate.bio}</p>
                     )}
                     {candidate.website && (
                       <a
@@ -161,10 +140,10 @@ function RaceCard({ race }: { race: any }) {
         )}
 
         {race.notes && (
-          <p className="text-xs text-warmgray-400 italic border-t border-warmgray-100 pt-3 mt-1">{race.notes}</p>
+          <p className="text-xs text-warmgray-600 italic border-t border-warmgray-100 pt-3 mt-1">{race.notes}</p>
         )}
         {race.districtNote && (
-          <div className="mt-2 flex items-start gap-1.5 text-xs text-warmgray-400">
+          <div className="mt-2 flex items-start gap-1.5 text-xs text-warmgray-600">
             <svg className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -199,7 +178,7 @@ function BallotMeasureCard({ measure }: { measure: any }) {
         <p className="text-warmgray-600 text-sm leading-relaxed mb-4">{measure.plainLanguageSummary}</p>
 
         <div className="bg-warmgray-50 rounded-xl p-4 mb-4">
-          <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">Proposed Constitutional Text</p>
+          <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Proposed Constitutional Text</p>
           <p className="text-warmgray-700 text-sm italic leading-relaxed">&ldquo;{measure.proposedConstitutionalText}&rdquo;</p>
         </div>
 
@@ -224,7 +203,7 @@ function BallotMeasureCard({ measure }: { measure: any }) {
             <ul className="space-y-1.5">
               {measure.arguments.against.slice(0, 3).map((arg: string, i: number) => (
                 <li key={i} className="text-xs text-warmgray-600 flex items-start gap-1.5">
-                  <span className="mt-1 w-3 h-3 rounded-full bg-terracotta-50 text-terracotta-600 flex-shrink-0 flex items-center justify-center">
+                  <span className="mt-1 w-3 h-3 rounded-full bg-terracotta-50 text-terracotta-700 flex-shrink-0 flex items-center justify-center">
                     <svg className="w-2 h-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
                     </svg>
@@ -259,10 +238,6 @@ export default function GeneralPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-terracotta-500 via-terracotta-600 to-terracotta-700" />
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
-          <Link href="/" className="inline-flex items-center gap-2 text-terracotta-100 hover:text-white mb-5 transition-colors text-sm">
-            <ArrowLeftIcon />
-            Back to Voter Guide
-          </Link>
 
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
             <div>
@@ -291,7 +266,7 @@ export default function GeneralPage() {
 
         {/* Candidates TBD Notice */}
         <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="flex-shrink-0 w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-600">
+          <div className="flex-shrink-0 w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-700">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
@@ -315,7 +290,7 @@ export default function GeneralPage() {
               </div>
               <div>
                 <h2 className="font-display text-xl font-bold text-warmgray-800">Ballot Measures</h2>
-                <p className="text-warmgray-500 text-sm">Two constitutional amendments — content confirmed now</p>
+                <p className="text-warmgray-600 text-sm">Two constitutional amendments — content confirmed now</p>
               </div>
             </div>
             <Link
@@ -342,7 +317,7 @@ export default function GeneralPage() {
         {/* Statewide Races */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
               </svg>
@@ -359,7 +334,7 @@ export default function GeneralPage() {
         {/* Federal */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
               </svg>
@@ -376,14 +351,14 @@ export default function GeneralPage() {
         {/* Vermont State Senate */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont State Senate</h2>
-              <p className="text-warmgray-500 text-sm">Chittenden Southeast district — 3 seats</p>
+              <p className="text-warmgray-600 text-sm">Chittenden Southeast district — 3 seats</p>
             </div>
           </div>
           <div className="space-y-5">
@@ -396,19 +371,19 @@ export default function GeneralPage() {
         {/* Vermont State House */}
         <section className="mb-10">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont House of Representatives</h2>
-              <p className="text-warmgray-500 text-sm">5 South Burlington districts</p>
+              <p className="text-warmgray-600 text-sm">5 South Burlington districts</p>
             </div>
           </div>
 
           <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mb-5 flex items-start gap-3">
-            <svg className="w-5 h-5 text-terracotta-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div className="text-sm text-terracotta-800">
@@ -435,10 +410,10 @@ export default function GeneralPage() {
             <div>
               <p className="font-semibold text-warmgray-700 mb-1">Polling Hours</p>
               <p className="text-warmgray-600">7:00 AM – 7:00 PM on November 3, 2026</p>
-              <p className="text-warmgray-500 mt-3 font-semibold">South Burlington Polling Locations</p>
+              <p className="text-warmgray-600 mt-3 font-semibold">South Burlington Polling Locations</p>
               <ul className="mt-1 space-y-1">
                 {votingInfo.southBurlingtonPollingLocations.map((loc, i) => (
-                  <li key={i} className="text-warmgray-500 flex items-start gap-1.5">
+                  <li key={i} className="text-warmgray-600 flex items-start gap-1.5">
                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-terracotta-400 flex-shrink-0" />
                     {loc}
                   </li>
@@ -453,14 +428,14 @@ export default function GeneralPage() {
               <div>
                 <p className="font-semibold text-warmgray-700 mb-1">Voter Registration</p>
                 <p className="text-warmgray-600">Same-day registration available at the polls.{" "}
-                  <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-terracotta-600 hover:text-terracotta-800 underline">
+                  <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-terracotta-700 hover:text-terracotta-800 underline">
                     Register online at mvp.vermont.gov
                   </a>
                 </p>
               </div>
               <div>
                 <p className="font-semibold text-warmgray-700 mb-1">Official Resources</p>
-                <a href="https://sos.vermont.gov/elections/" target="_blank" rel="noopener noreferrer" className="text-terracotta-600 hover:text-terracotta-800 underline text-warmgray-600">
+                <a href="https://sos.vermont.gov/elections/" target="_blank" rel="noopener noreferrer" className="text-terracotta-700 hover:text-terracotta-800 underline text-warmgray-600">
                   Vermont Secretary of State — Elections<ExternalLinkIcon />
                 </a>
               </div>

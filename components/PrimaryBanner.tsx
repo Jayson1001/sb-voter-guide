@@ -26,8 +26,9 @@ export default function PrimaryBanner() {
     setDays(daysUntilPrimary());
   }, []);
 
-  // Don't show it on the primary page itself, or once the primary has passed.
-  if (pathname?.startsWith("/primary")) return null;
+  // Hide on the homepage (its hero already has a countdown), on the primary
+  // page itself, and once the primary has passed.
+  if (pathname === "/" || pathname?.startsWith("/primary")) return null;
   if (days !== null && days < 0) return null;
 
   const countLabel =

@@ -89,7 +89,7 @@ export default function BudgetPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">Tax Calculator</h2>
-              <p className="text-warmgray-500 text-sm">See what this budget means for your property taxes</p>
+              <p className="text-warmgray-600 text-sm">See what this budget means for your property taxes</p>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ export default function BudgetPage() {
               Your Home Value
             </label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-warmgray-400 font-medium">$</span>
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-warmgray-600 font-medium">$</span>
               <input
                 type="number"
                 value={homeValue}
@@ -107,7 +107,7 @@ export default function BudgetPage() {
                 placeholder="440000"
               />
             </div>
-            <p className="text-warmgray-400 text-sm mt-2">
+            <p className="text-warmgray-600 text-sm mt-2">
               Average South Burlington home: $440,000 | Average condo: $300,000
             </p>
           </div>
@@ -127,7 +127,7 @@ export default function BudgetPage() {
                 </div>
                 <div className="border-t border-sage-200 pt-2 flex justify-between">
                   <span className="font-semibold text-warmgray-700">Difference</span>
-                  <span className={`font-bold ${municipalDifference > 0 ? 'text-terracotta-600' : 'text-sage-600'}`}>
+                  <span className={`font-bold ${municipalDifference > 0 ? 'text-terracotta-700' : 'text-sage-600'}`}>
                     {municipalDifference >= 0 ? '+' : ''}{formatCurrency(municipalDifference, 2)}/year
                   </span>
                 </div>
@@ -148,7 +148,7 @@ export default function BudgetPage() {
                 </div>
                 <div className="border-t border-terracotta-200 pt-2 flex justify-between">
                   <span className="font-semibold text-warmgray-700">Difference</span>
-                  <span className={`font-bold ${totalDifference > 0 ? 'text-terracotta-600' : 'text-sage-600'}`}>
+                  <span className={`font-bold ${totalDifference > 0 ? 'text-terracotta-700' : 'text-sage-600'}`}>
                     {totalDifference >= 0 ? '+' : ''}{formatCurrency(totalDifference, 2)}/year
                   </span>
                 </div>
@@ -156,7 +156,7 @@ export default function BudgetPage() {
             </div>
           </div>
 
-          <p className="text-warmgray-400 text-xs mt-4">
+          <p className="text-warmgray-600 text-xs mt-4">
             * Calculations based on homestead property tax rates. Non-homestead rates differ slightly.
             Tax rates are per $100 of assessed property value. FY2027 education rate is estimated based on
             the projected 8.76% increase; the final rate is set by the state after voters approve the school budget.
@@ -187,7 +187,7 @@ export default function BudgetPage() {
                     style={{ width: `${(item.amount / maxBreakdown) * 100}%` }}
                   />
                 </div>
-                <p className="text-warmgray-400 text-sm mt-1">{item.percentOfGeneral}% of general fund</p>
+                <p className="text-warmgray-600 text-sm mt-1">{item.percentOfGeneral}% of general fund</p>
               </div>
             ))}
           </div>
@@ -245,14 +245,14 @@ export default function BudgetPage() {
             {cityBudget.enterpriseFunds.funds.map((fund) => (
               <div key={fund.name} className="bg-cream-100 rounded-xl p-4 text-center">
                 <p className="text-warmgray-600 text-sm mb-1">{fund.name}</p>
-                <p className={`font-bold text-lg ${fund.rateIncrease > 0 ? 'text-terracotta-600' : 'text-sage-600'}`}>
+                <p className={`font-bold text-lg ${fund.rateIncrease > 0 ? 'text-terracotta-700' : 'text-sage-600'}`}>
                   {fund.rateIncrease > 0 ? '+' : ''}{fund.rateIncrease}%
                 </p>
               </div>
             ))}
           </div>
 
-          <p className="text-warmgray-500 text-sm">
+          <p className="text-warmgray-600 text-sm">
             Estimated annual increase for most residents: ~${cityBudget.enterpriseFunds.estimatedAnnualIncrease}
             (or ~${cityBudget.enterpriseFunds.minimumAccountIncrease} for accounts paying minimum fees)
           </p>
@@ -262,7 +262,7 @@ export default function BudgetPage() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8 border-2 border-terracotta-200">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center">
-              <svg className="w-5 h-5 text-terracotta-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-terracotta-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path d="M12 14l9-5-9-5-9 5 9 5z" />
                 <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
@@ -270,7 +270,7 @@ export default function BudgetPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800">The Other Half of Your Tax Bill</h2>
-              <p className="text-warmgray-500 text-sm">School budget drives the majority of property taxes</p>
+              <p className="text-warmgray-600 text-sm">School budget drives the majority of property taxes</p>
             </div>
           </div>
 
@@ -283,19 +283,19 @@ export default function BudgetPage() {
 
           <div className="grid sm:grid-cols-3 gap-4 mb-6">
             <div className="bg-cream-100 rounded-xl p-4 text-center">
-              <p className="text-warmgray-500 text-sm mb-1">School Budget</p>
+              <p className="text-warmgray-600 text-sm mb-1">School Budget</p>
               <p className="font-display font-bold text-2xl text-warmgray-800">$73.9M</p>
-              <p className="text-warmgray-500 text-xs mt-1">up 3.4% from $71.5M</p>
+              <p className="text-warmgray-600 text-xs mt-1">up 3.4% from $71.5M</p>
             </div>
             <div className="bg-cream-100 rounded-xl p-4 text-center">
-              <p className="text-warmgray-500 text-sm mb-1">Education Tax Impact</p>
-              <p className="font-display font-bold text-2xl text-terracotta-600">+8.76%</p>
-              <p className="text-warmgray-500 text-xs mt-1">even 0% spending = +4.24%</p>
+              <p className="text-warmgray-600 text-sm mb-1">Education Tax Impact</p>
+              <p className="font-display font-bold text-2xl text-terracotta-700">+8.76%</p>
+              <p className="text-warmgray-600 text-xs mt-1">even 0% spending = +4.24%</p>
             </div>
             <div className="bg-cream-100 rounded-xl p-4 text-center">
-              <p className="text-warmgray-500 text-sm mb-1">Board Vote</p>
+              <p className="text-warmgray-600 text-sm mb-1">Board Vote</p>
               <p className="font-display font-bold text-2xl text-warmgray-800">4-3</p>
-              <p className="text-warmgray-500 text-xs mt-1">not unanimous</p>
+              <p className="text-warmgray-600 text-xs mt-1">not unanimous</p>
             </div>
           </div>
 
@@ -339,7 +339,7 @@ export default function BudgetPage() {
           </div>
 
           <div className="border-t border-warmgray-100 pt-3">
-            <p className="text-warmgray-400 text-xs">
+            <p className="text-warmgray-600 text-xs">
               Sources:{' '}
               <a href="https://www.vtcng.com/otherpapersbvt/community/education/south-burlington-school-board-approves-spending-increase/article_f10c6a32-1524-4b76-9725-51ff0c6d90a0.html" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:underline">The Other Paper</a>
               {' '}&middot;{' '}
@@ -382,14 +382,14 @@ export default function BudgetPage() {
               href="/fire-station-bond"
               className="flex items-center gap-3 p-4 bg-terracotta-50 rounded-xl hover:bg-terracotta-100 transition-colors"
             >
-              <div className="w-10 h-10 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600">
+              <div className="w-10 h-10 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
                 </svg>
               </div>
               <div>
                 <p className="font-semibold text-warmgray-800">Fire Station Bond</p>
-                <p className="text-sm text-warmgray-500">$2.3M addition - Article 3</p>
+                <p className="text-sm text-warmgray-600">$2.3M addition - Article 3</p>
               </div>
             </Link>
             <Link
@@ -403,7 +403,7 @@ export default function BudgetPage() {
               </div>
               <div>
                 <p className="font-semibold text-warmgray-800">City Council Race</p>
-                <p className="text-sm text-warmgray-500">2 candidates - contested</p>
+                <p className="text-sm text-warmgray-600">2 candidates - contested</p>
               </div>
             </Link>
           </div>
@@ -413,7 +413,7 @@ export default function BudgetPage() {
       {/* Footer */}
       <footer className="bg-warmgray-100 border-t border-warmgray-200 mt-12">
         <div className="max-w-4xl mx-auto px-4 py-6 text-center">
-          <p className="text-warmgray-500 text-sm">
+          <p className="text-warmgray-600 text-sm">
             South Burlington Voter Guide 2026 &middot; A nonpartisan community resource
           </p>
         </div>

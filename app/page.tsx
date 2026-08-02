@@ -15,7 +15,7 @@ const MapPinIcon = () => (
 );
 
 const ArrowRightIcon = () => (
-  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
   </svg>
 );
@@ -154,8 +154,51 @@ export default function Home() {
               Request a Ballot
               <ArrowRightIcon />
             </a>
+            <Link
+              href="/how-to-vote"
+              className="inline-flex items-center gap-2 bg-sage-700/40 hover:bg-sage-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
+            >
+              How to vote
+              <ArrowRightIcon />
+            </Link>
           </div>
         </section>
+
+        {/* Primary Guide Card — races gateway, right below the Primary Main Event */}
+        <Link href="/primary" className="group block mb-8 animate-fade-in-delay-1">
+          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent group-hover:border-sage-300 transition-all">
+            <div className="bg-gradient-to-br from-sage-500 to-sage-600 p-6 text-white">
+              <div className="flex items-start justify-between">
+                <div>
+                  <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
+                    August 11, 2026 &bull; Up next
+                  </span>
+                  <h2 className="font-display text-2xl font-bold">Vermont Primary Guide</h2>
+                  <p className="text-sage-100 text-sm mt-1">Every race on your primary ballot — and who&apos;s running for it</p>
+                </div>
+                <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
+                  <ArrowRightIcon />
+                </div>
+              </div>
+            </div>
+            <div className="p-6">
+              <p className="text-warmgray-600 text-xs font-semibold uppercase tracking-wide mb-3">Races on the ballot</p>
+              <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+                {primaryRaces.map((race, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
+                    <span className="mt-1 flex-shrink-0 w-4 h-4 bg-sage-100 text-sage-600 rounded-full flex items-center justify-center">
+                      <CheckIcon />
+                    </span>
+                    {race}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-4 pt-4 border-t border-warmgray-100">
+                <p className="text-xs text-warmgray-600">Filing closed May 28 &bull; Full candidate list inside</p>
+              </div>
+            </div>
+          </div>
+        </Link>
 
         {/* Intro */}
         <div className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 animate-fade-in-delay-1">
@@ -169,7 +212,7 @@ export default function Home() {
                 South Burlington residents will vote in two elections in 2026: the Vermont Primary on August 11 and the General Election on November 3.
                 This independent, nonpartisan guide covers all races on those ballots — from Governor down to your local State House representative.
               </p>
-              <p className="text-warmgray-500 text-sm mt-2">
+              <p className="text-warmgray-600 text-sm mt-2">
                 Candidate filing closed May 28, 2026. The full candidate list is now available — see the primary and general guides below.
               </p>
             </div>
@@ -192,7 +235,7 @@ export default function Home() {
               <p className="text-warmgray-700 text-sm sm:text-base leading-relaxed mb-2">
                 See the candidates for the August 11 primary in their own words. New forums are added to the playlist as they&apos;re released.
               </p>
-              <p className="text-warmgray-500 text-xs leading-relaxed mb-4">
+              <p className="text-warmgray-600 text-xs leading-relaxed mb-4">
                 Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
               </p>
               <a
@@ -245,7 +288,7 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <div className="flex items-center justify-between gap-3 mb-3">
             <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
-            <span className="text-xs text-warmgray-400 font-medium">Updated July 22, 2026</span>
+            <span className="text-xs text-warmgray-600 font-medium">Updated July 22, 2026</span>
           </div>
           <ul className="space-y-2 text-sm text-warmgray-700">
             <li className="flex items-start gap-2">
@@ -260,6 +303,15 @@ export default function Home() {
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>Democratic gubernatorial primary is a two-way race</strong> between Amanda Janoo and Aly Richards. Jeffery Wilson announced in April but did not file.</span>
             </li>
+          </ul>
+          <details className="group mt-3">
+            <summary className="flex items-center gap-1.5 cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden text-sm font-medium text-sage-700 hover:text-sage-900">
+              <svg className="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+              5 more updates
+            </summary>
+            <ul className="space-y-2 text-sm text-warmgray-700 mt-3">
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>Treasurer:</strong> incumbent Mike Pieciak (D) is unopposed in the Democratic primary. H. Brooke Paige (R) and Zachary Hampl (P) are on the primary ballot and would face Pieciak in November.</span>
@@ -280,7 +332,8 @@ export default function Home() {
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
               <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) are unopposed in the Democratic primary; Republican Mitchel Cypes is on the ballot in Chittenden-8. As of July 21, 2026, independents can still file for the November ballot until August 6.</span>
             </li>
-          </ul>
+            </ul>
+          </details>
         </div>
 
         {/* Key Dates Timeline */}
@@ -306,7 +359,7 @@ export default function Home() {
                       )}
                     </div>
                     <p className="text-warmgray-700 text-sm mt-0.5">{item.event}</p>
-                    {item.note && <p className="text-warmgray-500 text-xs mt-1">{item.note}</p>}
+                    {item.note && <p className="text-warmgray-600 text-xs mt-1">{item.note}</p>}
                   </li>
                 );
               })}
@@ -314,41 +367,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Primary Guide Card — the main event, full width */}
-        <Link href="/primary" className="group block mb-8 animate-fade-in-delay-2">
-          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent group-hover:border-sage-300 transition-all">
-            <div className="bg-gradient-to-br from-sage-500 to-sage-600 p-6 text-white">
-              <div className="flex items-start justify-between">
-                <div>
-                  <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
-                    August 11, 2026 &bull; Up next
-                  </span>
-                  <h2 className="font-display text-2xl font-bold">Vermont Primary Guide</h2>
-                  <p className="text-sage-100 text-sm mt-1">Every race on your primary ballot — and who&apos;s running for it</p>
-                </div>
-                <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
-                  <ArrowRightIcon />
-                </div>
-              </div>
-            </div>
-            <div className="p-6">
-              <p className="text-warmgray-500 text-xs font-semibold uppercase tracking-wide mb-3">Races on the ballot</p>
-              <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
-                {primaryRaces.map((race, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
-                    <span className="mt-1 flex-shrink-0 w-4 h-4 bg-sage-100 text-sage-600 rounded-full flex items-center justify-center">
-                      <CheckIcon />
-                    </span>
-                    {race}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4 pt-4 border-t border-warmgray-100">
-                <p className="text-xs text-warmgray-400">Filing closed May 28 &bull; Full candidate list inside</p>
-              </div>
-            </div>
-          </div>
-        </Link>
+        {/* Primary Guide card lives up top now, right after the Primary Main Event. */}
 
         {/* Open Primary Explainer */}
         <div className="bg-gradient-to-r from-sage-50 to-cream-100 border border-sage-100 rounded-2xl p-5 sm:p-6 mb-8">
@@ -382,7 +401,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Register to Vote</p>
-                <p className="text-xs text-warmgray-500">Same-day registration available — no deadline</p>
+                <p className="text-xs text-warmgray-600">Same-day registration available — no deadline</p>
               </div>
             </a>
             <a
@@ -396,7 +415,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Find Your District</p>
-                <p className="text-xs text-warmgray-500">SB spans multiple House districts</p>
+                <p className="text-xs text-warmgray-600">SB spans multiple House districts</p>
               </div>
             </a>
             <a
@@ -412,7 +431,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="font-medium text-warmgray-800 text-sm">Absentee Ballots</p>
-                <p className="text-xs text-warmgray-500">Aug 11 primary: request one (not mailed automatically). Nov 3 general: mailed to every active voter.</p>
+                <p className="text-xs text-warmgray-600">Aug 11 primary: request one (not mailed automatically). Nov 3 general: mailed to every active voter.</p>
               </div>
             </a>
           </div>
@@ -421,8 +440,8 @@ export default function Home() {
         {/* Looking ahead to November — de-emphasized until after the primary */}
         <section className="mb-8">
           <div className="flex items-baseline gap-2 mb-3">
-            <h2 className="font-display text-lg font-bold text-warmgray-500">Looking ahead to November</h2>
-            <span className="text-xs text-warmgray-400">— after Aug 11</span>
+            <h2 className="font-display text-lg font-bold text-warmgray-600">Looking ahead to November</h2>
+            <span className="text-xs text-warmgray-600">— after Aug 11</span>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
 
@@ -431,7 +450,7 @@ export default function Home() {
               <div className="bg-white rounded-2xl border border-warmgray-200 p-5 h-full hover:border-terracotta-300 transition-colors">
                 <div className="flex items-start justify-between gap-3 mb-2">
                   <div>
-                    <span className="inline-block bg-warmgray-100 text-warmgray-500 text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
+                    <span className="inline-block bg-warmgray-100 text-warmgray-600 text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
                       November 3, 2026
                     </span>
                     <h3 className="font-display text-lg font-bold text-warmgray-700">General Election</h3>
@@ -440,12 +459,12 @@ export default function Home() {
                     <ArrowRightIcon />
                   </span>
                 </div>
-                <p className="text-warmgray-500 text-sm leading-relaxed">
+                <p className="text-warmgray-600 text-sm leading-relaxed">
                   Every race from the primary, plus the statewide ballot measures — and a ballot mailed to every active voter automatically. We&apos;ll turn the spotlight here once the primary&apos;s done.
                 </p>
                 <ul className="mt-3 space-y-1">
                   {generalAdditions.map((item, i) => (
-                    <li key={i} className="text-xs text-warmgray-500 flex items-start gap-2">
+                    <li key={i} className="text-xs text-warmgray-600 flex items-start gap-2">
                       <span className="mt-1.5 w-1 h-1 rounded-full bg-terracotta-300 flex-shrink-0" />
                       {item}
                     </li>
@@ -456,11 +475,11 @@ export default function Home() {
 
             {/* Leadership 2027 (moved down, muted) */}
             <div className="bg-white rounded-2xl border border-warmgray-200 p-5">
-              <span className="inline-block bg-warmgray-100 text-warmgray-500 text-xs font-semibold px-2 py-0.5 rounded-full mb-2 uppercase tracking-wide">
+              <span className="inline-block bg-warmgray-100 text-warmgray-600 text-xs font-semibold px-2 py-0.5 rounded-full mb-2 uppercase tracking-wide">
                 Looking ahead to 2027
               </span>
               <h3 className="font-display text-base font-bold text-warmgray-700 mb-1">New leadership coming to Montpelier</h3>
-              <p className="text-warmgray-500 text-sm leading-relaxed">
+              <p className="text-warmgray-600 text-sm leading-relaxed">
                 Both House Speaker <strong>Jill Krowinski</strong> (D-Burlington) and Senate President Pro Tem <strong>Phil Baruth</strong> (D/P-Chittenden Central) aren&apos;t seeking reelection — so both chambers get new leaders in the 2027 session, the first open contest for both top posts in years.
               </p>
             </div>
@@ -475,7 +494,7 @@ export default function Home() {
             </div>
             <div>
               <p className="font-display font-semibold text-warmgray-700">March 2026 Town Meeting Day Results</p>
-              <p className="text-warmgray-500 text-sm">Beth Zigmund elected to City Council &bull; All ballot articles passed</p>
+              <p className="text-warmgray-600 text-sm">Beth Zigmund elected to City Council &bull; All ballot articles passed</p>
             </div>
           </div>
           <Link
@@ -498,7 +517,7 @@ export default function Home() {
               An independent, nonpartisan community resource for South Burlington voters. Information is compiled
               from official sources, candidate materials, and trusted news coverage.
             </p>
-            <p className="text-xs text-warmgray-400 mb-4">
+            <p className="text-xs text-warmgray-600 mb-4">
               All positions sourced from publicly available materials. Not affiliated with the City of South Burlington or any candidate.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4 border-t border-warmgray-100">

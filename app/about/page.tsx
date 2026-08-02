@@ -83,13 +83,6 @@ export default function AboutPage() {
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-1 text-sage-100 hover:text-white transition-colors mb-6 text-sm"
-          >
-            <ArrowLeftIcon />
-            Back to Guide
-          </Link>
           <div className="animate-fade-in">
             <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3 tracking-tight">
               About This Guide
@@ -165,7 +158,7 @@ export default function AboutPage() {
         {/* Contact & Feedback */}
         <section className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-6 animate-fade-in-delay-1">
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-600 flex-shrink-0">
+            <div className="w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-700 flex-shrink-0">
               <MessageIcon />
             </div>
             <h2 className="font-display text-xl font-bold text-warmgray-800">
@@ -192,13 +185,13 @@ export default function AboutPage() {
                 <p className="font-medium text-warmgray-800 text-sm">
                   Send an Email
                 </p>
-                <p className="text-xs text-warmgray-500">
+                <p className="text-xs text-warmgray-600">
                   jayson@durantedevelopment.com
                 </p>
               </div>
             </a>
 
-            <p className="text-warmgray-500 text-xs">
+            <p className="text-warmgray-600 text-xs">
               Corrections, candidate information, missing sources, accessibility
               feedback — all welcome.
             </p>
@@ -237,7 +230,7 @@ export default function AboutPage() {
 
         {/* Page footer */}
         <div className="mt-8 pt-6 border-t border-warmgray-200 text-center">
-          <p className="text-warmgray-400 text-xs">
+          <p className="text-warmgray-600 text-xs">
             sbvoterguide.com &middot; An independent community resource for
             South Burlington, VT
           </p>

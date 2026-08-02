@@ -103,6 +103,18 @@
   opacity: 0;
 }
 
+/* Respect reduced-motion: skip the fade-in entrance and show content at rest
+   (the delay classes start at opacity:0, so we must restore visibility). */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-fade-in-delay-1,
+  .animate-fade-in-delay-2,
+  .animate-fade-in-delay-3 {
+    animation: none;
+    opacity: 1;
+  }
+}
+
 /* Card hover effect */
 .card-interactive {
   @apply transition-lift;
@@ -143,11 +155,12 @@
   color: #A34A2E;
 }
 
-/* Focus states for accessibility */
+/* Focus states for accessibility. A dark ring stays visible on white pages
+   AND on the sage/terracotta buttons (the light sage ring used to vanish on
+   colored controls). No border-radius here — it reshaped rounded pills. */
 *:focus-visible {
-  outline: 2px solid var(--sage-primary);
+  outline: 2px solid #294429;
   outline-offset: 2px;
-  border-radius: 4px;
 }
 
 /* Selection color */

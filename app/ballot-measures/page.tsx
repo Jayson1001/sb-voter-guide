@@ -92,7 +92,7 @@ export default function BallotMeasuresPage() {
               </div>
             </div>
           </div>
-          <p className="text-xs text-warmgray-400 mt-4 pt-4 border-t border-warmgray-100">
+          <p className="text-xs text-warmgray-600 mt-4 pt-4 border-t border-warmgray-100">
             Note: Vermont citizens cannot initiate constitutional amendments themselves — all amendments must be referred by the legislature through this two-session process.
           </p>
         </div>
@@ -137,14 +137,14 @@ export default function BallotMeasuresPage() {
                 <p className="text-warmgray-600 leading-relaxed">{measure.plainLanguageSummary}</p>
 
                 <div className="mt-4 bg-warmgray-50 rounded-xl p-4">
-                  <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">Proposed Constitutional Text</p>
+                  <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Proposed Constitutional Text</p>
                   <p className="text-warmgray-700 text-sm italic leading-relaxed">&ldquo;{measure.proposedConstitutionalText}&rdquo;</p>
                 </div>
 
                 {/* Protected characteristics for PR.4 */}
                 {(measure as any).protectedCharacteristics && (
                   <div className="mt-4">
-                    <p className="text-xs font-semibold text-warmgray-500 uppercase tracking-wide mb-2">Nine Protected Characteristics</p>
+                    <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Nine Protected Characteristics</p>
                     <div className="flex flex-wrap gap-2">
                       {(measure as any).protectedCharacteristics.map((char: string) => (
                         <span key={char} className="text-xs bg-sage-50 text-sage-700 border border-sage-100 px-2.5 py-1 rounded-full">
@@ -179,7 +179,7 @@ export default function BallotMeasuresPage() {
 
                 <div className="bg-white rounded-2xl shadow-soft p-6">
                   <h3 className="font-display text-base font-bold text-warmgray-800 mb-3 flex items-center gap-2">
-                    <span className="w-6 h-6 bg-warmgray-100 rounded-full flex items-center justify-center text-warmgray-500 flex-shrink-0">
+                    <span className="w-6 h-6 bg-warmgray-100 rounded-full flex items-center justify-center text-warmgray-600 flex-shrink-0">
                       <XIcon />
                     </span>
                     What it does <em>not</em> do
@@ -187,7 +187,7 @@ export default function BallotMeasuresPage() {
                   <ul className="space-y-2.5">
                     {measure.whatItDoesNot.map((item, i) => (
                       <li key={i} className="flex items-start gap-2.5 text-sm text-warmgray-600">
-                        <span className="mt-0.5 w-4 h-4 bg-warmgray-100 rounded-full flex items-center justify-center text-warmgray-400 flex-shrink-0">
+                        <span className="mt-0.5 w-4 h-4 bg-warmgray-100 rounded-full flex items-center justify-center text-warmgray-600 flex-shrink-0">
                           <XIcon />
                         </span>
                         {item}
@@ -199,10 +199,10 @@ export default function BallotMeasuresPage() {
 
               {/* Arguments */}
               <div className="bg-warmgray-50 border border-warmgray-200 rounded-xl px-4 py-3 flex items-start gap-2">
-                <svg className="w-4 h-4 text-warmgray-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-warmgray-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <p className="text-xs text-warmgray-500">
+                <p className="text-xs text-warmgray-600">
                   <strong className="text-warmgray-600">Note:</strong> {(measure as any).argumentsDisclaimer}
                 </p>
               </div>
@@ -249,7 +249,7 @@ export default function BallotMeasuresPage() {
                     <div key={i} className="flex items-start gap-3">
                       <div className={`flex-shrink-0 w-2 h-2 mt-2 rounded-full ${measureIdx === 0 ? 'bg-sage-400' : 'bg-terracotta-400'}`} />
                       <div>
-                        <span className={`text-xs font-semibold ${measureIdx === 0 ? 'text-sage-600' : 'text-terracotta-600'}`}>
+                        <span className={`text-xs font-semibold ${measureIdx === 0 ? 'text-sage-600' : 'text-terracotta-700'}`}>
                           {item.date}
                         </span>
                         <p className="text-warmgray-700 text-sm">{item.action}</p>

@@ -74,25 +74,6 @@ export default function ArchivePage() {
 
   return (
     <main className="min-h-screen bg-pattern">
-      {/* Archive Banner */}
-      <div className="bg-warmgray-700 text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-          <div className="flex items-center gap-2 text-sm">
-            <svg className="w-4 h-4 text-warmgray-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-            </svg>
-            <span className="text-warmgray-200">Archive &mdash; March 3, 2026 Town Meeting Day Results</span>
-          </div>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm text-white bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded-lg transition-colors font-medium"
-          >
-            <ArrowLeftIcon />
-            Back to Voter Guide
-          </Link>
-        </div>
-      </div>
-
       {/* Hero Header */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-warmgray-500 via-warmgray-600 to-warmgray-700" />
@@ -192,7 +173,7 @@ export default function ArchivePage() {
           <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800">
             {contestedRace?.title}
           </h2>
-          <p className="text-warmgray-500 mt-2">Beth Zigmund elected with 1,699 votes (50.5%) to Amy Allen&apos;s 1,668 (49.5%)</p>
+          <p className="text-warmgray-600 mt-2">Beth Zigmund elected with 1,699 votes (50.5%) to Amy Allen&apos;s 1,668 (49.5%)</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -201,7 +182,7 @@ export default function ArchivePage() {
               <div className="bg-white rounded-2xl shadow-soft p-6 h-full border-2 border-transparent hover:border-sage-200 transition-colors">
                 <div className="flex items-center gap-4 mb-4">
                   <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
-                    index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-600'
+                    index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-700'
                   }`}>
                     <UserIcon />
                   </div>
@@ -211,7 +192,7 @@ export default function ArchivePage() {
                       {(candidate as any).elected ? (
                         <span className="text-xs font-semibold text-sage-700 bg-sage-100 px-2 py-0.5 rounded-full">Elected &mdash; {(candidate as any).votes?.toLocaleString()} votes</span>
                       ) : (
-                        <span className="text-xs font-semibold text-warmgray-500 bg-warmgray-100 px-2 py-0.5 rounded-full">{(candidate as any).votes?.toLocaleString()} votes</span>
+                        <span className="text-xs font-semibold text-warmgray-600 bg-warmgray-100 px-2 py-0.5 rounded-full">{(candidate as any).votes?.toLocaleString()} votes</span>
                       )}
                     </div>
                   </div>
@@ -219,7 +200,7 @@ export default function ArchivePage() {
                 <p className="text-warmgray-600 text-sm leading-relaxed mb-4">{candidate.background}</p>
                 {candidate.experience && candidate.experience.length > 0 && (
                   <div className="pt-4 border-t border-warmgray-100">
-                    <p className="text-xs font-semibold text-warmgray-400 uppercase tracking-wide mb-2">Experience Highlights</p>
+                    <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Experience Highlights</p>
                     <ul className="space-y-1">
                       {candidate.experience.slice(0, 2).map((exp, i) => (
                         <li key={i} className="text-sm text-warmgray-600 flex items-start gap-2">
@@ -240,7 +221,7 @@ export default function ArchivePage() {
           <div className="mb-12">
             <div className="text-center mb-8">
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800 mb-2">Uncontested Races — Results</h2>
-              <p className="text-warmgray-500">These candidates ran unopposed and were elected</p>
+              <p className="text-warmgray-600">These candidates ran unopposed and were elected</p>
             </div>
 
             <div className="bg-white rounded-2xl shadow-soft overflow-hidden">
@@ -249,7 +230,7 @@ export default function ArchivePage() {
                   <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600"><UserIcon /></div>
                   <h3 className="font-display font-bold text-warmgray-800">City Council</h3>
                 </div>
-                <p className="text-warmgray-500 text-xs mb-4 ml-10">
+                <p className="text-warmgray-600 text-xs mb-4 ml-10">
                   The 5-member council sets the city budget, approves zoning changes, hires the city manager, and makes policy decisions on development, infrastructure, and services.
                 </p>
                 <div className="space-y-3">
@@ -259,14 +240,14 @@ export default function ArchivePage() {
                       <div key={race.id} className="flex items-center justify-between bg-cream-50 rounded-xl p-4 hover:bg-sage-50 transition-colors">
                         <div>
                           <p className="font-medium text-warmgray-800">{race.candidates[0]?.name || 'No candidate'}</p>
-                          <p className="text-sm text-warmgray-500">{race.title}</p>
+                          <p className="text-sm text-warmgray-600">{race.title}</p>
                           {race.candidates[0]?.experience?.[0] && (
-                            <p className="text-xs text-warmgray-400 mt-1">{race.candidates[0].experience[0]}</p>
+                            <p className="text-xs text-warmgray-600 mt-1">{race.candidates[0].experience[0]}</p>
                           )}
                         </div>
                         <div className="flex items-center gap-3">
                           {race.candidates[0]?.votes && (
-                            <span className="text-xs text-warmgray-400">{race.candidates[0].votes.toLocaleString()} votes</span>
+                            <span className="text-xs text-warmgray-600">{race.candidates[0].votes.toLocaleString()} votes</span>
                           )}
                           <span className="flex items-center gap-1 text-sage-600 text-sm font-medium"><CheckCircleIcon /> Elected</span>
                         </div>
@@ -277,10 +258,10 @@ export default function ArchivePage() {
 
               <div className="p-6 bg-cream-50/50">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-600"><AcademicCapIcon /></div>
+                  <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700"><AcademicCapIcon /></div>
                   <h3 className="font-display font-bold text-warmgray-800">School Board</h3>
                 </div>
-                <p className="text-warmgray-500 text-xs mb-4 ml-10">
+                <p className="text-warmgray-600 text-xs mb-4 ml-10">
                   The school board hires the superintendent, sets the school budget (~70-75% of your property tax), negotiates teacher contracts, and oversees district policy.
                 </p>
                 <div className="space-y-3">
@@ -293,14 +274,14 @@ export default function ArchivePage() {
                             <div className="flex items-center justify-between">
                               <div>
                                 <p className="font-medium text-warmgray-800">{race.candidates[0]?.name}</p>
-                                <p className="text-sm text-warmgray-500">{race.title}</p>
+                                <p className="text-sm text-warmgray-600">{race.title}</p>
                                 {race.candidates[0]?.experience?.[0] && (
-                                  <p className="text-xs text-warmgray-400 mt-1">{race.candidates[0].experience[0]}</p>
+                                  <p className="text-xs text-warmgray-600 mt-1">{race.candidates[0].experience[0]}</p>
                                 )}
                               </div>
                               <div className="flex items-center gap-3">
                                 {race.candidates[0]?.votes && (
-                                  <span className="text-xs text-warmgray-400">{race.candidates[0].votes.toLocaleString()} votes</span>
+                                  <span className="text-xs text-warmgray-600">{race.candidates[0].votes.toLocaleString()} votes</span>
                                 )}
                                 <span className="flex items-center gap-1 text-sage-600 text-sm font-medium"><CheckCircleIcon /> Elected</span>
                               </div>
@@ -308,7 +289,7 @@ export default function ArchivePage() {
                             {race.writeInChallenges?.length > 0 && (
                               <div className="mt-2 pt-2 border-t border-warmgray-100">
                                 {race.writeInChallenges.map((writeIn: any) => (
-                                  <p key={writeIn.name} className="text-xs text-warmgray-400">
+                                  <p key={writeIn.name} className="text-xs text-warmgray-600">
                                     Write-in: {writeIn.name} — {writeIn.votes.toLocaleString()} votes
                                   </p>
                                 ))}
@@ -321,15 +302,15 @@ export default function ArchivePage() {
                               <p className="font-medium text-warmgray-800">
                                 {race.writeInWinner ? race.writeInWinner.name : 'No candidate filed'}
                               </p>
-                              <p className="text-sm text-warmgray-500">{race.title}</p>
-                              <p className="text-xs text-warmgray-400 mt-1">
+                              <p className="text-sm text-warmgray-600">{race.title}</p>
+                              <p className="text-xs text-warmgray-600 mt-1">
                                 {race.writeInWinner ? 'Elected via write-in campaign' : 'Seat remained unfilled'}
                               </p>
                             </div>
                             {race.writeInWinner ? (
                               <span className="flex items-center gap-1 text-sage-600 text-sm font-medium"><CheckCircleIcon /> Elected</span>
                             ) : (
-                              <span className="text-terracotta-600 text-sm font-medium">Open Seat</span>
+                              <span className="text-terracotta-700 text-sm font-medium">Open Seat</span>
                             )}
                           </div>
                         )}
@@ -346,7 +327,7 @@ export default function ArchivePage() {
           <div className="mb-12">
             <div className="text-center mb-8">
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-warmgray-800 mb-2">Ballot Article Results</h2>
-              <p className="text-warmgray-500">How South Burlington voted on March 3rd</p>
+              <p className="text-warmgray-600">How South Burlington voted on March 3rd</p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {ballotArticles.slice(1).map((article: any, index: number) => (
@@ -354,7 +335,7 @@ export default function ArchivePage() {
                   <div className="bg-white rounded-2xl shadow-soft p-6 border-2 border-transparent hover:border-sage-200 transition-colors h-full">
                     <div className="flex items-start gap-4">
                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                        index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-600'
+                        index === 0 ? 'bg-sage-100 text-sage-600' : 'bg-terracotta-100 text-terracotta-700'
                       }`}>
                         {index === 0 ? <DocumentIcon /> : <FireIcon />}
                       </div>
@@ -431,7 +412,7 @@ export default function ArchivePage() {
               This archive preserves the March 3, 2026 South Burlington Town Meeting Day voter guide and results.
               Information compiled from candidate websites, public statements, and local news coverage.
             </p>
-            <p className="text-xs text-warmgray-400 mb-4">
+            <p className="text-xs text-warmgray-600 mb-4">
               An independent, nonpartisan community resource. All positions sourced from publicly available materials.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4 border-t border-warmgray-100">
@@ -442,7 +423,7 @@ export default function ArchivePage() {
                 View Sources & Citations
               </Link>
               <span className="hidden sm:inline text-warmgray-300">•</span>
-              <span className="text-xs text-warmgray-400">
+              <span className="text-xs text-warmgray-600">
                 Last updated: {new Date((candidatesData as any).lastUpdated + 'T12:00:00').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
               </span>
             </div>
