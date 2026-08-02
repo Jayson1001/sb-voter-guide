@@ -703,6 +703,42 @@ export default function PrimaryPage() {
           ))}
         </section>
 
+        {/* Check it yourself — primary-source resources */}
+        <section id="check-it-yourself" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-6">
+          <h2 className="font-display text-xl font-bold text-warmgray-800 mb-1">Check it yourself</h2>
+          <p className="text-warmgray-600 text-sm leading-relaxed mb-5">
+            Every campaign says the same three things. Here&apos;s where to go when you want to know what someone
+            actually did.
+          </p>
+          <ul className="space-y-4">
+            {[
+              { title: "Vermont-NEA 2026 Primary Guide", url: "https://vtnea.org/primaryguide2026", desc: "Candidates answered a long written questionnaire, and the guide builds you a sample ballot you can take to the polls." },
+              { title: "Vermont Public — debates & interviews", url: "https://www.vermontpublic.org/show/vermont-edition/2026-07-23/vermont-2026-democratic-primary-debate-governor", desc: "The candidates in extended, unscripted conversation — governor, lieutenant governor, and more." },
+              { title: "VTDigger 2026 Primary Election Guide", url: "https://vtdigger.org/2026-primary-election-guide/", desc: "County-by-county pages, including each candidate's financial disclosures." },
+              { title: "Vermont campaign finance portal", url: "https://campaignfinance.vermont.gov/", desc: "Who's funding whom. Big ad buys ($520+) within 45 days of the election must be reported within 24 hours, so right now it's basically a live feed of ad spending. The next major filing lands August 7." },
+              { title: "Vermont Legislature", url: "https://legislature.vermont.gov/", desc: "For anyone already in office: what they sponsored, which committees they sit on, and how they voted." },
+            ].map((r, i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="mt-0.5 flex-shrink-0 w-6 h-6 bg-sage-100 text-sage-700 rounded-lg flex items-center justify-center text-xs font-bold">
+                  {i + 1}
+                </span>
+                <div>
+                  <a
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-sage-700 hover:text-sage-900 text-sm"
+                  >
+                    {r.title}
+                    <ExternalLinkIcon />
+                  </a>
+                  <p className="text-warmgray-500 text-xs leading-relaxed mt-0.5">{r.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         {/* Voter Info */}
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-4">Primary Voting Info</h2>

@@ -183,6 +183,12 @@ export default function RaceComparison({ raceId }: { raceId: string }) {
                 </li>
               ))}
             </ul>
+            <a
+              href="#check-it-yourself"
+              className="inline-block mt-3 text-xs font-medium text-sage-600 hover:text-sage-800 underline underline-offset-2"
+            >
+              More ways to check any candidate &rarr;
+            </a>
           </div>
         )}
       </div>
