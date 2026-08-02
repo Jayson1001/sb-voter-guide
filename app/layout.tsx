@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Quicksand, Nunito } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import PrimaryBanner from "@/components/PrimaryBanner";
+import SiteNav from "@/components/SiteNav";
 import "./globals.css";
 
 const quicksand = Quicksand({
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="en" className={`${quicksand.variable} ${nunito.variable}`}>
       <body className="font-body bg-cream-100 min-h-screen">
         <PrimaryBanner />
+        <SiteNav />
         {children}
         <Analytics />
       </body>
