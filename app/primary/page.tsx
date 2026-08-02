@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Who's on your Aug 11 ballot?",
     description:
       "Every South Burlington race on the August 11 primary ballot, in plain English — with side-by-side candidate comparisons and the Bartlett Bay bond explained.",
-    url: "https://sbvoterguide.com/primary",
+    url: "https://www.sbvoterguide.com/primary",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Who's on your August 11 South Burlington ballot?" }],
   },
   twitter: {

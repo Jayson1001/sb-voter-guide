@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Quicksand, Nunito } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import PrimaryBanner from "@/components/PrimaryBanner";
+import SiteNav from "@/components/SiteNav";
 import "./globals.css";
 
 const quicksand = Quicksand({
@@ -17,7 +18,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sbvoterguide.com"),
+  metadataBase: new URL("https://www.sbvoterguide.com"),
   title: "South Burlington Voter Guide 2026 | Primary & General Elections",
   description: "Your complete guide to the 2026 elections for South Burlington, VT residents. Covers the Vermont Primary (August 11) and General Election (November 3) — Governor, legislature, U.S. House, Proposals 3 & 4, and more. A nonpartisan community resource.",
   keywords: ["South Burlington", "Vermont", "voter guide", "2026 election", "Vermont primary", "Vermont general election", "Governor Phil Scott", "Becca Balint", "Proposal 3", "Proposal 4", "Vermont legislature", "Chittenden County", "nonpartisan"],
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "South Burlington Voter Guide 2026",
     description: "Complete guide to the 2026 Vermont Primary (Aug 11) and General Election (Nov 3) for South Burlington residents. Governor, legislature, ballot measures, and more.",
-    url: "https://sbvoterguide.com",
+    url: "https://www.sbvoterguide.com",
     type: "website",
     locale: "en_US",
     siteName: "South Burlington Voter Guide",
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="en" className={`${quicksand.variable} ${nunito.variable}`}>
       <body className="font-body bg-cream-100 min-h-screen">
         <PrimaryBanner />
+        <SiteNav />
         {children}
         <Analytics />
       </body>
