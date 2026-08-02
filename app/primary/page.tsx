@@ -441,9 +441,45 @@ export default function PrimaryPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
-                  <span>The rest comes from <strong className="text-warmgray-800">wastewater ratepayers</strong> — your sewer fees, which the city expects to rise about 2–3% a year. The city says South Burlington&apos;s rates are among the lowest in Vermont and would land mid-pack even after the increases.</span>
+                  <span>The rest comes from <strong className="text-warmgray-800">wastewater ratepayers</strong> — meaning sewer fees, not property taxes (more on that just below).</span>
                 </li>
               </ul>
+            </div>
+
+            {/* How will this affect my taxes? */}
+            <div className="bg-cream-50 border border-cream-300 rounded-xl p-4 mb-5">
+              <p className="font-display font-bold text-warmgray-800 text-sm mb-2 flex items-center gap-2">
+                <span aria-hidden="true">💵</span> How will this affect my taxes?
+              </p>
+              <div className="text-warmgray-600 text-sm leading-relaxed space-y-2">
+                <p>
+                  Here&apos;s the part people get wrong: this bond{" "}
+                  <strong className="text-warmgray-800">doesn&apos;t come out of your property taxes</strong>. It&apos;s
+                  paid back through <strong className="text-warmgray-800">wastewater (sewer) rates</strong> — so it lands
+                  on your sewer bill, not your property tax bill.
+                </p>
+                <p>
+                  The city expects sewer rates to rise about <strong className="text-warmgray-800">2–3% a year</strong>{" "}
+                  beyond increases already planned, spread over the next{" "}
+                  <strong className="text-warmgray-800">5–6 years</strong> rather than all at once. The 2% state loan
+                  (payments don&apos;t start until construction wraps, about two years out) and the $700,000 EPA grant
+                  help hold the cost down. South Burlington has one of the lowest sewer rates in Vermont today, and the
+                  city says it would still compare well regionally after the increases.
+                </p>
+                <p className="text-warmgray-500 text-xs">
+                  The city hasn&apos;t published an exact dollar figure for a typical household, so we can&apos;t give you
+                  a precise monthly number — check your sewer bill or the{" "}
+                  <a
+                    href="https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sage-600 hover:text-sage-800 underline"
+                  >
+                    city project page
+                  </a>
+                  .
+                </p>
+              </div>
             </div>
 
             {/* Learn more: hearing + videos */}
