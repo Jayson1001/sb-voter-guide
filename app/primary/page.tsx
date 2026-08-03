@@ -329,7 +329,7 @@ export default function PrimaryPage() {
         </div>
 
         {/* What is a Primary */}
-        <div id="primary-mechanics" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-20">
+        <div id="primary-mechanics" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-32">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-3">What is the Primary?</h2>
           <div className="grid sm:grid-cols-2 gap-4 text-sm text-warmgray-600 leading-relaxed">
             <p>
@@ -361,21 +361,20 @@ export default function PrimaryPage() {
           </div>
         </div>
 
-        {/* Jump to your race — a prominent card (voters were scrolling past the
-            quieter version) so they can skip past the bond to their ballot section. */}
-        <nav aria-label="Jump to a section" className="bg-white rounded-2xl shadow-soft border-2 border-sage-200 p-4 sm:p-5 mb-8">
-          <div className="flex items-center gap-2.5 mb-3">
-            <div className="w-9 h-9 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600 flex-shrink-0">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        {/* Jump to your race — compact chip bar that sticks under the main nav on
+            scroll, so a voter can hop between sections (and the bond) from anywhere.
+            Horizontally scrollable on phones. */}
+        <nav
+          aria-label="Jump to a race or the bond"
+          className="sticky top-14 z-30 -mx-4 sm:mx-0 mb-8 bg-white/95 backdrop-blur-sm border-y sm:border border-sage-200 sm:rounded-xl shadow-soft"
+        >
+          <div className="flex items-center gap-2 px-3 sm:px-4 py-2.5 overflow-x-auto">
+            <span className="flex items-center gap-1.5 flex-shrink-0 text-xs font-semibold text-warmgray-600 uppercase tracking-wide pr-1">
+              <svg className="w-4 h-4 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h10" />
               </svg>
-            </div>
-            <div>
-              <h2 className="font-display text-base sm:text-lg font-bold text-warmgray-800 leading-tight">Jump to your race</h2>
-              <p className="text-xs text-warmgray-600">Skip straight to the section you care about</p>
-            </div>
-          </div>
-          <ul className="flex flex-wrap gap-2">
+              Jump to
+            </span>
             {[
               { href: "#statewide", label: "Statewide" },
               { href: "#federal", label: "U.S. House" },
@@ -384,20 +383,19 @@ export default function PrimaryPage() {
               { href: "#county", label: "County offices" },
               { href: "#bond", label: "Bartlett Bay bond" },
             ].map((s) => (
-              <li key={s.href}>
-                <a
-                  href={s.href}
-                  className={`inline-flex items-center px-3.5 py-2 rounded-full text-sm font-medium transition-colors ${
-                    s.href === "#bond"
-                      ? "bg-terracotta-100 text-terracotta-700 hover:bg-terracotta-200"
-                      : "bg-sage-100 text-sage-800 hover:bg-sage-200"
-                  }`}
-                >
-                  {s.label}
-                </a>
-              </li>
+              <a
+                key={s.href}
+                href={s.href}
+                className={`flex-shrink-0 inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                  s.href === "#bond"
+                    ? "bg-terracotta-100 text-terracotta-700 hover:bg-terracotta-200"
+                    : "bg-sage-100 text-sage-800 hover:bg-sage-200"
+                }`}
+              >
+                {s.label}
+              </a>
             ))}
-          </ul>
+          </div>
         </nav>
 
         {/* Candidate Forums (CCTV Burlington) */}
@@ -457,7 +455,7 @@ export default function PrimaryPage() {
         </div>
 
         {/* Statewide Races */}
-        <section id="statewide" className="mb-10 scroll-mt-20">
+        <section id="statewide" className="mb-10 scroll-mt-32">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -482,7 +480,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Federal Races */}
-        <section id="federal" className="mb-10 scroll-mt-20">
+        <section id="federal" className="mb-10 scroll-mt-32">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -503,7 +501,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Vermont State Senate */}
-        <section id="senate" className="mb-10 scroll-mt-20">
+        <section id="senate" className="mb-10 scroll-mt-32">
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -528,7 +526,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Vermont State House */}
-        <section id="house" className="mb-10 scroll-mt-20">
+        <section id="house" className="mb-10 scroll-mt-32">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -569,7 +567,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Chittenden County Offices */}
-        <section id="county" className="mb-10 scroll-mt-20">
+        <section id="county" className="mb-10 scroll-mt-32">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -619,7 +617,7 @@ export default function PrimaryPage() {
 
         {/* City Ballot Item — Bartlett Bay wastewater bond. NOT a primary race:
             every SB voter gets this on the Aug 11 ballot regardless of party. */}
-        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8 scroll-mt-20">
+        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8 scroll-mt-32">
           <div className="bg-terracotta-500 text-white px-5 sm:px-6 py-2.5 flex items-center gap-2">
             <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
@@ -790,7 +788,7 @@ export default function PrimaryPage() {
         </section>
 
         {/* Check it yourself — primary-source resources */}
-        <section id="check-it-yourself" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-20">
+        <section id="check-it-yourself" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-32">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-1">Check it yourself</h2>
           <p className="text-warmgray-600 text-sm leading-relaxed mb-5">
             Every campaign says the same three things. Here&apos;s where to go when you want to know what someone
