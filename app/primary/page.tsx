@@ -320,7 +320,7 @@ export default function PrimaryPage() {
             Horizontally scrollable on phones. */}
         <nav
           aria-label="Jump to a race or the bond"
-          className="sticky top-14 z-30 -mx-4 sm:mx-0 mb-8 bg-white/95 backdrop-blur-sm border-y sm:border border-sage-200 sm:rounded-xl shadow-soft"
+          className="sticky top-14 z-30 -mx-4 sm:-mx-6 lg:-mx-8 mb-8 bg-white/95 backdrop-blur-sm border border-sage-200 rounded-xl shadow-soft"
         >
           <div className="flex items-center gap-2 px-3 sm:px-4 py-2.5 overflow-x-auto lg:justify-between">
             <span className="flex items-center gap-1.5 flex-shrink-0 text-xs font-semibold text-warmgray-600 uppercase tracking-wide pr-1">
