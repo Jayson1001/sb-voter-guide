@@ -315,6 +315,43 @@ export default function PrimaryPage() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
+        {/* Jump to your race — compact chip bar that sticks under the main nav on
+            scroll, so a voter can hop between sections (and the bond) from anywhere.
+            Horizontally scrollable on phones. */}
+        <nav
+          aria-label="Jump to a race or the bond"
+          className="sticky top-14 z-30 -mx-4 sm:-mx-6 lg:-mx-8 mb-8 bg-white/95 backdrop-blur-sm border border-sage-200 rounded-xl shadow-soft"
+        >
+          <div className="flex items-center gap-2 px-3 sm:px-4 py-2.5 overflow-x-auto lg:justify-between">
+            <span className="flex items-center gap-1.5 flex-shrink-0 text-xs font-semibold text-warmgray-600 uppercase tracking-wide pr-1">
+              <svg className="w-4 h-4 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h10" />
+              </svg>
+              Jump to
+            </span>
+            {[
+              { href: "#statewide", label: "Statewide" },
+              { href: "#federal", label: "U.S. House" },
+              { href: "#senate", label: "State Senate" },
+              { href: "#house", label: "State House" },
+              { href: "#county", label: "County offices" },
+              { href: "#bond", label: "Bartlett Bay bond" },
+            ].map((s) => (
+              <a
+                key={s.href}
+                href={s.href}
+                className={`flex-shrink-0 inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                  s.href === "#bond"
+                    ? "bg-terracotta-100 text-terracotta-700 hover:bg-terracotta-200"
+                    : "bg-sage-100 text-sage-800 hover:bg-sage-200"
+                }`}
+              >
+                {s.label}
+              </a>
+            ))}
+          </div>
+        </nav>
+
         {/* Turnout hook */}
         <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-4 mb-8 flex items-start gap-3">
           <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -329,7 +366,7 @@ export default function PrimaryPage() {
         </div>
 
         {/* What is a Primary */}
-        <div id="primary-mechanics" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-20">
+        <div id="primary-mechanics" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-32">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-3">What is the Primary?</h2>
           <div className="grid sm:grid-cols-2 gap-4 text-sm text-warmgray-600 leading-relaxed">
             <p>
@@ -361,48 +398,226 @@ export default function PrimaryPage() {
           </div>
         </div>
 
-        {/* Jump to your race — a prominent card (voters were scrolling past the
-            quieter version) so they can skip past the bond to their ballot section. */}
-        <nav aria-label="Jump to a section" className="bg-white rounded-2xl shadow-soft border-2 border-sage-200 p-4 sm:p-5 mb-8">
-          <div className="flex items-center gap-2.5 mb-3">
-            <div className="w-9 h-9 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600 flex-shrink-0">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h10" />
+        {/* Candidate Forums (CCTV Burlington) */}
+        <div className="bg-white border-2 border-sage-200 rounded-2xl shadow-soft p-6 sm:p-7 mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+            <div className="flex-shrink-0 w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center text-sage-600">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">Watch the candidate forums</h3>
+              <p className="text-warmgray-700 text-sm leading-relaxed mb-2">
+                See the candidates for the August 11 primary in their own words. New forums are added to the playlist as they&apos;re released.
+              </p>
+              <p className="text-warmgray-600 text-sm leading-relaxed mb-2">
+                Local hook: the three Democratic candidates for Lieutenant Governor held a housing forum in South
+                Burlington on July 15 (<a href="https://vtdigger.org/2026/07/20/in-vermonts-democratic-primary-for-lieutenant-governor-leading-candidates-past-work-takes-center-stage/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">VTDigger, July 20</a>).
+              </p>
+              <p className="text-warmgray-600 text-xs leading-relaxed mb-3">
+                Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-sage-500 hover:bg-sage-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors"
+              >
+                Watch on YouTube
+                <ExternalLinkIcon />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Filing Timeline */}
+        <div className="bg-sage-50 border border-sage-200 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center text-sage-600">
+            <CalendarIcon />
+          </div>
+          <div className="flex-1">
+            <p className="font-semibold text-sage-800">Filing deadline passed — see full candidate list</p>
+            <p className="text-sage-700 text-sm mt-0.5">
+              Candidate filing closed <strong>May 28, 2026 at 5:00 PM</strong>.
+              The races and candidates below reflect filings as of that deadline. For the official certified list, see the VT SoS candidates page.
+            </p>
+          </div>
+          <a
+            href="https://sos.vermont.gov/elections/election-info-resources/candidates/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-medium text-sage-700 bg-white border border-sage-200 hover:border-sage-300 px-4 py-2 rounded-lg transition-colors"
+          >
+            VT SoS Candidates Page
+            <ArrowRightIcon />
+          </a>
+        </div>
+
+        {/* Statewide Races */}
+        <section id="statewide" className="mb-10 scroll-mt-32">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+              </svg>
+            </div>
+            <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont Statewide Offices</h2>
+          </div>
+          <div className="mb-4"><MechanicsLink /></div>
+          <div className="grid lg:grid-cols-2 gap-5">
+            {statewide.map((race) => (
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+              </div>
+            ))}
+          </div>
+          {/* Full-width comparisons for the contested statewide races (auto-renders where data exists) */}
+          {statewide.map((race) => (
+            <RaceComparison key={race.id} raceId={race.id} />
+          ))}
+        </section>
+
+        {/* Federal Races */}
+        <section id="federal" className="mb-10 scroll-mt-32">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+              </svg>
+            </div>
+            <h2 className="font-display text-xl font-bold text-warmgray-800">Federal Office</h2>
+          </div>
+          <div className="mb-4"><MechanicsLink /></div>
+          <div className="grid lg:grid-cols-2 gap-5">
+            {federal.map((race) => (
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Vermont State Senate */}
+        <section id="senate" className="mb-10 scroll-mt-32">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
             <div>
-              <h2 className="font-display text-base sm:text-lg font-bold text-warmgray-800 leading-tight">Jump to your race</h2>
-              <p className="text-xs text-warmgray-600">Skip straight to the section you care about</p>
+              <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont State Senate</h2>
+              <p className="text-warmgray-600 text-sm">Your senators from the Chittenden Southeast district</p>
             </div>
           </div>
-          <ul className="flex flex-wrap gap-2">
-            {[
-              { href: "#statewide", label: "Statewide" },
-              { href: "#federal", label: "U.S. House" },
-              { href: "#senate", label: "State Senate" },
-              { href: "#house", label: "State House" },
-              { href: "#county", label: "County offices" },
-              { href: "#bond", label: "Bartlett Bay bond" },
-            ].map((s) => (
-              <li key={s.href}>
-                <a
-                  href={s.href}
-                  className={`inline-flex items-center px-3.5 py-2 rounded-full text-sm font-medium transition-colors ${
-                    s.href === "#bond"
-                      ? "bg-terracotta-100 text-terracotta-700 hover:bg-terracotta-200"
-                      : "bg-sage-100 text-sage-800 hover:bg-sage-200"
-                  }`}
-                >
-                  {s.label}
-                </a>
-              </li>
+          <div className="mb-4"><MechanicsLink /></div>
+          <div className="space-y-5">
+            {stateSenate.map((race) => (
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+                <RaceComparison raceId={race.id} />
+              </div>
             ))}
-          </ul>
-        </nav>
+          </div>
+        </section>
+
+        {/* Vermont State House */}
+        <section id="house" className="mb-10 scroll-mt-32">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <div>
+              <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont House of Representatives</h2>
+              <p className="text-warmgray-600 text-sm">South Burlington spans multiple House districts — see which one you&apos;re in</p>
+            </div>
+          </div>
+          <div className="mb-4"><MechanicsLink /></div>
+
+          <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mb-5 flex items-start gap-3">
+            <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div className="text-sm text-terracotta-800">
+              <strong>Find your district:</strong> South Burlington is divided into five Vermont House districts.
+              Use{" "}
+              <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="underline hover:text-terracotta-900">
+                My Voter Page (mvp.vermont.gov)
+              </a>
+              {" "}to look up your exact district based on your address.
+            </div>
+          </div>
+
+          {/* One explainer for the office type — not once per district */}
+          <div className="mb-5">
+            <OfficeExplainer office="Vermont House of Representatives" />
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-5">
+            {stateHouse.map((race) => (
+              <RaceCard key={race.id} race={race} />
+            ))}
+          </div>
+        </section>
+
+        {/* Chittenden County Offices */}
+        <section id="county" className="mb-10 scroll-mt-32">
+          <div className="flex items-center gap-3 mb-3">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+              </svg>
+            </div>
+            <div>
+              <h2 className="font-display text-xl font-bold text-warmgray-800">Chittenden County Offices</h2>
+              <p className="text-warmgray-600 text-sm">Same for every South Burlington voter — no district lookup needed</p>
+            </div>
+          </div>
+          <div className="mb-4"><MechanicsLink /></div>
+
+          <div className="bg-cream-50 border border-warmgray-200 rounded-xl p-4 mb-5 flex items-start gap-3">
+            <svg className="w-5 h-5 text-warmgray-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p className="text-sm text-warmgray-600 leading-relaxed">
+              These county offices are elected across all of Chittenden County, so every South Burlington voter sees the
+              same candidates. Each is a Democratic primary this August — no Republican or Progressive candidates filed
+              for these seats.
+            </p>
+          </div>
+
+          {/* State's Attorney — featured (the one contested countywide race likely decided in the primary) */}
+          {statesAttorney && (
+            <div className="flex flex-col gap-3 mb-5">
+              <OfficeExplainer office={statesAttorney.office} />
+              <RaceCard race={statesAttorney} />
+              <RaceComparison raceId="states-attorney" />
+            </div>
+          )}
+
+          <div className="grid lg:grid-cols-2 gap-5">
+            {otherCounty.map((race) => (
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+              </div>
+            ))}
+          </div>
+          {/* Full-width comparisons for contested county races (e.g. Sheriff) */}
+          {otherCounty.map((race) => (
+            <RaceComparison key={race.id} raceId={race.id} />
+          ))}
+        </section>
 
         {/* City Ballot Item — Bartlett Bay wastewater bond. NOT a primary race:
             every SB voter gets this on the Aug 11 ballot regardless of party. */}
-        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8 scroll-mt-20">
+        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8 scroll-mt-32">
           <div className="bg-terracotta-500 text-white px-5 sm:px-6 py-2.5 flex items-center gap-2">
             <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
@@ -572,225 +787,8 @@ export default function PrimaryPage() {
           </div>
         </section>
 
-        {/* Candidate Forums (CCTV Burlington) */}
-        <div className="bg-white border-2 border-sage-200 rounded-2xl shadow-soft p-6 sm:p-7 mb-8">
-          <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-            <div className="flex-shrink-0 w-12 h-12 bg-sage-100 rounded-xl flex items-center justify-center text-sage-600">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">Watch the candidate forums</h3>
-              <p className="text-warmgray-700 text-sm leading-relaxed mb-2">
-                See the candidates for the August 11 primary in their own words. New forums are added to the playlist as they&apos;re released.
-              </p>
-              <p className="text-warmgray-600 text-sm leading-relaxed mb-2">
-                Local hook: the three Democratic candidates for Lieutenant Governor held a housing forum in South
-                Burlington on July 15 (<a href="https://vtdigger.org/2026/07/20/in-vermonts-democratic-primary-for-lieutenant-governor-leading-candidates-past-work-takes-center-stage/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">VTDigger, July 20</a>).
-              </p>
-              <p className="text-warmgray-600 text-xs leading-relaxed mb-3">
-                Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
-              </p>
-              <a
-                href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-sage-500 hover:bg-sage-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors"
-              >
-                Watch on YouTube
-                <ExternalLinkIcon />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Filing Timeline */}
-        <div className="bg-sage-50 border border-sage-200 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="flex-shrink-0 w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center text-sage-600">
-            <CalendarIcon />
-          </div>
-          <div className="flex-1">
-            <p className="font-semibold text-sage-800">Filing deadline passed — see full candidate list</p>
-            <p className="text-sage-700 text-sm mt-0.5">
-              Candidate filing closed <strong>May 28, 2026 at 5:00 PM</strong>.
-              The races and candidates below reflect filings as of that deadline. For the official certified list, see the VT SoS candidates page.
-            </p>
-          </div>
-          <a
-            href="https://sos.vermont.gov/elections/election-info-resources/candidates/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-medium text-sage-700 bg-white border border-sage-200 hover:border-sage-300 px-4 py-2 rounded-lg transition-colors"
-          >
-            VT SoS Candidates Page
-            <ArrowRightIcon />
-          </a>
-        </div>
-
-        {/* Statewide Races */}
-        <section id="statewide" className="mb-10 scroll-mt-20">
-          <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
-              </svg>
-            </div>
-            <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont Statewide Offices</h2>
-          </div>
-          <div className="mb-4"><MechanicsLink /></div>
-          <div className="grid lg:grid-cols-2 gap-5">
-            {statewide.map((race) => (
-              <div key={race.id} className="flex flex-col gap-3">
-                <OfficeExplainer office={race.office} />
-                <RaceCard race={race} />
-              </div>
-            ))}
-          </div>
-          {/* Full-width comparisons for the contested statewide races (auto-renders where data exists) */}
-          {statewide.map((race) => (
-            <RaceComparison key={race.id} raceId={race.id} />
-          ))}
-        </section>
-
-        {/* Federal Races */}
-        <section id="federal" className="mb-10 scroll-mt-20">
-          <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
-              </svg>
-            </div>
-            <h2 className="font-display text-xl font-bold text-warmgray-800">Federal Office</h2>
-          </div>
-          <div className="mb-4"><MechanicsLink /></div>
-          <div className="grid lg:grid-cols-2 gap-5">
-            {federal.map((race) => (
-              <div key={race.id} className="flex flex-col gap-3">
-                <OfficeExplainer office={race.office} />
-                <RaceCard race={race} />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Vermont State Senate */}
-        <section id="senate" className="mb-10 scroll-mt-20">
-          <div className="flex items-center gap-3 mb-5">
-            <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </div>
-            <div>
-              <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont State Senate</h2>
-              <p className="text-warmgray-600 text-sm">Your senators from the Chittenden Southeast district</p>
-            </div>
-          </div>
-          <div className="mb-4"><MechanicsLink /></div>
-          <div className="space-y-5">
-            {stateSenate.map((race) => (
-              <div key={race.id} className="flex flex-col gap-3">
-                <OfficeExplainer office={race.office} />
-                <RaceCard race={race} />
-                <RaceComparison raceId={race.id} />
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Vermont State House */}
-        <section id="house" className="mb-10 scroll-mt-20">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-8 h-8 bg-sage-100 rounded-lg flex items-center justify-center text-sage-600">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-            </div>
-            <div>
-              <h2 className="font-display text-xl font-bold text-warmgray-800">Vermont House of Representatives</h2>
-              <p className="text-warmgray-600 text-sm">South Burlington spans multiple House districts — see which one you&apos;re in</p>
-            </div>
-          </div>
-          <div className="mb-4"><MechanicsLink /></div>
-
-          <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mb-5 flex items-start gap-3">
-            <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <div className="text-sm text-terracotta-800">
-              <strong>Find your district:</strong> South Burlington is divided into five Vermont House districts.
-              Use{" "}
-              <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="underline hover:text-terracotta-900">
-                My Voter Page (mvp.vermont.gov)
-              </a>
-              {" "}to look up your exact district based on your address.
-            </div>
-          </div>
-
-          {/* One explainer for the office type — not once per district */}
-          <div className="mb-5">
-            <OfficeExplainer office="Vermont House of Representatives" />
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-5">
-            {stateHouse.map((race) => (
-              <RaceCard key={race.id} race={race} />
-            ))}
-          </div>
-        </section>
-
-        {/* Chittenden County Offices */}
-        <section id="county" className="mb-10 scroll-mt-20">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
-              </svg>
-            </div>
-            <div>
-              <h2 className="font-display text-xl font-bold text-warmgray-800">Chittenden County Offices</h2>
-              <p className="text-warmgray-600 text-sm">Same for every South Burlington voter — no district lookup needed</p>
-            </div>
-          </div>
-          <div className="mb-4"><MechanicsLink /></div>
-
-          <div className="bg-cream-50 border border-warmgray-200 rounded-xl p-4 mb-5 flex items-start gap-3">
-            <svg className="w-5 h-5 text-warmgray-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <p className="text-sm text-warmgray-600 leading-relaxed">
-              These county offices are elected across all of Chittenden County, so every South Burlington voter sees the
-              same candidates. Each is a Democratic primary this August — no Republican or Progressive candidates filed
-              for these seats.
-            </p>
-          </div>
-
-          {/* State's Attorney — featured (the one contested countywide race likely decided in the primary) */}
-          {statesAttorney && (
-            <div className="flex flex-col gap-3 mb-5">
-              <OfficeExplainer office={statesAttorney.office} />
-              <RaceCard race={statesAttorney} />
-              <RaceComparison raceId="states-attorney" />
-            </div>
-          )}
-
-          <div className="grid lg:grid-cols-2 gap-5">
-            {otherCounty.map((race) => (
-              <div key={race.id} className="flex flex-col gap-3">
-                <OfficeExplainer office={race.office} />
-                <RaceCard race={race} />
-              </div>
-            ))}
-          </div>
-          {/* Full-width comparisons for contested county races (e.g. Sheriff) */}
-          {otherCounty.map((race) => (
-            <RaceComparison key={race.id} raceId={race.id} />
-          ))}
-        </section>
-
         {/* Check it yourself — primary-source resources */}
-        <section id="check-it-yourself" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-20">
+        <section id="check-it-yourself" className="bg-white rounded-2xl shadow-soft p-6 sm:p-8 mb-8 scroll-mt-32">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-1">Check it yourself</h2>
           <p className="text-warmgray-600 text-sm leading-relaxed mb-5">
             Every campaign says the same three things. Here&apos;s where to go when you want to know what someone
