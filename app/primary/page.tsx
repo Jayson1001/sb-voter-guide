@@ -400,178 +400,6 @@ export default function PrimaryPage() {
           </ul>
         </nav>
 
-        {/* City Ballot Item — Bartlett Bay wastewater bond. NOT a primary race:
-            every SB voter gets this on the Aug 11 ballot regardless of party. */}
-        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8 scroll-mt-20">
-          <div className="bg-terracotta-500 text-white px-5 sm:px-6 py-2.5 flex items-center gap-2">
-            <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
-            </svg>
-            <span className="text-xs font-semibold uppercase tracking-wide">City ballot item · Every voter gets this one</span>
-          </div>
-          <div className="p-5 sm:p-7">
-            <h2 className="font-display text-xl sm:text-2xl font-bold text-warmgray-800 mb-2">
-              $16.4 million for the Bartlett Bay wastewater plant
-            </h2>
-            <p className="text-warmgray-600 text-sm leading-relaxed mb-5">
-              This one isn&apos;t a party race. It&apos;s a <strong className="text-warmgray-800">city question on the same
-              August 11 ballot</strong>, and every South Burlington voter gets it — no matter which party&apos;s ballot you
-              pick. It&apos;s decided that day, not in November.
-            </p>
-
-            {/* What you're voting on */}
-            <div className="bg-cream-50 rounded-xl p-4 mb-5">
-              <p className="text-warmgray-700 text-sm leading-relaxed">
-                Voters are asked to approve an <strong className="text-warmgray-800">additional $16.4 million</strong> to
-                rebuild the Bartlett Bay Wastewater Treatment Facility — the city&apos;s sewage-treatment plant off Route 7
-                — on top of the <strong className="text-warmgray-800">$33.8 million</strong> bond voters approved on Town
-                Meeting Day in 2023. The plant has run continuously for more than 55 years, and 25 years since its last
-                major refurbishment. The city says critical parts are worn out and no longer made.
-              </p>
-            </div>
-
-            {/* Two key facts, always visible */}
-            <div className="grid sm:grid-cols-2 gap-3 mb-5">
-              <div className="bg-sage-50 border border-sage-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
-                <span aria-hidden="true">💵</span> Paid through <strong className="text-warmgray-800">sewer rates, not property taxes</strong> — about 2–3% a year, phased over 5–6 years.
-              </div>
-              <div className="bg-terracotta-50 border border-terracotta-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
-                <span aria-hidden="true">🗓️</span> <strong className="text-warmgray-800">Public hearing:</strong> Mon, Aug 10, 6 PM at City Hall (Zoom option on the city page).
-              </div>
-            </div>
-
-            {/* Full breakdown collapsed by default so it doesn't bury the races below */}
-            <details className="group border-t border-warmgray-100 pt-4">
-              <summary className="flex items-center gap-2 cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden text-sm font-semibold text-sage-700 hover:text-sage-900">
-                <svg className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-                See the full breakdown — costs, how it&apos;s paid, tax impact, the criticism &amp; videos
-              </summary>
-              <div className="mt-5">
-
-            {/* City's case + the criticism, side by side and equal */}
-            <div className="grid md:grid-cols-2 gap-4 mb-5">
-              <div className="border border-sage-100 rounded-xl p-4">
-                <p className="text-xs font-semibold text-sage-700 uppercase tracking-wide mb-2">Why the cost went up — the city&apos;s case</p>
-                <p className="text-warmgray-600 text-sm leading-relaxed">
-                  The city points to inflation and rising construction costs, tariffs on materials, and federal
-                  &ldquo;Buy America&rdquo; rules (the BABA Act) that raise the price of equipment, plus fuel costs. Then
-                  crews hit surprises at the site: poor soils and a newly discovered protected wetland that limited where
-                  infrastructure could go, along with a design change for wet-weather capacity — a third clarifier, the
-                  tank that settles solids out of the water.
-                </p>
-              </div>
-              <div className="border border-warmgray-200 rounded-xl p-4">
-                <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">The criticism</p>
-                <p className="text-warmgray-600 text-sm leading-relaxed">
-                  <a href="https://www.vtcng.com/otherpapersbvt/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">The Other Paper</a>{" "}
-                  reported the request is a <strong className="text-warmgray-800">49% increase</strong> in total project
-                  funding, following a <strong className="text-warmgray-800">66% cost overrun</strong> on the Bartlett Bay
-                  portion specifically. Some residents and at least one city councilor questioned how late the full scale
-                  of the overrun reached voters. The original $33.8 million also covered Queen City Park pump stations
-                  (not moving forward) and the Airport Parkway plant (already under construction).
-                </p>
-              </div>
-            </div>
-
-            {/* How it's paid for */}
-            <div className="mb-5">
-              <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">How it gets paid for</p>
-              <ul className="space-y-2 text-warmgray-600 text-sm leading-relaxed">
-                <li className="flex items-start gap-2">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
-                  <span>A <strong className="text-warmgray-800">2% state clean-water loan</strong> (the Clean Water State Revolving Fund) is lined up for the project as designed. The city says if the bond fails or stalls, that low-interest money gets reallocated to other projects around Vermont — and the contractor holding the current bid may not hold it.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
-                  <span>A <strong className="text-warmgray-800">$700,000 EPA grant</strong> (2025) covers some energy-efficiency work.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
-                  <span>The rest comes from <strong className="text-warmgray-800">wastewater ratepayers</strong> — meaning sewer fees, not property taxes (more on that just below).</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* How will this affect my taxes? */}
-            <div className="bg-cream-50 border border-cream-300 rounded-xl p-4 mb-5">
-              <p className="font-display font-bold text-warmgray-800 text-sm mb-2 flex items-center gap-2">
-                <span aria-hidden="true">💵</span> How will this affect my taxes?
-              </p>
-              <div className="text-warmgray-600 text-sm leading-relaxed space-y-2">
-                <p>
-                  Here&apos;s the part people get wrong: this bond{" "}
-                  <strong className="text-warmgray-800">doesn&apos;t come out of your property taxes</strong>. It&apos;s
-                  paid back through <strong className="text-warmgray-800">wastewater (sewer) rates</strong> — so it lands
-                  on your sewer bill, not your property tax bill.
-                </p>
-                <p>
-                  The city expects sewer rates to rise about <strong className="text-warmgray-800">2–3% a year</strong>{" "}
-                  beyond increases already planned, spread over the next{" "}
-                  <strong className="text-warmgray-800">5–6 years</strong> rather than all at once. The 2% state loan
-                  (payments don&apos;t start until construction wraps, about two years out) and the $700,000 EPA grant
-                  help hold the cost down. South Burlington has one of the lowest sewer rates in Vermont today, and the
-                  city says it would still compare well regionally after the increases.
-                </p>
-                <p className="text-warmgray-600 text-xs">
-                  The city hasn&apos;t published an exact dollar figure for a typical household, so we can&apos;t give you
-                  a precise monthly number — check your sewer bill or the{" "}
-                  <a
-                    href="https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sage-600 hover:text-sage-800 underline"
-                  >
-                    city project page
-                  </a>
-                  .
-                </p>
-              </div>
-            </div>
-
-            {/* Learn more: hearing + videos */}
-            <div className="bg-sage-50 border border-sage-100 rounded-xl p-4 mb-5">
-              <p className="text-xs font-semibold text-sage-700 uppercase tracking-wide mb-2">Dig in before you vote</p>
-              <ul className="space-y-1.5 text-warmgray-700 text-sm leading-relaxed mb-3">
-                <li>
-                  <strong className="text-warmgray-800">Public information hearing:</strong> Monday, August 10, 6:00 PM at
-                  City Hall (180 Market Street), with a Zoom option (link on the city&apos;s project page).
-                </li>
-                <li>
-                  <strong className="text-warmgray-800">Watch:</strong> Town Meeting TV made two videos — a tour of the
-                  facility and a forum with Councilors Andrew Chalnick and Beth Zigmund and the public works director.
-                  Both are on the city&apos;s project page.
-                </li>
-              </ul>
-              <a
-                href="https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-sage-500 hover:bg-sage-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors"
-              >
-                City project page &amp; videos
-                <ExternalLinkIcon />
-              </a>
-            </div>
-
-            {/* Ballot logistics */}
-            <div className="flex items-start gap-2 text-xs text-warmgray-600 leading-relaxed">
-              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-warmgray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <p>
-                <strong className="text-warmgray-600">Heads up on your ballot:</strong> because this is a city
-                special-election item, these ballots may not be ready until 20–30 days before August 11. If you already
-                requested or returned a primary ballot, the city article may reach you separately. Not sure? Check with
-                the City Clerk at 802-846-4105.
-              </p>
-            </div>
-              </div>
-            </details>
-          </div>
-        </section>
-
         {/* Candidate Forums (CCTV Burlington) */}
         <div className="bg-white border-2 border-sage-200 rounded-2xl shadow-soft p-6 sm:p-7 mb-8">
           <div className="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -787,6 +615,178 @@ export default function PrimaryPage() {
           {otherCounty.map((race) => (
             <RaceComparison key={race.id} raceId={race.id} />
           ))}
+        </section>
+
+        {/* City Ballot Item — Bartlett Bay wastewater bond. NOT a primary race:
+            every SB voter gets this on the Aug 11 ballot regardless of party. */}
+        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8 scroll-mt-20">
+          <div className="bg-terracotta-500 text-white px-5 sm:px-6 py-2.5 flex items-center gap-2">
+            <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+            </svg>
+            <span className="text-xs font-semibold uppercase tracking-wide">City ballot item · Every voter gets this one</span>
+          </div>
+          <div className="p-5 sm:p-7">
+            <h2 className="font-display text-xl sm:text-2xl font-bold text-warmgray-800 mb-2">
+              $16.4 million for the Bartlett Bay wastewater plant
+            </h2>
+            <p className="text-warmgray-600 text-sm leading-relaxed mb-5">
+              This one isn&apos;t a party race. It&apos;s a <strong className="text-warmgray-800">city question on the same
+              August 11 ballot</strong>, and every South Burlington voter gets it — no matter which party&apos;s ballot you
+              pick. It&apos;s decided that day, not in November.
+            </p>
+
+            {/* What you're voting on */}
+            <div className="bg-cream-50 rounded-xl p-4 mb-5">
+              <p className="text-warmgray-700 text-sm leading-relaxed">
+                Voters are asked to approve an <strong className="text-warmgray-800">additional $16.4 million</strong> to
+                rebuild the Bartlett Bay Wastewater Treatment Facility — the city&apos;s sewage-treatment plant off Route 7
+                — on top of the <strong className="text-warmgray-800">$33.8 million</strong> bond voters approved on Town
+                Meeting Day in 2023. The plant has run continuously for more than 55 years, and 25 years since its last
+                major refurbishment. The city says critical parts are worn out and no longer made.
+              </p>
+            </div>
+
+            {/* Two key facts, always visible */}
+            <div className="grid sm:grid-cols-2 gap-3 mb-5">
+              <div className="bg-sage-50 border border-sage-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
+                <span aria-hidden="true">💵</span> Paid through <strong className="text-warmgray-800">sewer rates, not property taxes</strong> — about 2–3% a year, phased over 5–6 years.
+              </div>
+              <div className="bg-terracotta-50 border border-terracotta-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
+                <span aria-hidden="true">🗓️</span> <strong className="text-warmgray-800">Public hearing:</strong> Mon, Aug 10, 6 PM at City Hall (Zoom option on the city page).
+              </div>
+            </div>
+
+            {/* Full breakdown collapsed by default so it doesn't bury the races below */}
+            <details className="group border-t border-warmgray-100 pt-4">
+              <summary className="flex items-center gap-2 cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden text-sm font-semibold text-sage-700 hover:text-sage-900">
+                <svg className="w-4 h-4 flex-shrink-0 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+                See the full breakdown — costs, how it&apos;s paid, tax impact, the criticism &amp; videos
+              </summary>
+              <div className="mt-5">
+
+            {/* City's case + the criticism, side by side and equal */}
+            <div className="grid md:grid-cols-2 gap-4 mb-5">
+              <div className="border border-sage-100 rounded-xl p-4">
+                <p className="text-xs font-semibold text-sage-700 uppercase tracking-wide mb-2">Why the cost went up — the city&apos;s case</p>
+                <p className="text-warmgray-600 text-sm leading-relaxed">
+                  The city points to inflation and rising construction costs, tariffs on materials, and federal
+                  &ldquo;Buy America&rdquo; rules (the BABA Act) that raise the price of equipment, plus fuel costs. Then
+                  crews hit surprises at the site: poor soils and a newly discovered protected wetland that limited where
+                  infrastructure could go, along with a design change for wet-weather capacity — a third clarifier, the
+                  tank that settles solids out of the water.
+                </p>
+              </div>
+              <div className="border border-warmgray-200 rounded-xl p-4">
+                <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">The criticism</p>
+                <p className="text-warmgray-600 text-sm leading-relaxed">
+                  <a href="https://www.vtcng.com/otherpapersbvt/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">The Other Paper</a>{" "}
+                  reported the request is a <strong className="text-warmgray-800">49% increase</strong> in total project
+                  funding, following a <strong className="text-warmgray-800">66% cost overrun</strong> on the Bartlett Bay
+                  portion specifically. Some residents and at least one city councilor questioned how late the full scale
+                  of the overrun reached voters. The original $33.8 million also covered Queen City Park pump stations
+                  (not moving forward) and the Airport Parkway plant (already under construction).
+                </p>
+              </div>
+            </div>
+
+            {/* How it's paid for */}
+            <div className="mb-5">
+              <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">How it gets paid for</p>
+              <ul className="space-y-2 text-warmgray-600 text-sm leading-relaxed">
+                <li className="flex items-start gap-2">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
+                  <span>A <strong className="text-warmgray-800">2% state clean-water loan</strong> (the Clean Water State Revolving Fund) is lined up for the project as designed. The city says if the bond fails or stalls, that low-interest money gets reallocated to other projects around Vermont — and the contractor holding the current bid may not hold it.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
+                  <span>A <strong className="text-warmgray-800">$700,000 EPA grant</strong> (2025) covers some energy-efficiency work.</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-400 flex-shrink-0" />
+                  <span>The rest comes from <strong className="text-warmgray-800">wastewater ratepayers</strong> — meaning sewer fees, not property taxes (more on that just below).</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* How will this affect my taxes? */}
+            <div className="bg-cream-50 border border-cream-300 rounded-xl p-4 mb-5">
+              <p className="font-display font-bold text-warmgray-800 text-sm mb-2 flex items-center gap-2">
+                <span aria-hidden="true">💵</span> How will this affect my taxes?
+              </p>
+              <div className="text-warmgray-600 text-sm leading-relaxed space-y-2">
+                <p>
+                  Here&apos;s the part people get wrong: this bond{" "}
+                  <strong className="text-warmgray-800">doesn&apos;t come out of your property taxes</strong>. It&apos;s
+                  paid back through <strong className="text-warmgray-800">wastewater (sewer) rates</strong> — so it lands
+                  on your sewer bill, not your property tax bill.
+                </p>
+                <p>
+                  The city expects sewer rates to rise about <strong className="text-warmgray-800">2–3% a year</strong>{" "}
+                  beyond increases already planned, spread over the next{" "}
+                  <strong className="text-warmgray-800">5–6 years</strong> rather than all at once. The 2% state loan
+                  (payments don&apos;t start until construction wraps, about two years out) and the $700,000 EPA grant
+                  help hold the cost down. South Burlington has one of the lowest sewer rates in Vermont today, and the
+                  city says it would still compare well regionally after the increases.
+                </p>
+                <p className="text-warmgray-600 text-xs">
+                  The city hasn&apos;t published an exact dollar figure for a typical household, so we can&apos;t give you
+                  a precise monthly number — check your sewer bill or the{" "}
+                  <a
+                    href="https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sage-600 hover:text-sage-800 underline"
+                  >
+                    city project page
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+
+            {/* Learn more: hearing + videos */}
+            <div className="bg-sage-50 border border-sage-100 rounded-xl p-4 mb-5">
+              <p className="text-xs font-semibold text-sage-700 uppercase tracking-wide mb-2">Dig in before you vote</p>
+              <ul className="space-y-1.5 text-warmgray-700 text-sm leading-relaxed mb-3">
+                <li>
+                  <strong className="text-warmgray-800">Public information hearing:</strong> Monday, August 10, 6:00 PM at
+                  City Hall (180 Market Street), with a Zoom option (link on the city&apos;s project page).
+                </li>
+                <li>
+                  <strong className="text-warmgray-800">Watch:</strong> Town Meeting TV made two videos — a tour of the
+                  facility and a forum with Councilors Andrew Chalnick and Beth Zigmund and the public works director.
+                  Both are on the city&apos;s project page.
+                </li>
+              </ul>
+              <a
+                href="https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-sage-500 hover:bg-sage-600 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors"
+              >
+                City project page &amp; videos
+                <ExternalLinkIcon />
+              </a>
+            </div>
+
+            {/* Ballot logistics */}
+            <div className="flex items-start gap-2 text-xs text-warmgray-600 leading-relaxed">
+              <svg className="w-4 h-4 flex-shrink-0 mt-0.5 text-warmgray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p>
+                <strong className="text-warmgray-600">Heads up on your ballot:</strong> because this is a city
+                special-election item, these ballots may not be ready until 20–30 days before August 11. If you already
+                requested or returned a primary ballot, the city article may reach you separately. Not sure? Check with
+                the City Clerk at 802-846-4105.
+              </p>
+            </div>
+              </div>
+            </details>
+          </div>
         </section>
 
         {/* Check it yourself — primary-source resources */}
