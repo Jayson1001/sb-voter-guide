@@ -490,7 +490,9 @@ export default function PrimaryPage() {
             <h2 className="font-display text-xl font-bold text-warmgray-800">Federal Office</h2>
           </div>
           <div className="mb-4"><MechanicsLink /></div>
-          <div className="grid lg:grid-cols-2 gap-5">
+          {/* Full-width: Vermont has a single at-large U.S. House race, so there's
+              nothing to sit beside it in a two-column grid. */}
+          <div className="space-y-5">
             {federal.map((race) => (
               <div key={race.id} className="flex flex-col gap-3">
                 <OfficeExplainer office={race.office} />
