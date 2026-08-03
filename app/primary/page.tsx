@@ -315,6 +315,43 @@ export default function PrimaryPage() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
+        {/* Jump to your race — compact chip bar that sticks under the main nav on
+            scroll, so a voter can hop between sections (and the bond) from anywhere.
+            Horizontally scrollable on phones. */}
+        <nav
+          aria-label="Jump to a race or the bond"
+          className="sticky top-14 z-30 -mx-4 sm:mx-0 mb-8 bg-white/95 backdrop-blur-sm border-y sm:border border-sage-200 sm:rounded-xl shadow-soft"
+        >
+          <div className="flex items-center gap-2 px-3 sm:px-4 py-2.5 overflow-x-auto">
+            <span className="flex items-center gap-1.5 flex-shrink-0 text-xs font-semibold text-warmgray-600 uppercase tracking-wide pr-1">
+              <svg className="w-4 h-4 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h10" />
+              </svg>
+              Jump to
+            </span>
+            {[
+              { href: "#statewide", label: "Statewide" },
+              { href: "#federal", label: "U.S. House" },
+              { href: "#senate", label: "State Senate" },
+              { href: "#house", label: "State House" },
+              { href: "#county", label: "County offices" },
+              { href: "#bond", label: "Bartlett Bay bond" },
+            ].map((s) => (
+              <a
+                key={s.href}
+                href={s.href}
+                className={`flex-shrink-0 inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                  s.href === "#bond"
+                    ? "bg-terracotta-100 text-terracotta-700 hover:bg-terracotta-200"
+                    : "bg-sage-100 text-sage-800 hover:bg-sage-200"
+                }`}
+              >
+                {s.label}
+              </a>
+            ))}
+          </div>
+        </nav>
+
         {/* Turnout hook */}
         <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-4 mb-8 flex items-start gap-3">
           <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -360,43 +397,6 @@ export default function PrimaryPage() {
             </p>
           </div>
         </div>
-
-        {/* Jump to your race — compact chip bar that sticks under the main nav on
-            scroll, so a voter can hop between sections (and the bond) from anywhere.
-            Horizontally scrollable on phones. */}
-        <nav
-          aria-label="Jump to a race or the bond"
-          className="sticky top-14 z-30 -mx-4 sm:mx-0 mb-8 bg-white/95 backdrop-blur-sm border-y sm:border border-sage-200 sm:rounded-xl shadow-soft"
-        >
-          <div className="flex items-center gap-2 px-3 sm:px-4 py-2.5 overflow-x-auto">
-            <span className="flex items-center gap-1.5 flex-shrink-0 text-xs font-semibold text-warmgray-600 uppercase tracking-wide pr-1">
-              <svg className="w-4 h-4 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h10" />
-              </svg>
-              Jump to
-            </span>
-            {[
-              { href: "#statewide", label: "Statewide" },
-              { href: "#federal", label: "U.S. House" },
-              { href: "#senate", label: "State Senate" },
-              { href: "#house", label: "State House" },
-              { href: "#county", label: "County offices" },
-              { href: "#bond", label: "Bartlett Bay bond" },
-            ].map((s) => (
-              <a
-                key={s.href}
-                href={s.href}
-                className={`flex-shrink-0 inline-flex items-center px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                  s.href === "#bond"
-                    ? "bg-terracotta-100 text-terracotta-700 hover:bg-terracotta-200"
-                    : "bg-sage-100 text-sage-800 hover:bg-sage-200"
-                }`}
-              >
-                {s.label}
-              </a>
-            ))}
-          </div>
-        </nav>
 
         {/* Candidate Forums (CCTV Burlington) */}
         <div className="bg-white border-2 border-sage-200 rounded-2xl shadow-soft p-6 sm:p-7 mb-8">
