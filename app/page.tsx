@@ -232,32 +232,38 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div className="flex-1">
               <span className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide">August 11 primary &bull; Results</span>
-              <h2 className="font-display text-xl font-bold text-warmgray-800 mt-1 mb-2">Who&apos;s on the November ballot now</h2>
+              <h2 className="font-display text-xl font-bold text-warmgray-800 mt-1 mb-2">Party nominees from the primary</h2>
+              <p className="text-xs text-warmgray-600 mb-2">
+                With their November ballot labels. Some races also have independent or minor-party candidates &mdash;{" "}
+                <Link href="/general" className="underline hover:text-sage-700">see the full ballot</Link>.
+              </p>
               <ul className="space-y-1.5 text-sm text-warmgray-700">
-                <li><strong>Governor:</strong> Amanda Janoo won the Democratic primary; Phil Scott won the Republican primary.</li>
+                <li><strong>Governor:</strong> Amanda Janoo (Dem/Prog) and Phil Scott (Republican), plus 3 other candidates.</li>
                 <li><strong>Lt. Governor:</strong> Molly Gray (Democratic) and John S. Rodgers (Republican).</li>
-                <li><strong>U.S. House:</strong> Becca Balint (Democratic) and Gerald Malloy (Republican).</li>
+                <li><strong>U.S. House:</strong> Becca Balint (Democratic) and Gerald Malloy (Republican), plus 4 other candidates.</li>
+                <li><strong>Treasurer:</strong> Mike Pieciak (Democratic), Zachary Hampl (Progressive), and Lynn LaFleur (Republican).</li>
+                <li><strong>Secretary of State:</strong> Sarah Copeland Hanzas (Democratic), Rachel Shaw (Progressive), and H. Brooke Paige (Republican).</li>
+                <li><strong>Auditor:</strong> Tim Ashe (Democratic) and Ivar Kronick (Republican).</li>
+                <li><strong>Attorney General:</strong> Charity R. Clark (Democratic) and Edwin Howell Kemon (Republican).</li>
                 <li>
-                  <strong>Treasurer, Secretary of State, Auditor, Attorney General:</strong> Mike Pieciak, Sarah Copeland
-                  Hanzas, Tim Ashe, and Charity R. Clark won the Democratic primaries. H. Brooke Paige won all four
-                  Republican primaries, then withdrew from three; the Republican nominees for those are now Lynn LaFleur
-                  (Treasurer), Ivar Kronick (Auditor), and Edwin Howell Kemon (Attorney General). Zachary Hampl
-                  (Treasurer) and Rachel Shaw (Secretary of State) won the Progressive primaries.
+                  <strong>About the Republican changes:</strong> H. Brooke Paige won the Republican primaries for Treasurer,
+                  Secretary of State, Auditor, and Attorney General, then withdrew from all but Secretary of State. LaFleur,
+                  Kronick, and Kemon are the Republican nominees on the November ballot.
                 </li>
                 <li>
-                  <strong>State Senate, Chittenden SE:</strong> Democrats nominated Thomas Chittenden, Virginia
-                  &ldquo;Ginny&rdquo; Lyons, and Kesha Ram Hinsdale; Republicans nominated Bruce Roy, Javen Sears, and
-                  Rohan St Marthe (as a write-in).
+                  <strong>State Senate, Chittenden SE:</strong> Thomas Chittenden, Virginia &ldquo;Ginny&rdquo; Lyons, and Kesha
+                  Ram Hinsdale (Democratic); Bruce Roy, Javen Sears, and Rohan St Marthe (Republican; St Marthe as a write-in).
                 </li>
                 <li>
                   <strong>State House:</strong> none of South Burlington&apos;s House primaries was contested. Nominees:
-                  Democrats Bridget Burkhardt, Emilie Krasnow, Kate Nugent, Brian Minier, and Martin J. LaLonde, plus
-                  Republican Mitchel Cypes in Chittenden-8.
+                  Bridget Burkhardt, Emilie Krasnow, Kate Nugent, Brian Minier, and Martin J. LaLonde (Democratic), plus
+                  Mitchel Cypes (Republican) in Chittenden-8.
                 </li>
                 <li>
-                  <strong>County:</strong> Democratic primaries went to Sarah F. George (State&apos;s Attorney), Daniel
-                  Gamelin (Sheriff), Amy Payne (High Bailiff), Connie Cain Ramsey and Anne Nichols Williams (Assistant
-                  Judges), and Gregory J. Glennon (Probate Judge). Several also won Republican nominations by write-in.
+                  <strong>County:</strong> State&apos;s Attorney, Sarah George (Dem/Prog) and Jace Laquerre (Republican;
+                  Bram Kranichfeld won that nomination by write-in and later withdrew); Sheriff, Daniel Gamelin (Dem/Rep);
+                  High Bailiff, Amy Payne (Democratic) and Paul McManus (Republican), plus 1 other candidate; Assistant
+                  Judges, Connie Cain Ramsey and Anne Nichols Williams (Dem/Rep); Probate Judge, Gregory J. Glennon (Dem/Rep).
                 </li>
                 <li>
                   <strong>Bartlett Bay bond:</strong> approved, {fmt(bond.votesYes)} yes to {fmt(bond.votesNo)} no (
@@ -347,7 +353,7 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>New: <Link href="/primary-results" className="text-sage-600 hover:text-sage-800 underline">August 11 primary results</Link></strong>, statewide and in South Burlington, plus the Bartlett Bay bond &mdash; now the official canvass figures, with South Burlington&apos;s own numbers for every race.</span>
+              <span><strong>New: <Link href="/primary-results" className="text-sage-600 hover:text-sage-800 underline">August 11 primary results</Link></strong>, statewide and in South Burlington, plus the Bartlett Bay bond &mdash; official totals from the Secretary of State, plus South Burlington figures (the official canvass for federal and statewide races; the City Clerk&apos;s unofficial count for Senate, House, and county races).</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
@@ -355,55 +361,20 @@ export default function Home() {
                 <strong>The November ballot is set</strong>, per the{" "}
                 <a href={generalRacesData.candidateSource.url} target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">Secretary of State&apos;s candidate list</a>.
                 Besides the party nominees, independents Phoenix K. Altair, Adam Ortiz, Suzanne &ldquo;Suz&rdquo; Seymour, and
-                Ryan P. Walton are running for U.S. House, Brian Judd for Governor, and Sean Miller for High Bailiff. Republicans
-                named Lynn LaFleur, Ivar Kronick, Edwin Howell Kemon, and Jace Laquerre after primary nominees withdrew. Every
+                Ryan P. Walton are running for U.S. House, Brian Judd for Governor, and Sean Miller for High Bailiff. Lynn LaFleur,
+                Ivar Kronick, Edwin Howell Kemon, and Jace Laquerre are the Republican nominees in races where the primary winner later withdrew. Every
                 race is on the <Link href="/general" className="text-sage-600 hover:text-sage-800 underline">general election guide</Link>.
               </span>
             </li>
           </ul>
-          <details className="group mt-3">
-            <summary className="flex items-center gap-1.5 cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden text-sm font-medium text-sage-700 hover:text-sage-900">
-              <svg className="w-4 h-4 transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-              Earlier updates (before the primary, through July 22)
-            </summary>
-            <ul className="space-y-2 text-sm text-warmgray-600 mt-3">
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-terracotta-500 flex-shrink-0" />
-              <span><strong>On every ballot:</strong> a <strong>$16.4M Bartlett Bay wastewater bond</strong> is a city question on the August 11 ballot — every South Burlington voter gets it, whatever party ballot you pick. See the full breakdown on the <Link href="/primary" className="text-sage-600 hover:text-sage-800 underline">primary guide</Link>. Public hearing Monday, August 10.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Early voting is open</strong> for the August 11 primary — request an absentee ballot at <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">mvp.vermont.gov</a>.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Democratic gubernatorial primary is a two-way race</strong> between Amanda Janoo and Aly Richards. Jeffery Wilson announced in April but did not file.</span>
-            </li>
-          
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Treasurer:</strong> incumbent Mike Pieciak (D) is unopposed in the Democratic primary. H. Brooke Paige (R) and Zachary Hampl (P) are on the primary ballot and would face Pieciak in November.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Auditor:</strong> open seat. The Democratic primary is now a two-way race between Tim Ashe and Nicholas Graeter; Dan Towle ended his campaign but stays on the ballot. H. Brooke Paige is the lone Republican.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Governor November ballot confirmed:</strong> Gov. Scott (R), the Democratic primary winner, and Dean Roy (Freedom and Unity Party, 14-year-old Stowe student) will all appear.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Chittenden-SE Senate:</strong> five-way Democratic primary confirmed — incumbents Chittenden, Lyons, and Ram Hinsdale vs. challengers Grossman and Hunt for 3 nominations. The Republican primary is a two-way race between Javen Sears and Bruce Roy.</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>South Burlington State House:</strong> all five Democratic incumbents (LaLonde, Burkhardt, Krasnow, Nugent, Minier) are unopposed in the Democratic primary; Republican Mitchel Cypes is on the ballot in Chittenden-8. As of July 21, 2026, independents can still file for the November ballot until August 6.</span>
-            </li>
-            </ul>
-          </details>
+          <p className="text-sm text-warmgray-600 mt-3 flex items-start gap-2">
+            <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-warmgray-300 flex-shrink-0" />
+            <span>
+              <strong>Through July 22, 2026:</strong> the guide covered the August 11 primary &mdash; the candidates on each
+              party&apos;s ballot, the Bartlett Bay bond question, and early voting. That guide is archived at{" "}
+              <Link href="/primary" className="text-sage-600 hover:text-sage-800 underline">/primary</Link>.
+            </span>
+          </p>
         </div>
 
         {/* Key Dates Timeline */}

@@ -42,12 +42,25 @@ const ExternalLinkIcon = () => (
 );
 
 const CITY_ELECTIONS_URL = "https://www.southburlingtonvt.gov/211/Elections-Voting";
+const SOS_REGISTRATION_URL = "https://sos.vermont.gov/elections/voters/registration/";
+const SOS_MAIL_URL = "https://sos.vermont.gov/elections/voters/early-absentee-voting/";
+
+const Src = ({ href, children }: { href: string; children: ReactNode }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">
+    {children}
+  </a>
+);
 
 const faqs: { question: string; answer: ReactNode }[] = [
   {
     question: "Do I need to register before Election Day?",
-    answer:
-      "No. Vermont has same-day voter registration. You can register and vote on the same day — even at your polling place on Election Day. There is no registration deadline. You can also register or update your registration online at mvp.vermont.gov up to the day before the election.",
+    answer: (
+      <>
+        No. Vermont has same-day voter registration: you can register on any day up to and including Election Day,
+        even at your polling place (<Src href={SOS_REGISTRATION_URL}>Vermont Secretary of State</Src>). You can also
+        register or update your registration at mvp.vermont.gov.
+      </>
+    ),
   },
   {
     question: "What do I need to bring to register at the polls?",
@@ -61,13 +74,24 @@ const faqs: { question: string; answer: ReactNode }[] = [
   },
   {
     question: "Will I get a ballot in the mail?",
-    answer:
-      "For the General Election (November 3), yes — Vermont automatically mails ballots to all active registered voters. You can vote by mail, drop your ballot at a drop box, or vote in person at your polling place. For the Primary (August 11), you can request an absentee ballot through My Voter Page (mvp.vermont.gov) or vote in person.",
+    answer: (
+      <>
+        Yes &mdash; for the November 3 general election, Vermont mails a ballot to every active registered voter. You can
+        vote by mail, use a drop box, or vote in person at your polling place (
+        <Src href={SOS_MAIL_URL}>Vermont Secretary of State</Src>).
+      </>
+    ),
   },
   {
     question: "How do I vote by mail?",
-    answer:
-      "When you receive your ballot in the mail, mark it, seal it in the provided envelope, sign the envelope, and either mail it back (postage is pre-paid) or drop it at a designated drop box or your Town Clerk's office. Your ballot must be received by 7:00 PM on Election Day.",
+    answer: (
+      <>
+        Mark your ballot, follow the instructions that come with it, and return it by mail to the City Clerk&apos;s
+        Office (180 Market Street), in the 24/7 drop box at City Hall, or at your polling place. It must arrive by 7:00
+        PM on Election Day (<Src href={SOS_MAIL_URL}>Vermont Secretary of State</Src>;{" "}
+        <Src href={CITY_ELECTIONS_URL}>City of South Burlington</Src>).
+      </>
+    ),
   },
   {
     question: "I moved within South Burlington. Do I need to re-register?",
@@ -87,12 +111,7 @@ const faqs: { question: string; answer: ReactNode }[] = [
   {
     question: "What are the polling hours?",
     answer:
-      "Polls are open from 7:00 AM to 7:00 PM on Election Day. If you are in line by 7:00 PM, you will be allowed to vote.",
-  },
-  {
-    question: "How does the primary work? Do I pick a party?",
-    answer:
-      "Vermont has open primaries. When you arrive at the polls, you choose which party's ballot you want — you do not have to be registered with that party. You can only vote in one party's primary. Your choice does not affect your voter registration or party affiliation.",
+      "Polls are open from 7:00 AM to 7:00 PM on Election Day.",
   },
   {
     question: "Can I drop my ballot off instead of mailing it?",
@@ -111,8 +130,12 @@ const faqs: { question: string; answer: ReactNode }[] = [
   },
   {
     question: "How do I reach the South Burlington City Clerk?",
-    answer:
-      "The City Clerk's Office is at 180 Market Street and is open Monday through Friday, 8:00 AM to 4:30 PM. You can call them at 802-846-4105 with any questions about your ballot, registration, or where to vote.",
+    answer: (
+      <>
+        The City Clerk&apos;s Office is at City Hall, 180 Market Street. For current hours and contact details, see the{" "}
+        <Src href={CITY_ELECTIONS_URL}>City of South Burlington&apos;s Elections &amp; Voting page</Src>.
+      </>
+    ),
   },
 ];
 
@@ -172,7 +195,7 @@ export default function HowToVotePage() {
                 Vermont Has Same-Day Voter Registration
               </h2>
               <p className="text-warmgray-700 text-sm leading-relaxed mb-2">
-                There is no registration deadline in Vermont. You can register and vote on the same day — including at your polling place on Election Day. This applies to both the Primary (August 11) and the General Election (November 3).
+                There is no registration deadline in Vermont. You can register and vote on the same day — including at your polling place on Election Day.
               </p>
               <p className="text-warmgray-600 text-sm leading-relaxed">
                 You can also register or update your registration online at{" "}
@@ -184,8 +207,12 @@ export default function HowToVotePage() {
                 >
                   mvp.vermont.gov
                   <ExternalLinkIcon />
-                </a>{" "}
-                up to the day before the election.
+                </a>
+                . Source:{" "}
+                <a href={SOS_REGISTRATION_URL} target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">
+                  Vermont Secretary of State
+                </a>
+                .
               </p>
             </div>
           </div>

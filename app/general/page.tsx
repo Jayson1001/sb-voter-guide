@@ -355,7 +355,7 @@ export default function GeneralPage() {
             <p className="text-warmgray-600 text-sm leading-relaxed mb-3">
               New this round: JPs weren&apos;t on the August primary ballot &mdash; they&apos;re elected in November.
               This year South Burlington has <strong>{jp.candidates.length} candidates for {jp.seats} seats</strong>, so
-              you can vote for every name on the list and still have a write-in line or two to spare.{" "}
+              you can vote for every name on the list and still have one vote left for a write-in.{" "}
               {jp.termNote}{" "}
               <span className="text-xs">
                 (Source:{" "}
