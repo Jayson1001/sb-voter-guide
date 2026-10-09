@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07",
+  "lastUpdated": "2026-10-08",
   "electionDate": "2026-11-03",
   "measures": [
     {
@@ -44,10 +44,26 @@
         ]
       },
       "legislativeHistory": [
-        { "date": "April 2024", "action": "Passed Vermont Senate unanimously" },
-        { "date": "May 2024", "action": "Passed Vermont House with bipartisan support" },
-        { "date": "March 2025", "action": "Passed Vermont Senate again, unanimously (second required passage)" },
-        { "date": "May 1, 2025", "action": "Passed Vermont House — certified for November 2026 ballot" }
+        {
+          "date": "April 2024",
+          "action": "Passed Vermont Senate unanimously"
+        },
+        {
+          "date": "May 2024",
+          "action": "Passed Vermont House with bipartisan support"
+        },
+        {
+          "date": "March 2025",
+          "action": "Passed Vermont Senate again, unanimously (second required passage)"
+        },
+        {
+          "date": "May 1, 2025",
+          "action": "Passed Vermont House — certified for November 2026 ballot"
+        },
+        {
+          "date": "July 28, 2026",
+          "action": "Formally proclaimed by Gov. Phil Scott for the November 3, 2026 ballot"
+        }
       ],
       "context": "Vermont is not currently a right-to-work state. But constitutional protection would prevent any future legislature from enacting such laws. If passed, Vermont would join Illinois (which banned right-to-work via constitutional amendment in 2022) as one of only two states with such explicit constitutional protection.",
       "sources": [
@@ -58,6 +74,18 @@
         {
           "title": "Vermont Legislature — PR.3 Status",
           "url": "https://legislature.vermont.gov/bill/status/2026/PR.3"
+        },
+        {
+          "title": "Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)",
+          "url": "https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4"
+        },
+        {
+          "title": "Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)",
+          "url": "https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf"
+        },
+        {
+          "title": "City of South Burlington — November 3, 2026 sample ballot (Chittenden-8, PDF)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6118/SOUTH_BURLINGTON-SAMPLE-District-8-PDF"
         }
       ]
     },
@@ -67,8 +95,7 @@
       "title": "Equal Protection of Law",
       "subtitle": "Constitutional amendment adding an explicit equal rights clause to the Vermont Constitution",
       "type": "Constitutional Amendment",
-      "status": "on-track",
-      "statusNote": "Pending final passage in the 2025–26 legislative session; Senate Judiciary Committee approved February 2026",
+      "status": "confirmed",
       "electionDate": "2026-11-03",
       "proposedConstitutionalText": "That the people are guaranteed equal protection under the law. The State shall not deny equal treatment and respect under the law on account of a person's race, ethnicity, sex, religion, disability, sexual orientation, gender identity, gender expression, or national origin.",
       "plainLanguageSummary": "Proposal 4 would add an explicit equal protection clause to the Vermont Constitution, listing nine protected characteristics. Vermont currently has broad general equality language in the constitution but no specific equal protection clause like the one in the 14th Amendment to the U.S. Constitution.",
@@ -115,10 +142,22 @@
         ]
       },
       "legislativeHistory": [
-        { "date": "April 23, 2024", "action": "Passed Vermont Senate — 28 to 0" },
-        { "date": "May 8, 2024", "action": "Passed Vermont House — 140 to 4" },
-        { "date": "February 2026", "action": "Senate Judiciary Committee approved second passage" },
-        { "date": "Spring 2026", "action": "Expected to receive final legislative approval and be certified for the November ballot" }
+        {
+          "date": "April 23, 2024",
+          "action": "Passed Vermont Senate — 28 to 0"
+        },
+        {
+          "date": "May 8, 2024",
+          "action": "Passed Vermont House — 140 to 4"
+        },
+        {
+          "date": "February 2026",
+          "action": "Senate Judiciary Committee approved second passage"
+        },
+        {
+          "date": "July 28, 2026",
+          "action": "Formally proclaimed by Gov. Phil Scott for the November 3, 2026 ballot"
+        }
       ],
       "context": "Unlike the U.S. Constitution's 14th Amendment (which guarantees equal protection at the federal level), Vermont's current constitution has no specific equal protection clause. Vermont does have Article 7 (government exists for the common benefit) and statutory anti-discrimination protections — PR.4 would add an explicit constitutional equal protection clause.",
       "sources": [
@@ -133,8 +172,56 @@
         {
           "title": "PR.4 as adopted by the Senate (PDF)",
           "url": "https://legislature.vermont.gov/Documents/2024/Docs/BILLS/PR0004/PR0004%20As%20adopted%20by%20the%20Senate%20Official.pdf"
+        },
+        {
+          "title": "Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)",
+          "url": "https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4"
+        },
+        {
+          "title": "Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)",
+          "url": "https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf"
+        },
+        {
+          "title": "City of South Burlington — November 3, 2026 sample ballot (Chittenden-8, PDF)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6118/SOUTH_BURLINGTON-SAMPLE-District-8-PDF"
         }
       ]
     }
-  ]
+  ],
+  "sampleBallots": [
+    {
+      "district": "Chittenden-8",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6118/SOUTH_BURLINGTON-SAMPLE-District-8-PDF"
+    },
+    {
+      "district": "Chittenden-9",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6119/SOUTH_BURLINGTON-SAMPLE-District-9-PDF"
+    },
+    {
+      "district": "Chittenden-10",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6120/SOUTH_BURLINGTON-SAMPLE-District-10-PDF"
+    },
+    {
+      "district": "Chittenden-11",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6121/SOUTH_BURLINGTON-SAMPLE-District-11-PDF"
+    },
+    {
+      "district": "Chittenden-12",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6122/SOUTH_BURLINGTON-SAMPLE-District-12-PDF"
+    }
+  ],
+  "ballotStatus": {
+    "note": "Both proposals are confirmed on the November 3, 2026 ballot. Governor Phil Scott formally proclaimed them on July 28, 2026, and they appear on every South Burlington sample ballot.",
+    "sources": [
+      {
+        "title": "Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)",
+        "url": "https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4"
+      },
+      {
+        "title": "Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)",
+        "url": "https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf"
+      }
+    ]
+  },
+  "ballotWordingNote": "The ballot prints the full official text of each proposal. Both are printed as adding an \"Article 23\" to the Vermont Constitution — Proposal 3 as \"Article 23. [Right to collectively bargain]\" and Proposal 4 as \"Article 23. [Equality of rights]\". For the exact wording, read your district's sample ballot."
 }
