@@ -43,6 +43,8 @@ type Contest = {
   totalVotesStatewide: number | null;
   totalVotesSB: number | null;
   writeInsOther: { votesStatewide: number | null; votesSB: number | null };
+  blanks?: { votesStatewide: number | null; votesSB: number | null };
+  overvotes?: { votesStatewide: number | null; votesSB: number | null };
   candidates: ResultCandidate[];
   note: string | null;
 };
@@ -179,8 +181,13 @@ function ContestTable({ race, contest }: { race: RaceResult; contest: Contest })
   const partyKey = ballotToParty[contest.party] || contest.party;
   const chip = partyColors[partyKey] || "bg-warmgray-50 text-warmgray-600 border-warmgray-100";
   const col = scopeColumn(race);
-  const showWriteInRow =
-    contest.writeInsOther.votesStatewide != null || contest.writeInsOther.votesSB != null;
+  const has = (x?: { votesStatewide: number | null; votesSB: number | null }) =>
+    !!x && (x.votesStatewide != null || x.votesSB != null);
+  const extraRows = [
+    { label: "All other write-ins", v: contest.writeInsOther },
+    { label: "Left blank", v: contest.blanks },
+    { label: "Overvotes", v: contest.overvotes },
+  ].filter((r) => has(r.v));
 
   return (
     <div className="mt-4">
@@ -236,15 +243,15 @@ function ContestTable({ race, contest }: { race: RaceResult; contest: Contest })
                 <td className="text-right tabular-nums py-2 px-1 text-warmgray-600">{pct(c.pctSB)}</td>
               </tr>
             ))}
-            {showWriteInRow && (
-              <tr className="border-t border-warmgray-100">
-                <th scope="row" className="text-left font-normal py-2 px-1 text-warmgray-600 italic">All other write-ins</th>
-                <td className="text-right tabular-nums py-2 px-1 text-warmgray-600">{fmt(contest.writeInsOther.votesStatewide)}</td>
+            {extraRows.map((r) => (
+              <tr key={r.label} className="border-t border-warmgray-100">
+                <th scope="row" className="text-left font-normal py-2 px-1 text-warmgray-600 italic">{r.label}</th>
+                <td className="text-right tabular-nums py-2 px-1 text-warmgray-600">{fmt(r.v?.votesStatewide)}</td>
                 <td className="text-right py-2 px-1" />
-                <td className="text-right tabular-nums py-2 px-1 text-warmgray-600 border-l border-warmgray-100">{fmt(contest.writeInsOther.votesSB)}</td>
+                <td className="text-right tabular-nums py-2 px-1 text-warmgray-600 border-l border-warmgray-100">{fmt(r.v?.votesSB)}</td>
                 <td className="text-right py-2 px-1" />
               </tr>
-            )}
+            ))}
           </tbody>
         </table>
       </div>
@@ -330,6 +337,7 @@ function SectionHeading({ id, title, subtitle }: { id: string; title: string; su
 export default function PrimaryResultsPage() {
   const { election, bond } = results;
   const isPlaceholder = results.status === "placeholder";
+  const isPartial = results.status === "partial";
   const certified = fmtDate(election.certifiedDate);
   const sb = election.southBurlington;
 
@@ -405,12 +413,12 @@ export default function PrimaryResultsPage() {
       </header>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        {/* Placeholder notice — shown until the results file is filled in */}
-        {isPlaceholder && (
+        {/* Placeholder / partial notice — shown until every number is in */}
+        {(isPlaceholder || isPartial) && (
           <div role="status" className="bg-cream-50 border-2 border-terracotta-200 rounded-2xl p-5 mb-6 flex items-start gap-3 text-terracotta-800">
             <InfoIcon />
             <div className="text-sm leading-relaxed">
-              <p className="font-semibold">Results being finalized</p>
+              <p className="font-semibold">{isPartial ? "Some results still being finalized" : "Results being finalized"}</p>
               <p className="text-warmgray-700 mt-0.5">
                 We&apos;re checking every number against the official canvass before we post it. Until then you&apos;ll see
                 a dash (&mdash;) where a vote count goes. Want it straight from the source? The{" "}
@@ -628,8 +636,8 @@ export default function PrimaryResultsPage() {
                 <p className="text-sm text-warmgray-600">Official result sources will be listed here once the numbers are posted.</p>
               )}
               <p className="text-xs text-warmgray-600 mt-4">
-                Percentages are of votes cast in that party&apos;s race and may not add to 100% because of rounding and
-                write-ins.
+                Percentages are as published in the cited source and may not add to 100% (blank ballots, write-ins,
+                and rounding).
               </p>
             </div>
           </div>
