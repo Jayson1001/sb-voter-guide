@@ -110,7 +110,7 @@ const ballotToParty: Record<string, string> = {
 };
 
 const fmt = (n: number | null | undefined) => (n == null ? "—" : n.toLocaleString("en-US"));
-const pct = (n: number | null | undefined) => (n == null ? "—" : `${n.toFixed(1)}%`);
+const pct = (n: number | null | undefined) => (n == null ? "—" : `${n.toFixed(2)}%`);
 const fmtDate = (iso: string | null) =>
   iso
     ? new Date(iso + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })
@@ -691,12 +691,11 @@ export default function PrimaryResultsPage() {
                 <p className="text-sm text-warmgray-600">Official result sources will be listed here once the numbers are posted.</p>
               )}
               <p className="text-xs text-warmgray-600 mt-4">
-                How the percentages work: the whole-race percentages are the Secretary of State&apos;s own figures.
-                South Burlington percentages are from the official canvass and are a share of all that party&apos;s
-                ballots cast in the city, blanks included, so they run a little lower. Senate, House, and county races
-                have no official South Burlington breakdown; those city numbers are the City Clerk&apos;s unofficial
-                count and are shown without a percentage. Totals may not add to 100% because of blanks, write-ins, and
-                rounding.
+                Percentages are as reported by the Secretary of State: whole-race figures from the official winner
+                listing, South Burlington figures from the official town-by-town canvass. Senate, House, and county
+                races have no official South Burlington breakdown; those city numbers are the City Clerk&apos;s
+                unofficial count and are shown without a percentage. Totals may not add to 100% because of blanks,
+                write-ins, and rounding.
               </p>
             </div>
           </div>
