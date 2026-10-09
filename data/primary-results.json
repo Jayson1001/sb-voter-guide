@@ -1,0 +1,1385 @@
+{
+  "status": "placeholder",
+  "lastUpdated": "2026-10-08",
+  "election": {
+    "name": "Vermont Primary Election",
+    "date": "2026-08-11",
+    "certifiedDate": null,
+    "certifiedBy": null,
+    "southBurlington": {
+      "ballotsCast": null,
+      "registeredVoters": null,
+      "turnoutPct": null,
+      "ballotsByParty": {
+        "Democratic": null,
+        "Progressive": null,
+        "Republican": null
+      }
+    },
+    "statewide": {
+      "ballotsCast": null,
+      "registeredVoters": null,
+      "turnoutPct": null
+    },
+    "summary": null,
+    "sources": []
+  },
+  "races": {
+    "governor": {
+      "office": "Governor of Vermont",
+      "shortName": "Governor",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Amanda Janoo",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Aly Richards",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Phil Scott",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "lt-governor": {
+      "office": "Lieutenant Governor of Vermont",
+      "shortName": "Lt. Governor",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Esther Charlestin",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Molly Gray",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Ryan McLaren",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "John Rodgers",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "attorney-general": {
+      "office": "Attorney General",
+      "shortName": "Attorney General",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Charity Clark",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "H. Brooke Paige",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "secretary-of-state": {
+      "office": "Secretary of State",
+      "shortName": "Secretary of State",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Sarah Copeland Hanzas",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Rachel Shaw",
+              "party": "Progressive",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "H. Brooke Paige",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "treasurer": {
+      "office": "State Treasurer",
+      "shortName": "State Treasurer",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Mike Pieciak",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Zachary Hampl",
+              "party": "Progressive",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "H. Brooke Paige",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "auditor": {
+      "office": "Auditor of Accounts",
+      "shortName": "State Auditor",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Tim Ashe",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Nick Graeter",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Dan Towle",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false,
+              "withdrawn": true
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "H. Brooke Paige",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "us-house": {
+      "office": "U.S. Representative, Vermont At-Large",
+      "shortName": "U.S. House",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Becca Balint",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Mark Coester",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Gerald Malloy",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "chittenden-se-senate": {
+      "office": "Vermont State Senate",
+      "shortName": "State Senate",
+      "district": "Chittenden Southeast",
+      "seats": 3,
+      "scopeLabel": "Chittenden Southeast district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 3,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Thomas Chittenden",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Joanna Grossman",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Kesha Ram Hinsdale",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Elizabeth Hunt",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Virginia Lyons",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 3,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 3,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Bruce Roy",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Javen Sears",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "chittenden-8": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-8",
+      "seats": 1,
+      "scopeLabel": "Chittenden-8 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Bridget Burkhardt",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Mitchel Cypes",
+              "party": "Republican",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "chittenden-9": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-9",
+      "seats": 1,
+      "scopeLabel": "Chittenden-9 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Emilie Krasnow",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "chittenden-10": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-10",
+      "seats": 1,
+      "scopeLabel": "Chittenden-10 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Kate Nugent",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "chittenden-11": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-11",
+      "seats": 1,
+      "scopeLabel": "Chittenden-11 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Brian Minier",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "chittenden-12": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-12",
+      "seats": 1,
+      "scopeLabel": "Chittenden-12 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Martin LaLonde",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "states-attorney": {
+      "office": "State's Attorney",
+      "shortName": "State's Attorney",
+      "district": "Chittenden County",
+      "seats": 1,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Sarah George",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Bram Kranichfeld",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "sheriff": {
+      "office": "Sheriff",
+      "shortName": "Sheriff",
+      "district": "Chittenden County",
+      "seats": 1,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Kevin Bloom",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Daniel Gamelin",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "high-bailiff": {
+      "office": "High Bailiff",
+      "shortName": "High Bailiff",
+      "district": "Chittenden County",
+      "seats": 1,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Augustus Barkyoumb",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Paul McManus",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Amy Payne",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Helaine \"Lainey\" Rappaport",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Michael \"Mikey\" Roberts",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "assistant-judges": {
+      "office": "Assistant Judges",
+      "shortName": "Assistant Judge",
+      "district": "Chittenden County",
+      "seats": 2,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 2,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Connie Cain Ramsey",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Anne Nichols Williams",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 2,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 2,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    },
+    "probate-judge": {
+      "office": "Probate Judge",
+      "shortName": "Probate Judge",
+      "district": "Chittenden County",
+      "seats": 1,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Gregory J. Glennon",
+              "party": "Democrat",
+              "votesStatewide": null,
+              "pctStatewide": null,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": []
+    }
+  },
+  "bond": {
+    "id": "bartlett-bay-bond",
+    "title": "Bartlett Bay wastewater plant bond",
+    "amount": "$16.4 million",
+    "passed": null,
+    "votesYes": null,
+    "votesNo": null,
+    "pctYes": null,
+    "pctNo": null,
+    "note": null,
+    "sources": [
+      {
+        "title": "City of South Burlington — Bartlett Bay WWTF Upgrade Project",
+        "url": "https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project"
+      }
+    ]
+  }
+}

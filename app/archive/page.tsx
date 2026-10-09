@@ -394,6 +394,22 @@ export default function ArchivePage() {
           </div>
         </div>
 
+        {/* Past results — the newer primary results live on their own page */}
+        <div className="bg-warmgray-50 border border-warmgray-200 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-0.5">Past results</p>
+            <p className="font-display font-semibold text-warmgray-700">August 11, 2026 Vermont Primary</p>
+            <p className="text-warmgray-600 text-sm">Who won each party&apos;s nomination, plus the Bartlett Bay bond</p>
+          </div>
+          <Link
+            href="/primary-results"
+            className="inline-flex items-center gap-2 text-sm font-medium text-warmgray-600 hover:text-warmgray-800 bg-white border border-warmgray-200 hover:border-warmgray-300 px-4 py-2 rounded-lg transition-colors flex-shrink-0"
+          >
+            Primary results
+            <ArrowRightIcon />
+          </Link>
+        </div>
+
         {/* Back to Guide */}
         <div className="text-center mb-8">
           <Link
