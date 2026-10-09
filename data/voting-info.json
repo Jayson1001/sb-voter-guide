@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30",
+  "lastUpdated": "2026-10-08",
   "voterRegistration": {
     "deadline": "Same-day registration available at the polls",
     "onlineDeadline": "The day before the election via My Voter Page",
@@ -12,10 +12,10 @@
     "note": "South Burlington is divided into multiple Vermont House districts. Use My Voter Page to look up your exact district and find your representatives."
   },
   "southBurlingtonPollingLocations": [
-    "Chamberlin School (White Street)",
-    "Frederick H. Tuttle Middle School (Dorset Street)",
-    "Orchard School (Baldwin Avenue)",
-    "Kevin Dorn Senior Center at City Hall (Market Street)"
+    "City Hall Senior Center, 180 Market Street (Chittenden-8)",
+    "F.H. Tuttle Middle School, 500 Dorset Street (Chittenden-9 and Chittenden-11)",
+    "Chamberlin School, 262 White Street (Chittenden-10)",
+    "Orchard School, 2 Baldwin Avenue (Chittenden-12)"
   ],
   "keyDates": [
     {
@@ -72,14 +72,45 @@
         "requestUrl": "https://mvp.vermont.gov/",
         "note": "Vermont automatically mails ballots to all active registered voters. You may vote by mail or return your ballot in person."
       },
-      "notes": "Vermont automatically mails ballots to all registered voters for general elections. You can vote by mail, drop your ballot at a drop box, or vote in person at your polling place."
+      "notes": "Vermont automatically mails ballots to all active registered voters for general elections. You can vote by mail, drop your ballot at a drop box, or vote in person at your polling place."
     }
   ],
   "officialResources": {
     "myVoterPage": "https://mvp.vermont.gov/",
     "vtSoSElections": "https://sos.vermont.gov/elections/",
-    "sbCityClerk": "https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php",
+    "sbCityClerk": "https://www.southburlingtonvt.gov/211/Elections-Voting",
     "vtLegislature": "https://legislature.vermont.gov/",
     "vtSecretaryOfState": "https://sos.vermont.gov/"
+  },
+  "pollingPlacesByDistrict": [
+    {
+      "district": "Chittenden-8",
+      "name": "City Hall Senior Center",
+      "address": "180 Market Street"
+    },
+    {
+      "district": "Chittenden-9",
+      "name": "F.H. Tuttle Middle School",
+      "address": "500 Dorset Street"
+    },
+    {
+      "district": "Chittenden-10",
+      "name": "Chamberlin School",
+      "address": "262 White Street"
+    },
+    {
+      "district": "Chittenden-11",
+      "name": "F.H. Tuttle Middle School",
+      "address": "500 Dorset Street"
+    },
+    {
+      "district": "Chittenden-12",
+      "name": "Orchard School",
+      "address": "2 Baldwin Avenue"
+    }
+  ],
+  "pollingPlacesSource": {
+    "title": "City of South Burlington — Elections & Voting",
+    "url": "https://www.southburlingtonvt.gov/211/Elections-Voting"
   }
 }
