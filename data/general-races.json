@@ -56,10 +56,9 @@
           "parties": [
             "Freedom and Unity"
           ],
-          "bio": "14-year-old Stowe student, running with the newly formed Freedom and Unity Party. Coverage: Newsweek, Fortune, CNN.",
+          "bio": "Stowe student, Freedom and Unity Party nominee.",
           "notablePositions": [
-            "Helped form the Freedom and Unity Party in 2026",
-            "Believed to be among the youngest people ever on a Vermont general election ballot for Governor"
+            "Helped form the Freedom and Unity Party in 2026"
           ],
           "website": "https://deanroyforgovernor.my.canva.site"
         },
@@ -75,10 +74,8 @@
             "Supports abortion rights",
             "Has signed gun safety legislation",
             "Has vetoed several Democratic tax and spending proposals",
-            "Led Vermont's COVID-19 vaccine rollout, one of the fastest in the nation",
             "Focus on housing affordability and economic development"
-          ],
-          "website": "https://governor.vermont.gov"
+          ]
         }
       ]
     },
@@ -115,8 +112,7 @@
             "Switched from Democrat to Republican before the 2024 race",
             "Focus on rural Vermont issues and the Northeast Kingdom",
             "Advocates for workforce development and economic opportunity"
-          ],
-          "website": "https://ltgov.vermont.gov"
+          ]
         }
       ]
     },
@@ -142,8 +138,7 @@
             "First woman to serve as Vermont Attorney General",
             "Active in multi-state opioid and environmental enforcement actions",
             "Focus on consumer protection and corporate accountability"
-          ],
-          "website": "https://ago.vermont.gov"
+          ]
         },
         {
           "name": "Edwin Howell Kemon",
@@ -188,8 +183,7 @@
             "Expanded access to absentee voting",
             "Modernized business registration systems",
             "Advocates for election security and voter access"
-          ],
-          "website": "https://sos.vermont.gov"
+          ]
         },
         {
           "name": "H. Brooke Paige",
@@ -198,7 +192,6 @@
           "parties": [
             "Republican"
           ],
-          "bio": "Longtime Vermont Republican candidate.",
           "website": "http://brookepaige.us"
         },
         {
@@ -292,12 +285,11 @@
           "parties": [
             "Democrat"
           ],
-          "bio": "Tim Ashe has served as Auditor Doug Hoffer's chief deputy since 2021. He was previously Vermont Senate President Pro Tem from 2013–2021, one of the most powerful positions in Vermont state government, and ran for Lieutenant Governor in 2020.",
+          "bio": "Tim Ashe has served as Chief Deputy Auditor of Accounts since 2021. He was previously Vermont Senate President Pro Tem from 2013–2021 and ran for Lieutenant Governor in 2020.",
           "notablePositions": [
-            "Chief Deputy Auditor of Accounts since 2021 (under Hoffer)",
+            "Chief Deputy Auditor of Accounts since 2021",
             "Former Vermont Senate President Pro Tem (2013–2021)",
-            "Led major Vermont policy initiatives on housing, climate, and tax reform",
-            "Ran for Lt. Governor in 2020 (lost Democratic primary)"
+            "Ran for Lt. Governor in 2020"
           ],
           "website": "https://www.timashe.com"
         },
@@ -355,8 +347,7 @@
             "Former Vermont Senate President Pro Tem",
             "Serves on House Judiciary Committee",
             "Focus on housing, climate, and workers' rights"
-          ],
-          "website": "https://balint.house.gov"
+          ]
         },
         {
           "name": "Gerald Malloy",
@@ -415,13 +406,11 @@
           "parties": [
             "Democrat"
           ],
-          "bio": "Thomas Chittenden grew up in South Burlington and previously served on the South Burlington City Council. He was elected to the Vermont Senate representing Chittenden Southeast and is directly connected to his South Burlington constituents.",
+          "bio": "Thomas Chittenden grew up in South Burlington and previously served on the South Burlington City Council. He was elected to the Vermont Senate representing Chittenden Southeast.",
           "notablePositions": [
             "Former South Burlington City Councilor",
-            "Grew up in South Burlington",
-            "Serves on Senate committees"
-          ],
-          "website": "https://legislature.vermont.gov/people/single/2026/34724"
+            "Grew up in South Burlington"
+          ]
         },
         {
           "name": "Kesha Ram Hinsdale",
@@ -430,10 +419,9 @@
           "parties": [
             "Democrat"
           ],
-          "bio": "Kesha Ram Hinsdale has been Senate Majority Leader since January 2025 — one of the chamber's top leadership posts — and has announced she is running for Senate President Pro Tempore in 2027, the Senate's top job, now that Phil Baruth is retiring. She served in the Vermont House from 2009 to 2016 and has been in the Senate since 2021. She is the first woman of color to serve in the Vermont Senate.",
+          "bio": "Kesha Ram Hinsdale has been Senate Majority Leader since January 2025. She served in the Vermont House from 2009 to 2016 and has been in the Senate since 2021. She is the first woman of color to serve in the Vermont Senate.",
           "notablePositions": [
             "Senate Majority Leader since January 2025",
-            "Running for Senate President Pro Tempore (the Senate's top post) in 2027",
             "First woman of color to serve in the Vermont Senate",
             "Focus on climate, housing, and racial equity"
           ],
@@ -448,10 +436,8 @@
           ],
           "bio": "Virginia Lyons is a Vermont State Senator representing the Chittenden Southeast district. She has served in the Senate for multiple terms.",
           "notablePositions": [
-            "Experienced Senate member",
             "Chittenden Southeast representative"
-          ],
-          "website": "https://legislature.vermont.gov/people/single/2026/14616"
+          ]
         },
         {
           "name": "Bruce Roy",
@@ -507,7 +493,7 @@
       "candidates": [
         {
           "name": "Bridget Burkhardt",
-          "town": null,
+          "town": "South Burlington",
           "ballotLabel": "Democratic",
           "parties": [
             "Democrat"
@@ -521,7 +507,7 @@
         },
         {
           "name": "Mitchel Cypes",
-          "town": null,
+          "town": "South Burlington",
           "ballotLabel": "Republican",
           "parties": [
             "Republican"
@@ -542,7 +528,7 @@
       "candidates": [
         {
           "name": "Emilie Krasnow",
-          "town": null,
+          "town": "South Burlington",
           "ballotLabel": "Democratic",
           "parties": [
             "Democrat"
@@ -568,7 +554,7 @@
       "candidates": [
         {
           "name": "Kate Nugent",
-          "town": null,
+          "town": "South Burlington",
           "ballotLabel": "Democratic",
           "parties": [
             "Democrat"
@@ -594,7 +580,7 @@
       "candidates": [
         {
           "name": "Brian Minier",
-          "town": null,
+          "town": "South Burlington",
           "ballotLabel": "Democratic",
           "parties": [
             "Democrat"
@@ -620,16 +606,15 @@
       "candidates": [
         {
           "name": "Martin J. LaLonde",
-          "town": null,
+          "town": "South Burlington",
           "ballotLabel": "Democratic",
           "parties": [
             "Democrat"
           ],
-          "bio": "Martin LaLonde is a South Burlington attorney who has served in the Vermont House for several terms. He is known as a reliable Democratic vote and has been active on legal and judiciary issues.",
+          "bio": "Martin LaLonde is a South Burlington attorney who has served in the Vermont House for several terms.",
           "notablePositions": [
             "Attorney by profession",
-            "Multi-term South Burlington representative",
-            "Active on legal and judiciary matters"
+            "Multi-term South Burlington representative"
           ],
           "website": "https://martinlalondevt.com"
         }
