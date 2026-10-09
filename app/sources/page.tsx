@@ -47,7 +47,6 @@ const staticSourceCategories = [
   {
     category: 'Official South Burlington',
     sources: [
-      { title: 'South Burlington City Clerk — Elections & Voting', url: 'https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php' },
       { title: 'South Burlington Elections & Voting — drop boxes, early-voting cutoff, ballot timing', url: 'https://www.southburlingtonvt.gov/211/Elections-Voting' },
       { title: 'South Burlington March 3, 2026 Town Meeting Day Results', url: 'https://www.southburlingtonvt.gov/697/March-3-2026-Town-Meeting-Day-Results' },
     ],
@@ -241,7 +240,7 @@ export default function SourcesPage() {
                 </a>
                 {' '}or the{' '}
                 <a
-                  href="https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php"
+                  href="https://www.southburlingtonvt.gov/211/Elections-Voting"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-terracotta-700 hover:text-terracotta-800 underline"

@@ -284,7 +284,7 @@ export default function HowToVotePage() {
             {[
               { name: "My Voter Page", desc: "Register, find your polling place, request a ballot", url: "https://mvp.vermont.gov/" },
               { name: "VT Secretary of State — Elections", desc: "Official election information", url: "https://sos.vermont.gov/elections/" },
-              { name: "SB City Clerk — Elections", desc: "Local election details", url: "https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php" },
+              { name: "SB City Clerk — Elections", desc: "Local election details", url: "https://www.southburlingtonvt.gov/211/Elections-Voting" },
             ].map((resource, i) => (
               <a
                 key={i}
