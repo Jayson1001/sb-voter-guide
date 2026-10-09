@@ -98,7 +98,7 @@ const faqs = [
   {
     question: "Can I drop my ballot off instead of mailing it?",
     answer:
-      "Yes. You can return your ballot by mail, in person at the Clerk's Office, or in one of the 24/7 drop boxes near the main and back entrances of City Hall (180 Market Street). Early in-person voting at the Clerk's Office ends at noon the day before the election — so for the August 11 primary, that's noon on Monday, August 10.",
+      "Yes. You can return your ballot by mail, in person at the Clerk's Office, or in one of the 24/7 drop boxes near the main and back entrances of City Hall (180 Market Street). Early in-person voting at the Clerk's Office ends at noon the day before the election — so for the November 3 general election, that's {{TODO:brief-E:general-early-voting-cutoff-time-and-source}}.",
   },
   {
     question: "How do I reach the South Burlington City Clerk?",
@@ -197,8 +197,8 @@ export default function HowToVotePage() {
             {[
               { label: "Registration deadline", value: "None — same-day registration" },
               { label: "Photo ID required", value: "No" },
-              { label: "Primary (open)", value: "August 11, 2026" },
               { label: "General Election", value: "November 3, 2026" },
+              { label: "Primary (done)", value: "August 11, 2026 — see results" },
               { label: "Polling hours", value: "7:00 AM – 7:00 PM" },
               { label: "Mail ballots (general)", value: "Sent automatically to all voters" },
             ].map((fact, i) => (

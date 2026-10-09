@@ -3,6 +3,19 @@ import racesData from "@/data/races.json";
 import ballotMeasuresData from "@/data/ballot-measures.json";
 import votingInfo from "@/data/voting-info.json";
 import { partyColors, statusColors, statusLabels } from "@/lib/raceMeta";
+import OfficeExplainer from "@/components/OfficeExplainer";
+
+export const metadata = {
+  title: "What's on your Nov 3 ballot? — South Burlington General Election Guide",
+  description:
+    "Every race on your November 3, 2026 South Burlington ballot, in plain English — Governor, Lt. Governor, U.S. House, the Chittenden-Southeast Senate, your State House district, Justices of the Peace, and Proposals 3 & 4. Independent and nonpartisan.",
+  alternates: { canonical: "/general" },
+  openGraph: {
+    title: "What's on your Nov 3 ballot?",
+    description: "Every South Burlington race on the November 3 general election ballot, in plain English.",
+    url: "https://www.sbvoterguide.com/general",
+  },
+};
 
 const ArrowLeftIcon = () => (
   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -228,7 +241,7 @@ function BallotMeasureCard({ measure }: { measure: any }) {
 }
 
 export default function GeneralPage() {
-  const { statewide, federal, stateSenate, stateHouse } = racesData;
+  const { statewide, federal, stateSenate, stateHouse, county } = racesData;
   const measures = ballotMeasuresData.measures;
 
   return (
@@ -272,9 +285,12 @@ export default function GeneralPage() {
             </svg>
           </div>
           <div className="flex-1">
-            <p className="font-semibold text-terracotta-800">General election candidates finalized after the August 11 primary</p>
+            {/* PHASE 2: the race cards below still show the pre-primary candidate
+                lists from data/races.json. Swap this notice once races.json holds
+                the certified November ballot (see handoff/build-notes.md, item 5). */}
+            <p className="font-semibold text-terracotta-800">The primary is over — here&apos;s who made the November ballot</p>
             <p className="text-terracotta-700 text-sm mt-0.5">
-              Filing closed <strong>May 28, 2026</strong>. The primary is <strong>August 11</strong>; the winner of each contested primary appears on the November ballot. Filed candidates are listed below.
+              Each party picked its nominees on August 11 (<Link href="/primary-results" className="underline hover:text-terracotta-900">see the results</Link>). {"{{TODO:brief-C:general-ballot-final-status}}"}
             </p>
           </div>
         </div>
@@ -403,6 +419,50 @@ export default function GeneralPage() {
           </div>
         </section>
 
+        {/* Chittenden County offices — on the November ballot too. Cards show
+            races.json data, which is still pre-primary (see build-notes item 5). */}
+        <section id="county" className="mb-10 scroll-mt-32">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-8 h-8 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+              </svg>
+            </div>
+            <div>
+              <h2 className="font-display text-xl font-bold text-warmgray-800">Chittenden County Offices</h2>
+              <p className="text-warmgray-600 text-sm">Same for every South Burlington voter — no district lookup needed</p>
+            </div>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-5">
+            {county.map((race) => (
+              <div key={race.id} className="flex flex-col gap-3">
+                <OfficeExplainer office={race.office} />
+                <RaceCard race={race} />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Justices of the Peace — elected in November only, not in the primary */}
+        <section id="justices-of-the-peace" className="mb-10 scroll-mt-32">
+          <div className="bg-white rounded-2xl shadow-soft p-5 sm:p-6">
+            <h2 className="font-display text-xl font-bold text-warmgray-800 mb-1">Justices of the Peace</h2>
+            <p className="text-warmgray-600 text-sm leading-relaxed mb-3">
+              New this round: JPs weren&apos;t on the August primary ballot — they&apos;re elected in November.
+            </p>
+            {/* Reusable blurb-map: renders once "Justice of the Peace" has an entry in
+                data/office-explainers.json ({{TODO:brief-C:jp-explainer-blurb}}). */}
+            <div className="mb-3">
+              <OfficeExplainer office="Justice of the Peace" />
+            </div>
+            <div className="bg-cream-50 border border-warmgray-200 rounded-xl p-4 text-sm text-warmgray-600 leading-relaxed">
+              <p><strong className="text-warmgray-700">How many seats:</strong> {"{{TODO:brief-C:jp-seat-count}}"}</p>
+              <p className="mt-1"><strong className="text-warmgray-700">Who&apos;s on the ballot:</strong> {"{{TODO:brief-C:jp-candidates}}"}</p>
+              <p className="mt-1"><strong className="text-warmgray-700">Source:</strong> {"{{TODO:brief-C:jp-source-url}}"}</p>
+            </div>
+          </div>
+        </section>
+
         {/* Voter Info */}
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <h2 className="font-display text-xl font-bold text-warmgray-800 mb-4">General Election Voting Info</h2>
@@ -446,11 +506,11 @@ export default function GeneralPage() {
         {/* Nav */}
         <div className="flex flex-col sm:flex-row gap-4 mb-4">
           <Link
-            href="/primary"
+            href="/primary-results"
             className="flex-1 flex items-center justify-center gap-2 bg-white border border-warmgray-200 hover:border-sage-300 text-warmgray-700 hover:text-sage-700 px-5 py-3 rounded-xl font-medium text-sm transition-colors"
           >
             <ArrowLeftIcon />
-            Primary Election Guide (Aug 11)
+            August 11 Primary Results
           </Link>
           <Link
             href="/ballot-measures"

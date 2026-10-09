@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import primaryResults from '@/data/primary-results.json';
 
 const ExternalLinkIcon = () => (
   <svg className="w-4 h-4 inline-block ml-1 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -12,7 +13,7 @@ const LinkIcon = () => (
   </svg>
 );
 
-const sourceCategories = [
+const staticSourceCategories = [
   {
     category: 'Official Vermont Government',
     sources: [
@@ -91,6 +92,30 @@ const sourceCategories = [
       { title: 'South Burlington candidates file bids for Town Meeting Day seats — The Other Paper', url: 'https://www.vtcng.com/otherpapersbvt/news/municipal_matters/south-burlington-candidates-file-bids-for-town-meeting-day-seats/article_8cebfdd2-6996-4ca9-8f33-7fa60e288c5c.html' },
     ],
   },
+];
+
+// August 11 primary results: sources live in data/primary-results.json (election,
+// per-race, and bond) so the results page and this page can't drift. The
+// category only appears once at least one source has been filled in.
+type Src = { title: string; url: string };
+const pr = primaryResults as unknown as {
+  election: { sources: Src[] };
+  races: Record<string, { sources: Src[] }>;
+  bond: { sources: Src[] };
+};
+const primaryResultSources: Src[] = Array.from(
+  new Map(
+    [...pr.election.sources, ...Object.values(pr.races).flatMap((r) => r.sources)]
+      .map((x) => [x.url, x] as [string, Src])
+  ).values()
+);
+
+const sourceCategories = [
+  ...staticSourceCategories.slice(0, -1),
+  ...(primaryResultSources.length > 0
+    ? [{ category: 'August 11, 2026 Primary Results', sources: primaryResultSources }]
+    : []),
+  ...staticSourceCategories.slice(-1),
 ];
 
 export default function SourcesPage() {
