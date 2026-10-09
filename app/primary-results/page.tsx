@@ -478,7 +478,7 @@ export default function PrimaryResultsPage() {
             ballot. The first pair of columns is the whole race (statewide, or the whole district or county); the
             &ldquo;SB&rdquo; columns are South Burlington&apos;s share of it. A green row means that candidate won the
             nomination (in races with more than one seat, more than one person wins). Candidates are listed by votes.
-            &ldquo;—&rdquo; means that figure isn&apos;t in the official files.
+            A dash (&mdash;) means that figure isn&apos;t broken out in the official files we used.
           </p>
         </div>
 
@@ -672,7 +672,6 @@ export default function PrimaryResultsPage() {
                   Vermont Secretary of State results
                   <ExternalLinkIcon />
                 </a>
-                </div>
               </div>
             </div>
             <div className="p-6">
