@@ -53,7 +53,7 @@ export default function BallotMeasuresPage() {
             </span>
             <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">Ballot Measures</h1>
             <p className="text-sage-100 text-base sm:text-lg max-w-2xl">
-              Two proposed amendments to the Vermont Constitution — both referred by the legislature with overwhelming bipartisan support.
+              Two proposed amendments to the Vermont Constitution — both referred to voters by the legislature.
             </p>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function BallotMeasuresPage() {
               <div className="w-8 h-8 bg-sage-100 rounded-full flex items-center justify-center text-sage-700 font-bold text-sm flex-shrink-0">1</div>
               <div>
                 <p className="font-semibold text-warmgray-700 mb-0.5">Legislature (first session)</p>
-                <p>Both the House and Senate must pass the amendment. Both measures passed with near-unanimous votes in 2023–24.</p>
+                <p>Both the House and Senate must pass the amendment. Both measures first passed in 2024.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
@@ -89,7 +89,7 @@ export default function BallotMeasuresPage() {
               <div className="w-8 h-8 bg-sage-100 rounded-full flex items-center justify-center text-sage-700 font-bold text-sm flex-shrink-0">3</div>
               <div>
                 <p className="font-semibold text-warmgray-700 mb-0.5">Voter ratification</p>
-                <p>Vermont voters vote Yes or No on November 3, 2026. A simple majority approves it — and it becomes part of the Vermont Constitution permanently.</p>
+                <p>Vermont voters vote Yes or No on November 3, 2026. A simple majority approves it — and it becomes part of the Vermont Constitution.</p>
               </div>
             </div>
           </div>
