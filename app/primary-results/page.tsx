@@ -55,6 +55,7 @@ type RaceResult = {
   district?: string;
   seats: number;
   scopeLabel: string;
+  sbUnofficial?: boolean; // SB column comes from the City Clerk's unofficial sheet
   contests: Contest[];
   notes: string | null;
   sources: Source[];
@@ -67,20 +68,24 @@ type BondResult = {
   passed: boolean | null;
   votesYes: number | null;
   votesNo: number | null;
+  blank?: number | null;
+  totalVotes?: number | null;
+  checklist?: number | null;
+  pctVoted?: number | null;
   pctYes: number | null;
   pctNo: number | null;
+  byDistrict?: { district: string; yes: number; no: number }[];
   note: string | null;
   sources: Source[];
 };
 
 type PrimaryResults = {
-  status: "placeholder" | "partial" | "final";
+  status: "placeholder" | "partial" | "official";
   lastUpdated: string;
   election: {
     name: string;
     date: string;
-    certifiedDate: string | null;
-    certifiedBy: string | null;
+    canvassDate: string | null; // date stamped on the SOS official canvass
     southBurlington: {
       ballotsCast: number | null;
       registeredVoters: number | null;
@@ -290,6 +295,12 @@ function RaceResultCard({ raceId }: { raceId: string }) {
         )}
       </div>
 
+      {race.sbUnofficial && (
+        <p className="mt-3 text-xs text-warmgray-700 bg-cream-50 border border-warmgray-200 rounded-lg px-3 py-2">
+          South Burlington figures are the City Clerk&apos;s unofficial count; district/county totals are official.
+        </p>
+      )}
+
       {withCandidates.map((contest) => (
         <ContestTable key={contest.party} race={race} contest={contest} />
       ))}
@@ -338,7 +349,7 @@ export default function PrimaryResultsPage() {
   const { election, bond } = results;
   const isPlaceholder = results.status === "placeholder";
   const isPartial = results.status === "partial";
-  const certified = fmtDate(election.certifiedDate);
+  const canvass = fmtDate(election.canvassDate);
   const sb = election.southBurlington;
 
   // Race groups follow data/races.json so this page mirrors /primary exactly.
@@ -439,11 +450,11 @@ export default function PrimaryResultsPage() {
             </div>
             <div>
               <h2 className="font-display text-xl font-bold text-warmgray-800 mb-2">
-                {isPlaceholder ? "The primary is over" : "The results are in"}
+                {isPlaceholder ? "The primary is over" : "The official results"}
               </h2>
               <p className="text-warmgray-600 leading-relaxed">
                 {election.summary ??
-                  "On August 11, each party picked who goes on to the November ballot. This page shows who won each nomination, statewide and here in South Burlington, plus how the city voted on the Bartlett Bay bond."}
+                  "On August 11, each party picked who goes on to the November ballot. This page shows who won each nomination, the official totals, South Burlington's share, and how the city voted on the Bartlett Bay bond."}
               </p>
               <p className="text-warmgray-600 text-sm leading-relaxed mt-3">
                 Quick reminder on how to read this: a primary is a party picking its own team. Winning here means
@@ -466,7 +477,8 @@ export default function PrimaryResultsPage() {
             <strong className="text-warmgray-700">Reading the tables:</strong> each office shows one table per party
             ballot. The first pair of columns is the whole race (statewide, or the whole district or county); the
             &ldquo;SB&rdquo; columns are South Burlington&apos;s share of it. A green row means that candidate won the
-            nomination. Candidates are listed by votes once results are posted.
+            nomination (in races with more than one seat, more than one person wins). Candidates are listed by votes.
+            &ldquo;—&rdquo; means that figure isn&apos;t in the official files.
           </p>
         </div>
 
@@ -550,7 +562,7 @@ export default function PrimaryResultsPage() {
                 {bond.amount} for the {bond.title.replace(/ bond$/i, "")}
               </h2>
               <p className="text-warmgray-600 text-sm mb-4">
-                Not a party race — a city question on the same August 11 ballot.{" "}
+                Not a party race — a city question on the same August 11 ballot. Official count from the City of South Burlington.{" "}
                 <Link href="/primary#bond" className="text-sage-600 hover:text-sage-800 underline">What it was about</Link>
               </p>
 
@@ -575,14 +587,48 @@ export default function PrimaryResultsPage() {
                 <div className="bg-sage-50 rounded-xl p-3">
                   <p className="text-xs font-semibold text-sage-700 uppercase tracking-wide">Yes</p>
                   <p className="font-display text-2xl font-bold text-warmgray-800 tabular-nums">{fmt(bond.votesYes)}</p>
-                  <p className="text-xs text-warmgray-600 tabular-nums">{pct(bond.pctYes)}</p>
+                  {bond.pctYes != null && <p className="text-xs text-warmgray-600 tabular-nums">{pct(bond.pctYes)}</p>}
                 </div>
                 <div className="bg-warmgray-50 rounded-xl p-3">
                   <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide">No</p>
                   <p className="font-display text-2xl font-bold text-warmgray-800 tabular-nums">{fmt(bond.votesNo)}</p>
-                  <p className="text-xs text-warmgray-600 tabular-nums">{pct(bond.pctNo)}</p>
+                  {bond.pctNo != null && <p className="text-xs text-warmgray-600 tabular-nums">{pct(bond.pctNo)}</p>}
                 </div>
               </div>
+
+              {(bond.blank != null || bond.totalVotes != null) && (
+                <p className="text-sm text-warmgray-600 leading-relaxed mt-4">
+                  {bond.blank != null && <>Blank: {fmt(bond.blank)}. </>}
+                  {bond.totalVotes != null && <>{fmt(bond.totalVotes)} ballots were cast on the question</>}
+                  {bond.checklist != null && <>, out of {fmt(bond.checklist)} voters on the checklist</>}
+                  {bond.pctVoted != null && <> ({pct(bond.pctVoted)})</>}
+                  {bond.totalVotes != null && "."}
+                </p>
+              )}
+
+              {bond.byDistrict && bond.byDistrict.length > 0 && (
+                <div className="mt-4 overflow-x-auto">
+                  <table className="w-full text-sm max-w-md">
+                    <caption className="text-left text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-1">By voting district</caption>
+                    <thead>
+                      <tr className="text-xs text-warmgray-600">
+                        <th scope="col" className="text-left font-semibold py-1 px-1">District</th>
+                        <th scope="col" className="text-right font-semibold py-1 px-1">Yes</th>
+                        <th scope="col" className="text-right font-semibold py-1 px-1">No</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {bond.byDistrict.map((r) => (
+                        <tr key={r.district} className="border-t border-warmgray-100">
+                          <th scope="row" className="text-left font-normal py-1.5 px-1 text-warmgray-700">{r.district}</th>
+                          <td className="text-right tabular-nums py-1.5 px-1 text-warmgray-700">{fmt(r.yes)}</td>
+                          <td className="text-right tabular-nums py-1.5 px-1 text-warmgray-700">{fmt(r.no)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
 
               {bond.note && <p className="text-sm text-warmgray-600 leading-relaxed mt-4">{bond.note}</p>}
 
@@ -612,10 +658,20 @@ export default function PrimaryResultsPage() {
                 <div>
                   <p className="text-white/80 text-sm">Vermont Primary &mdash; August 11, 2026</p>
                   <p className="font-display font-bold text-xl">
-                    {certified
-                      ? `Certified ${certified}${election.certifiedBy ? ` by the ${election.certifiedBy}` : ""}`
-                      : "Certification date being confirmed"}
+                    {canvass ? `Official results (canvass dated ${canvass})` : "Official results being posted"}
                   </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <a
+                  href="https://sos.vermont.gov/elections/election-info-resources/elections-results-data"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                >
+                  Vermont Secretary of State results
+                  <ExternalLinkIcon />
+                </a>
                 </div>
               </div>
             </div>
@@ -636,8 +692,12 @@ export default function PrimaryResultsPage() {
                 <p className="text-sm text-warmgray-600">Official result sources will be listed here once the numbers are posted.</p>
               )}
               <p className="text-xs text-warmgray-600 mt-4">
-                Percentages are as published in the cited source and may not add to 100% (blank ballots, write-ins,
-                and rounding).
+                How the percentages work: the whole-race percentages are the Secretary of State&apos;s own figures.
+                South Burlington percentages are from the official canvass and are a share of all that party&apos;s
+                ballots cast in the city, blanks included, so they run a little lower. Senate, House, and county races
+                have no official South Burlington breakdown; those city numbers are the City Clerk&apos;s unofficial
+                count and are shown without a percentage. Totals may not add to 100% because of blanks, write-ins, and
+                rounding.
               </p>
             </div>
           </div>
