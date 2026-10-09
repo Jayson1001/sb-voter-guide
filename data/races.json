@@ -4,7 +4,6 @@
   "candidateFilingCloses": "2026-05-28",
   "primaryDate": "2026-08-11",
   "generalDate": "2026-11-03",
-
   "statewide": [
     {
       "id": "governor",
@@ -333,22 +332,8 @@
         "Operates independently of both the Governor and legislature",
         "Certifies state financial statements"
       ],
-      "whyItMatters": "Vermont's Auditor of Accounts operates independently of both the Governor and the legislature, auditing state agencies and programs and reporting findings to the public. Seven-term incumbent Doug Hoffer is retiring after 14 years, making this an open seat race.",
-      "incumbents": [
-        {
-          "name": "Doug Hoffer",
-          "party": "Democrat",
-          "termStarted": 2013,
-          "status": "retiring",
-          "statusNote": "Retiring after seven terms — first open Auditor race in 14 years",
-          "bio": "Doug Hoffer served as Vermont Auditor of Accounts from 2013–2026, winning seven consecutive terms. He announced before the 2024 election that 2026 would be his last term, opening the seat for the first time in 14 years.",
-          "notablePositions": [
-            "Audited state health benefit exchange, Agency of Transportation, and other major programs",
-            "Published detailed reports on Vermont housing and workforce issues",
-            "Served seven consecutive terms (2013–2026)"
-          ]
-        }
-      ],
+      "whyItMatters": "Vermont's Auditor of Accounts operates independently of both the Governor and the legislature, auditing state agencies and programs and reporting findings to the public. This is an open-seat race.",
+      "incumbents": [],
       "knownCandidates": [
         {
           "name": "Tim Ashe",
@@ -365,7 +350,7 @@
           ]
         },
         {
-          "name": "Nick Graeter",
+          "name": "Nicholas Graeter",
           "party": "Democrat",
           "status": "announced",
           "announcedDate": "May 2026",
@@ -391,10 +376,9 @@
           "notablePositions": []
         }
       ],
-      "notes": "This is the first open Auditor race in Vermont in 14 years. The Democratic primary is now a two-way contest between Tim Ashe (Hoffer's chief deputy since 2021) and Nick Graeter; a third Democrat, Dan Towle, ended his campaign but remains on the ballot. H. Brooke Paige is the lone Republican candidate. (Sources: Vermont Secretary of State 2026 primary candidate list; Vermont Public on Towle's withdrawal.)"
+      "notes": "This is an open-seat race. The Democratic primary is now a two-way contest between Tim Ashe and Nicholas Graeter; a third Democrat, Dan Towle, ended his campaign but remains on the ballot. H. Brooke Paige is the lone Republican candidate. (Sources: Vermont Secretary of State 2026 primary candidate list; Vermont Public on Towle's withdrawal.)"
     }
   ],
-
   "federal": [
     {
       "id": "us-house",
@@ -463,7 +447,6 @@
       "notes": "Balint faces a contested GOP primary between Gerald Malloy and Mark Coester. Andrew Giusto is a declared Unity Party write-in for the November general (not on the filed ballot). Vermont's at-large seat has been held by a Democrat or Independent since 1991."
     }
   ],
-
   "stateSenate": [
     {
       "id": "chittenden-se-senate",
@@ -573,7 +556,6 @@
       "notes": "All three seats are on the ballot. The Democratic primary is a five-way contest between incumbents Thomas Chittenden, Virginia Lyons, and Kesha Ram Hinsdale and challengers Joanna Grossman and Elizabeth Hunt — voters choose up to three nominees. The Republican primary is a two-way contest between Javen Sears and Bruce Roy. (Source: Vermont Secretary of State 2026 primary candidate list.)"
     }
   ],
-
   "stateHouse": [
     {
       "id": "chittenden-8",
@@ -718,7 +700,6 @@
       "notes": "Independents have until August 6, 2026 to file for the November general ballot."
     }
   ],
-
   "county": [
     {
       "id": "states-attorney",

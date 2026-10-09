@@ -97,13 +97,13 @@
     "office": "Auditor of Accounts",
     "asOf": "2026-08-02",
     "intro": "The auditor independently checks how the state spends money. A third Democrat, Dan Towle, is still on the ballot but ended his campaign, so this is the active contest — and the two candidates have different ideas about the job.",
-    "candidates": ["Tim Ashe", "Nick Graeter"],
+    "candidates": ["Tim Ashe", "Nicholas Graeter"],
     "rows": [
       {
         "axis": "What they'd audit first",
         "values": {
           "Tim Ashe": "Points to the Agency of Human Services — roughly half the state budget — and to the high cost of health care.",
-          "Nick Graeter": "Favors narrower, focused audits — first up, the state's School Safety Center and overtime spending in the Department of Corrections."
+          "Nicholas Graeter": "Favors narrower, focused audits — first up, the state's School Safety Center and overtime spending in the Department of Corrections."
         },
         "source": { "label": "Vermont Public, July 14, 2026", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-14/meet-the-democratic-candidates-for-vermont-state-auditor" }
       },
@@ -111,7 +111,7 @@
         "axis": "Approach to the job",
         "values": {
           "Tim Ashe": "Argues the office needs someone who can take on big, complex systems.",
-          "Nick Graeter": "Argues for tighter audits with clearer, more actionable findings, rather than tackling sprawling systems."
+          "Nicholas Graeter": "Argues for tighter audits with clearer, more actionable findings, rather than tackling sprawling systems."
         },
         "source": { "label": "Vermont Public, July 14, 2026", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-14/meet-the-democratic-candidates-for-vermont-state-auditor" }
       },
@@ -119,12 +119,12 @@
         "axis": "Background",
         "values": {
           "Tim Ashe": "Deputy Auditor since 2021 and a former Senate President Pro Tempore; about two decades in state and local government.",
-          "Nick Graeter": "An accounting specialist and first-time candidate, running as a Montpelier outsider."
+          "Nicholas Graeter": "An accounting specialist and first-time candidate, running as a Montpelier outsider."
         },
         "source": { "label": "Vermont Public, July 14, 2026", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-14/meet-the-democratic-candidates-for-vermont-state-auditor" }
       }
     ],
-    "agree": "Both are Democrats who say the auditor's findings should actually get acted on, not filed away. The office is open for the first time in 14 years, with Doug Hoffer retiring.",
+    "agree": "Both are Democrats who say the auditor's findings should actually get acted on, not filed away. The office is an open seat.",
     "sources": [
       { "label": "Vermont Public — Meet the Democratic candidates for auditor (July 14, 2026)", "url": "https://www.vermontpublic.org/show/vermont-edition/2026-07-14/meet-the-democratic-candidates-for-vermont-state-auditor" }
     ]
