@@ -137,7 +137,7 @@ export default function Home() {
                 <span aria-hidden="true">🗳️</span> One ballot, no party to pick
               </p>
               <p className="text-terracotta-50 text-sm leading-relaxed">
-                No three-ballot shuffle this time. Everyone gets the same ballot with every party&apos;s nominee (plus independents) side by side, so you can mix and match however you like.
+                No three-ballot shuffle this time. You get one ballot with every party&apos;s nominee (plus independents) side by side, so you can mix and match however you like. (Your State House race depends on your district.)
               </p>
             </div>
           </div>
