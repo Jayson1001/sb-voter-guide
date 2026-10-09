@@ -30,3 +30,26 @@ export const statusLabels: Record<string, string> = {
   "withdrawn": "On the ballot · campaign ended",
   "unknown": "Plans not announced",
 };
+
+// November ballot labels, printed exactly as on the ballot. A fusion label
+// ("Dem/Prog", "Dem/Rep") means more than one party nominated the candidate;
+// the chip takes the color of the first party listed.
+export const ballotLabelParty: Record<string, string> = {
+  "Democratic": "Democrat",
+  "Republican": "Republican",
+  "Progressive": "Progressive",
+  "Independent": "Independent",
+  "Dem/Prog": "Democrat",
+  "Dem/Rep": "Democrat",
+  "Freedom and Unity": "Freedom and Unity",
+  "Peace and Justice": "Peace and Justice",
+};
+
+export const ballotLabelTitle: Record<string, string> = {
+  "Dem/Prog": "Nominated by the Democratic and Progressive parties",
+  "Dem/Rep": "Nominated by the Democratic and Republican parties",
+};
+
+export function ballotLabelClass(label: string): string {
+  return partyColors[ballotLabelParty[label] ?? ""] || "bg-warmgray-50 text-warmgray-600 border-warmgray-100";
+}
