@@ -3,30 +3,34 @@ import Link from "next/link";
 import racesData from "@/data/races.json";
 import votingInfo from "@/data/voting-info.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
-import PrimaryCountdown from "@/components/PrimaryCountdown";
 import RaceComparison from "@/components/RaceComparison";
 import { partyColors, statusColors, statusLabels } from "@/lib/raceMeta";
 
 export const metadata: Metadata = {
-  title: "Who's on your Aug 11 ballot? — South Burlington Primary Guide",
+  title: "August 11 Primary Guide (past election) — South Burlington Voter Guide",
   description:
-    "Every race on your August 11 South Burlington primary ballot, in plain English — Governor, Lt. Governor, Auditor, State's Attorney, Sheriff, the Chittenden-SE Senate, and the $16.4M Bartlett Bay bond. Side-by-side candidate comparisons. Independent and nonpartisan.",
+    "The August 11, 2026 primary is over — see the results at /primary-results. This is the archived guide to every race that was on the South Burlington primary ballot, in plain English — Governor, Lt. Governor, Auditor, State's Attorney, Sheriff, the Chittenden-SE Senate, and the $16.4M Bartlett Bay bond. Side-by-side candidate comparisons. Independent and nonpartisan.",
   alternates: { canonical: "/primary" },
   openGraph: {
-    title: "Who's on your Aug 11 ballot?",
+    title: "August 11 Primary Guide (past election)",
     description:
-      "Every South Burlington race on the August 11 primary ballot, in plain English — with side-by-side candidate comparisons and the Bartlett Bay bond explained.",
+      "The archived guide to every South Burlington race on the August 11 primary ballot. The primary is over — see the results and the November 3 guide.",
     url: "https://www.sbvoterguide.com/primary",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Who's on your August 11 South Burlington ballot?" }],
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "South Burlington August 11 primary guide (past election)" }],
   },
   twitter: {
-    title: "Who's on your Aug 11 ballot?",
+    title: "August 11 Primary Guide (past election)",
     description:
-      "Every South Burlington race on the August 11 primary ballot, in plain English — with side-by-side candidate comparisons.",
+      "The archived South Burlington primary guide. The primary is over — see the results and the November 3 guide.",
     images: ["/og.png"],
   },
 };
 
+// ARCHIVED: the Aug 11 primary is over. This page is kept as a record of the
+// pre-primary guide; results live at /primary-results and the live guide is
+// /general. The TODO below is historical — general-ballot candidate changes
+// now belong in data/races.json for /general.
+//
 // TODO (after the Aug 6, 2026 independent/minor-party filing deadline): run a
 // candidate sweep against the certified VT Secretary of State list.
 //   - Confirm or remove June Goodband (Governor, Peace & Justice) — her 2026
@@ -277,7 +281,7 @@ export default function PrimaryPage() {
                 </span>
                 <span className="text-left leading-none">
                   <span className="block text-sage-100 text-[0.7rem] font-semibold uppercase tracking-widest mb-1">
-                    Election Day
+                    Election Day (past)
                   </span>
                   <span className="block font-display text-2xl sm:text-3xl font-bold text-white">
                     August 11, 2026
@@ -288,20 +292,16 @@ export default function PrimaryPage() {
               <p className="text-sage-100 text-base sm:text-lg">Each party nominates its candidates for the November general election</p>
             </div>
             <div className="flex-shrink-0 flex flex-col items-center gap-3">
-              <PrimaryCountdown />
-              <a
-                href="https://mvp.vermont.gov/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <span className="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
+                Past election
+              </span>
+              <Link
+                href="/primary-results"
                 className="inline-flex items-center gap-2 bg-white text-sage-700 hover:bg-cream-100 px-4 py-2 rounded-lg font-semibold text-sm transition-colors whitespace-nowrap"
               >
-                <span className="relative flex h-2 w-2" aria-hidden="true">
-                  <span className="absolute inline-flex h-full w-full rounded-full bg-sage-500 opacity-75 motion-safe:animate-ping" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-sage-600" />
-                </span>
-                Early voting is open
+                See the results
                 <ArrowRightIcon />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -314,6 +314,34 @@ export default function PrimaryPage() {
       </header>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+
+        {/* This election is over — point people to results and to November.
+            Everything below is kept as-is as a record of the pre-primary guide. */}
+        <div role="note" className="bg-white border-2 border-terracotta-200 rounded-2xl shadow-soft p-5 sm:p-6 mb-6">
+          <p className="font-display text-lg sm:text-xl font-bold text-warmgray-800 mb-1">
+            The August 11 primary is over.
+          </p>
+          <p className="text-warmgray-600 text-sm leading-relaxed mb-4">
+            This page is the guide we published before the primary, kept here for the record. Dates, deadlines, and
+            &ldquo;early voting is open&rdquo; notes below were true then, not now.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Link
+              href="/primary-results"
+              className="inline-flex items-center justify-center gap-2 bg-sage-500 hover:bg-sage-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors"
+            >
+              The August 11 primary is over — see the results
+              <ArrowRightIcon />
+            </Link>
+            <Link
+              href="/general"
+              className="inline-flex items-center justify-center gap-2 bg-terracotta-500 hover:bg-terracotta-600 text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors"
+            >
+              Now: the November 3 general election
+              <ArrowRightIcon />
+            </Link>
+          </div>
+        </div>
 
         {/* Jump to your race — compact chip bar that sticks under the main nav on
             scroll, so a voter can hop between sections (and the bond) from anywhere.
@@ -900,6 +928,13 @@ export default function PrimaryPage() {
           >
             <ArrowLeftIcon />
             Back to Voter Guide
+          </Link>
+          <Link
+            href="/primary-results"
+            className="flex-1 flex items-center justify-center gap-2 bg-white border border-warmgray-200 hover:border-sage-300 text-warmgray-700 hover:text-sage-700 px-5 py-3 rounded-xl font-medium text-sm transition-colors"
+          >
+            Primary results
+            <ArrowRightIcon />
           </Link>
           <Link
             href="/general"
