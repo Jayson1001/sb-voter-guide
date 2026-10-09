@@ -1,5 +1,13 @@
 import Link from "next/link";
 import GeneralCountdown from "@/components/GeneralCountdown";
+import generalRacesData from "@/data/general-races.json";
+import primaryResults from "@/data/primary-results.json";
+import type { GeneralRace } from "@/components/GeneralRaceCard";
+
+const SOS_RESULTS = "https://sos.vermont.gov/elections/election-info-resources/elections-results-data";
+const SOS_MAIL_BALLOTS = "https://sos.vermont.gov/elections/voters/early-absentee-voting/";
+const CITY_ELECTIONS = "https://www.southburlingtonvt.gov/211/Elections-Voting";
+const CITY_PRIMARY_RESULTS = "https://www.southburlingtonvt.gov/716/August-11-2026-Vermont-Primary-Results";
 
 const CalendarIcon = () => (
   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -32,37 +40,35 @@ const ArchiveIcon = () => (
   </svg>
 );
 
-// Dates from Aug 11 on. Anything we haven't confirmed against an official
-// source yet is a {{TODO:...}} token for phase 2 — don't guess.
-const keyDates: { date: string; event: string; type: string; note?: string; badge?: string; href?: string }[] = [
+// Dates from Aug 11 on. Each one carries the official source it came from.
+const keyDates: { date: string; event: string; type: string; note?: string; badge?: string; href?: string; sources?: { label: string; url: string }[] }[] = [
   { date: "Aug 11", event: "Vermont Primary Election — done", type: "past", note: "Each party picked its November nominees. See who won on the primary results page.", href: "/primary-results" },
-  { date: "Late Sept – Oct 1", event: "General election ballots mailed", type: "milestone", note: "Vermont mails a ballot to every active registered voter, starting around Sept 25" },
-  { date: "{{TODO:brief-E:general-early-voting-cutoff-date}}", event: "Last day for early in-person voting at the City Clerk's office", type: "filing", note: "{{TODO:brief-E:general-early-voting-cutoff-time-and-source}}" },
-  { date: "Nov 3", event: "Vermont General Election", type: "election", badge: "Up next", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls. Mailed ballots must be back by {{TODO:brief-E:general-ballot-return-deadline}}." },
-  { date: "{{TODO:brief-F:canvass-date}}", event: "Results canvassed and certified", type: "milestone", note: "{{TODO:brief-F:canvass-certification-detail}}" },
+  { date: "First half of Oct", event: "General election ballots arrive in mailboxes", type: "milestone", note: "Vermont mails a ballot to every active registered voter. If yours hasn't shown up by mid-October, contact the City Clerk.", sources: [{ label: "Vermont Secretary of State", url: "https://sos.vermont.gov/node/1246" }] },
+  { date: "Mon, Nov 2 · noon", event: "Early in-person voting at the City Clerk's office ends", type: "filing", note: "City Clerk's Office, 180 Market Street.", sources: [{ label: "City of South Burlington", url: CITY_ELECTIONS }] },
+  { date: "Nov 3", event: "Vermont General Election", type: "election", badge: "Up next", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls. Mailed ballots are due by 7 PM.", sources: [{ label: "Vermont Secretary of State", url: SOS_MAIL_BALLOTS }] },
+  { date: "Nov 10", event: "Results canvassed and certified", type: "milestone", note: "Canvassing committees meet one week after the election to certify the results; recount petitions are due within seven days of the election.", sources: [{ label: "17 V.S.A. § 2592", url: "https://legislature.vermont.gov/statutes/section/17/051/02592" }, { label: "17 V.S.A. § 2602", url: "https://legislature.vermont.gov/statutes/section/17/051/02602" }] },
 ];
 
-// Offices on the November 3 ballot for South Burlington. Same offices as the
-// primary, now one nominee per party (plus independents), and Justices of the
-// Peace, which are elected only in November.
+// Offices on the November 3 ballot for South Burlington, with candidate
+// counts straight from data/general-races.json.
+const raceCount = (r: GeneralRace) => `${r.candidates.length} ${r.candidates.length === 1 ? "candidate" : "candidates"}`;
+const gr = generalRacesData as unknown as Record<string, GeneralRace[]>;
 const generalRaces = [
-  "Governor of Vermont",
-  "Lieutenant Governor",
-  "Attorney General",
-  "Secretary of State",
-  "State Treasurer",
-  "Auditor of Accounts (open seat)",
-  "U.S. House (At-Large)",
-  "VT State Senate — Chittenden SE (3 seats)",
-  "VT House — South Burlington districts",
-  "Chittenden County offices",
-  "Justices of the Peace",
+  ...gr.statewide.map((r) => `${r.shortName}${r.openSeat ? " (open seat)" : ""} — ${raceCount(r)}`),
+  ...gr.federal.map((r) => `${r.shortName} — ${raceCount(r)}`),
+  `State Senate, Chittenden SE — ${raceCount(gr.stateSenate[0])} for 3 seats`,
+  "State House — your district (5 in South Burlington)",
+  "Chittenden County: State's Attorney, Sheriff, High Bailiff, Assistant Judges, Probate Judge",
+  `Justices of the Peace — ${generalRacesData.justicesOfThePeace.candidates.length} candidates for ${generalRacesData.justicesOfThePeace.seats} seats`,
 ];
 
 const generalAdditions = [
   "Proposal 3: Right to Collective Bargaining",
   "Proposal 4: Equal Protection of Law",
 ];
+
+const bond = primaryResults.bond;
+const fmt = (n: number) => n.toLocaleString("en-US");
 
 export default function Home() {
   return (
@@ -129,7 +135,8 @@ export default function Home() {
                 <span aria-hidden="true">📬</span> Your ballot comes to you
               </p>
               <p className="text-terracotta-50 text-sm leading-relaxed">
-                Unlike the primary, you don&apos;t have to ask. Vermont mails a general-election ballot to <strong>every</strong> active registered voter. Mail it back, drop it off, or vote in person on Nov 3. Returned ballots need to arrive by {"{{TODO:brief-E:general-ballot-return-deadline}}"}.
+                Unlike the primary, you don&apos;t have to ask. Vermont mails a general-election ballot to <strong>every</strong> active registered voter. Mail it back, drop it off, or vote in person on Nov 3. Ballots are due by <strong>7 PM on Election Day, November 3</strong> (
+                <a href={SOS_MAIL_BALLOTS} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Secretary of State</a>).
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
@@ -168,9 +175,9 @@ export default function Home() {
         </section>
 
         {/* General Guide Card — races gateway, right below the main event */}
-        <Link href="/general" className="group block mb-8 animate-fade-in-delay-1">
-          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent group-hover:border-terracotta-300 transition-all">
-            <div className="bg-gradient-to-br from-terracotta-500 to-terracotta-600 p-6 text-white">
+        <div className="group mb-8 animate-fade-in-delay-1">
+          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent hover:border-terracotta-300 transition-all">
+            <Link href="/general" className="block bg-gradient-to-br from-terracotta-500 to-terracotta-600 p-6 text-white">
               <div className="flex items-start justify-between">
                 <div>
                   <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
@@ -183,7 +190,7 @@ export default function Home() {
                   <ArrowRightIcon />
                 </div>
               </div>
-            </div>
+            </Link>
             <div className="p-6">
               <p className="text-warmgray-600 text-xs font-semibold uppercase tracking-wide mb-3">On the ballot</p>
               <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
@@ -196,12 +203,29 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 pt-4 border-t border-warmgray-100">
-                <p className="text-xs text-warmgray-600">{"{{TODO:brief-C:general-ballot-final-status}}"}</p>
+              <div className="mt-4 pt-4 border-t border-warmgray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <p className="text-xs text-warmgray-600">
+                  No city or school questions this time. Candidate list:{" "}
+                  <a href={generalRacesData.candidateSource.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-700">
+                    Vermont Secretary of State
+                  </a>{" "}
+                  (updated Sept 23, 2026); ballot contents:{" "}
+                  <a href={CITY_ELECTIONS} target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-700">
+                    City sample ballots
+                  </a>
+                  .
+                </p>
+                <Link
+                  href="/general"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-terracotta-700 bg-terracotta-50 hover:bg-terracotta-100 border border-terracotta-200 px-4 py-2 rounded-lg transition-colors flex-shrink-0"
+                >
+                  See every race
+                  <ArrowRightIcon />
+                </Link>
               </div>
             </div>
           </div>
-        </Link>
+        </div>
 
         {/* Primary results card — what August settled */}
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8 animate-fade-in-delay-1">
@@ -210,13 +234,43 @@ export default function Home() {
               <span className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide">August 11 primary &bull; Results</span>
               <h2 className="font-display text-xl font-bold text-warmgray-800 mt-1 mb-2">Who&apos;s on the November ballot now</h2>
               <ul className="space-y-1.5 text-sm text-warmgray-700">
-                <li>{"{{TODO:brief-A:governor-nominees}}"}</li>
-                <li>{"{{TODO:brief-A:lt-governor-nominees}}"}</li>
-                <li>{"{{TODO:brief-A:auditor-nominees}}"}</li>
-                <li>{"{{TODO:brief-A:chittenden-se-senate-nominees}}"}</li>
-                <li>{"{{TODO:brief-A:county-nominees}}"}</li>
-                <li>{"{{TODO:brief-B:bartlett-bay-bond-result}}"}</li>
+                <li><strong>Governor:</strong> Amanda Janoo won the Democratic primary; Phil Scott won the Republican primary.</li>
+                <li><strong>Lt. Governor:</strong> Molly Gray (Democratic) and John S. Rodgers (Republican).</li>
+                <li><strong>U.S. House:</strong> Becca Balint (Democratic) and Gerald Malloy (Republican).</li>
+                <li>
+                  <strong>Treasurer, Secretary of State, Auditor, Attorney General:</strong> Mike Pieciak, Sarah Copeland
+                  Hanzas, Tim Ashe, and Charity R. Clark won the Democratic primaries. H. Brooke Paige won all four
+                  Republican primaries, then withdrew from three; the Republican nominees for those are now Lynn LaFleur
+                  (Treasurer), Ivar Kronick (Auditor), and Edwin Howell Kemon (Attorney General). Zachary Hampl
+                  (Treasurer) and Rachel Shaw (Secretary of State) won the Progressive primaries.
+                </li>
+                <li>
+                  <strong>State Senate, Chittenden SE:</strong> Democrats nominated Thomas Chittenden, Virginia
+                  &ldquo;Ginny&rdquo; Lyons, and Kesha Ram Hinsdale; Republicans nominated Bruce Roy, Javen Sears, and
+                  Rohan St Marthe (as a write-in).
+                </li>
+                <li>
+                  <strong>State House:</strong> none of South Burlington&apos;s House primaries was contested. Nominees:
+                  Democrats Bridget Burkhardt, Emilie Krasnow, Kate Nugent, Brian Minier, and Martin J. LaLonde, plus
+                  Republican Mitchel Cypes in Chittenden-8.
+                </li>
+                <li>
+                  <strong>County:</strong> Democratic primaries went to Sarah F. George (State&apos;s Attorney), Daniel
+                  Gamelin (Sheriff), Amy Payne (High Bailiff), Connie Cain Ramsey and Anne Nichols Williams (Assistant
+                  Judges), and Gregory J. Glennon (Probate Judge). Several also won Republican nominations by write-in.
+                </li>
+                <li>
+                  <strong>Bartlett Bay bond:</strong> approved, {fmt(bond.votesYes)} yes to {fmt(bond.votesNo)} no (
+                  <a href={CITY_PRIMARY_RESULTS} target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">City of South Burlington</a>).
+                </li>
               </ul>
+              <p className="text-xs text-warmgray-600 mt-3">
+                Source:{" "}
+                <a href={SOS_RESULTS} target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-700">
+                  Vermont Secretary of State official results
+                </a>{" "}
+                (canvass dated August 17, 2026).
+              </p>
             </div>
             <Link
               href="/primary-results"
@@ -243,38 +297,6 @@ export default function Home() {
               <p className="text-warmgray-600 text-sm mt-2">
                 Primary results and the archived primary guide are still here if you want to look back.
               </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Candidate Forums (Town Meeting TV) */}
-        <div className="bg-white rounded-2xl p-6 sm:p-7 mb-8 border-2 border-sage-200 shadow-soft animate-fade-in-delay-1">
-          <div className="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-5">
-            <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-sage-500 to-sage-600 rounded-xl flex items-center justify-center text-white">
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <div className="flex-1">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-semibold text-sage-700 uppercase tracking-wide">Resource</span>
-              </div>
-              <h2 className="font-display text-xl sm:text-2xl font-bold text-warmgray-800 mb-1">Watch the candidate forums</h2>
-              <p className="text-warmgray-700 text-sm sm:text-base leading-relaxed mb-2">
-                See the candidates in their own words. {"{{TODO:brief-E:general-candidate-forums}}"}
-              </p>
-              <p className="text-warmgray-600 text-xs leading-relaxed mb-4">
-                Video is courtesy of <a href="https://www.cctv.org" target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">Town Meeting TV</a>. Town Meeting TV is Chittenden County&apos;s regional government access TV channel.
-              </p>
-              <a
-                href="https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-sage-500 hover:bg-sage-600 text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
-              >
-                Watch on YouTube
-                <ArrowRightIcon />
-              </a>
             </div>
           </div>
         </div>
@@ -325,11 +347,18 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>New: <Link href="/primary-results" className="text-sage-600 hover:text-sage-800 underline">August 11 primary results</Link></strong>, statewide and in South Burlington, plus the Bartlett Bay bond. {"{{TODO:brief-A:results-headline}}"}</span>
+              <span><strong>New: <Link href="/primary-results" className="text-sage-600 hover:text-sage-800 underline">August 11 primary results</Link></strong>, statewide and in South Burlington, plus the Bartlett Bay bond &mdash; now the official canvass figures, with South Burlington&apos;s own numbers for every race.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span>{"{{TODO:brief-C:general-ballot-changes-since-primary}}"}</span>
+              <span>
+                <strong>The November ballot is set</strong>, per the{" "}
+                <a href={generalRacesData.candidateSource.url} target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">Secretary of State&apos;s candidate list</a>.
+                Besides the party nominees, independents Phoenix K. Altair, Adam Ortiz, Suzanne &ldquo;Suz&rdquo; Seymour, and
+                Ryan P. Walton are running for U.S. House, Brian Judd for Governor, and Sean Miller for High Bailiff. Republicans
+                named Lynn LaFleur, Ivar Kronick, Edwin Howell Kemon, and Jace Laquerre after primary nominees withdrew. Every
+                race is on the <Link href="/general" className="text-sage-600 hover:text-sage-800 underline">general election guide</Link>.
+              </span>
             </li>
           </ul>
           <details className="group mt-3">
@@ -359,7 +388,7 @@ export default function Home() {
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
-              <span><strong>Auditor:</strong> open seat — Doug Hoffer is retiring. The Democratic primary is now a two-way race between Tim Ashe and Nick Graeter; Dan Towle ended his campaign but stays on the ballot. H. Brooke Paige is the lone Republican.</span>
+              <span><strong>Auditor:</strong> open seat. The Democratic primary is now a two-way race between Tim Ashe and Nicholas Graeter; Dan Towle ended his campaign but stays on the ballot. H. Brooke Paige is the lone Republican.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sage-500 flex-shrink-0" />
@@ -407,7 +436,24 @@ export default function Home() {
                         item.event
                       )}
                     </p>
-                    {item.note && <p className="text-warmgray-600 text-xs mt-1">{item.note}</p>}
+                    {item.note && (
+                      <p className="text-warmgray-600 text-xs mt-1">
+                        {item.note}
+                        {item.sources && (
+                          <>
+                            {" "}Source:{" "}
+                            {item.sources.map((src, k) => (
+                              <span key={src.url}>
+                                {k > 0 && " · "}
+                                <a href={src.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-700">
+                                  {src.label}
+                                </a>
+                              </span>
+                            ))}
+                          </>
+                        )}
+                      </p>
+                    )}
                   </li>
                 );
               })}
@@ -424,7 +470,7 @@ export default function Home() {
             <div className="flex-1">
               <h3 className="font-display text-lg font-bold text-warmgray-800 mb-1">New on the November ballot: Justices of the Peace</h3>
               <p className="text-warmgray-700 text-sm leading-relaxed">
-                They weren&apos;t on the August ballot — JPs are elected in November. If you&apos;ve never been sure what a JP does, you&apos;re in good company; we explain it on the <Link href="/general#justices-of-the-peace" className="text-sage-700 hover:text-sage-900 underline">general election guide</Link>.
+                They weren&apos;t on the August ballot — JPs are elected in November. South Burlington has {generalRacesData.justicesOfThePeace.candidates.length} candidates for {generalRacesData.justicesOfThePeace.seats} seats this year. If you&apos;ve never been sure what a JP does, you&apos;re in good company; we point you to the official answer on the <Link href="/general#justices-of-the-peace" className="text-sage-700 hover:text-sage-900 underline">general election guide</Link>.
               </p>
             </div>
           </div>

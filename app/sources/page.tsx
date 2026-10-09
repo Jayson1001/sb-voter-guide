@@ -25,6 +25,26 @@ const staticSourceCategories = [
     ],
   },
   {
+    category: 'November 3, 2026 General Election',
+    sources: [
+      { title: 'Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)', url: 'https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx' },
+      { title: 'City of South Burlington — Nov 3 sample ballot, Chittenden-8 (PDF)', url: 'https://www.southburlingtonvt.gov/DocumentCenter/View/6118/SOUTH_BURLINGTON-SAMPLE-District-8-PDF' },
+      { title: 'City of South Burlington — Nov 3 sample ballot, Chittenden-9 (PDF)', url: 'https://www.southburlingtonvt.gov/DocumentCenter/View/6119/SOUTH_BURLINGTON-SAMPLE-District-9-PDF' },
+      { title: 'City of South Burlington — Nov 3 sample ballot, Chittenden-10 (PDF)', url: 'https://www.southburlingtonvt.gov/DocumentCenter/View/6120/SOUTH_BURLINGTON-SAMPLE-District-10-PDF' },
+      { title: 'City of South Burlington — Nov 3 sample ballot, Chittenden-11 (PDF)', url: 'https://www.southburlingtonvt.gov/DocumentCenter/View/6121/SOUTH_BURLINGTON-SAMPLE-District-11-PDF' },
+      { title: 'City of South Burlington — Nov 3 sample ballot, Chittenden-12 (PDF)', url: 'https://www.southburlingtonvt.gov/DocumentCenter/View/6122/SOUTH_BURLINGTON-SAMPLE-District-12-PDF' },
+      { title: 'City of South Burlington — Elections & Voting (polling places, early voting, drop box)', url: 'https://www.southburlingtonvt.gov/211/Elections-Voting' },
+      { title: 'Vermont Secretary of State — Early & absentee voting', url: 'https://sos.vermont.gov/elections/voters/early-absentee-voting/' },
+      { title: 'Vermont Secretary of State — Sept 3, 2026 release on general-election ballot mailing', url: 'https://sos.vermont.gov/node/1246' },
+      { title: 'Vermont Secretary of State — Voter registration', url: 'https://sos.vermont.gov/elections/voters/registration/' },
+      { title: 'Vermont Secretary of State — Justice of the Peace Guide (PDF)', url: 'https://outside.vermont.gov/dept/sos/Elections%20Division/town%20clerks%20and%20local%20elections/vt-jp-guide.pdf' },
+      { title: 'Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)', url: 'https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4' },
+      { title: 'Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)', url: 'https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf' },
+      { title: '17 V.S.A. § 2592 — Canvassing committees', url: 'https://legislature.vermont.gov/statutes/section/17/051/02592' },
+      { title: '17 V.S.A. § 2602 — Recounts', url: 'https://legislature.vermont.gov/statutes/section/17/051/02602' },
+    ],
+  },
+  {
     category: 'Official South Burlington',
     sources: [
       { title: 'South Burlington City Clerk — Elections & Voting', url: 'https://www.southburlingtonvt.gov/departments/city_clerk/elections_and_voting.php' },
@@ -35,6 +55,7 @@ const staticSourceCategories = [
   {
     category: 'August 11 City Ballot Item — Bartlett Bay Wastewater Bond',
     sources: [
+      { title: 'City of South Burlington — August 11, 2026 Vermont Primary Results (official bond count)', url: 'https://www.southburlingtonvt.gov/716/August-11-2026-Vermont-Primary-Results' },
       { title: 'City of South Burlington — Bartlett Bay WWTF Upgrade Project (official project page & videos)', url: 'https://www.southburlingtonvt.gov/705/Bartlett-Bay-WWTF-Upgrade-Project' },
       { title: 'The Other Paper — South Burlington coverage (Liberty Darr, June 25 & May 2026 wastewater bond reports)', url: 'https://www.vtcng.com/otherpapersbvt/' },
       { title: 'WCAX — "Costs climb for South Burlington wastewater facility upgrades" (June 23, 2026)', url: 'https://www.wcax.com/2026/06/23/costs-climb-south-burlington-wastewater-facility-upgrades/' },
