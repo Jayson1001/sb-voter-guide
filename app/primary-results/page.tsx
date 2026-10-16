@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import racesData from "@/data/races.json";
 import resultsData from "@/data/primary-results.json";
-import { partyColors } from "@/lib/raceMeta";
+import { partyChipClass } from "@/lib/raceMeta";
 
 export const metadata: Metadata = {
   title: "August 11 Primary Results — South Burlington Voter Guide",
@@ -102,13 +102,6 @@ type PrimaryResults = {
 
 const results = resultsData as unknown as PrimaryResults;
 
-// Ballot name ("Democratic") -> the party key used for chip colors ("Democrat").
-const ballotToParty: Record<string, string> = {
-  Democratic: "Democrat",
-  Republican: "Republican",
-  Progressive: "Progressive",
-};
-
 const fmt = (n: number | null | undefined) => (n == null ? "—" : n.toLocaleString("en-US"));
 const pct = (n: number | null | undefined) => (n == null ? "—" : `${n.toFixed(2)}%`);
 const fmtDate = (iso: string | null) =>
@@ -183,8 +176,6 @@ const ExternalLinkIcon = () => (
 // ---------------------------------------------------------------------------
 
 function ContestTable({ race, contest }: { race: RaceResult; contest: Contest }) {
-  const partyKey = ballotToParty[contest.party] || contest.party;
-  const chip = partyColors[partyKey] || "bg-warmgray-50 text-warmgray-600 border-warmgray-100";
   const col = scopeColumn(race);
   const has = (x?: { votesStatewide: number | null; votesSB: number | null }) =>
     !!x && (x.votesStatewide != null || x.votesSB != null);
@@ -197,7 +188,7 @@ function ContestTable({ race, contest }: { race: RaceResult; contest: Contest })
   return (
     <div className="mt-4">
       <div className="flex flex-wrap items-center gap-2 mb-2">
-        <span className={`text-xs px-2 py-0.5 rounded-full border font-medium ${chip}`}>
+        <span className={`text-xs px-2 py-0.5 rounded-full border font-medium ${partyChipClass(contest.party)}`}>
           {contest.party} ballot
         </span>
         {contest.seats > 1 && (

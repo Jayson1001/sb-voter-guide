@@ -1,4 +1,4 @@
-import { ballotLabelClass, ballotLabelTitle } from "@/lib/raceMeta";
+import { partyChipClass, ballotLabelTitle } from "@/lib/raceMeta";
 import generalRaces from "@/data/general-races.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
 
@@ -56,7 +56,7 @@ const numberWords = ["", "ONE", "TWO", "THREE", "FOUR", "FIVE"];
 export function BallotLabelChip({ label }: { label: string }) {
   return (
     <span
-      className={`text-xs px-2 py-0.5 rounded-full border ${ballotLabelClass(label)}`}
+      className={`text-xs px-2 py-0.5 rounded-full border ${partyChipClass(label)}`}
       title={ballotLabelTitle[label]}
     >
       {label}

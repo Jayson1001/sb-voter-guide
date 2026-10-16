@@ -4,7 +4,7 @@ import racesData from "@/data/races.json";
 import votingInfo from "@/data/voting-info.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
 import RaceComparison from "@/components/RaceComparison";
-import { partyColors, statusColors, statusLabels } from "@/lib/raceMeta";
+import { partyChipClass, statusColors, statusLabels } from "@/lib/raceMeta";
 
 export const metadata: Metadata = {
   title: "August 11 Primary Guide (past election) — South Burlington Voter Guide",
@@ -150,7 +150,7 @@ function RaceCard({ race }: { race: any }) {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <span className="font-medium text-warmgray-800 text-sm">{incumbent.name}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[incumbent.party] || 'bg-warmgray-50 text-warmgray-600 border-warmgray-100'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyChipClass(incumbent.party)}`}>
                         {incumbent.party}
                       </span>
                     </div>
@@ -201,7 +201,7 @@ function RaceCard({ race }: { race: any }) {
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 mb-0.5">
                       <span className="font-medium text-warmgray-800 text-sm">{candidate.name}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyColors[candidate.party] || 'bg-warmgray-50 text-warmgray-600 border-warmgray-100'}`}>
+                      <span className={`text-xs px-2 py-0.5 rounded-full border ${partyChipClass(candidate.party)}`}>
                         {candidate.party}
                       </span>
                       {candidate.announcedDate && (
