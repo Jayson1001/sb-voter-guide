@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07",
+  "lastUpdated": "2026-10-08",
   "electionDate": "2026-11-03",
   "measures": [
     {
@@ -10,27 +10,23 @@
       "type": "Constitutional Amendment",
       "status": "confirmed",
       "electionDate": "2026-11-03",
-      "proposedConstitutionalText": "That employees have the right to organize and join a labor organization for the purpose of collectively bargaining with their employers, and to protect their economic welfare and safety in the workplace. No law shall be enacted that interferes with, negates, or diminishes these rights.",
-      "plainLanguageSummary": "Proposal 3 would add workers' rights to organize unions and collectively bargain to the Vermont Constitution. It would also make it unconstitutional for Vermont to pass 'right-to-work' laws — laws that allow workers in a unionized workplace to opt out of paying union dues, which can weaken unions over time.",
+      "proposedConstitutionalText": "That employees have a right to organize or join a labor organization for the purpose of collectively bargaining with their employer through an exclusive representative of their choosing for the purpose of negotiating wages, hours, and working conditions and to protect their economic welfare and safety in the workplace.",
+      "plainLanguageSummary": "Proposal 3 would add workers' rights to organize unions and collectively bargain to the Vermont Constitution. It would also bar laws that prohibit agreements requiring union membership as a condition of employment — the kind of law usually called 'right-to-work,' which lets workers in a unionized workplace opt out of paying union dues.",
       "whatItDoes": [
-        "Establishes a constitutional right for all Vermont workers to join a union",
-        "Protects workers' right to collectively bargain wages, hours, and working conditions",
-        "Bans Vermont from passing 'right-to-work' legislation in the future",
-        "Applies to all employers operating in Vermont",
-        "Cannot be undone by simple legislation — only by a future constitutional amendment"
+        "Adds a right for employees to organize or join a labor organization to collectively bargain with their employer, through an exclusive representative of their choosing",
+        "Covers negotiating wages, hours, and working conditions, and protecting economic welfare and safety in the workplace",
+        "Bars laws that interfere with, negate, or diminish employees' right to collectively bargain",
+        "Bars laws that prohibit employer–union agreements requiring union membership as a condition of employment",
+        "As part of the constitution, it could be changed only by a future constitutional amendment"
       ],
       "whatItDoesNot": [
-        "Does not require workers to join unions",
-        "Does not force employers to agree to specific union demands",
-        "Does not change existing labor laws (provides constitutional backing for them)",
-        "Does not apply to federal workplaces or federal employees"
+        "The text doesn't itself require anyone to join a union — but it does bar laws that would prohibit employer–union agreements requiring membership as a condition of employment",
+        "Does not force employers to agree to specific union demands"
       ],
       "argumentsDisclaimer": "The following arguments are drawn from positions stated by supporters and opponents of this measure. They do not represent the views of this voter guide.",
       "arguments": {
         "forLabel": "Arguments made by supporters",
         "for": [
-          "Would constitutionally protect workers' right to organize and bargain — currently only protected by statute",
-          "Would make Vermont one of only a handful of states to constitutionally protect collective bargaining",
           "Supporters argue constitutional protection is harder to undo than statutory protection",
           "Supporters cite research suggesting right-to-work policies are associated with lower wages",
           "Supporters say Vermont's union workforce has contributed to economic stability in the state"
@@ -39,17 +35,32 @@
         "against": [
           "Opponents argue the amendment could deter businesses from locating in Vermont",
           "Opponents argue constitutional amendments should address fundamental rights, not labor policy",
-          "Opponents argue it could reduce flexibility for future labor law reform",
           "Opponents argue right-to-work laws give individual workers freedom of choice in union participation"
         ]
       },
       "legislativeHistory": [
-        { "date": "April 2024", "action": "Passed Vermont Senate unanimously" },
-        { "date": "May 2024", "action": "Passed Vermont House with bipartisan support" },
-        { "date": "March 2025", "action": "Passed Vermont Senate again, unanimously (second required passage)" },
-        { "date": "May 1, 2025", "action": "Passed Vermont House — certified for November 2026 ballot" }
+        {
+          "date": "April 2024",
+          "action": "Passed Vermont Senate unanimously"
+        },
+        {
+          "date": "May 2024",
+          "action": "Passed Vermont House with bipartisan support"
+        },
+        {
+          "date": "March 2025",
+          "action": "Passed Vermont Senate again, unanimously (second required passage)"
+        },
+        {
+          "date": "May 1, 2025",
+          "action": "Passed Vermont House — certified for November 2026 ballot"
+        },
+        {
+          "date": "July 28, 2026",
+          "action": "Formally proclaimed by Gov. Phil Scott for the November 3, 2026 ballot"
+        }
       ],
-      "context": "Vermont is not currently a right-to-work state. But constitutional protection would prevent any future legislature from enacting such laws. If passed, Vermont would join Illinois (which banned right-to-work via constitutional amendment in 2022) as one of only two states with such explicit constitutional protection.",
+      "context": "Because this would be part of the Vermont Constitution, a future legislature couldn't change it by passing an ordinary law; it would take another constitutional amendment.",
       "sources": [
         {
           "title": "Vermont Proposal 3 — Ballotpedia",
@@ -58,6 +69,18 @@
         {
           "title": "Vermont Legislature — PR.3 Status",
           "url": "https://legislature.vermont.gov/bill/status/2026/PR.3"
+        },
+        {
+          "title": "Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)",
+          "url": "https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4"
+        },
+        {
+          "title": "Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)",
+          "url": "https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf"
+        },
+        {
+          "title": "City of South Burlington — November 3, 2026 sample ballot (Chittenden-8, PDF)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6118/SOUTH_BURLINGTON-SAMPLE-District-8-PDF"
         }
       ]
     },
@@ -67,10 +90,9 @@
       "title": "Equal Protection of Law",
       "subtitle": "Constitutional amendment adding an explicit equal rights clause to the Vermont Constitution",
       "type": "Constitutional Amendment",
-      "status": "on-track",
-      "statusNote": "Pending final passage in the 2025–26 legislative session; Senate Judiciary Committee approved February 2026",
+      "status": "confirmed",
       "electionDate": "2026-11-03",
-      "proposedConstitutionalText": "That the people are guaranteed equal protection under the law. The State shall not deny equal treatment and respect under the law on account of a person's race, ethnicity, sex, religion, disability, sexual orientation, gender identity, gender expression, or national origin.",
+      "proposedConstitutionalText": "That the people are guaranteed equal protection under the law. The State shall not deny equal treatment under the law on account of a person's race, ethnicity, sex, religion, disability, sexual orientation, gender identity, gender expression, or national origin.",
       "plainLanguageSummary": "Proposal 4 would add an explicit equal protection clause to the Vermont Constitution, listing nine protected characteristics. Vermont currently has broad general equality language in the constitution but no specific equal protection clause like the one in the 14th Amendment to the U.S. Constitution.",
       "protectedCharacteristics": [
         "Race",
@@ -84,11 +106,9 @@
         "National origin"
       ],
       "whatItDoes": [
-        "Creates an explicit equal protection clause in the Vermont Constitution",
-        "Prohibits the state from denying equal treatment based on nine protected characteristics",
-        "Provides a stronger legal basis for challenging discriminatory laws in Vermont courts",
-        "Applies independent of federal constitutional protections",
-        "Codifies protections that could be at risk if federal equal protection doctrine changes"
+        "Guarantees the people equal protection under the law",
+        "Bars the State from denying equal treatment under the law on account of race, ethnicity, sex, religion, disability, sexual orientation, gender identity, gender expression, or national origin",
+        "States that the Article does not prevent measures intended to provide equality of treatment and opportunity for members of groups that have historically been subject to discrimination"
       ],
       "whatItDoesNot": [
         "Does not change existing state anti-discrimination laws",
@@ -100,25 +120,34 @@
       "arguments": {
         "forLabel": "Arguments made by supporters",
         "for": [
-          "Vermont's constitution does not currently contain an explicit equal protection clause",
           "Supporters say state-level constitutional protection would be independent of federal court decisions",
-          "Passed the legislature 28-0 in the Senate and 140-4 in the House",
           "Supporters argue the amendment would strengthen legal protections for the nine listed characteristics",
           "Supporters say explicit constitutional language clarifies rights that may currently require legal interpretation"
         ],
         "againstLabel": "Arguments made by opponents",
         "against": [
-          "Opponents note Vermont already has statutory anti-discrimination laws covering these characteristics",
+          "Opponents argue Vermont's existing statutory anti-discrimination laws already cover these characteristics",
           "Opponents argue constitutional amendments could produce unintended legal interpretations by courts",
-          "Opponents argue constitutional amendments should not address issues already covered by statute",
-          "Opponents note potential for litigation over broad terms like 'equal treatment'"
+          "Opponents point to the potential for litigation over broad terms like 'equal treatment'"
         ]
       },
       "legislativeHistory": [
-        { "date": "April 23, 2024", "action": "Passed Vermont Senate — 28 to 0" },
-        { "date": "May 8, 2024", "action": "Passed Vermont House — 140 to 4" },
-        { "date": "February 2026", "action": "Senate Judiciary Committee approved second passage" },
-        { "date": "Spring 2026", "action": "Expected to receive final legislative approval and be certified for the November ballot" }
+        {
+          "date": "April 23, 2024",
+          "action": "Passed Vermont Senate — 28 to 0"
+        },
+        {
+          "date": "May 8, 2024",
+          "action": "Passed Vermont House — 140 to 4"
+        },
+        {
+          "date": "February 2026",
+          "action": "Senate Judiciary Committee approved second passage"
+        },
+        {
+          "date": "July 28, 2026",
+          "action": "Formally proclaimed by Gov. Phil Scott for the November 3, 2026 ballot"
+        }
       ],
       "context": "Unlike the U.S. Constitution's 14th Amendment (which guarantees equal protection at the federal level), Vermont's current constitution has no specific equal protection clause. Vermont does have Article 7 (government exists for the common benefit) and statutory anti-discrimination protections — PR.4 would add an explicit constitutional equal protection clause.",
       "sources": [
@@ -133,8 +162,56 @@
         {
           "title": "PR.4 as adopted by the Senate (PDF)",
           "url": "https://legislature.vermont.gov/Documents/2024/Docs/BILLS/PR0004/PR0004%20As%20adopted%20by%20the%20Senate%20Official.pdf"
+        },
+        {
+          "title": "Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)",
+          "url": "https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4"
+        },
+        {
+          "title": "Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)",
+          "url": "https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf"
+        },
+        {
+          "title": "City of South Burlington — November 3, 2026 sample ballot (Chittenden-8, PDF)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6118/SOUTH_BURLINGTON-SAMPLE-District-8-PDF"
         }
       ]
     }
-  ]
+  ],
+  "sampleBallots": [
+    {
+      "district": "Chittenden-8",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6118/SOUTH_BURLINGTON-SAMPLE-District-8-PDF"
+    },
+    {
+      "district": "Chittenden-9",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6119/SOUTH_BURLINGTON-SAMPLE-District-9-PDF"
+    },
+    {
+      "district": "Chittenden-10",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6120/SOUTH_BURLINGTON-SAMPLE-District-10-PDF"
+    },
+    {
+      "district": "Chittenden-11",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6121/SOUTH_BURLINGTON-SAMPLE-District-11-PDF"
+    },
+    {
+      "district": "Chittenden-12",
+      "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6122/SOUTH_BURLINGTON-SAMPLE-District-12-PDF"
+    }
+  ],
+  "ballotStatus": {
+    "note": "Both proposals are confirmed on the November 3, 2026 ballot. Governor Phil Scott formally proclaimed them on July 28, 2026, and they appear on every South Burlington sample ballot.",
+    "sources": [
+      {
+        "title": "Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)",
+        "url": "https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4"
+      },
+      {
+        "title": "Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)",
+        "url": "https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf"
+      }
+    ]
+  },
+  "ballotWordingNote": "The ballot prints the full official text of each proposal. Both are printed as adding an \"Article 23\" to the Vermont Constitution — Proposal 3 as \"Article 23. [Right to collectively bargain]\" and Proposal 4 as \"Article 23. [Equality of rights]\". For the exact wording, read your district's sample ballot."
 }

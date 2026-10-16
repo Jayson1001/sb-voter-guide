@@ -1,0 +1,2142 @@
+{
+  "status": "official",
+  "lastUpdated": "2026-10-08",
+  "election": {
+    "name": "Vermont Primary Election",
+    "date": "2026-08-11",
+    "southBurlington": {
+      "ballotsCast": 4671,
+      "registeredVoters": 16271,
+      "turnoutPct": 28.71,
+      "ballotsByParty": {
+        "Democratic": 4212,
+        "Progressive": 10,
+        "Republican": 449
+      }
+    },
+    "statewide": {
+      "ballotsCast": 112447,
+      "registeredVoters": 503861,
+      "turnoutPct": 22.32
+    },
+    "summary": null,
+    "sources": [
+      {
+        "title": "Vermont Secretary of State — Elections results & data",
+        "url": "https://sos.vermont.gov/elections/election-info-resources/elections-results-data"
+      },
+      {
+        "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+        "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+      },
+      {
+        "title": "Vermont Secretary of State — 2026 August Primary official canvass, town by town (dated Aug 17, 2026)",
+        "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-official-canvass-town-by-town.pdf"
+      },
+      {
+        "title": "Vermont Secretary of State — 2026 August Primary voter turnout report (combined)",
+        "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-voter-turnout-report-combined.pdf"
+      },
+      {
+        "title": "Vermont Secretary of State — 2026 August Primary voter turnout report (by party)",
+        "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-voter-turnout-report-by-party.pdf"
+      }
+    ],
+    "canvassDate": "2026-08-17"
+  },
+  "races": {
+    "governor": {
+      "office": "Governor of Vermont",
+      "shortName": "Governor",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 177
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 551
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Amanda Janoo",
+              "party": "Democrat",
+              "votesStatewide": 39614,
+              "pctStatewide": 44.56,
+              "votesSB": 1668,
+              "pctSB": 39.6,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Aly Richards",
+              "party": "Democrat",
+              "votesStatewide": 37570,
+              "pctStatewide": 42.26,
+              "votesSB": 1815,
+              "pctSB": 43.09,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 6
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 4
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 2
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 18
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Phil Scott",
+              "party": "Republican",
+              "votesStatewide": 21466,
+              "pctStatewide": 93.06,
+              "votesSB": 429,
+              "pctSB": 95.55,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary official canvass, town by town (dated Aug 17, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-official-canvass-town-by-town.pdf"
+        }
+      ],
+      "sbUnofficial": false
+    },
+    "lt-governor": {
+      "office": "Lieutenant Governor of Vermont",
+      "shortName": "Lt. Governor",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 31
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 301
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Molly Gray",
+              "party": "Democrat",
+              "votesStatewide": 50884,
+              "pctStatewide": 57.23,
+              "votesSB": 2229,
+              "pctSB": 52.92,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Ryan McLaren",
+              "party": "Democrat",
+              "votesStatewide": 23111,
+              "pctStatewide": 25.99,
+              "votesSB": 1129,
+              "pctSB": 26.8,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Esther Charlestin",
+              "party": "Democrat",
+              "votesStatewide": 9135,
+              "pctStatewide": 10.27,
+              "votesSB": 519,
+              "pctSB": 12.32,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 3
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "John S. Rodgers",
+              "party": "Republican",
+              "votesStatewide": 20173,
+              "pctStatewide": 87.45,
+              "votesSB": 380,
+              "pctSB": 84.63,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary official canvass, town by town (dated Aug 17, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-official-canvass-town-by-town.pdf"
+        }
+      ],
+      "sbUnofficial": false
+    },
+    "attorney-general": {
+      "office": "Attorney General",
+      "shortName": "Attorney General",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Charity R. Clark",
+              "party": "Democrat",
+              "votesStatewide": 72943,
+              "pctStatewide": 82.05,
+              "votesSB": 3280,
+              "pctSB": 77.87,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 1
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 9
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "H. Brooke Paige",
+              "party": "Republican",
+              "votesStatewide": 16687,
+              "pctStatewide": 72.34,
+              "votesSB": 297,
+              "pctSB": 66.15,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": "H. Brooke Paige later withdrew from this nomination; Edwin Howell Kemon is the Republican on the November 3 ballot."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary official canvass, town by town (dated Aug 17, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-official-canvass-town-by-town.pdf"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ],
+      "sbUnofficial": false
+    },
+    "secretary-of-state": {
+      "office": "Secretary of State",
+      "shortName": "Secretary of State",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Sarah Copeland Hanzas",
+              "party": "Democrat",
+              "votesStatewide": 72355,
+              "pctStatewide": 81.38,
+              "votesSB": 3253,
+              "pctSB": 77.23,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Rachel Shaw",
+              "party": "Progressive",
+              "votesStatewide": 320,
+              "pctStatewide": 67.51,
+              "votesSB": 3,
+              "pctSB": 30.0,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "H. Brooke Paige",
+              "party": "Republican",
+              "votesStatewide": 17542,
+              "pctStatewide": 76.05,
+              "votesSB": 323,
+              "pctSB": 71.94,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary official canvass, town by town (dated Aug 17, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-official-canvass-town-by-town.pdf"
+        }
+      ],
+      "sbUnofficial": false
+    },
+    "treasurer": {
+      "office": "State Treasurer",
+      "shortName": "State Treasurer",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Mike Pieciak",
+              "party": "Democrat",
+              "votesStatewide": 75777,
+              "pctStatewide": 85.23,
+              "votesSB": 3485,
+              "pctSB": 82.74,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Zachary Hampl",
+              "party": "Progressive",
+              "votesStatewide": 289,
+              "pctStatewide": 60.97,
+              "votesSB": 4,
+              "pctSB": 40.0,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "H. Brooke Paige",
+              "party": "Republican",
+              "votesStatewide": 17968,
+              "pctStatewide": 77.89,
+              "votesSB": 326,
+              "pctSB": 72.61,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": "H. Brooke Paige later withdrew from this nomination; Lynn LaFleur is the Republican on the November 3 ballot."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary official canvass, town by town (dated Aug 17, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-official-canvass-town-by-town.pdf"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ],
+      "sbUnofficial": false
+    },
+    "auditor": {
+      "office": "Auditor of Accounts",
+      "shortName": "State Auditor",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 14
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 680
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Tim Ashe",
+              "party": "Democrat",
+              "votesStatewide": 53082,
+              "pctStatewide": 59.71,
+              "votesSB": 2969,
+              "pctSB": 70.49,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Nicholas Graeter",
+              "party": "Democrat",
+              "votesStatewide": 8897,
+              "pctStatewide": 10.01,
+              "votesSB": 358,
+              "pctSB": 8.5,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Dan Towle",
+              "party": "Democrat",
+              "votesStatewide": 8532,
+              "pctStatewide": 9.6,
+              "votesSB": 189,
+              "pctSB": 4.49,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "H. Brooke Paige",
+              "party": "Republican",
+              "votesStatewide": 16870,
+              "pctStatewide": 73.13,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": "H. Brooke Paige later withdrew from this nomination; Ivar Kronick is the Republican on the November 3 ballot."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary official canvass, town by town (dated Aug 17, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-official-canvass-town-by-town.pdf"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ],
+      "sbUnofficial": false
+    },
+    "us-house": {
+      "office": "U.S. Representative, Vermont At-Large",
+      "shortName": "U.S. House",
+      "seats": 1,
+      "scopeLabel": "Statewide",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 70
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 508
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Becca Balint",
+              "party": "Democrat",
+              "votesStatewide": 79679,
+              "pctStatewide": 89.62,
+              "votesSB": 3633,
+              "pctSB": 86.25,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 6
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 4
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": 7
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": 68
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Gerald Malloy",
+              "party": "Republican",
+              "votesStatewide": 15662,
+              "pctStatewide": 67.9,
+              "votesSB": 308,
+              "pctSB": 68.6,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Mark Coester",
+              "party": "Republican",
+              "votesStatewide": 4523,
+              "pctStatewide": 19.61,
+              "votesSB": 65,
+              "pctSB": 14.48,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary official canvass, town by town (dated Aug 17, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-official-canvass-town-by-town.pdf"
+        }
+      ],
+      "sbUnofficial": false
+    },
+    "chittenden-se-senate": {
+      "office": "Vermont State Senate",
+      "shortName": "State Senate",
+      "district": "Chittenden Southeast",
+      "seats": 3,
+      "scopeLabel": "Chittenden Southeast district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 3,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Thomas Chittenden",
+              "party": "Democrat",
+              "votesStatewide": 9332,
+              "pctStatewide": 19.38,
+              "votesSB": 2705,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Virginia \"Ginny\" Lyons",
+              "party": "Democrat",
+              "votesStatewide": 9160,
+              "pctStatewide": 19.03,
+              "votesSB": 2325,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Kesha Ram Hinsdale",
+              "party": "Democrat",
+              "votesStatewide": 8428,
+              "pctStatewide": 17.51,
+              "votesSB": 2189,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Elizabeth Ann Hunt",
+              "party": "Democrat",
+              "votesStatewide": 6571,
+              "pctStatewide": 13.65,
+              "votesSB": 1542,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Joanna Grossman",
+              "party": "Democrat",
+              "votesStatewide": 5131,
+              "pctStatewide": 10.66,
+              "votesSB": 1430,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 3,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 3,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Bruce Roy",
+              "party": "Republican",
+              "votesStatewide": 1187,
+              "pctStatewide": 25.84,
+              "votesSB": 298,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Javen Sears",
+              "party": "Republican",
+              "votesStatewide": 773,
+              "pctStatewide": 16.83,
+              "votesSB": 252,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Rohan St Marthe",
+              "party": "Republican",
+              "votesStatewide": 83,
+              "pctStatewide": 1.81,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": true
+            }
+          ],
+          "note": "Rohan St Marthe won a Republican nomination by write-in; the city's sheet has no South Burlington line for him."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "chittenden-8": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-8",
+      "seats": 1,
+      "scopeLabel": "Chittenden-8 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Bridget Burkhardt",
+              "party": "Democrat",
+              "votesStatewide": 673,
+              "pctStatewide": 66.05,
+              "votesSB": 566,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Mitchel Cypes",
+              "party": "Republican",
+              "votesStatewide": 86,
+              "pctStatewide": 67.19,
+              "votesSB": 66,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        }
+      ],
+      "notes": "Chittenden-8 also includes part of Williston, so the district total is larger than South Burlington's share.",
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary voter turnout report (combined)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-voter-turnout-report-combined.pdf"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "chittenden-9": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-9",
+      "seats": 1,
+      "scopeLabel": "Chittenden-9 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Emilie Krasnow",
+              "party": "Democrat",
+              "votesStatewide": 617,
+              "pctStatewide": 76.36,
+              "votesSB": 617,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "chittenden-10": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-10",
+      "seats": 1,
+      "scopeLabel": "Chittenden-10 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Kate Nugent",
+              "party": "Democrat",
+              "votesStatewide": 556,
+              "pctStatewide": 73.06,
+              "votesSB": 556,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "chittenden-11": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-11",
+      "seats": 1,
+      "scopeLabel": "Chittenden-11 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Brian Minier",
+              "party": "Democrat",
+              "votesStatewide": 473,
+              "pctStatewide": 72.77,
+              "votesSB": 473,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "chittenden-12": {
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-12",
+      "seats": 1,
+      "scopeLabel": "Chittenden-12 district",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Martin J. LaLonde",
+              "party": "Democrat",
+              "votesStatewide": 850,
+              "pctStatewide": 73.47,
+              "votesSB": 850,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "states-attorney": {
+      "office": "State's Attorney",
+      "shortName": "State's Attorney",
+      "district": "Chittenden County",
+      "seats": 1,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Sarah F. George",
+              "party": "Democrat",
+              "votesStatewide": 15932,
+              "pctStatewide": 48.85,
+              "votesSB": 2005,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Bram Kranichfeld",
+              "party": "Democrat",
+              "votesStatewide": 14923,
+              "pctStatewide": 45.76,
+              "votesSB": 2000,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Bram Kranichfeld",
+              "party": "Republican",
+              "votesStatewide": 455,
+              "pctStatewide": 13.23,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": true
+            }
+          ],
+          "note": "Kranichfeld won the Republican nomination by write-in and later withdrew; Jace Laquerre is the Republican on the November 3 ballot."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "sheriff": {
+      "office": "Sheriff",
+      "shortName": "Sheriff",
+      "district": "Chittenden County",
+      "seats": 1,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Daniel Gamelin",
+              "party": "Democrat",
+              "votesStatewide": 15878,
+              "pctStatewide": 48.69,
+              "votesSB": 2161,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Kevin Bloom",
+              "party": "Democrat",
+              "votesStatewide": 12135,
+              "pctStatewide": 37.21,
+              "votesSB": 1536,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Daniel Gamelin",
+              "party": "Republican",
+              "votesStatewide": 743,
+              "pctStatewide": 21.6,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": true
+            }
+          ],
+          "note": "Gamelin also won the Republican nomination by write-in."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "high-bailiff": {
+      "office": "High Bailiff",
+      "shortName": "High Bailiff",
+      "district": "Chittenden County",
+      "seats": 1,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Amy Payne",
+              "party": "Democrat",
+              "votesStatewide": 8603,
+              "pctStatewide": 26.38,
+              "votesSB": 987,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Paul McManus",
+              "party": "Democrat",
+              "votesStatewide": 5249,
+              "pctStatewide": 16.1,
+              "votesSB": 638,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Michael \"Mikey\" Roberts",
+              "party": "Democrat",
+              "votesStatewide": 2584,
+              "pctStatewide": 7.92,
+              "votesSB": 322,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Helaine \"Lainey\" Rappaport",
+              "party": "Democrat",
+              "votesStatewide": 1778,
+              "pctStatewide": 5.45,
+              "votesSB": 217,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            },
+            {
+              "name": "Augustus Barkyoumb",
+              "party": "Democrat",
+              "votesStatewide": 1691,
+              "pctStatewide": 5.19,
+              "votesSB": 187,
+              "pctSB": null,
+              "winner": false,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Paul McManus",
+              "party": "Republican",
+              "votesStatewide": 104,
+              "pctStatewide": 3.02,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": true
+            }
+          ],
+          "note": "McManus won the Republican nomination by write-in."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "assistant-judges": {
+      "office": "Assistant Judges",
+      "shortName": "Assistant Judge",
+      "district": "Chittenden County",
+      "seats": 2,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 2,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Connie Cain Ramsey",
+              "party": "Democrat",
+              "votesStatewide": 19838,
+              "pctStatewide": 30.42,
+              "votesSB": 2554,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            },
+            {
+              "name": "Anne Nichols Williams",
+              "party": "Democrat",
+              "votesStatewide": 19169,
+              "pctStatewide": 29.39,
+              "votesSB": 2445,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 2,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 2,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Connie Cain Ramsey",
+              "party": "Republican",
+              "votesStatewide": 78,
+              "pctStatewide": 1.13,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": true
+            },
+            {
+              "name": "Anne Nichols Williams",
+              "party": "Republican",
+              "votesStatewide": 59,
+              "pctStatewide": 0.86,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": true
+            }
+          ],
+          "note": "Ramsey and Williams also won the Republican nominations by write-in."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    },
+    "probate-judge": {
+      "office": "Probate Judge",
+      "shortName": "Probate Judge",
+      "district": "Chittenden County",
+      "seats": 1,
+      "scopeLabel": "Chittenden County",
+      "contests": [
+        {
+          "party": "Democratic",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Gregory J. Glennon",
+              "party": "Democrat",
+              "votesStatewide": 22830,
+              "pctStatewide": 70.0,
+              "votesSB": 3018,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": false
+            }
+          ],
+          "note": null
+        },
+        {
+          "party": "Progressive",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [],
+          "note": null
+        },
+        {
+          "party": "Republican",
+          "seats": 1,
+          "totalVotesStatewide": null,
+          "totalVotesSB": null,
+          "writeInsOther": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "blanks": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "overvotes": {
+            "votesStatewide": null,
+            "votesSB": null
+          },
+          "candidates": [
+            {
+              "name": "Gregory J. Glennon",
+              "party": "Republican",
+              "votesStatewide": 113,
+              "pctStatewide": 3.28,
+              "votesSB": null,
+              "pctSB": null,
+              "winner": true,
+              "writeIn": true
+            }
+          ],
+          "note": "Glennon also won the Republican nomination by write-in."
+        }
+      ],
+      "notes": null,
+      "sources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "City of South Burlington — Unofficial August 11, 2026 Vermont Primary Results (XLS)",
+          "url": "https://www.southburlingtonvt.gov/DocumentCenter/View/6020"
+        }
+      ],
+      "sbUnofficial": true
+    }
+  },
+  "bond": {
+    "id": "bartlett-bay-bond",
+    "title": "Bartlett Bay wastewater plant bond",
+    "amount": "$16.4 million",
+    "passed": true,
+    "votesYes": 3637,
+    "votesNo": 823,
+    "blank": 57,
+    "totalVotes": 4517,
+    "checklist": 16268,
+    "pctVoted": 27.52,
+    "pctYes": null,
+    "pctNo": null,
+    "byDistrict": [
+      {
+        "district": "Chittenden-8",
+        "yes": 685,
+        "no": 220
+      },
+      {
+        "district": "Chittenden-9",
+        "yes": 690,
+        "no": 137
+      },
+      {
+        "district": "Chittenden-10",
+        "yes": 665,
+        "no": 194
+      },
+      {
+        "district": "Chittenden-11",
+        "yes": 574,
+        "no": 93
+      },
+      {
+        "district": "Chittenden-12",
+        "yes": 1023,
+        "no": 179
+      }
+    ],
+    "note": "Counts are the City of South Burlington's official results for the special city question on the August 11 ballot.",
+    "sources": [
+      {
+        "title": "City of South Burlington — August 11, 2026 Vermont Primary Results",
+        "url": "https://www.southburlingtonvt.gov/716/August-11-2026-Vermont-Primary-Results"
+      }
+    ]
+  }
+}

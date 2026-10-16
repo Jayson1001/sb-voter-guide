@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ballotMeasuresData from "@/data/ballot-measures.json";
+import SampleBallotLinks from "@/components/SampleBallotLinks";
 
 const ArrowLeftIcon = () => (
   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,7 +53,7 @@ export default function BallotMeasuresPage() {
             </span>
             <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">Ballot Measures</h1>
             <p className="text-sage-100 text-base sm:text-lg max-w-2xl">
-              Two proposed amendments to the Vermont Constitution — both referred by the legislature with overwhelming bipartisan support.
+              Two proposed amendments to the Vermont Constitution — both referred to voters by the legislature.
             </p>
           </div>
         </div>
@@ -74,26 +75,44 @@ export default function BallotMeasuresPage() {
               <div className="w-8 h-8 bg-sage-100 rounded-full flex items-center justify-center text-sage-700 font-bold text-sm flex-shrink-0">1</div>
               <div>
                 <p className="font-semibold text-warmgray-700 mb-0.5">Legislature (first session)</p>
-                <p>Both the House and Senate must pass the amendment. Both measures passed with near-unanimous votes in 2023–24.</p>
+                <p>Both the House and Senate must pass the amendment. Both measures first passed in 2024.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 bg-sage-100 rounded-full flex items-center justify-center text-sage-700 font-bold text-sm flex-shrink-0">2</div>
               <div>
                 <p className="font-semibold text-warmgray-700 mb-0.5">Legislature (second session)</p>
-                <p>After an intervening election, the new legislature must pass the amendment again. Both measures are completing this step in 2025–26.</p>
+                <p>After an intervening election, the new legislature must pass the amendment again. Both measures completed this step in 2025–26.</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 bg-sage-100 rounded-full flex items-center justify-center text-sage-700 font-bold text-sm flex-shrink-0">3</div>
               <div>
                 <p className="font-semibold text-warmgray-700 mb-0.5">Voter ratification</p>
-                <p>Vermont voters vote Yes or No on November 3, 2026. A simple majority approves it — and it becomes part of the Vermont Constitution permanently.</p>
+                <p>Vermont voters vote Yes or No on November 3, 2026. A simple majority approves it — and it becomes part of the Vermont Constitution.</p>
               </div>
             </div>
           </div>
           <p className="text-xs text-warmgray-600 mt-4 pt-4 border-t border-warmgray-100">
             Note: Vermont citizens cannot initiate constitutional amendments themselves — all amendments must be referred by the legislature through this two-session process.
+          </p>
+        </div>
+
+        {/* Confirmed on the ballot */}
+        <div className="bg-sage-50 border border-sage-200 rounded-2xl p-5 mb-8 text-sm text-warmgray-700 leading-relaxed">
+          <p>
+            <strong className="text-sage-800">On your November 3 ballot:</strong> {ballotMeasuresData.ballotStatus.note}
+          </p>
+          <p className="text-xs text-warmgray-600 mt-2">
+            Sources:{" "}
+            {ballotMeasuresData.ballotStatus.sources.map((s, i) => (
+              <span key={s.url}>
+                {i > 0 && " · "}
+                <a href={s.url} target="_blank" rel="noopener noreferrer" className="text-sage-700 hover:text-sage-900 underline">
+                  {s.title}
+                </a>
+              </span>
+            ))}
           </p>
         </div>
 
@@ -122,9 +141,6 @@ export default function BallotMeasuresPage() {
                       </svg>
                       {measure.status === 'confirmed' ? 'Confirmed for Nov ballot' : 'On track for Nov ballot'}
                     </span>
-                    {measure.statusNote && measure.status !== 'confirmed' && (
-                      <p className="text-white/70 text-xs mt-1 text-right">{measure.statusNote}</p>
-                    )}
                   </div>
                 </div>
               </div>
@@ -137,8 +153,16 @@ export default function BallotMeasuresPage() {
                 <p className="text-warmgray-600 leading-relaxed">{measure.plainLanguageSummary}</p>
 
                 <div className="mt-4 bg-warmgray-50 rounded-xl p-4">
-                  <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Proposed Constitutional Text</p>
+                  <p className="text-xs font-semibold text-warmgray-600 uppercase tracking-wide mb-2">Key language (excerpt)</p>
                   <p className="text-warmgray-700 text-sm italic leading-relaxed">&ldquo;{measure.proposedConstitutionalText}&rdquo;</p>
+                </div>
+
+                <div className="mt-3 bg-cream-50 border border-warmgray-200 rounded-xl p-4 text-sm text-warmgray-600 leading-relaxed">
+                  <p className="font-semibold text-warmgray-700 mb-1">Exact ballot wording</p>
+                  <p>{ballotMeasuresData.ballotWordingNote}</p>
+                  <p className="mt-2">
+                    Sample ballots (City of South Burlington, PDF): <SampleBallotLinks />
+                  </p>
                 </div>
 
                 {/* Protected characteristics for PR.4 */}

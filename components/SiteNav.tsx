@@ -10,10 +10,10 @@ import { useState } from "react";
 // offers, not just a way to get around. Active page is highlighted.
 
 const navItems: { href: string; label: string; desc: string }[] = [
-  { href: "/primary", label: "Primary", desc: "Who's on your August 11 ballot" },
-  { href: "/general", label: "General", desc: "The November 3 election" },
+  { href: "/general", label: "General", desc: "What's on your November 3 ballot" },
   { href: "/ballot-measures", label: "Ballot Measures", desc: "Proposals 3 & 4, explained" },
   { href: "/how-to-vote", label: "How to Vote", desc: "Register, mail ballots, drop boxes" },
+  { href: "/primary-results", label: "Primary Results", desc: "Who won on August 11" },
   { href: "/sources", label: "Sources", desc: "Where every fact comes from" },
   { href: "/about", label: "About", desc: "Who makes this guide" },
   { href: "/archive", label: "Archive", desc: "March 2026 Town Meeting results" },

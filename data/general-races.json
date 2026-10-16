@@ -1,0 +1,935 @@
+{
+  "lastUpdated": "2026-10-08",
+  "electionDate": "2026-11-03",
+  "candidateSource": {
+    "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+    "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+  },
+  "statewide": [
+    {
+      "id": "governor",
+      "office": "Governor of Vermont",
+      "shortName": "Governor",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Governor is Vermont's chief executive, responsible for managing state government, signing or vetoing legislation, appointing judges and cabinet members, and representing Vermont in national affairs.",
+      "candidates": [
+        {
+          "name": "June Goodband",
+          "town": "Springfield",
+          "ballotLabel": "Peace and Justice",
+          "parties": [
+            "Peace and Justice"
+          ],
+          "bio": "Ran for Governor in 2024 as the Green Mountain Peace and Justice Party candidate.",
+          "website": "https://june4govvt.org"
+        },
+        {
+          "name": "Amanda Janoo",
+          "town": "Burlington",
+          "ballotLabel": "Dem/Prog",
+          "parties": [
+            "Democrat",
+            "Progressive"
+          ],
+          "bio": "An Oxford-trained economist and Strafford native, running for office for the first time.",
+          "notablePositions": [
+            "Proposes publicly funded universal primary care, with the state paying providers directly",
+            "Would fund it with income-tax surcharges on high earners — 2% on income over $250,000 and 8% over $500,000"
+          ],
+          "website": "https://www.janooforvt.com"
+        },
+        {
+          "name": "Brian Judd",
+          "town": "Barre City",
+          "ballotLabel": "Independent",
+          "parties": [
+            "Independent"
+          ]
+        },
+        {
+          "name": "Dean Roy",
+          "town": "Stowe",
+          "ballotLabel": "Freedom and Unity",
+          "parties": [
+            "Freedom and Unity"
+          ],
+          "bio": "Stowe student, Freedom and Unity Party nominee.",
+          "notablePositions": [
+            "Helped form the Freedom and Unity Party in 2026"
+          ],
+          "website": "https://deanroyforgovernor.my.canva.site"
+        },
+        {
+          "name": "Phil Scott",
+          "town": "Berlin",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ],
+          "bio": "Phil Scott has served as Vermont's Governor since January 2017, winning five consecutive two-year terms. A former contractor and racing driver, Scott is a Republican who has supported abortion rights and signed gun safety legislation while vetoing several Democratic tax and spending proposals.",
+          "notablePositions": [
+            "Supports abortion rights",
+            "Has signed gun safety legislation",
+            "Has vetoed several Democratic tax and spending proposals",
+            "Focus on housing affordability and economic development"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lt-governor",
+      "office": "Lieutenant Governor of Vermont",
+      "shortName": "Lt. Governor",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Lieutenant Governor presides over the Vermont Senate (but only votes to break ties), serves on several state boards, and becomes Governor if the Governor is unable to serve.",
+      "candidates": [
+        {
+          "name": "Molly Gray",
+          "town": "Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Former Vermont Lieutenant Governor (2021–2023).",
+          "website": "https://www.mollyforvt.com"
+        },
+        {
+          "name": "John S. Rodgers",
+          "town": "Glover",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ],
+          "bio": "John Rodgers was elected Lieutenant Governor in 2024 running as a Republican, after years as a Democratic state senator. He previously served in the Vermont House and Senate representing the Northeast Kingdom and has long advocated for Second Amendment rights.",
+          "notablePositions": [
+            "Supports Second Amendment rights",
+            "Switched from Democrat to Republican before the 2024 race",
+            "Focus on rural Vermont issues and the Northeast Kingdom",
+            "Advocates for workforce development and economic opportunity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "attorney-general",
+      "office": "Attorney General",
+      "shortName": "Attorney General",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Attorney General is Vermont's chief law enforcement officer, representing the state in legal matters, enforcing consumer protection laws, and prosecuting public corruption.",
+      "candidates": [
+        {
+          "name": "Charity R. Clark",
+          "town": "Williston",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Charity Clark was elected Vermont Attorney General in 2022, becoming the first woman to hold the office. She previously served as Chief Assistant Attorney General. She has been active in multi-state coalitions on opioids, environmental protection, and consumer fraud.",
+          "notablePositions": [
+            "First woman to serve as Vermont Attorney General",
+            "Active in multi-state opioid and environmental enforcement actions",
+            "Focus on consumer protection and corporate accountability"
+          ]
+        },
+        {
+          "name": "Edwin Howell Kemon",
+          "town": "Vergennes",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ]
+        }
+      ],
+      "notes": "H. Brooke Paige won the Republican primary for Attorney General and later withdrew; Edwin Howell Kemon is the Republican nominee on the November ballot.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ]
+    },
+    {
+      "id": "secretary-of-state",
+      "office": "Secretary of State",
+      "shortName": "Secretary of State",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Secretary of State oversees Vermont's elections, maintains official state records, regulates professional licenses, and registers businesses and nonprofits.",
+      "candidates": [
+        {
+          "name": "Sarah Copeland Hanzas",
+          "town": "Bradford",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Sarah Copeland Hanzas was first elected Secretary of State in 2022. She previously served in the Vermont House of Representatives for over a decade. She succeeded Jim Condos, who served as Secretary of State from 2011–2022.",
+          "notablePositions": [
+            "Expanded access to absentee voting",
+            "Modernized business registration systems",
+            "Advocates for election security and voter access"
+          ]
+        },
+        {
+          "name": "H. Brooke Paige",
+          "town": "Washington",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ],
+          "website": "http://brookepaige.us"
+        },
+        {
+          "name": "Rachel Shaw",
+          "town": "Bennington",
+          "ballotLabel": "Progressive",
+          "parties": [
+            "Progressive"
+          ]
+        }
+      ],
+      "notes": "H. Brooke Paige won four Republican primaries in August (Treasurer, Secretary of State, Auditor, and Attorney General) and later withdrew from three of them. Secretary of State is the one he's still on the ballot for.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ]
+    },
+    {
+      "id": "treasurer",
+      "office": "State Treasurer",
+      "shortName": "State Treasurer",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The State Treasurer manages Vermont's finances, investments, and public debt, and administers retirement funds for state employees and teachers.",
+      "candidates": [
+        {
+          "name": "Zachary Hampl",
+          "town": "Rutland Town",
+          "ballotLabel": "Progressive",
+          "parties": [
+            "Progressive"
+          ]
+        },
+        {
+          "name": "Lynn LaFleur",
+          "town": "Stowe",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ]
+        },
+        {
+          "name": "Mike Pieciak",
+          "town": "Winooski",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Mike Pieciak was first elected State Treasurer in 2022. He previously served as Commissioner of the Vermont Department of Financial Regulation and oversaw Vermont's pandemic stimulus distribution before becoming Treasurer.",
+          "notablePositions": [
+            "Focus on fiscal responsibility and pension fund management",
+            "Advocates for Vermont housing investment programs"
+          ],
+          "website": "https://vermonttreasurer.gov"
+        }
+      ],
+      "notes": "H. Brooke Paige won the Republican primary for Treasurer and later withdrew; Lynn LaFleur is the Republican nominee on the November ballot.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ]
+    },
+    {
+      "id": "auditor",
+      "office": "Auditor of Accounts",
+      "shortName": "State Auditor",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": true,
+      "description": "The Auditor of Accounts independently audits Vermont state agencies, ensuring taxpayer money is spent efficiently, legally, and as intended. The Auditor reports to the legislature and the public — not the Governor.",
+      "candidates": [
+        {
+          "name": "Tim Ashe",
+          "town": "Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Tim Ashe has served as Chief Deputy Auditor of Accounts since 2021. He was previously Vermont Senate President Pro Tem from 2013–2021 and ran for Lieutenant Governor in 2020.",
+          "notablePositions": [
+            "Chief Deputy Auditor of Accounts since 2021",
+            "Former Vermont Senate President Pro Tem (2013–2021)",
+            "Ran for Lt. Governor in 2020"
+          ],
+          "website": "https://www.timashe.com"
+        },
+        {
+          "name": "Ivar Kronick",
+          "town": "Poultney",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ]
+        }
+      ],
+      "notes": "H. Brooke Paige won the Republican primary for Auditor and later withdrew; Ivar Kronick is the Republican nominee on the November ballot.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ]
+    }
+  ],
+  "federal": [
+    {
+      "id": "us-house",
+      "office": "U.S. Representative, Vermont At-Large",
+      "shortName": "U.S. House",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "Vermont has a single at-large congressional seat in the U.S. House of Representatives. One representative covers the entire state, serving on congressional committees, voting on federal legislation, and directing federal funding to Vermont.",
+      "candidates": [
+        {
+          "name": "Phoenix K. Altair",
+          "town": "Irasburg",
+          "ballotLabel": "Independent",
+          "parties": [
+            "Independent"
+          ]
+        },
+        {
+          "name": "Becca Balint",
+          "town": "Brattleboro",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Becca Balint was elected Vermont's at-large U.S. Representative in 2022, becoming the first woman and first openly gay person elected to Congress from Vermont. She previously served in the Vermont Senate and as Senate President Pro Tem. She serves on the House Judiciary Committee and House Education and Workforce Committee.",
+          "notablePositions": [
+            "First woman and first openly LGBTQ+ person elected to Congress from Vermont",
+            "Former Vermont Senate President Pro Tem",
+            "Serves on House Judiciary Committee",
+            "Focus on housing, climate, and workers' rights"
+          ]
+        },
+        {
+          "name": "Gerald Malloy",
+          "town": "Weathersfield",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ],
+          "bio": "Army veteran; previously the 2022 Republican nominee for U.S. Senate against Peter Welch.",
+          "website": "https://www.deploymalloy.com"
+        },
+        {
+          "name": "Adam Ortiz",
+          "town": "Newport City",
+          "ballotLabel": "Independent",
+          "parties": [
+            "Independent"
+          ]
+        },
+        {
+          "name": "Suzanne \"Suz\" Seymour",
+          "town": "Highgate",
+          "ballotLabel": "Independent",
+          "parties": [
+            "Independent"
+          ]
+        },
+        {
+          "name": "Ryan P. Walton",
+          "town": "Rutland City",
+          "ballotLabel": "Independent",
+          "parties": [
+            "Independent"
+          ]
+        }
+      ]
+    }
+  ],
+  "stateSenate": [
+    {
+      "id": "chittenden-se-senate",
+      "office": "Vermont State Senate",
+      "shortName": "State Senate",
+      "district": "Chittenden Southeast",
+      "seats": 3,
+      "voteFor": 3,
+      "termYears": 2,
+      "openSeat": false,
+      "description": "The Vermont State Senate has 30 members who serve 2-year terms. The Chittenden Southeast district elects 3 senators, who pass state legislation, approve the state budget, and confirm the Governor's key appointments.",
+      "voteForNote": "This district elects three senators, so you can vote for up to three candidates — from any party, in any combination.",
+      "candidates": [
+        {
+          "name": "Thomas Chittenden",
+          "town": "South Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Thomas Chittenden grew up in South Burlington and previously served on the South Burlington City Council. He was elected to the Vermont Senate representing Chittenden Southeast.",
+          "notablePositions": [
+            "Former South Burlington City Councilor",
+            "Grew up in South Burlington"
+          ]
+        },
+        {
+          "name": "Kesha Ram Hinsdale",
+          "town": "Shelburne",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Kesha Ram Hinsdale has been Senate Majority Leader since January 2025. She served in the Vermont House from 2009 to 2016 and has been in the Senate since 2021. She is the first woman of color to serve in the Vermont Senate.",
+          "notablePositions": [
+            "Senate Majority Leader since January 2025",
+            "First woman of color to serve in the Vermont Senate",
+            "Focus on climate, housing, and racial equity"
+          ],
+          "website": "https://keshaforvermont.com"
+        },
+        {
+          "name": "Virginia \"Ginny\" Lyons",
+          "town": "Williston",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Virginia Lyons is a Vermont State Senator representing the Chittenden Southeast district. She has served in the Senate for multiple terms.",
+          "notablePositions": [
+            "Chittenden Southeast representative"
+          ]
+        },
+        {
+          "name": "Bruce Roy",
+          "town": "Williston",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ],
+          "bio": "Retired IBM engineer and Air Force veteran."
+        },
+        {
+          "name": "Javen Sears",
+          "town": "South Burlington",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ],
+          "bio": "UVM student and South Burlington High School class of 2020 graduate.",
+          "notablePositions": [
+            "Recent SBHS graduate (2020)",
+            "UVM student"
+          ],
+          "website": "https://www.javensears.com"
+        },
+        {
+          "name": "Rohan St Marthe",
+          "town": "Jericho",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ]
+        }
+      ],
+      "notes": "Rohan St Marthe won a Republican nomination as a write-in candidate in the August primary.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        }
+      ]
+    }
+  ],
+  "stateHouse": [
+    {
+      "id": "chittenden-8",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-8",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Bridget Burkhardt",
+          "town": "South Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Bridget Burkhardt was elected to the Vermont House in 2024 and is serving her first term, representing a South Burlington district.",
+          "notablePositions": [
+            "First-term representative (elected 2024)",
+            "South Burlington representative"
+          ],
+          "website": "https://burkhardtforvt.com"
+        },
+        {
+          "name": "Mitchel Cypes",
+          "town": "South Burlington",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ]
+        }
+      ],
+      "districtNote": "Covers part of South Burlington and part of Williston. Not sure which district you're in? Look it up at mvp.vermont.gov."
+    },
+    {
+      "id": "chittenden-9",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-9",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Emilie Krasnow",
+          "town": "South Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Emilie Krasnow represents a South Burlington district in the Vermont House of Representatives.",
+          "notablePositions": [
+            "South Burlington representative"
+          ],
+          "website": "https://www.emiliekrasnow.com"
+        }
+      ],
+      "districtNote": "Covers part of South Burlington. Not sure which district you're in? Look it up at mvp.vermont.gov."
+    },
+    {
+      "id": "chittenden-10",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-10",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Kate Nugent",
+          "town": "South Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Kate Nugent represents a South Burlington district in the Vermont House of Representatives.",
+          "notablePositions": [
+            "South Burlington representative"
+          ],
+          "website": "https://www.katenugent.org"
+        }
+      ],
+      "districtNote": "Covers part of South Burlington. Not sure which district you're in? Look it up at mvp.vermont.gov."
+    },
+    {
+      "id": "chittenden-11",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-11",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Brian Minier",
+          "town": "South Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Brian Minier represents a South Burlington district in the Vermont House of Representatives.",
+          "notablePositions": [
+            "South Burlington representative"
+          ],
+          "website": "https://sites.google.com/view/minier4vthouse/home"
+        }
+      ],
+      "districtNote": "Covers part of South Burlington. Not sure which district you're in? Look it up at mvp.vermont.gov."
+    },
+    {
+      "id": "chittenden-12",
+      "office": "Vermont House of Representatives",
+      "shortName": "State House",
+      "district": "Chittenden-12",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Martin J. LaLonde",
+          "town": "South Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ],
+          "bio": "Martin LaLonde is a South Burlington attorney who has served in the Vermont House for several terms.",
+          "notablePositions": [
+            "Attorney by profession",
+            "Multi-term South Burlington representative"
+          ],
+          "website": "https://martinlalondevt.com"
+        }
+      ],
+      "districtNote": "Covers part of South Burlington. Not sure which district you're in? Look it up at mvp.vermont.gov."
+    }
+  ],
+  "county": [
+    {
+      "id": "states-attorney",
+      "office": "State's Attorney",
+      "shortName": "State's Attorney",
+      "district": "Chittenden County",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 4,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Sarah George",
+          "town": "Colchester",
+          "ballotLabel": "Dem/Prog",
+          "parties": [
+            "Democrat",
+            "Progressive"
+          ],
+          "bio": "Has served as Chittenden County State's Attorney since 2017 and is seeking a third full term.",
+          "notablePositions": [
+            "Pairs accountability with treatment courts and recovery services",
+            "Emphasizes reentry support for people leaving the justice system"
+          ]
+        },
+        {
+          "name": "Jace Laquerre",
+          "town": "Milton",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ]
+        }
+      ],
+      "notes": "Bram Kranichfeld won the Republican nomination as a write-in candidate in August and later withdrew; Jace Laquerre is the Republican nominee on the November ballot.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        },
+        {
+          "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+        }
+      ]
+    },
+    {
+      "id": "sheriff",
+      "office": "Sheriff",
+      "shortName": "Sheriff",
+      "district": "Chittenden County",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 4,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Daniel Gamelin",
+          "town": "Colchester",
+          "ballotLabel": "Dem/Rep",
+          "parties": [
+            "Democrat",
+            "Republican"
+          ],
+          "bio": "Has served as Chittenden County Sheriff since being elected in 2022, with more than 40 years in the sheriff's department.",
+          "notablePositions": [
+            "Elected sheriff in 2022",
+            "More than 40 years in the sheriff's department"
+          ]
+        }
+      ],
+      "notes": "Daniel Gamelin won the Democratic primary and also won the Republican nomination as a write-in candidate.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        }
+      ]
+    },
+    {
+      "id": "high-bailiff",
+      "office": "High Bailiff",
+      "shortName": "High Bailiff",
+      "district": "Chittenden County",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 2,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Paul McManus",
+          "town": "Williston",
+          "ballotLabel": "Republican",
+          "parties": [
+            "Republican"
+          ]
+        },
+        {
+          "name": "Sean Miller",
+          "town": "Burlington",
+          "ballotLabel": "Independent",
+          "parties": [
+            "Independent"
+          ]
+        },
+        {
+          "name": "Amy Payne",
+          "town": "Burlington",
+          "ballotLabel": "Democratic",
+          "parties": [
+            "Democrat"
+          ]
+        }
+      ],
+      "notes": "Amy Payne won the Democratic primary. Paul McManus won the Republican nomination as a write-in candidate.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        }
+      ]
+    },
+    {
+      "id": "assistant-judges",
+      "office": "Assistant Judges",
+      "shortName": "Assistant Judge",
+      "district": "Chittenden County",
+      "seats": 2,
+      "voteFor": 2,
+      "termYears": 4,
+      "openSeat": false,
+      "voteForNote": "Two assistant judge seats are on the ballot, so you can vote for up to two candidates.",
+      "candidates": [
+        {
+          "name": "Connie Cain Ramsey",
+          "town": "Burlington",
+          "ballotLabel": "Dem/Rep",
+          "parties": [
+            "Democrat",
+            "Republican"
+          ]
+        },
+        {
+          "name": "Anne Nichols Williams",
+          "town": "Burlington",
+          "ballotLabel": "Dem/Rep",
+          "parties": [
+            "Democrat",
+            "Republican"
+          ]
+        }
+      ],
+      "notes": "Both won the Democratic primary and also won Republican nominations as write-in candidates.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        }
+      ]
+    },
+    {
+      "id": "probate-judge",
+      "office": "Probate Judge",
+      "shortName": "Probate Judge",
+      "district": "Chittenden County",
+      "seats": 1,
+      "voteFor": 1,
+      "termYears": 4,
+      "openSeat": false,
+      "candidates": [
+        {
+          "name": "Gregory J. Glennon",
+          "town": "Burlington",
+          "ballotLabel": "Dem/Rep",
+          "parties": [
+            "Democrat",
+            "Republican"
+          ]
+        }
+      ],
+      "notes": "Gregory J. Glennon won the Democratic primary and also won the Republican nomination as a write-in candidate.",
+      "noteSources": [
+        {
+          "title": "Vermont Secretary of State — 2026 August Primary winner listing (official)",
+          "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/elections_results_data/2026-august-primary-winner-listing.xlsx"
+        }
+      ]
+    }
+  ],
+  "justicesOfThePeace": {
+    "office": "Justice of the Peace",
+    "seats": 15,
+    "voteFor": 15,
+    "termYears": 2,
+    "termNote": "Two-year terms begin February 1, 2027.",
+    "termSource": {
+      "title": "Vermont Secretary of State — Justice of the Peace Guide (PDF)",
+      "url": "https://outside.vermont.gov/dept/sos/Elections%20Division/town%20clerks%20and%20local%20elections/vt-jp-guide.pdf"
+    },
+    "candidates": [
+      {
+        "name": "Linda Bailey",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "T.J. Donovan",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Meaghan Emery",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Donna Kinville",
+        "ballotLabel": "Independent",
+        "parties": [
+          "Independent"
+        ]
+      },
+      {
+        "name": "Jason Kirchick",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Christy Liddy",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Maurice Mahoney",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Cyndy McGeoch",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Robert \"Burt\" Munger",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Jennifer Oakes",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Ann Pugh",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Michel St. Germain",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Lynn Vera",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      },
+      {
+        "name": "Matthew Vigneau",
+        "ballotLabel": "Democratic",
+        "parties": [
+          "Democrat"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
+        "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_qualified_candidates.xlsx"
+      },
+      {
+        "title": "City of South Burlington — November 3, 2026 sample ballots",
+        "url": "https://www.southburlingtonvt.gov/211/Elections-Voting"
+      }
+    ]
+  }
+}
