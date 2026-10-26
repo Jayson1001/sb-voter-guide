@@ -381,8 +381,8 @@ export default function PrimaryPage() {
         </nav>
 
         {/* Turnout hook */}
-        <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-4 mb-8 flex items-start gap-3">
-          <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="bg-sage-50 border border-sage-200 rounded-2xl p-4 mb-8 flex items-start gap-3">
+          <svg className="w-5 h-5 text-sage-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
           </svg>
           <p className="text-sm text-warmgray-700 leading-relaxed">
@@ -570,14 +570,14 @@ export default function PrimaryPage() {
           </div>
           <div className="mb-4"><MechanicsLink /></div>
 
-          <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mb-5 flex items-start gap-3">
-            <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-sage-50 border border-sage-200 rounded-xl p-4 mb-5 flex items-start gap-3">
+            <svg className="w-5 h-5 text-sage-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <div className="text-sm text-terracotta-800">
+            <div className="text-sm text-sage-800">
               <strong>Find your district:</strong> South Burlington is divided into five Vermont House districts.
               Use{" "}
-              <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="underline hover:text-terracotta-900">
+              <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-900">
                 My Voter Page (mvp.vermont.gov)
               </a>
               {" "}to look up your exact district based on your address.
@@ -647,8 +647,8 @@ export default function PrimaryPage() {
 
         {/* City Ballot Item — Bartlett Bay wastewater bond. NOT a primary race:
             every SB voter gets this on the Aug 11 ballot regardless of party. */}
-        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden mb-8 scroll-mt-32">
-          <div className="bg-terracotta-500 text-white px-5 sm:px-6 py-2.5 flex items-center gap-2">
+        <section id="bond" className="bg-white rounded-2xl shadow-soft border-2 border-sage-200 overflow-hidden mb-8 scroll-mt-32">
+          <div className="bg-sage-500 text-white px-5 sm:px-6 py-2.5 flex items-center gap-2">
             <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
             </svg>
@@ -680,7 +680,7 @@ export default function PrimaryPage() {
               <div className="bg-sage-50 border border-sage-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
                 <span aria-hidden="true">💵</span> Paid through <strong className="text-warmgray-800">sewer rates, not property taxes</strong> — about 2–3% a year, phased over 5–6 years.
               </div>
-              <div className="bg-terracotta-50 border border-terracotta-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
+              <div className="bg-sage-50 border border-sage-100 rounded-xl p-3 text-sm text-warmgray-700 leading-relaxed">
                 <span aria-hidden="true">🗓️</span> <strong className="text-warmgray-800">Public hearing:</strong> Mon, Aug 10, 6 PM at City Hall (Zoom option on the city page).
               </div>
             </div>

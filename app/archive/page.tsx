@@ -146,7 +146,7 @@ export default function ArchivePage() {
           rel="noopener noreferrer"
           className="block mb-10 group"
         >
-          <div className="bg-gradient-to-r from-terracotta-500 to-terracotta-600 rounded-2xl p-5 sm:p-6 text-white shadow-soft hover:shadow-lg transition-shadow">
+          <div className="bg-gradient-to-r from-sage-500 to-sage-600 rounded-2xl p-5 sm:p-6 text-white shadow-soft hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-4">
               <div className="flex-shrink-0 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
                 <VideoIcon />
@@ -154,10 +154,10 @@ export default function ArchivePage() {
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full">Archive</span>
-                  <span className="text-terracotta-100 text-sm">February 10, 2026</span>
+                  <span className="text-sage-100 text-sm">February 10, 2026</span>
                 </div>
                 <h3 className="font-display font-bold text-lg sm:text-xl">Watch the Candidate Forum</h3>
-                <p className="text-terracotta-100 text-sm mt-1">Beth Zigmund and Amy Allen discuss the issues on Town Meeting TV</p>
+                <p className="text-sage-100 text-sm mt-1">Beth Zigmund and Amy Allen discuss the issues on Town Meeting TV</p>
               </div>
               <div className="hidden sm:flex items-center gap-2 text-white/80 group-hover:text-white group-hover:translate-x-1 transition-all">
                 <span className="text-sm font-medium">Watch on YouTube</span>

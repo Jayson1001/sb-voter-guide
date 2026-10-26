@@ -133,7 +133,7 @@ export default function GeneralPage() {
     <main className="min-h-screen bg-pattern">
       {/* Header */}
       <header className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-terracotta-500 via-terracotta-600 to-terracotta-700" />
+        <div className="absolute inset-0 bg-gradient-to-br from-sage-500 via-sage-600 to-sage-700" />
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
 
@@ -143,12 +143,12 @@ export default function GeneralPage() {
                 November 3, 2026
               </span>
               <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-2">Vermont General Election</h1>
-              <p className="text-terracotta-100 text-base sm:text-lg">All races + two constitutional amendments on the ballot</p>
+              <p className="text-sage-100 text-base sm:text-lg">All races + two constitutional amendments on the ballot</p>
             </div>
             <div className="flex-shrink-0 bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4 text-white text-center">
-              <p className="text-terracotta-100 text-xs font-medium uppercase tracking-wide">Election Day</p>
+              <p className="text-sage-100 text-xs font-medium uppercase tracking-wide">Election Day</p>
               <p className="font-display text-2xl font-bold">Nov 3, 2026</p>
-              <p className="text-terracotta-100 text-sm">7 AM – 7 PM</p>
+              <p className="text-sage-100 text-sm">7 AM – 7 PM</p>
             </div>
           </div>
         </div>
@@ -163,24 +163,24 @@ export default function GeneralPage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
         {/* Ballot status notice */}
-        <div className="bg-terracotta-50 border border-terracotta-200 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start gap-4">
-          <div className="flex-shrink-0 w-10 h-10 bg-terracotta-100 rounded-xl flex items-center justify-center text-terracotta-700">
+        <div className="bg-sage-50 border border-sage-200 rounded-2xl p-5 mb-8 flex flex-col sm:flex-row items-start gap-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center text-sage-700">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
           </div>
           <div className="flex-1">
-            <p className="font-semibold text-terracotta-800">This is the actual November ballot</p>
-            <p className="text-terracotta-700 text-sm mt-0.5 leading-relaxed">
+            <p className="font-semibold text-sage-800">This is the actual November ballot</p>
+            <p className="text-sage-700 text-sm mt-0.5 leading-relaxed">
               Every candidate below is on the{" "}
-              <a href={SOS_CANDIDATES.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-terracotta-900">
+              <a href={SOS_CANDIDATES.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-900">
                 Secretary of State&apos;s official qualified-candidate list
               </a>{" "}
               (updated September 23, 2026), which matches the City&apos;s sample ballots. Each party picked its
-              nominees on August 11 (<Link href="/primary-results" className="underline hover:text-terracotta-900">see the results</Link>).
+              nominees on August 11 (<Link href="/primary-results" className="underline hover:text-sage-900">see the results</Link>).
               No city or school questions are on this ballot.
             </p>
-            <p className="text-terracotta-700 text-sm mt-2">
+            <p className="text-sage-700 text-sm mt-2">
               See your exact ballot (City of South Burlington sample ballots, by House district): <SampleBallotLinks />
             </p>
           </div>
@@ -300,14 +300,14 @@ export default function GeneralPage() {
             </div>
           </div>
 
-          <div className="bg-terracotta-50 border border-terracotta-200 rounded-xl p-4 mb-5 flex items-start gap-3">
-            <svg className="w-5 h-5 text-terracotta-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-sage-50 border border-sage-200 rounded-xl p-4 mb-5 flex items-start gap-3">
+            <svg className="w-5 h-5 text-sage-700 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <div className="text-sm text-terracotta-800">
+            <div className="text-sm text-sage-800">
               <strong>Find your district:</strong> South Burlington spans five Vermont House districts.
               Use{" "}
-              <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="underline hover:text-terracotta-900">
+              <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-900">
                 My Voter Page (mvp.vermont.gov)
               </a>
               {" "}to confirm which district you&apos;re in based on your address.
