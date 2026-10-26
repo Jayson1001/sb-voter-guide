@@ -70,7 +70,7 @@ export default function BudgetPage() {
               <p className="text-sage-100 text-sm">General Fund</p>
               <p className="font-display font-bold text-2xl">{formatCurrency(cityBudget.generalFund)}</p>
             </div>
-            <div className="bg-terracotta-500/80 backdrop-blur-sm rounded-xl px-4 py-2">
+            <div className="bg-sage-500/80 backdrop-blur-sm rounded-xl px-4 py-2">
               <p className="text-terracotta-100 text-sm">Change from Last Year</p>
               <p className="font-display font-bold text-2xl">{formatPercent(cityBudget.percentIncrease)}</p>
             </div>
@@ -135,7 +135,7 @@ export default function BudgetPage() {
             </div>
 
             {/* Total Tax (City + Education) */}
-            <div className="bg-terracotta-50 rounded-xl p-4">
+            <div className="bg-sage-50 rounded-xl p-4">
               <h3 className="font-semibold text-warmgray-700 mb-3">Total Tax (City + Education est.)</h3>
               <div className="space-y-2">
                 <div className="flex justify-between">
@@ -274,7 +274,7 @@ export default function BudgetPage() {
             </div>
           </div>
 
-          <div className="bg-terracotta-50 rounded-xl p-4 mb-4">
+          <div className="bg-sage-50 rounded-xl p-4 mb-4">
             <p className="text-warmgray-700 text-sm leading-relaxed">
               The city budget (above) is only <strong>part</strong> of your property tax bill. Education taxes typically make up
               about <strong>70-75%</strong> of the total. The school district&apos;s FY2027 budget is a separate ballot question on March 3.
@@ -330,7 +330,7 @@ export default function BudgetPage() {
           </div>
 
           <div className="flex flex-wrap gap-2 mb-4">
-            <div className="bg-terracotta-50 rounded-lg px-3 py-1.5">
+            <div className="bg-sage-50 rounded-lg px-3 py-1.5">
               <span className="text-terracotta-700 text-xs font-medium">Combined tax increase (city + school): ~7.4%</span>
             </div>
             <div className="bg-sage-50 rounded-lg px-3 py-1.5">
@@ -380,7 +380,7 @@ export default function BudgetPage() {
           <div className="grid sm:grid-cols-2 gap-4">
             <Link
               href="/fire-station-bond"
-              className="flex items-center gap-3 p-4 bg-terracotta-50 rounded-xl hover:bg-terracotta-100 transition-colors"
+              className="flex items-center gap-3 p-4 bg-sage-50 rounded-xl hover:bg-sage-100 transition-colors"
             >
               <div className="w-10 h-10 bg-terracotta-100 rounded-lg flex items-center justify-center text-terracotta-700">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -113,17 +113,17 @@ export default function Home() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
         {/* General Main Event — countdown + the facts people need for November */}
-        <section className="bg-gradient-to-br from-terracotta-500 to-terracotta-600 rounded-2xl p-6 sm:p-8 mb-8 text-white shadow-soft animate-fade-in">
+        <section className="bg-gradient-to-br from-sage-500 to-sage-600 rounded-2xl p-6 sm:p-8 mb-8 text-white shadow-soft animate-fade-in">
           <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-5">
             <div className="flex-shrink-0 mx-auto sm:mx-0">
-              <GeneralCountdown tone="terracotta" />
+              <GeneralCountdown tone="sage" />
             </div>
             <div className="flex-1">
               <span className="inline-block text-xs font-semibold bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full uppercase tracking-wide mb-2">
                 Up next &bull; November 3
               </span>
               <h2 className="font-display text-2xl sm:text-3xl font-bold mb-1">The November 3 general election is next</h2>
-              <p className="text-terracotta-50 text-sm sm:text-base leading-relaxed">
+              <p className="text-sage-50 text-sm sm:text-base leading-relaxed">
                 This is the one that decides who actually takes office. Vermont has same-day registration, so there&apos;s still no deadline to register. And November is simpler than August in two ways.
               </p>
             </div>
@@ -134,7 +134,7 @@ export default function Home() {
               <p className="font-display font-bold mb-1 flex items-center gap-2">
                 <span aria-hidden="true">📬</span> Your ballot comes to you
               </p>
-              <p className="text-terracotta-50 text-sm leading-relaxed">
+              <p className="text-sage-50 text-sm leading-relaxed">
                 Unlike the primary, you don&apos;t have to ask. Vermont mails a general-election ballot to <strong>every</strong> active registered voter. Mail it back, drop it off, or vote in person on Nov 3. Ballots are due by <strong>7 PM on Election Day, November 3</strong> (
                 <a href={SOS_MAIL_BALLOTS} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Secretary of State</a>).
               </p>
@@ -143,7 +143,7 @@ export default function Home() {
               <p className="font-display font-bold mb-1 flex items-center gap-2">
                 <span aria-hidden="true">🗳️</span> One ballot, no party to pick
               </p>
-              <p className="text-terracotta-50 text-sm leading-relaxed">
+              <p className="text-sage-50 text-sm leading-relaxed">
                 No three-ballot shuffle this time. You get one ballot with every party&apos;s nominee (plus independents) side by side, so you can mix and match however you like. (Your State House race depends on your district.)
               </p>
             </div>
@@ -152,21 +152,21 @@ export default function Home() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/general"
-              className="inline-flex items-center gap-2 bg-white text-terracotta-700 hover:bg-cream-100 px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors"
+              className="inline-flex items-center gap-2 bg-white text-sage-700 hover:bg-cream-100 px-5 py-2.5 rounded-lg font-semibold text-sm transition-colors"
             >
               See what&apos;s on your ballot — General Guide
               <ArrowRightIcon />
             </Link>
             <Link
               href="/how-to-vote"
-              className="inline-flex items-center gap-2 bg-terracotta-700/40 hover:bg-terracotta-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
+              className="inline-flex items-center gap-2 bg-sage-700/40 hover:bg-sage-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
             >
               How to vote
               <ArrowRightIcon />
             </Link>
             <Link
               href="/primary-results"
-              className="inline-flex items-center gap-2 bg-terracotta-700/40 hover:bg-terracotta-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
+              className="inline-flex items-center gap-2 bg-sage-700/40 hover:bg-sage-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
             >
               August primary results
               <ArrowRightIcon />
@@ -176,15 +176,15 @@ export default function Home() {
 
         {/* General Guide Card — races gateway, right below the main event */}
         <div className="group mb-8 animate-fade-in-delay-1">
-          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent hover:border-terracotta-300 transition-all">
-            <Link href="/general" className="block bg-gradient-to-br from-terracotta-500 to-terracotta-600 p-6 text-white">
+          <div className="bg-white rounded-2xl shadow-soft overflow-hidden border-2 border-transparent hover:border-sage-300 transition-all">
+            <Link href="/general" className="block bg-gradient-to-br from-sage-500 to-sage-600 p-6 text-white">
               <div className="flex items-start justify-between">
                 <div>
                   <span className="inline-block bg-white/20 text-white text-xs font-semibold px-2 py-0.5 rounded-full mb-2">
                     November 3, 2026 &bull; Up next
                   </span>
                   <h2 className="font-display text-2xl font-bold">General Election Guide</h2>
-                  <p className="text-terracotta-100 text-sm mt-1">Every race on your November ballot — and who&apos;s running for it</p>
+                  <p className="text-sage-100 text-sm mt-1">Every race on your November ballot — and who&apos;s running for it</p>
                 </div>
                 <div className="bg-white/20 rounded-xl p-3 group-hover:bg-white/30 transition-colors">
                   <ArrowRightIcon />
@@ -196,7 +196,7 @@ export default function Home() {
               <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
                 {[...generalRaces, ...generalAdditions].map((race, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-warmgray-700">
-                    <span className="mt-1 flex-shrink-0 w-4 h-4 bg-terracotta-100 text-terracotta-700 rounded-full flex items-center justify-center">
+                    <span className="mt-1 flex-shrink-0 w-4 h-4 bg-sage-100 text-sage-700 rounded-full flex items-center justify-center">
                       <CheckIcon />
                     </span>
                     {race}
@@ -217,7 +217,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/general"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-terracotta-700 bg-terracotta-50 hover:bg-terracotta-100 border border-terracotta-200 px-4 py-2 rounded-lg transition-colors flex-shrink-0"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-sage-700 bg-sage-50 hover:bg-sage-100 border border-sage-200 px-4 py-2 rounded-lg transition-colors flex-shrink-0"
                 >
                   See every race
                   <ArrowRightIcon />
@@ -308,7 +308,7 @@ export default function Home() {
         </div>
 
         {/* Same-Day Registration Banner */}
-        <div className="bg-gradient-to-r from-sage-50 to-terracotta-50 border border-sage-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
+        <div className="bg-gradient-to-r from-sage-50 to-sage-100 border border-sage-200 rounded-2xl p-5 sm:p-6 mb-8 animate-fade-in-delay-1">
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0 w-11 h-11 bg-sage-100 rounded-xl flex items-center justify-center">
               <CheckIcon />

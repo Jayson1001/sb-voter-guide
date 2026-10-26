@@ -7,7 +7,7 @@ export default function FireStationBondPage() {
   return (
     <main className="min-h-screen bg-pattern">
       {/* Header */}
-      <header className="bg-terracotta-600 text-white">
+      <header className="bg-sage-600 text-white">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <Link
             href="/"

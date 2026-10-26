@@ -544,8 +544,8 @@ export default function PrimaryResultsPage() {
 
         {/* Bartlett Bay bond result */}
         <section id="bond" className="mb-10 scroll-mt-32">
-          <div className="bg-white rounded-2xl shadow-soft border-2 border-terracotta-200 overflow-hidden">
-            <div className="bg-terracotta-500 text-white px-5 sm:px-6 py-2.5">
+          <div className="bg-white rounded-2xl shadow-soft border-2 border-sage-200 overflow-hidden">
+            <div className="bg-sage-500 text-white px-5 sm:px-6 py-2.5">
               <span className="text-xs font-semibold uppercase tracking-wide">City ballot item · Every voter got this one</span>
             </div>
             <div className="p-5 sm:p-7">
