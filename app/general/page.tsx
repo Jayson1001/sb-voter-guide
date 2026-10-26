@@ -228,7 +228,9 @@ export default function GeneralPage() {
             last name, with the party label exactly as it&apos;s printed on the ballot. Some names carry two labels, like{" "}
             <BallotLabelChip label="Dem/Prog" /> or <BallotLabelChip label="Dem/Rep" /> &mdash; Vermont lets more than one
             party nominate the same person, so they show up once with both. Every race also has a write-in line. Tap
-            &ldquo;About this candidate&rdquo; for whatever background we&apos;ve sourced so far.
+            &ldquo;About this candidate&rdquo; for whatever background we&apos;ve sourced so far. Where a debate, forum
+            or interview has been recorded, the card has a &ldquo;Watch the candidates&rdquo; box linking to it on the
+            host&apos;s site (Vermont Public or Town Meeting TV).
           </p>
         </div>
 

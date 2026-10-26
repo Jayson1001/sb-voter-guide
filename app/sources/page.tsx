@@ -45,6 +45,15 @@ const staticSourceCategories = [
     ],
   },
   {
+    category: 'Debates & candidate forums (November 3 ballot)',
+    sources: [
+      { title: 'Vermont Public — 2026 general election debate schedule', url: 'https://www.vermontpublic.org/about-us/2026-09-14/vermont-public-2026-general-election-debates' },
+      { title: 'Vermont Public — Election 2026 hub (debates, candidate interviews, candidate guide)', url: 'https://www.vermontpublic.org/election-2026' },
+      { title: 'Town Meeting TV — 2026 general election candidate forum schedule (with links to each recording)', url: 'https://cctv.org/tmtv/elections/primary-general-elections/general-election-schedule-2026' },
+      { title: 'Town Meeting TV — 2026 election forums playlist (YouTube)', url: 'https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J' },
+    ],
+  },
+  {
     category: 'Official South Burlington',
     sources: [
       { title: 'South Burlington Elections & Voting — drop boxes, early-voting cutoff, ballot timing', url: 'https://www.southburlingtonvt.gov/211/Elections-Voting' },
