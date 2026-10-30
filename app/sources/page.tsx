@@ -37,11 +37,20 @@ const staticSourceCategories = [
       { title: 'Vermont Secretary of State — Early & absentee voting', url: 'https://sos.vermont.gov/elections/voters/early-absentee-voting/' },
       { title: 'Vermont Secretary of State — Sept 3, 2026 release on general-election ballot mailing', url: 'https://sos.vermont.gov/node/1246' },
       { title: 'Vermont Secretary of State — Voter registration', url: 'https://sos.vermont.gov/elections/voters/registration/' },
-      { title: 'Vermont Secretary of State — Justice of the Peace Guide (PDF)', url: 'https://outside.vermont.gov/dept/sos/Elections%20Division/town%20clerks%20and%20local%20elections/vt-jp-guide.pdf' },
+      { title: 'Vermont Secretary of State — Justice of the Peace Guide (PDF)', url: 'https://outside.vermont.gov/dept/sos/Elections_Division/town_clerks_local_elections/vermont_justice_peace_guide.pdf' },
       { title: 'Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)', url: 'https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4' },
       { title: 'Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)', url: 'https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf' },
       { title: '17 V.S.A. § 2592 — Canvassing committees', url: 'https://legislature.vermont.gov/statutes/section/17/051/02592' },
       { title: '17 V.S.A. § 2602 — Recounts', url: 'https://legislature.vermont.gov/statutes/section/17/051/02602' },
+    ],
+  },
+  {
+    category: 'Debates & candidate forums (November 3 ballot)',
+    sources: [
+      { title: 'Vermont Public — 2026 general election debate schedule', url: 'https://www.vermontpublic.org/about-us/2026-09-14/vermont-public-2026-general-election-debates' },
+      { title: 'Vermont Public — Election 2026 hub (debates, candidate interviews, candidate guide)', url: 'https://www.vermontpublic.org/election-2026' },
+      { title: 'Town Meeting TV — 2026 general election candidate forum schedule (with links to each recording)', url: 'https://cctv.org/tmtv/elections/primary-general-elections/general-election-schedule-2026' },
+      { title: 'Town Meeting TV — 2026 election forums playlist (YouTube)', url: 'https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J' },
     ],
   },
   {

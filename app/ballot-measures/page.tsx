@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WatchLinks from "@/components/WatchLinks";
 import ballotMeasuresData from "@/data/ballot-measures.json";
 import SampleBallotLinks from "@/components/SampleBallotLinks";
 
@@ -121,7 +122,7 @@ export default function BallotMeasuresPage() {
           <div key={measure.id} className="mb-10">
             {/* Measure Header */}
             <div className={`rounded-2xl overflow-hidden shadow-soft mb-5`}>
-              <div className={`px-6 py-6 ${measureIdx === 0 ? 'bg-gradient-to-br from-sage-500 to-sage-700' : 'bg-gradient-to-br from-terracotta-500 to-terracotta-700'}`}>
+              <div className={`px-6 py-6 ${measureIdx === 0 ? 'bg-gradient-to-br from-sage-500 to-sage-700' : 'bg-gradient-to-br from-sage-600 to-sage-800'}`}>
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
                   <div>
                     <span className="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full mb-2">
@@ -287,6 +288,9 @@ export default function BallotMeasuresPage() {
                   <p className="text-warmgray-600 text-sm leading-relaxed">{measure.context}</p>
                 </div>
               </div>
+
+              {/* Recorded forum on this measure */}
+              <WatchLinks id={measure.id} heading="Watch the forum" />
 
               {/* Sources */}
               <div className="bg-white rounded-2xl shadow-soft p-6">

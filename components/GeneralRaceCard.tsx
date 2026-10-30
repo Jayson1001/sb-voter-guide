@@ -1,6 +1,7 @@
 import { partyChipClass, ballotLabelTitle } from "@/lib/raceMeta";
 import generalRaces from "@/data/general-races.json";
 import OfficeExplainer from "@/components/OfficeExplainer";
+import WatchLinks from "@/components/WatchLinks";
 
 // One card per race on the November 3 ballot, driven by data/general-races.json.
 // Every candidate gets the exact same card: name, ballot label, town, the
@@ -166,6 +167,8 @@ export default function GeneralRaceCard({ race }: { race: GeneralRace }) {
             <CandidateCard key={c.name} c={c} />
           ))}
         </ul>
+
+        <WatchLinks id={race.id} />
 
         {race.notes && (
           <p className="text-xs text-warmgray-600 italic border-t border-warmgray-100 pt-3 mt-1">

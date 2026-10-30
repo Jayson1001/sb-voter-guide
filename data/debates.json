@@ -1,0 +1,230 @@
+{
+  "lastUpdated": "2026-10-25",
+  "note": "Recorded debates, candidate forums and interviews for the November 3, 2026 ballot. Each entry links to the host's own page. Dates are the host's listed broadcast date. Entries are only added once the host has posted a watch or listen link.",
+  "schedules": [
+    {
+      "title": "Vermont Public — 2026 general election debate schedule",
+      "url": "https://www.vermontpublic.org/about-us/2026-09-14/vermont-public-2026-general-election-debates"
+    },
+    {
+      "title": "Town Meeting TV — 2026 general election candidate forum schedule",
+      "url": "https://cctv.org/tmtv/elections/primary-general-elections/general-election-schedule-2026"
+    },
+    {
+      "title": "Town Meeting TV — 2026 election forums playlist (YouTube)",
+      "url": "https://www.youtube.com/playlist?list=PLljLFn4BZd2NCRWbtgzlAg2eWL7886b3J"
+    }
+  ],
+  "events": [
+    {
+      "raceIds": ["governor"],
+      "kind": "debate",
+      "title": "Governor debate",
+      "host": "Vermont Public",
+      "date": "2026-10-21",
+      "participants": "Phil Scott and Amanda Janoo",
+      "format": "Video, audio and transcript",
+      "url": "https://www.vermontpublic.org/show/vermont-edition/2026-10-20/vermont-publics-2026-governor-debate"
+    },
+    {
+      "raceIds": ["governor"],
+      "kind": "forum",
+      "title": "Governor candidate forum",
+      "host": "Town Meeting TV, with Common Good Vermont and Vermont Businesses for Social Responsibility",
+      "date": "2026-09-29",
+      "participants": "Amanda Janoo, June Goodband, Brian Judd, Dean Roy and Jerry Trudell. Phil Scott declined the invitation.",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/in-partnership-with-common-good-vermont-vermont-businesses-for-social-responsibility-governor-candidate-forum"
+    },
+    {
+      "raceIds": ["lt-governor"],
+      "kind": "debate",
+      "title": "Lieutenant Governor debate",
+      "host": "Vermont Public",
+      "date": "2026-10-06",
+      "participants": "John S. Rodgers and Molly Gray",
+      "format": "Video, audio and transcript",
+      "url": "https://www.vermontpublic.org/show/vermont-edition/2026-10-05/live-vermont-publics-2026-lieutenant-governor-debate"
+    },
+    {
+      "raceIds": ["lt-governor"],
+      "kind": "forum",
+      "title": "Lieutenant Governor candidate forum",
+      "host": "Town Meeting TV, with Common Good Vermont",
+      "date": "2026-09-30",
+      "participants": "Molly Gray and John S. Rodgers",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/in-partnership-with-common-good-vermont-lieutenant-governor-candidate-forum"
+    },
+    {
+      "raceIds": ["attorney-general"],
+      "kind": "forum",
+      "title": "Attorney General candidate forum",
+      "host": "Town Meeting TV",
+      "date": "2026-10-05",
+      "participants": "Charity R. Clark and Edwin Howell Kemon",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/attorney-general-candidate-forum-2026"
+    },
+    {
+      "raceIds": ["attorney-general"],
+      "kind": "interview",
+      "title": "Attorney General candidate interview",
+      "host": "Vermont Public",
+      "date": "2026-10-05",
+      "participants": "Charity R. Clark. Vermont Public says its attempts to interview Edwin Howell Kemon were unsuccessful.",
+      "format": "Audio and transcript",
+      "url": "https://www.vermontpublic.org/show/vermont-edition/2026-10-05/2026-election-interviews-vermont-attorney-general"
+    },
+    {
+      "raceIds": ["secretary-of-state"],
+      "kind": "interview",
+      "title": "Secretary of State candidate interviews",
+      "host": "Vermont Public",
+      "date": "2026-10-05",
+      "participants": "Sarah Copeland Hanzas and H. Brooke Paige. Vermont Public says it did not receive a response from Rachel Shaw.",
+      "format": "Audio and transcript",
+      "url": "https://www.vermontpublic.org/show/vermont-edition/2026-10-05/2026-election-interviews-vermont-secretary-of-state"
+    },
+    {
+      "raceIds": ["treasurer"],
+      "kind": "forum",
+      "title": "State Treasurer candidate forum",
+      "host": "Town Meeting TV",
+      "date": "2026-10-08",
+      "participants": "Mike Pieciak, Lynn LaFleur and Zachary Hampl",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/state-treasurer-candidate-forum"
+    },
+    {
+      "raceIds": ["treasurer"],
+      "kind": "interview",
+      "title": "State Treasurer candidate interviews",
+      "host": "Vermont Public",
+      "date": "2026-10-20",
+      "participants": "Mike Pieciak, Lynn LaFleur and Zachary Hampl",
+      "format": "Audio and transcript",
+      "url": "https://www.vermontpublic.org/show/vermont-edition/2026-10-20/2026-election-interviews-vermont-treasurer"
+    },
+    {
+      "raceIds": ["auditor"],
+      "kind": "forum",
+      "title": "Auditor of Accounts candidate forum",
+      "host": "Town Meeting TV",
+      "date": "2026-10-02",
+      "participants": "Tim Ashe and Ivar Kronick",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/auditor-of-accounts-candidate-forum"
+    },
+    {
+      "raceIds": ["auditor"],
+      "kind": "interview",
+      "title": "Auditor candidate interviews",
+      "host": "Vermont Public",
+      "date": "2026-10-20",
+      "participants": "Tim Ashe and Ivar Kronick",
+      "format": "Audio and transcript",
+      "url": "https://www.vermontpublic.org/show/vermont-edition/2026-10-20/2026-election-interviews-vermont-auditor"
+    },
+    {
+      "raceIds": ["us-house"],
+      "kind": "debate",
+      "title": "U.S. House debate",
+      "host": "Vermont Public",
+      "date": "2026-10-08",
+      "participants": "Becca Balint, Gerald Malloy and Adam Ortiz",
+      "format": "Video, audio and transcript",
+      "url": "https://www.vermontpublic.org/show/vermont-edition/2026-10-07/vermont-publics-2026-u-s-house-debate"
+    },
+    {
+      "raceIds": ["chittenden-se-senate"],
+      "kind": "forum",
+      "title": "Chittenden-Southeast Senate candidate forum, part 1",
+      "host": "Town Meeting TV",
+      "date": "2026-09-18",
+      "participants": "Thomas Chittenden and Virginia \"Ginny\" Lyons. Javen Sears and Rohan St. Marthe were not in attendance.",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/state-senator-chittenden-southeast-district-three-seats-candidate-forum-part-1"
+    },
+    {
+      "raceIds": ["chittenden-se-senate"],
+      "kind": "forum",
+      "title": "Chittenden-Southeast Senate candidate forum",
+      "host": "League of Women Voters, aired by Town Meeting TV",
+      "date": "2026-10-01",
+      "participants": "See the video for who took part.",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/the-league-of-women-voters-state-senate-chittenden-southeast-district-candidate-forum"
+    },
+    {
+      "raceIds": ["chittenden-se-senate"],
+      "kind": "forum",
+      "title": "Chittenden-Southeast Senate candidate forum, part 2",
+      "host": "Town Meeting TV",
+      "date": "2026-10-08",
+      "participants": "Kesha Ram Hinsdale and Bruce Roy",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/state-senator-chittenden-southeast-district-three-seats-candidate-forum-part-2"
+    },
+    {
+      "raceIds": ["chittenden-8"],
+      "kind": "forum",
+      "title": "Chittenden-8 candidate forum",
+      "host": "Town Meeting TV",
+      "date": "2026-09-02",
+      "participants": "Bridget Burkhardt and Mitchel Cypes",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/state-representative-chittenden-8-south-burlington-candidate-forum"
+    },
+    {
+      "raceIds": ["chittenden-9", "chittenden-10", "chittenden-11", "chittenden-12"],
+      "kind": "forum",
+      "title": "Chittenden-9, 10, 11 and 12 candidate forum",
+      "host": "Town Meeting TV",
+      "date": "2026-08-31",
+      "participants": "Emilie Krasnow, Kate Nugent, Brian Minier and Martin J. LaLonde, in one joint session for the four uncontested South Burlington districts",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/state-representative-chittenden-9-10-11-12-south-burlington-uncontested-candidate-forum"
+    },
+    {
+      "raceIds": ["states-attorney"],
+      "kind": "forum",
+      "title": "Chittenden County State's Attorney candidate forum",
+      "host": "Town Meeting TV",
+      "date": "2026-09-22",
+      "participants": "Sarah George and Jace Laquerre",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/chittenden-county-states-attorney-candidate-forum"
+    },
+    {
+      "raceIds": ["high-bailiff"],
+      "kind": "forum",
+      "title": "Chittenden County High Bailiff candidate forum",
+      "host": "Town Meeting TV",
+      "date": "2026-09-23",
+      "participants": "Amy Payne, Sean Miller and Paul McManus",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/chittenden-county-high-bailiff-candidate-forum"
+    },
+    {
+      "raceIds": ["proposal-3"],
+      "kind": "forum",
+      "title": "Proposal 3 ballot item forum",
+      "host": "Town Meeting TV",
+      "date": "2026-10-07",
+      "participants": "Speakers for and against the amendment",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/vermont-proposal-3-right-to-collective-bargaining-amendment-ballot-item-forum"
+    },
+    {
+      "raceIds": ["proposal-4"],
+      "kind": "forum",
+      "title": "Proposal 4 ballot item forum",
+      "host": "Town Meeting TV",
+      "date": "2026-10-13",
+      "participants": "Speakers for and against the amendment",
+      "format": "Video",
+      "url": "https://cctv.org/watch-tv/vermont-proposal-4-equal-protection-of-law-amendment-ballot-item-forum"
+    }
+  ]
+}
