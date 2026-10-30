@@ -37,7 +37,7 @@ const staticSourceCategories = [
       { title: 'Vermont Secretary of State — Early & absentee voting', url: 'https://sos.vermont.gov/elections/voters/early-absentee-voting/' },
       { title: 'Vermont Secretary of State — Sept 3, 2026 release on general-election ballot mailing', url: 'https://sos.vermont.gov/node/1246' },
       { title: 'Vermont Secretary of State — Voter registration', url: 'https://sos.vermont.gov/elections/voters/registration/' },
-      { title: 'Vermont Secretary of State — Justice of the Peace Guide (PDF)', url: 'https://outside.vermont.gov/dept/sos/Elections%20Division/town%20clerks%20and%20local%20elections/vt-jp-guide.pdf' },
+      { title: 'Vermont Secretary of State — Justice of the Peace Guide (PDF)', url: 'https://outside.vermont.gov/dept/sos/Elections_Division/town_clerks_local_elections/vermont_justice_peace_guide.pdf' },
       { title: 'Governor Phil Scott formally proclaims Constitutional Amendment Proposals 3 and 4 (July 28, 2026)', url: 'https://governor.vermont.gov/press-release/governor-phil-scott-formally-proclaims-constitutional-amendment-proposals-3-and-4' },
       { title: 'Vermont Legislative Council — 2026 constitutional amendment publication notice (PDF)', url: 'https://legislature.vermont.gov/assets/All-Council-Documents/2026-Vt.-Const.-amendment-publication-notice-for-Leg.-website-ID-421676.pdf' },
       { title: '17 V.S.A. § 2592 — Canvassing committees', url: 'https://legislature.vermont.gov/statutes/section/17/051/02592' },
