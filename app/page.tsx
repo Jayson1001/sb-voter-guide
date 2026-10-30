@@ -1,5 +1,5 @@
 import Link from "next/link";
-import GeneralCountdown from "@/components/GeneralCountdown";
+import { ElectionDayBadge } from "@/components/GeneralCountdown";
 import generalRacesData from "@/data/general-races.json";
 import primaryResults from "@/data/primary-results.json";
 import type { GeneralRace } from "@/components/GeneralRaceCard";
@@ -83,6 +83,7 @@ export default function Home() {
 
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <div className="text-center animate-fade-in">
+            <ElectionDayBadge />
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-4 tracking-tight">
               South Burlington
               <span className="block text-cream-200">Voter Guide 2026</span>
@@ -112,21 +113,16 @@ export default function Home() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
 
-        {/* General Main Event — countdown + the facts people need for November */}
+        {/* General Main Event — the facts people need for November */}
         <section className="bg-gradient-to-br from-sage-500 to-sage-600 rounded-2xl p-6 sm:p-8 mb-8 text-white shadow-soft animate-fade-in">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-5">
-            <div className="flex-shrink-0 mx-auto sm:mx-0">
-              <GeneralCountdown tone="sage" />
-            </div>
-            <div className="flex-1">
-              <span className="inline-block text-xs font-semibold bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full uppercase tracking-wide mb-2">
-                Up next &bull; November 3
-              </span>
-              <h2 className="font-display text-2xl sm:text-3xl font-bold mb-1">The November 3 general election is next</h2>
-              <p className="text-sage-50 text-sm sm:text-base leading-relaxed">
-                This is the one that decides who actually takes office. Vermont has same-day registration, so there&apos;s still no deadline to register. And November is simpler than August in two ways.
-              </p>
-            </div>
+          <div className="mb-5">
+            <span className="inline-block text-xs font-semibold bg-white/20 backdrop-blur-sm px-2 py-0.5 rounded-full uppercase tracking-wide mb-2">
+              Up next &bull; November 3
+            </span>
+            <h2 className="font-display text-2xl sm:text-3xl font-bold mb-1">The November 3 general election is next</h2>
+            <p className="text-sage-50 text-sm sm:text-base leading-relaxed">
+              This is the one that decides who actually takes office. Vermont has same-day registration, so there&apos;s still no deadline to register. And November is simpler than August in two ways.
+            </p>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4 mb-5">
