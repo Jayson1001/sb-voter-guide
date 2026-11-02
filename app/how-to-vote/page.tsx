@@ -86,9 +86,9 @@ const faqs: { question: string; answer: ReactNode }[] = [
     question: "How do I vote by mail?",
     answer: (
       <>
-        Mark your ballot, follow the instructions that come with it, and return it by mail to the City Clerk&apos;s
-        Office (180 Market Street), in the 24/7 drop box at City Hall, or at your polling place. It must arrive by 7:00
-        PM on Election Day (<Src href={SOS_MAIL_URL}>Vermont Secretary of State</Src>;{" "}
+        Mark your ballot, follow the instructions that come with it, and return it in the 24/7 drop box at City Hall
+        (180 Market Street) or at your polling place. It must arrive by 7:00 PM on Election Day, so it&apos;s now too
+        late to put it in the mail (<Src href={SOS_MAIL_URL}>Vermont Secretary of State</Src>;{" "}
         <Src href={CITY_ELECTIONS_URL}>City of South Burlington</Src>).
       </>
     ),
@@ -117,9 +117,9 @@ const faqs: { question: string; answer: ReactNode }[] = [
     question: "Can I drop my ballot off instead of mailing it?",
     answer: (
       <>
-        Yes. You can return your ballot by mail to 180 Market Street, in person at City Hall, or in the 24/7 drop box
-        near the main and back entrances of City Hall. Early in-person voting at the Clerk&apos;s Office ends at noon
-        the day before the election &mdash; so for the November 3 general election, that&apos;s{" "}
+        Yes. Use the 24/7 drop box near the main and back entrances of City Hall (180 Market Street), or bring your
+        ballot to your polling place by 7:00 PM on Election Day. Early in-person voting at the Clerk&apos;s Office ends
+        at noon the day before the election, so for the November 3 general election it closed at{" "}
         <strong>noon on Monday, November 2</strong> (
         <a href={CITY_ELECTIONS_URL} target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">
           City of South Burlington, Elections &amp; Voting
@@ -312,6 +312,7 @@ export default function HowToVotePage() {
               { name: "My Voter Page", desc: "Register, find your polling place, request a ballot", url: "https://mvp.vermont.gov/" },
               { name: "VT Secretary of State — Elections", desc: "Official election information", url: "https://sos.vermont.gov/elections/" },
               { name: "SB City Clerk — Elections", desc: "Local election details", url: "https://www.southburlingtonvt.gov/211/Elections-Voting" },
+              { name: "SB Election Results", desc: "South Burlington results, posted after polls close", url: "https://www.southburlingtonvt.gov/567/Election-Results" },
             ].map((resource, i) => (
               <a
                 key={i}
