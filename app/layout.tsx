@@ -30,8 +30,6 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "South Burlington Voter Guide",
-    // TODO(owner): public/og.png still reads "August 11 · South Burlington Primary".
-    // Swap in a November 3 image; alt text below already describes the general.
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "South Burlington Voter Guide — what's on your November 3 ballot?" }],
   },
   twitter: {
