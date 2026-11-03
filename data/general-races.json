@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-08",
+  "lastUpdated": "2026-11-02",
   "electionDate": "2026-11-03",
   "candidateSource": {
     "title": "Vermont Secretary of State — 2026 General Election qualified candidates (updated Sept 23, 2026)",
@@ -47,7 +47,8 @@
           "ballotLabel": "Independent",
           "parties": [
             "Independent"
-          ]
+          ],
+          "bio": "Barre City resident. Ran for Barre City Council in 2021 and was a Republican candidate for the Vermont House (Washington-3) in 2022."
         },
         {
           "name": "Dean Roy",
@@ -75,7 +76,8 @@
             "Has signed gun safety legislation",
             "Has vetoed several Democratic tax and spending proposals",
             "Focus on housing affordability and economic development"
-          ]
+          ],
+          "website": "https://philscott.org"
         }
       ]
     },
@@ -112,7 +114,8 @@
             "Switched from Democrat to Republican before the 2024 race",
             "Focus on rural Vermont issues and the Northeast Kingdom",
             "Advocates for workforce development and economic opportunity"
-          ]
+          ],
+          "website": "https://rodgersforvt.com"
         }
       ]
     },
@@ -138,7 +141,8 @@
             "First woman to serve as Vermont Attorney General",
             "Active in multi-state opioid and environmental enforcement actions",
             "Focus on consumer protection and corporate accountability"
-          ]
+          ],
+          "website": "https://charityforvermont.com"
         },
         {
           "name": "Edwin Howell Kemon",
@@ -146,6 +150,12 @@
           "ballotLabel": "Republican",
           "parties": [
             "Republican"
+          ],
+          "bio": "Vergennes resident who works as a digital model-based systems engineer. Named the Republican nominee by the state party committee in August 2026 after H. Brooke Paige, who won the primary, withdrew from this race.",
+          "notablePositions": [
+            "Says he would focus the office on public safety, government accountability, consumer protection, and environmental enforcement",
+            "Says he would prioritize crimes against children, including trafficking, and end \"catch and release of repeat offenders\"",
+            "Says he would move the office away from \"high-volume litigation against the federal administration\""
           ]
         }
       ],
@@ -183,7 +193,8 @@
             "Expanded access to absentee voting",
             "Modernized business registration systems",
             "Advocates for election security and voter access"
-          ]
+          ],
+          "website": "https://www.sarahforvermont.com"
         },
         {
           "name": "H. Brooke Paige",
@@ -192,7 +203,11 @@
           "parties": [
             "Republican"
           ],
-          "website": "http://brookepaige.us"
+          "bio": "Washington resident and retired sales and marketing CEO; serves as a justice of the peace and on his town's Board of Civil Authority. Won four Republican statewide primaries in August 2026 and withdrew from all but Secretary of State.",
+          "notablePositions": [
+            "Says the Secretary of State's office has taken control of elections away from local officials, citing universal vote-by-mail",
+            "Favors streamlining the office's Business Services and Office of Professional Regulation"
+          ]
         },
         {
           "name": "Rachel Shaw",
@@ -200,7 +215,8 @@
           "ballotLabel": "Progressive",
           "parties": [
             "Progressive"
-          ]
+          ],
+          "bio": "Bennington resident since 2023 who works in hospitality and sales and marketing. Served in the Massachusetts Army National Guard and studied emergency management at Massachusetts Maritime Academy. Says she is focused on housing, health care, education, and affordability."
         }
       ],
       "notes": "H. Brooke Paige won four Republican primaries in August (Treasurer, Secretary of State, Auditor, and Attorney General) and later withdrew from three of them. Secretary of State is the one he's still on the ballot for.",
@@ -231,6 +247,11 @@
           "ballotLabel": "Progressive",
           "parties": [
             "Progressive"
+          ],
+          "bio": "Rutland Town resident, an author and financial account manager who has also sold insurance. Won the Progressive primary for treasurer unopposed.",
+          "notablePositions": [
+            "Supports a state-owned bank modeled on North Dakota's, or a \"collaborative banking system\"",
+            "Names responsible funding of state employee pensions as a key challenge"
           ]
         },
         {
@@ -239,7 +260,14 @@
           "ballotLabel": "Republican",
           "parties": [
             "Republican"
-          ]
+          ],
+          "bio": "Stowe accountant, tax preparer, and controller. Treasurer of the Vermont Republican Party, former chair of the Lamoille County Republican Committee, and a Stowe justice of the peace. Named the Republican nominee by the state party committee in August 2026.",
+          "notablePositions": [
+            "Says she would address state pension underfunding as a way to lower school property taxes",
+            "Says the office should return unclaimed property more proactively",
+            "Pledges plain-language public financial reporting"
+          ],
+          "website": "https://lafleur4vttreasurer.com"
         },
         {
           "name": "Mike Pieciak",
@@ -299,7 +327,14 @@
           "ballotLabel": "Republican",
           "parties": [
             "Republican"
-          ]
+          ],
+          "bio": "Poultney resident who manages finances and audits for a company with about $3 million in operations. Named the Republican nominee by the state party committee in August 2026.",
+          "notablePositions": [
+            "Says Health and Human Services and Medicaid need more audit scrutiny",
+            "Proposes one searchable public list of all audits, findings, recommendations, and follow-ups",
+            "Says he would publicly post fraud, waste, and abuse referrals to the Attorney General"
+          ],
+          "website": "https://votekronick.com"
         }
       ],
       "notes": "H. Brooke Paige won the Republican primary for Auditor and later withdrew; Ivar Kronick is the Republican nominee on the November ballot.",
@@ -332,7 +367,14 @@
           "ballotLabel": "Independent",
           "parties": [
             "Independent"
-          ]
+          ],
+          "bio": "Grassroots organizer running for Congress as an independent; first run for this seat.",
+          "notablePositions": [
+            "Says term limits \"should apply to all positions\"",
+            "Calls for ending privatized prisons",
+            "Calls for better rural infrastructure, including cell towers and internet service"
+          ],
+          "website": "https://fixvermont.com"
         },
         {
           "name": "Becca Balint",
@@ -347,7 +389,8 @@
             "Former Vermont Senate President Pro Tem",
             "Serves on House Judiciary Committee",
             "Focus on housing, climate, and workers' rights"
-          ]
+          ],
+          "website": "https://beccabalint.com"
         },
         {
           "name": "Gerald Malloy",
@@ -365,6 +408,11 @@
           "ballotLabel": "Independent",
           "parties": [
             "Independent"
+          ],
+          "bio": "U.S. Army veteran who served in the Army National Guard from 2006 to 2012. Also ran for this seat as an independent in 2022 and 2024.",
+          "notablePositions": [
+            "Suggests replacing Social Security with \"a mandatory savings account where you get out what you put in\"",
+            "Says much of the national debt could be renegotiated"
           ]
         },
         {
@@ -373,7 +421,14 @@
           "ballotLabel": "Independent",
           "parties": [
             "Independent"
-          ]
+          ],
+          "bio": "Massage therapist, small-business owner, and comedian running for Congress as an independent. Says her campaign takes no PAC money.",
+          "notablePositions": [
+            "Proposes spending caps and fraud audits, and cutting or freezing congressional pay until Congress passes a balanced budget",
+            "Says Congress should use its war powers and that \"peace through diplomacy is the best way\"",
+            "Calls for audits of how Social Security money has been managed"
+          ],
+          "website": "https://ruokvt.com"
         },
         {
           "name": "Ryan P. Walton",
@@ -381,7 +436,13 @@
           "ballotLabel": "Independent",
           "parties": [
             "Independent"
-          ]
+          ],
+          "bio": "Software developer who says he has also restored properties, created housing, and run service businesses. Says he is running to give Vermont an independent voice that owes \"neither party a vote.\"",
+          "notablePositions": [
+            "Accepts contributions only from Vermont residents, capped at $250, with no PAC, party, or corporate money",
+            "Lists Vermont's housing shortage among his focus areas"
+          ],
+          "website": "https://www.waltonforvermont.com"
         }
       ]
     }
@@ -410,7 +471,8 @@
           "notablePositions": [
             "Former South Burlington City Councilor",
             "Grew up in South Burlington"
-          ]
+          ],
+          "website": "https://www.thomaschittenden.com"
         },
         {
           "name": "Kesha Ram Hinsdale",
@@ -446,7 +508,8 @@
           "parties": [
             "Republican"
           ],
-          "bio": "Retired IBM engineer and Air Force veteran."
+          "bio": "Retired IBM engineer and Air Force veteran.",
+          "website": "https://www.roy4vt.org"
         },
         {
           "name": "Javen Sears",
@@ -468,7 +531,8 @@
           "ballotLabel": "Republican",
           "parties": [
             "Republican"
-          ]
+          ],
+          "bio": "Jericho resident. Was the Republican candidate for this Senate district in 2022 and 2024."
         }
       ],
       "notes": "Rohan St Marthe won a Republican nomination as a write-in candidate in the August primary.",
@@ -653,6 +717,10 @@
           "ballotLabel": "Republican",
           "parties": [
             "Republican"
+          ],
+          "bio": "Milton software engineer who says he is not an attorney. Was one of Vermont's delegates to the 2016 Republican National Convention.",
+          "notablePositions": [
+            "Says that if elected he would resign immediately so the governor could appoint a replacement"
           ]
         }
       ],
@@ -717,6 +785,10 @@
           "ballotLabel": "Republican",
           "parties": [
             "Republican"
+          ],
+          "bio": "Williston resident who spent 32 years with the Chittenden County Sheriff's Office. Has also served as a regional area commander for the Federal Protective Service and as director of security for the Vermont Department of Buildings and General Services.",
+          "notablePositions": [
+            "Says the high bailiff should be present in the community and know how the sheriff's office operates"
           ]
         },
         {
@@ -733,6 +805,11 @@
           "ballotLabel": "Democratic",
           "parties": [
             "Democrat"
+          ],
+          "bio": "Burlington resident and former publishing executive and educator. In her second term as Burlington's Ward 4 inspector of elections and has co-led restorative justice work.",
+          "notablePositions": [
+            "Says the high bailiff should be a civilian rather than a law-enforcement official",
+            "Says she would act as a bridge between the sheriff's office and the community, and work with whichever sheriff is elected"
           ]
         }
       ],
@@ -762,7 +839,8 @@
           "parties": [
             "Democrat",
             "Republican"
-          ]
+          ],
+          "bio": "Incumbent assistant judge, first elected in November 2010. A member of the National Association of County Judges and the Vermont Association of Assistant Judges, and writes the \"Courthouse Chronicles\" historical articles."
         },
         {
           "name": "Anne Nichols Williams",
@@ -799,7 +877,8 @@
           "parties": [
             "Democrat",
             "Republican"
-          ]
+          ],
+          "bio": "Incumbent probate judge, appointed by Gov. Peter Shumlin in 2016 after serving as general counsel to the Vermont Agency of Education. Previously practiced law in South Burlington and was an assistant district attorney in Suffolk County, Mass."
         }
       ],
       "notes": "Gregory J. Glennon won the Democratic primary and also won the Republican nomination as a write-in candidate.",
