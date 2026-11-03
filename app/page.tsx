@@ -8,6 +8,8 @@ const SOS_RESULTS = "https://sos.vermont.gov/elections/election-info-resources/e
 const SOS_MAIL_BALLOTS = "https://sos.vermont.gov/elections/voters/early-absentee-voting/";
 const CITY_ELECTIONS = "https://www.southburlingtonvt.gov/211/Elections-Voting";
 const CITY_PRIMARY_RESULTS = "https://www.southburlingtonvt.gov/716/August-11-2026-Vermont-Primary-Results";
+// The City posts each election's results as a new page under this one.
+const CITY_RESULTS = "https://www.southburlingtonvt.gov/567/Election-Results";
 
 const CalendarIcon = () => (
   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,8 +46,9 @@ const ArchiveIcon = () => (
 const keyDates: { date: string; event: string; type: string; note?: string; badge?: string; href?: string; sources?: { label: string; url: string }[] }[] = [
   { date: "Aug 11", event: "Vermont Primary Election — done", type: "past", note: "Each party picked its November nominees. See who won on the primary results page.", href: "/primary-results" },
   { date: "First half of Oct", event: "General election ballots arrive in mailboxes", type: "milestone", note: "Vermont mails a ballot to every active registered voter. If yours hasn't shown up by mid-October, contact the City Clerk.", sources: [{ label: "Vermont Secretary of State", url: "https://sos.vermont.gov/node/1246" }] },
-  { date: "Mon, Nov 2 · noon", event: "Early in-person voting at the City Clerk's office ends", type: "filing", note: "City Clerk's Office, 180 Market Street.", sources: [{ label: "City of South Burlington", url: CITY_ELECTIONS }] },
-  { date: "Nov 3", event: "Vermont General Election", type: "election", badge: "Up next", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls. Mailed ballots are due by 7 PM.", sources: [{ label: "Vermont Secretary of State", url: SOS_MAIL_BALLOTS }] },
+  { date: "Mon, Nov 2 · noon", event: "Early in-person voting at the City Clerk's office — closed", type: "past", note: "Ended at noon the day before the election. You can still drop off your ballot or vote at the polls on Nov 3.", sources: [{ label: "City of South Burlington", url: CITY_ELECTIONS }] },
+  { date: "Nov 3", event: "Vermont General Election", type: "election", badge: "Up next", note: "Polls open 7 AM – 7 PM. Same-day registration at the polls. Still have your mailed ballot? It's too late to mail it — use the 24/7 drop box at City Hall or bring it to your polling place by 7 PM.", sources: [{ label: "Vermont Secretary of State", url: SOS_MAIL_BALLOTS }, { label: "City of South Burlington", url: CITY_ELECTIONS }] },
+  { date: "Nov 3 · after 7 PM", event: "Results start coming in", type: "milestone", note: "Unofficial results are reported town by town on election night. The City posts South Burlington's results on its Election Results page.", sources: [{ label: "City of South Burlington", url: CITY_RESULTS }, { label: "Vermont Secretary of State", url: SOS_RESULTS }] },
   { date: "Nov 10", event: "Results canvassed and certified", type: "milestone", note: "Canvassing committees meet one week after the election to certify the results; recount petitions are due within seven days of the election.", sources: [{ label: "17 V.S.A. § 2592", url: "https://legislature.vermont.gov/statutes/section/17/051/02592" }, { label: "17 V.S.A. § 2602", url: "https://legislature.vermont.gov/statutes/section/17/051/02602" }] },
 ];
 
@@ -131,8 +134,9 @@ export default function Home() {
                 <span aria-hidden="true">📬</span> Your ballot comes to you
               </p>
               <p className="text-sage-50 text-sm leading-relaxed">
-                Unlike the primary, you don&apos;t have to ask. Vermont mails a general-election ballot to <strong>every</strong> active registered voter. Mail it back, drop it off, or vote in person on Nov 3. Ballots are due by <strong>7 PM on Election Day, November 3</strong> (
-                <a href={SOS_MAIL_BALLOTS} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Secretary of State</a>).
+                Vermont mailed a general-election ballot to <strong>every</strong> active registered voter. Still have yours? It&apos;s too late to mail it &mdash; drop it in the 24/7 drop box at City Hall (180 Market Street) or bring it to your polling place by <strong>7 PM on Election Day, November 3</strong>. Or just vote in person (
+                <a href={SOS_MAIL_BALLOTS} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Secretary of State</a>;{" "}
+                <a href={CITY_ELECTIONS} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">City of South Burlington</a>).
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
@@ -160,6 +164,15 @@ export default function Home() {
               How to vote
               <ArrowRightIcon />
             </Link>
+            <a
+              href={CITY_RESULTS}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-sage-700/40 hover:bg-sage-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
+            >
+              Election night results (City)
+              <ArrowRightIcon />
+            </a>
             <Link
               href="/primary-results"
               className="inline-flex items-center gap-2 bg-sage-700/40 hover:bg-sage-700/60 text-white border border-white/30 px-5 py-2.5 rounded-lg font-medium text-sm transition-colors"
@@ -340,9 +353,13 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-soft p-6 mb-8">
           <div className="flex items-center justify-between gap-3 mb-3">
             <h2 className="font-display text-lg font-bold text-warmgray-800">What&apos;s New</h2>
-            <span className="text-xs text-warmgray-600 font-medium">Updated October 8, 2026</span>
+            <span className="text-xs text-warmgray-600 font-medium">Updated November 2, 2026</span>
           </div>
           <ul className="space-y-2 text-sm text-warmgray-700">
+            <li className="flex items-start gap-2">
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-terracotta-500 flex-shrink-0" />
+              <span><strong>Election Eve update.</strong> Early in-person voting at the Clerk&apos;s office has closed. If you still have your mailed ballot, don&apos;t mail it &mdash; use the 24/7 drop box at City Hall or bring it to your polling place by 7 PM on Nov 3. Results will be posted on the City&apos;s <a href={CITY_RESULTS} target="_blank" rel="noopener noreferrer" className="text-sage-600 hover:text-sage-800 underline">Election Results page</a>.</span>
+            </li>
             <li className="flex items-start gap-2">
               <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-terracotta-500 flex-shrink-0" />
               <span><strong>The guide now points at November 3.</strong> The <Link href="/general" className="text-sage-600 hover:text-sage-800 underline">general election guide</Link> is front and center; the August guide is archived at <Link href="/primary" className="text-sage-600 hover:text-sage-800 underline">/primary</Link>.</span>

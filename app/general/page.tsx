@@ -10,6 +10,8 @@ const SOS_CANDIDATES = generalRaces.candidateSource;
 const CITY_ELECTIONS = votingInfo.pollingPlacesSource;
 const SOS_MAIL_BALLOTS = "https://sos.vermont.gov/elections/voters/early-absentee-voting/";
 const SOS_REGISTRATION = "https://sos.vermont.gov/elections/voters/registration/";
+const SOS_RESULTS = "https://sos.vermont.gov/elections/election-info-resources/elections-results-data";
+const CITY_RESULTS = "https://www.southburlingtonvt.gov/567/Election-Results";
 
 export const metadata = {
   title: "What's on your Nov 3 ballot? — South Burlington General Election Guide",
@@ -421,9 +423,9 @@ export default function GeneralPage() {
               <div>
                 <p className="font-semibold text-warmgray-700 mb-1">Mail Ballots</p>
                 <p className="text-warmgray-600">
-                  Vermont mails a general-election ballot to every active registered voter. Mail it back, drop it in the
-                  24/7 drop box at City Hall (near the main and back entrances), return it in person at City Hall, or
-                  bring it to your polling place. Ballots are due by <strong>7 p.m. on November 3</strong>.{" "}
+                  Vermont mailed a general-election ballot to every active registered voter. If you still have yours,
+                  it&apos;s too late to mail it &mdash; drop it in the 24/7 drop box at City Hall (near the main and back
+                  entrances) or bring it to your polling place. Ballots are due by <strong>7 p.m. on November 3</strong>.{" "}
                   <span className="text-xs">
                     (Sources:{" "}
                     <a href={SOS_MAIL_BALLOTS} target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-700">Vermont Secretary of State</a>
@@ -435,7 +437,8 @@ export default function GeneralPage() {
               <div>
                 <p className="font-semibold text-warmgray-700 mb-1">Early Voting</p>
                 <p className="text-warmgray-600">
-                  Vote early at the City Clerk&apos;s Office, 180 Market Street, until <strong>noon on Monday, November 2</strong>.{" "}
+                  Closed. Early voting at the City Clerk&apos;s Office ended at <strong>noon on Monday, November 2</strong>.
+                  You can still vote in person at your polling place on Election Day.{" "}
                   <span className="text-xs">
                     (Source:{" "}
                     <a href={CITY_ELECTIONS.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-sage-700">City of South Burlington</a>)
@@ -451,6 +454,20 @@ export default function GeneralPage() {
                   <a href="https://mvp.vermont.gov/" target="_blank" rel="noopener noreferrer" className="text-terracotta-700 hover:text-terracotta-800 underline">
                     Register or check your registration at mvp.vermont.gov
                   </a>
+                </p>
+              </div>
+              <div>
+                <p className="font-semibold text-warmgray-700 mb-1">Election Night Results</p>
+                <p className="text-warmgray-600">
+                  Unofficial results are reported after polls close at 7 p.m. The City posts South Burlington&apos;s on its{" "}
+                  <a href={CITY_RESULTS} target="_blank" rel="noopener noreferrer" className="text-terracotta-700 hover:text-terracotta-800 underline">
+                    Election Results page<ExternalLinkIcon />
+                  </a>
+                  ; statewide results are on the{" "}
+                  <a href={SOS_RESULTS} target="_blank" rel="noopener noreferrer" className="text-terracotta-700 hover:text-terracotta-800 underline">
+                    Secretary of State&apos;s results page<ExternalLinkIcon />
+                  </a>
+                  .
                 </p>
               </div>
               <div>
